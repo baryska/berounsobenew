@@ -1,0 +1,104 @@
+.introPicture {
+  flex: 1.5;
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
+  clip-path: polygon(17% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.typewriterWrapper {
+  display: flex;
+  position: absolute;
+  left: 60%;
+  top: 1rem;
+}
+
+.typewriter {
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  color: white;
+  z-index: 100;
+}
+
+.cursor {
+  color: transparent;
+}
+
+.whiteLogo {
+  width: 200px;
+}
+
+@media (max-width: 1600px) {
+  .typewriter {
+    font-size: 1rem;
+  }
+
+  .whiteLogo {
+    width: 150px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .introPicture {
+    flex: 2;
+  }
+
+  .typewriter {
+    font-size: 0.7rem;
+  }
+
+  .whiteLogo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .introPicture {
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .typewriterWrapper {
+    left: 20%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .typewriter {
+    font-size: 1.2rem;
+  }
+
+  .whiteLogo {
+    width: 130px;
+  }
+}
+
+@media (max-width: 650px) {
+  .typewriter {
+    font-size: 0.9rem;
+    margin-left: 15px;
+  }
+  .whiteLogo {
+    width: 100px;
+    margin-right: 15px;
+  }
+
+  .introPicture {
+    background-size: 120% 120%;
+  }
+
+  .typewriterWrapper {
+    top: 0.7rem;
+    left: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .typewriter {
+    font-size: 0.7rem;
+  }
+
+  .typewriterWrapper {
+    top: 0.5rem;
+  }
+}

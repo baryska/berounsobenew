@@ -1,0 +1,19 @@
+.blueDots {
+  display: flex;
+  width: 100%;
+  margin-left: 33%;
+}
+
+.blueDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(76,164,202, 0.5);
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .blueDots {
+    margin-left: 0;
+  }
+}

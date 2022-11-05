@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cutive&family=Lekton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.home {
+  position: relative;
+  display: flex;
+}
+
+.aboutUs {
+  display: flex;
+  width: 100%;
+  color: #161534;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 3rem 0 2rem 0;
+}
+
+.blueDot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(76, 164, 202, 0.5);
+  margin: 0.5rem 0.5rem;
+}
+
+.contact {
+  padding: 2rem;
+}
+
+.whoWeAre, .smallProfiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 50px;
+}
+
+.cochceme {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(76, 164, 202, 0.1);
+}
+
+.programme {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin: 2rem 2rem;
+
+}
+
+.programme__item {
+  text-align: center;
+  flex-basis: 25%;
+}
+
+.programme__image {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #70b6d5;
+  border: solid white 1px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+}
+
+
+.programme__image:active {
+  animation: press 0.2s 1 linear;
+}
+
+@keyframes press {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.92);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.programme__text {
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.icon {
+  margin-right: 2rem;
+}
+
+.blueCircle, .blueCircle__2, .blueCircle__3 {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10;
+}
+
+
+.blueCircle {
+  width: 150px;
+  height: 150px;
+  background: repeating-linear-gradient(50deg,
+      rgba(76, 164, 202, 0.1),
+      rgba(76, 164, 202, 0.1) 3px,
+      #FFF 3px,
+      #FFF 5px);
+ 
+  top: -2rem;
+  right: 55%;
+  
+}
+
+.blueCircle__2 {
+  width: 200px;
+  height: 200px;
+  background: repeating-linear-gradient(-40deg,
+      rgba(76, 164, 202, 0.1),
+      rgba(76, 164, 202, 0.1) 3px,
+      #FFF 3px,
+      #FFF 5px);
+  bottom: 10rem;
+  left: -3rem;
+ 
+}
+
+.blueCircle__3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(76, 164, 202, 0.1);
+  bottom: -3rem;
+  left: 30%;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.footer {
+  height: 2rem;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1600px) {}
+
+@media (max-width: 1250px) {
+  .aboutUs {
+    font-size: 1.3rem;
+  }
+
+  .blueDot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .home>div:first-child {
+    order: 2;
+  }
+
+  .whoWeAre {
+    padding: 0;
+  }
+}
+
+@media (max-width: 786px) {
+  .contact {
+    padding-left: 0;
+    padding-right:0;
+  }
+  .arrow {
+    visibility: hidden;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+  .blueCircle, .blueCircle__2, .blueCircle__3 {
+    visibility: hidden;
+  }
+}
+
+
+
+
+

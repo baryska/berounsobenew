@@ -1,0 +1,51 @@
+.button {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+  .button :focus {
+      outline: none;
+  } 
+
+  .burger {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+    background-color: #161534;
+  }
+  .cross {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+    background-color: white;
+   }
+
+   .cross:first-child {
+    transform:  rotate(45deg);
+  }
+
+  .cross:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  .cross:nth-child(3) {
+    transform: rotate(-45deg);
+  }

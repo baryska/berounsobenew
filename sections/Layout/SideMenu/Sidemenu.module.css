@@ -1,0 +1,87 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #161534;
+  opacity: 80%;
+  height: 100vh;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  padding-top: 7rem;
+  width: 40%;
+  z-index: 100;
+}
+
+.navItem {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 400;
+}
+
+.navItemLink {
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: 20px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.navItemLink:before, .navItemLink:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #FFF;
+  transition: all 0.3s;
+}
+
+.navItemLink:before {
+  left: 0px;
+  top: 0px;
+}
+
+.navItemLink:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+.navItemLink:hover:before, .navItemLink:hover:after {
+  opacity: 60%;
+  width: 100%;
+}
+
+.navOpen {
+  transform: translateX(0);
+}
+
+@media (max-width: 600px) {
+  .nav {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    padding-top: 5rem;
+  }
+
+  .navItem {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .navItemLink {
+    width: 60%;
+  }
+
+}

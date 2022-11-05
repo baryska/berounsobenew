@@ -1,0 +1,128 @@
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200;400&family=Special+Elite&display=swap');
+ .main {
+   padding: 15px 10px 15px;
+ }
+
+ .title {
+   margin: 0;
+   margin-left: 35%;
+   line-height: 1;
+   font: 18px Raleway;
+   font-weight: 600;
+   color: rgba(0, 0, 0, 0.87);
+   padding: 20px 0 5px 0;
+ }
+
+ .title__profession {
+   margin-left: 35%;
+   margin-top: 10px;
+   font: 16px Raleway;
+   color: rgb(76, 164, 202);
+   font-style: italic;
+   font-weight: 500;
+ }
+
+ .title__block {
+  height: 23%;
+ }
+
+ .description {
+   margin: 0;
+   padding: 30px 25px;
+   font: 14px Raleway;
+   line-height: 1.2;
+ }
+
+ .heading {
+  font: 16px Raleway;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  background: rgba(76,164,202, 0.5);
+  min-height: 80px;
+ }
+
+ .heading p {
+  font-weight: 600;
+  margin-top: 5px;
+  color: black;
+ }
+
+ .footer {
+  position: relative;
+ }
+
+ .email {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 15px;
+  font-family: Special Elite;
+ }
+
+ .email__icon {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: -20px;
+  right: -35px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  background-color: rgb(76, 164, 202);
+ }
+
+ .email__icon:hover {
+  background-color: #70b6d5;
+}
+
+ .container {
+   height: 500px;
+   width: 380px;
+   margin: 30px 50px;
+   border-radius: 16px;
+   position: relative;
+   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+ }
+
+ .profileImg {
+   height: 150px;
+   width: 150px;
+   background-size: cover;
+   position: absolute;
+   top: -35px;
+   left: -35px;
+   border-radius: 50%;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+ }
+
+ .description {
+   margin-bottom: 20px;
+   height: 45%;
+ }
+
+ .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  padding: 0 20px;
+  margin-left: -20px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+ }
+
+ @media (max-width: 1250px) {
+  
+  .description {
+    font-size: 12px;
+  }
+}
