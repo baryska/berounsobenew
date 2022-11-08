@@ -3,12 +3,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Header } from '../sections/Layout/Header';
 import Profile from '../components/Profile/Profile';
-import SmallProfile from '../components/SmallProfile/SmallProfile';
-import { Profiles, SmallProfiles } from '../data/index';
+import { Profiles, Posts } from '../data/index';
 import Statements from '../components/Statements/Statements';
 import IntroPicture from '../components/IntroPicture/IntroPicture';
 import ContactForm from '../components/ContactForm/ContactForm';
-import Programme from '../components/Programme/Programme';
+import NewsItem from '../components/NewsItem/NewsItem';
 import styles from '../styles/Home.module.css';
 import GroupPic from '../public/vsichni_small.jpg'
 
@@ -67,11 +66,9 @@ const Home: NextPage = () => {
                 <div className={styles.blueDot} />
                 <div className={styles.blueDot} />
               </div>
-
             </h2>
-
             {Profiles.map((profile) => {
-              const { title, profession, text, photo, topic, email, sex } = profile;
+              const { title, profession, text, photo, topic, email } = profile;
               return (
                 <Profile
                   title={title}
@@ -80,14 +77,32 @@ const Home: NextPage = () => {
                   photo={photo}
                   topic={topic}
                   email={email}
-                  sex={sex}
                   key={title} />
               )
             })}
           </div>
         </section>
-        <section id="cochceme" className={styles.cochceme}>
-          <Programme />
+        <section id="aktuality" className={styles.cochceme}>
+          <h2 className={styles.aboutUs}><strong>AKTUALITY</strong>
+            <div>
+              <div className={styles.blueDot} />
+              <div className={styles.blueDot} />
+            </div>
+          </h2>
+          {Posts.map((post) => {
+            const { title, theme, slug, date, image, paragraphs } = post;
+            return (
+              <NewsItem
+                title={title}
+                theme={theme}
+                slug={slug}
+                date={date}
+                image={image}
+                paragraphs={paragraphs}
+                key={title}
+              />
+            )
+          })}
         </section>
         <section id="napistenam" className={styles.contact}>
           <ContactForm />

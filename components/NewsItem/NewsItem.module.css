@@ -1,0 +1,36 @@
+.post__image, .post__text {
+  transition: transform ease 0.5s;
+}
+
+.post:hover .post__image {
+  transform: scale(1.2);
+}
+
+.post:hover .post__text {
+  transform: translate(15px,0);
+}
+
+
+.post__text {
+  max-width: 480px;
+  padding: 1rem;
+}
+
+.post__theme {
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.post__title {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.post__title:hover {
+  text-decoration: underline;
+}

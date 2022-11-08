@@ -120,9 +120,3 @@
   border-bottom-right-radius: 16px;
  }
 
- @media (max-width: 1250px) {
-  
-  .description {
-    font-size: 12px;
-  }
-}

@@ -10,10 +10,9 @@ interface Props {
   text: string;
   topic: string;
   email: string;
-  sex: string;
 }
 
-const Profile = ({ title, profession, photo, text, topic, email, sex }: Props) => {
+const Profile = ({ title, profession, photo, text, topic, email }: Props) => {
 
   return (
     <div className={styles.container}>
@@ -32,7 +31,7 @@ const Profile = ({ title, profession, photo, text, topic, email, sex }: Props) =
       <p className={styles.description}>
         {text}
       </p>
-      <h2 className={styles.heading}>{sex === "M" ? "JEHO TÉMATA" : "JEJÍ TÉMATA"}:
+      <h2 className={styles.heading}>ČEMU SE VĚNUJE:
         <p>{topic}</p>
       </h2>
       <footer className={styles.footer}>

@@ -16,8 +16,8 @@ const LINKS = [
     name: "KDO JSME"
   },
   {
-    link: "#cochceme",
-    name: "CO CHCEME"
+    link: "#aktuality",
+    name: "AKTUALITY"
   },
   {
     link: "#napistenam",

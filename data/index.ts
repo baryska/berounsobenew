@@ -19,6 +19,7 @@ import Schmiedova from '../public/adela_schmiedova.png';
 import Kralova from '../public/jana_kralova.jpg';
 import Slepicka from '../public/milan_slepicka.jpg';
 import Pospisil from '../public/stanislav_pospíšil.jpg';
+import tgm from '../public/tgm.jpg';
 
 export const Profiles = [
   {
@@ -337,5 +338,29 @@ export const ProgrammePoints = [
       `Posuneme <strong>začátek zasedání zastupitelstva na 16 hodinu</strong>.`  
     ]
   },
+]
+
+export const Posts = [
+  {
+    title: 'Má smysl chodit k volbám?',
+    theme: 'Politika',
+    slug: 'ma-smysl-chodit-k-volbam',
+    date: '28.10. 2022',
+    image: tgm,
+    paragraphs: [
+      `Má smysl chodit ke (komunálním) volbám? Ke každým volbám to má smysl, ale u těch komunálních je to trochu jako o té košili, 
+      která nám je blíže než pověstný kabát. Výsledky se nás týkají bezprostředně. Ovlivňují to, jaké bude naše město, náš veřejný prostor a vůbec 
+      život v našem okolí. Přes zastupitele, které si zvolíme, máme šanci se na veřejném životě podílet, podporovat to dobré, co funguje, 
+      a zlepšovat to, co je potřeba dělat lépe. `,
+      `Má to smysl i přesto, že námi zvolení zastupitelé jsou „nakonec“ v opozici. Má smysl podávat návrhy, chodit na jednání zastupitelstva, 
+      má smysl mít oči a mysl otevřené.`,
+      `Podílet se můžete i osobně, aniž byste přímo kandidovali a byli zvoleni. Máme velkou radost, že se nám již od voleb ozývají naši podporovatelé. 
+      Děkujeme, že nám nabízíte „přiložit vaše ruce a hlavy k dílu“, a těšíme se na setkání. Vážíme si toho o to víc, že nám chcete pomáhat právě v době, 
+      kdy jsme se racionálně rozhodli pro mravenčí práci v opozici. Nemůžeme vám nabídnout schůzku ve starostenské kanceláři, ale umíme uvařit třeba dobré kafe 😉`,
+      `I dnes pracujeme. Slavíme Den vzniku samostatného Československa. A chceme vám připomenout jeden z mnoha moudrých citátů T. G. Masaryka:`,
+      `„Veliké zlo je, že žijeme v myšlence, co řekne o mně soused. Ale o to běží, mít svůj úsudek, svoji osobnost, individualitu. Odhodlejme se být svými!”`,
+      `Přejeme vám krásný sváteční den a hezký podzimní víkend.`
+    ]
+  }
 ]
 

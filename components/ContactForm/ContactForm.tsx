@@ -53,12 +53,21 @@ const ContactForm = () => {
     <>
       <div className={`${sent ? styles.sent : ''} ${styles.contactSection}`}>
         <h1 className={styles.contactUs}>
-          <strong>NAPIŠTE NÁM</strong>
+          <strong>DOTAZY & PODNĚTY</strong>
           <div>
             <div className={styles.blueDot} />
             <div className={styles.blueDot} />
           </div>
         </h1>
+        <div className={styles.text}>
+          <p>V berounském zastupitelstvu jsme v <strong>opozici</strong>, máme proto omezené možnosti, jak věci v Berouně rychle a efektivně zlepšovat.</p> 
+          <p>I tak ale můžeme <strong>podávat podněty, klást otázky a tlačit vedení radnice k řešení</strong>.</p>
+            <div style={{display: 'flex'}}><div className={styles.blueDot} /><p>Chcete se vedení města na něco zeptat, ale nemůžete přijít osobně na zasedání zastupitelstva?</p></div>
+            <div style={{display: 'flex'}}><div className={styles.blueDot} /><p>Máte návrh na zlepšení?</p></div>
+            <div style={{display: 'flex'}}><div className={styles.blueDot} /><p>Trápí Vás něco, co se v Berouně dlouhodobě neřeší?</p></div>
+            <div style={{display: 'flex'}}><div className={styles.blueDot} /><p>Zajímá Vás, čemu se právě věnujeme?</p></div>
+            <h2><strong>Napište nám</strong> a my se Vám co nejdříve ozveme!</h2>
+        </div>
         <div className={`${styles.wrapper} ${styles.centered}`}>
           <article className={styles.letter}>
             <form ref={form} onSubmit={sendEmail}>
@@ -98,7 +107,7 @@ const ContactForm = () => {
           <div>
             <p className={`${styles.resultMessage} ${styles.centered}`} style={{ bottom: '15rem' }}>Čekejte, prosím</p>
             <ThreeDots fill="#4ca4ca80" className={styles.centered} style={{ bottom: '6rem' }} />
-          </div>) 
+          </div>)
           : ""}
         <button className={`${styles.resend} ${messageVisible || errorMessageVisible ? '' : styles.messageInvisible}`} onClick={() => handleSentMessage()}>
           <Image src="/resend.svg" width="30px" height="30px" alt="resend" />
