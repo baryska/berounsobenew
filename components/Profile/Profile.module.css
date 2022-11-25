@@ -23,13 +23,20 @@
  }
 
  .title__block {
-  height: 23%;
+  height: 18%;
+ }
+
+ .pin {
+  display: flex;
+  margin-left: 1rem;
+  font-family: Raleway;
+  align-items: center;
  }
 
  .description {
    margin: 0;
    padding: 30px 25px;
-   font: 14px Raleway;
+   font: 1rem Raleway;
    line-height: 1.2;
  }
 
@@ -57,7 +64,6 @@
   text-align: center;
   font-size: 17px;
   font-weight: 600;
-  margin-top: 15px;
   font-family: Special Elite;
  }
 
@@ -80,11 +86,12 @@
 }
 
  .container {
-   height: 500px;
+   height: 630px;
    width: 380px;
    margin: 30px 50px;
    border-radius: 16px;
    position: relative;
+   background-color: white;
    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
@@ -103,7 +110,7 @@
 
  .description {
    margin-bottom: 20px;
-   height: 45%;
+   height: 50%;
  }
 
  .footer {
@@ -113,9 +120,10 @@
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 70px;
+  height: 50px;
   padding: 0 20px;
   margin-left: -20px;
+  margin-bottom: 0.5rem;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
  }

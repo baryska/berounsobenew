@@ -3,13 +3,13 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Header } from '../sections/Layout/Header';
 import Profile from '../components/Profile/Profile';
-import { Profiles, Posts } from '../data/index';
+import SmallProfile from '../components/SmallProfile/SmallProfile';
+import { Profiles, Helpers, Posts } from '../data/index';
 import Statements from '../components/Statements/Statements';
-import IntroPicture from '../components/IntroPicture/IntroPicture';
 import ContactForm from '../components/ContactForm/ContactForm';
 import NewsItem from '../components/NewsItem/NewsItem';
 import styles from '../styles/Home.module.css';
-import GroupPic from '../public/vsichni_small.jpg'
+import Link from 'next/link';
 
 const Home: NextPage = () => {
 
@@ -42,25 +42,19 @@ const Home: NextPage = () => {
 
       <main>
         <section className={styles.home}>
-          <Statements />
-          <IntroPicture />
-          <div className={styles.blueCircle} />
-          <div className={styles.blueCircle__2} />
-          <div className={styles.blueCircle__3} />
+          <video autoPlay muted loop className={styles.video}>
+            <source src="/beroun4.mp4" type="video/mp4" />
+          </video>
+          <div className={styles.logo}>
+            <Image src="/BerounsobeLogo.png" alt="logo" width="2001px" height="629px" />
+          </div>
+          <div className={styles.statement}>Chceme moderní město, které patří do 21. století</div>
           <button onClick={handleScrollTop} className={styles.arrow}>
             <Image src="/up.svg" width="40px" height="40px" alt="arrow" />
           </button>
         </section>
-
         <section id="kdojsme" >
           <div className={styles.whoWeAre}>
-            {/* <h1 className={styles.aboutUs}>
-              <strong>KDO JSME</strong>
-              <div>
-                <div className={styles.blueDot} />
-                <div className={styles.blueDot} />
-              </div>
-            </h1> */}
             <h2 className={styles.aboutUs}><strong>NAŠI ZASTUPITELÉ</strong>
               <div>
                 <div className={styles.blueDot} />
@@ -68,7 +62,7 @@ const Home: NextPage = () => {
               </div>
             </h2>
             {Profiles.map((profile) => {
-              const { title, profession, text, photo, topic, email } = profile;
+              const { title, profession, text, photo, topic, email, location } = profile;
               return (
                 <Profile
                   title={title}
@@ -77,32 +71,76 @@ const Home: NextPage = () => {
                   photo={photo}
                   topic={topic}
                   email={email}
+                  key={title}
+                  location={location}
+                  />
+              )
+            })}
+            <h2 className={styles.aboutUs} style={{marginTop: "8rem"}}><strong>NAŠI SPOLUPRACOVNÍCI</strong>
+              <div>
+                <div className={styles.blueDot} />
+                <div className={styles.blueDot} />
+              </div>
+            </h2>
+            {Helpers.map((profile) => {
+              const { title, profession, text, photo, topic, email, location } = profile;
+              return (
+                <Profile
+                  title={title}
+                  profession={profession}
+                  text={text}
+                  photo={photo}
+                  topic={topic}
+                  email={email}
+                  location={location}
                   key={title} />
+              )
+            })}           
+          </div>
+        </section>
+        <div className={styles.experts}>
+              <p>Na naši práci nejsme sami - víme, že nemůžeme být odborníky na vše, proto se často obracíme na <strong>experty</strong>.
+                Chcete se také zařadit do našeho <strong>týmu odborných konzultantů</strong>?
+              </p>
+              <p className={styles.letUsKnow}>
+                <strong><Link href="/#napistenam">Dejte nám vědět!</Link></strong>
+              </p>
+
+              <div className={styles.buttonDiv}>
+                <Link href="/advisors">
+                  <a className={styles.button}>S kým se radíme</a>
+                </Link>
+              </div>
+            </div>
+        <section id="informujeme" className={styles.aktualityContainer}>
+          <div className={styles.aktuality}>
+            <h2 className={styles.aboutUs}><strong>INFORMUJEME</strong>
+              <div>
+                <div className={styles.blueDot} />
+                <div className={styles.blueDot} />
+              </div>
+            </h2>
+            {Posts.slice(0, 4).map((post) => {
+              const { title, theme, slug, date, image, paragraphs } = post;
+              return (
+                <NewsItem
+                  title={title}
+                  theme={theme}
+                  slug={slug}
+                  date={date}
+                  image={image}
+                  paragraphs={paragraphs}
+                  key={title}
+                />
               )
             })}
           </div>
-        </section>
-        <section id="aktuality" className={styles.cochceme}>
-          <h2 className={styles.aboutUs}><strong>AKTUALITY</strong>
-            <div>
-              <div className={styles.blueDot} />
-              <div className={styles.blueDot} />
-            </div>
-          </h2>
-          {Posts.map((post) => {
-            const { title, theme, slug, date, image, paragraphs } = post;
-            return (
-              <NewsItem
-                title={title}
-                theme={theme}
-                slug={slug}
-                date={date}
-                image={image}
-                paragraphs={paragraphs}
-                key={title}
-              />
-            )
-          })}
+          <Link href="/posts">
+            <a className={styles.allNews}>
+              <span className={styles.displayAll}>Zobrazit vše</span>
+              <span><Image src="/double-arrow.svg" alt="šipka" width="25px" height="25px" /></span>
+            </a>
+          </Link>
         </section>
         <section id="napistenam" className={styles.contact}>
           <ContactForm />

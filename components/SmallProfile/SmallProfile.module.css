@@ -1,75 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200;400&family=Special+Elite&display=swap');
 .main {
-  padding: 10px 10px;
+  padding: 15px 10px 15px;
 }
 
-.card {
-  position: relative;
-  border-radius: 16px;
-  margin: 0 auto;
+.container {
+  height: 500px;
   width: 340px;
-  max-width: 100%;
-  height: 340px;
+  margin: 30px 20px;
+  border-radius: 16px;
+  position: relative;
+  background-color: white;
   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
-  overflow: hidden;
-  transition: transform 0.5s ease-out;
-  background-size: 100%;
-  background-position-x: 0;
-}
-
-.info {
-  position: relative;
-  width: 100%;
-  height: 340px;
-  background-color: #fff;
-  opacity: 0.9;
-  transform: translateY(100%) translateY(-50px) translateZ(0);
-  transition: transform 0.5s ease-out;
 }
 
 .title {
-  margin: 0;
-  padding: 17px 15px 16px 15px;
+  text-align: center;
   line-height: 1;
-  font: 20px Raleway;
+  font: 18px Raleway;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.87);
+  padding: 20px 0 5px 0;
 }
 
-.profession {
+.title__profession {
+  text-align: center;
+  margin-top: 10px;
+  font: 16px Raleway;
+  color: rgb(76, 164, 202);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.title__block {
+ height: 20%;
+ padding: 0.5rem
+}
+
+.description {
   margin: 0;
-  padding: 0 12px;
+  padding: 30px 25px;
   font: 15px Raleway;
-  line-height: 1;
+  line-height: 1.2;
 }
 
-.infoIcon, .closeIcon {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  visibility: hidden;
+.footer {
+ font: 16px Raleway;
+ color: white;
+ font-weight: 700;
+ text-align: center;
+ padding: 10px;
+ background: rgba(76,164,202, 0.5);
+ height: 17%;
+ border-bottom-left-radius: 16px;
+ border-bottom-right-radius: 16px;
 }
 
-@media (max-width: 768px) {
-  .infoIcon {
-    visibility: visible;
-  }
+.footer p {
+ font-weight: 600;
+ margin-top: 5px;
+ color: black;
+}
 
-  .card:hover .closeIcon {
-    visibility: visible;
-  }
+.description {
+  margin-bottom: 20px;
+  height: 59%;
 }
 
 
-@media (max-width: 1250px) {
-  .card {
-    width: 300px;
-    height: 300px;
-    background-size: 110%;
-    background-position-x: 0;
-  }
-
-  .info {
-    height: 300px;
-  }
-}

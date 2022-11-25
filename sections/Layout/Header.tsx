@@ -16,8 +16,8 @@ const LINKS = [
     name: "KDO JSME"
   },
   {
-    link: "#aktuality",
-    name: "AKTUALITY"
+    link: "#informujeme",
+    name: "INFORMUJEME"
   },
   {
     link: "#napistenam",
@@ -62,7 +62,7 @@ export const Header = () => {
                   <li
                     key={index}
                   >
-                    <Link href={link}>
+                    <Link href={`/${link}`}>
                       <a>{name}</a>
                     </Link>
                   </li>

@@ -60,13 +60,14 @@ const ContactForm = () => {
           </div>
         </h1>
         <div className={styles.text}>
-          <p>V berounském zastupitelstvu jsme v <strong>opozici</strong>, máme proto omezené možnosti, jak věci v Berouně rychle a efektivně zlepšovat.</p> 
+          <p>V berounském zastupitelstvu jsme v <strong>opozici</strong>, máme proto omezené možnosti, jak věci v Berouně rychle a efektivně zlepšovat.</p>
           <p>I tak ale můžeme <strong>podávat podněty, klást otázky a tlačit vedení radnice k řešení</strong>.</p>
-            <div style={{display: 'flex'}}><div className={styles.blueDot} /><p>Chcete se vedení města na něco zeptat, ale nemůžete přijít osobně na zasedání zastupitelstva?</p></div>
-            <div style={{display: 'flex'}}><div className={styles.blueDot} /><p>Máte návrh na zlepšení?</p></div>
-            <div style={{display: 'flex'}}><div className={styles.blueDot} /><p>Trápí Vás něco, co se v Berouně dlouhodobě neřeší?</p></div>
-            <div style={{display: 'flex'}}><div className={styles.blueDot} /><p>Zajímá Vás, čemu se právě věnujeme?</p></div>
-            <h2><strong>Napište nám</strong> a my se Vám co nejdříve ozveme!</h2>
+          <div style={{ display: 'flex' }}><div className={styles.blueDot} /><p>Chcete se vedení města na něco zeptat, ale nemůžete přijít osobně na zasedání zastupitelstva?</p></div>
+          <div style={{ display: 'flex' }}><div className={styles.blueDot} /><p>Máte návrh na zlepšení?</p></div>
+          <div style={{ display: 'flex' }}><div className={styles.blueDot} /><p>Trápí Vás něco, co se v Berouně dlouhodobě neřeší?</p></div>
+          <div style={{ display: 'flex' }}><div className={styles.blueDot} /><p>Zajímá Vás, čemu se právě věnujeme?</p></div>
+          <h2><strong>Napište nám</strong> a my se Vám co nejdříve ozveme!</h2>
+          <h4>Pište na e-mail <strong>info@berounsobe.eu</strong> nebo vyplňte náš kontaktní formulář:</h4>
         </div>
         <div className={`${styles.wrapper} ${styles.centered}`}>
           <article className={styles.letter}>
@@ -91,17 +92,28 @@ const ContactForm = () => {
                 </p>
               </div>
             </form>
+
           </article>
           <div className={`${styles.envelope} ${styles.front}`}></div>
           <div className={`${styles.envelope} ${styles.back}`}></div>
         </div>
         <div>
-          <p className={`${styles.resultMessage} ${styles.centered} ${messageVisible ? '' : styles.messageInvisible}`}>
+          <div className={`${styles.resultMessage} ${styles.centered} ${messageVisible ? '' : styles.messageInvisible}`} >
             Děkujeme Vám za zprávu! Pokud obsahuje dotaz, ozveme se Vám co nejdříve!
-          </p>
-          <p className={`${styles.resultMessage} ${styles.centered} ${errorMessageVisible ? '' : styles.messageInvisible}`}>
+            <div>
+              <button className={`${styles.resend} ${messageVisible || errorMessageVisible ? '' : styles.messageInvisible}`} >
+                <Image src="/resend.svg" width="30px" height="30px" alt="resend" />
+              </button>
+            </div>
+          </div>
+          <div className={`${styles.resultMessage} ${styles.centered} ${errorMessageVisible ? '' : styles.messageInvisible}`}>
             Odeslání zprávy se nezdařilo :( Zkuste to prosím znovu nebo nám napište na info@berounsobe.eu. Děkujeme!
-          </p>
+            <div onClick={() => handleSentMessage()}>
+              <button className={`${styles.resend} ${messageVisible || errorMessageVisible ? '' : styles.messageInvisible}`} onClick={() => handleSentMessage()}>
+                <Image src="/resend.svg" width="30px" height="30px" alt="resend" />
+              </button>
+            </div>
+          </div>
         </div>
         {loading ? (
           <div>

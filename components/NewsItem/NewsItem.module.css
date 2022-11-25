@@ -1,3 +1,7 @@
+.post {
+  margin: 1rem;
+}
+
 .post__image, .post__text {
   transition: transform ease 0.5s;
 }
@@ -10,9 +14,8 @@
   transform: translate(15px,0);
 }
 
-
 .post__text {
-  max-width: 480px;
+  max-width: 400px;
   padding: 1rem;
 }
 
@@ -25,12 +28,17 @@
   text-transform: uppercase;
 }
 
+.post__theme span:first-child {
+  color: rgb(76, 164, 202);
+}
+
 .post__title {
   font-family: Montserrat;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .post__title:hover {
   text-decoration: underline;
+  cursor: pointer;
 }

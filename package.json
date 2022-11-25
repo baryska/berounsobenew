@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "cookies-next": "^2.1.1",
     "email-validator": "^2.0.4",
@@ -21,8 +21,8 @@
     "react-dom": "18.0.0",
     "react-facebook-pixel": "^1.0.4",
     "react-loading-icons": "^1.1.0",
-    "typewriter-effect": "^2.19.0",
-    "use-delayed-state": "^1.2.0"
+    "react-multi-carousel": "^2.8.2",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@types/node": "17.0.27",

@@ -12,10 +12,6 @@ a {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .programme_title {
   font-size: 25px;
 }

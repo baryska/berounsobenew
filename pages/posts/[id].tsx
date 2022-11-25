@@ -1,5 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+import { useRouter } from 'next/router';
 import { getAllPostSlugs, getPostData } from '../../data/posts';
 import styles from './post.module.css';
 
@@ -16,13 +18,14 @@ interface Params {
 }
 
 const Post = ({ paragraphs, image, title }: Props) => {
+  const router = useRouter();
 
   return (
     <div className={styles.container}>
+      <button style={{textAlign: 'left'}} onClick={() => router.back()}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px"/></button>
       <h1 className={styles.title}>{title}</h1>
-      
         {image !== undefined && (
-          <span className={styles.image}><Image src={image} alt="foto" width="800px" height="500px" className={styles.image} /></span>
+          <span className={styles.image}><Image src={image} alt="foto" width="760px" height="570px" className={styles.image} /></span>
         )}
         <div className={styles.paragraphs}>
           {paragraphs?.map((paragraph) => <p key={paragraph} className={styles.paragraph}>{paragraph}</p>)}

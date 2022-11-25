@@ -2,6 +2,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  margin: 1rem 2rem;
 }
 
 
@@ -27,4 +28,35 @@
 
 .image {
   margin: 0 auto;
+}
+
+.allPosts__container {
+  display: flex;
+}
+
+.allPosts__menu {
+  width: 20%;
+  margin: 2rem;
+  position: relative;
+}
+
+.allPosts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 2rem;
+}
+
+.menuItem {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(76, 164, 202);
+  margin: 1rem auto;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
