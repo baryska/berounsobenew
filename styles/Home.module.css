@@ -18,6 +18,18 @@
   margin: 3rem 0 2rem 0;
 }
 
+.coworkers {
+  display: flex;
+  width: 100%;
+  color: #161534;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 8rem 0 2rem 0;
+}
+
 .blueDot {
   width: 15px;
   height: 15px;
@@ -183,7 +195,7 @@
 
 .displayAll {
   font-family: Raleway;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 600;
   margin-right: 1rem;
@@ -288,7 +300,7 @@
 
 
 @media (max-width: 1250px) {
-  .aboutUs {
+  .aboutUs, .coworkers {
     font-size: 1.3rem;
   }
 
@@ -340,6 +352,9 @@
   .contact {
     min-height: 65rem;
   }
+  .displayAll {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -381,7 +396,9 @@
   .video {
     width: auto;
   }
-
+  .coworkers {
+    margin: 3rem 0 2rem 0;
+  }
   .contact {
     min-height: 70rem
   }

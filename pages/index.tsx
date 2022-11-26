@@ -73,10 +73,10 @@ const Home: NextPage = () => {
                   email={email}
                   key={title}
                   location={location}
-                  />
+                />
               )
             })}
-            <h2 className={styles.aboutUs} style={{marginTop: "8rem"}}><strong>NAŠI SPOLUPRACOVNÍCI</strong>
+            <h2 className={styles.coworkers}><strong>NAŠI SPOLUPRACOVNÍCI</strong>
               <div>
                 <div className={styles.blueDot} />
                 <div className={styles.blueDot} />
@@ -95,23 +95,24 @@ const Home: NextPage = () => {
                   location={location}
                   key={title} />
               )
-            })}           
+            })}
           </div>
         </section>
         <div className={styles.experts}>
-              <p>Na naši práci nejsme sami - víme, že nemůžeme být odborníky na vše, proto se často obracíme na <strong>experty</strong>.
-                Chcete se také zařadit do našeho <strong>týmu odborných konzultantů</strong>?
-              </p>
-              <p className={styles.letUsKnow}>
-                <strong><Link href="/#napistenam">Dejte nám vědět!</Link></strong>
-              </p>
+          <p>Na naši práci nejsme sami - víme, že nemůžeme být odborníky na vše, proto se často obracíme na <strong>experty</strong>.
+            Chcete se také zařadit do našeho <strong>týmu odborných konzultantů</strong>?
+          </p>
+          <p className={styles.letUsKnow}>
+            <strong><Link href="/#napistenam">Dejte nám vědět!</Link></strong>
+          </p>
 
-              <div className={styles.buttonDiv}>
-                <Link href="/advisors">
-                  <a className={styles.button}>S kým se radíme</a>
-                </Link>
-              </div>
-            </div>
+          <Link href="/advisors">
+            <a className={styles.allNews}>
+              <span className={styles.displayAll}>S kým se radíme</span>
+              <span style={{marginTop: "8px"}}><Image src="/double-arrow.svg" alt="šipka" width="25px" height="25px" /></span>
+            </a>
+          </Link>
+        </div>
         <section id="informujeme" className={styles.aktualityContainer}>
           <div className={styles.aktuality}>
             <h2 className={styles.aboutUs}><strong>INFORMUJEME</strong>
@@ -138,7 +139,7 @@ const Home: NextPage = () => {
           <Link href="/posts">
             <a className={styles.allNews}>
               <span className={styles.displayAll}>Zobrazit vše</span>
-              <span><Image src="/double-arrow.svg" alt="šipka" width="25px" height="25px" /></span>
+              <span style={{marginTop: "1px"}}><Image src="/double-arrow.svg" alt="šipka" width="25px" height="25px" /></span>
             </a>
           </Link>
         </section>
