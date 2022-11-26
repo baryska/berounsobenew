@@ -381,6 +381,9 @@
     margin: 50% 10%;
     text-align: center;
   }
+  .arrowBack {
+    width: 20px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -404,6 +407,10 @@
   }
   .displayAll {
     font-size: 1.1rem;
+  }
+  .experts {
+    width: 90%;
+    font-size: 1rem;
   }
 }
 

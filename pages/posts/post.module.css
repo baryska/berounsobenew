@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   margin: 1rem 2rem;
+  position: relative;
 }
 
 
@@ -12,6 +13,14 @@
   font-weight: 600;
   text-align: center;
   margin: 2rem auto;
+}
+
+.arrowBack {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .paragraphs {
@@ -47,6 +56,10 @@
   margin: 2rem;
 }
 
+.menu {
+  margin-top: 5rem;
+}
+
 .menuItem {
   font-family: Montserrat;
   font-size: 1.2rem;
@@ -59,4 +72,10 @@
 .menuItem:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .arrowBack {
+    width: 20px;
+  }
 }
