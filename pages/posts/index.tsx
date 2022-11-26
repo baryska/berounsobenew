@@ -33,16 +33,16 @@ const News = () => {
           <Link href="/#informujeme"><a className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px" /></a></Link>
           <div className={styles.menu}>
             <div className={styles.menuSmall}>
-              <button className={styles.dropdownButton} onClick={() => setDropdownOpen(!dropdownOpen)}>Témata<svg className="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg></button>
+              <button className={styles.dropdownButton} onClick={() => setDropdownOpen(!dropdownOpen)}>Témata<Image src={dropdownOpen ? "/arrowUp.svg" : "/arrowDown.svg"} alt="sipka" width="15px" height="15px"/></button>
               {dropdownOpen && (
-                <div className=" z-10 w-52 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                <div className={styles.dropdown}>
                   <ul className="py-1 text-sm text-gray-700 dark:text-gray-200">
                     {menuItems.map((item) =>
                       <li key={item.key} style={{ margin: '0.5rem auto' }} onClick={() => handleFilterPosts(item.key)}>
-                        <a href="#" className={styles.menuItem}>{item.title}</a>
+                        <a href="#">{item.title}</a>
                       </li>
                     )}
-                    <li className={styles.menuItem} style={{ fontStyle: 'italic', marginTop: '2rem' }} onClick={() => handleChooseAllPosts()}>Vše</li>
+                    <li style={{ fontStyle: 'italic', marginTop: '2rem' }} onClick={() => handleChooseAllPosts()}>Vše</li>
                   </ul>
                 </div>
               )}

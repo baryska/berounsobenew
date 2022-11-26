@@ -45,7 +45,7 @@
 
 @media (max-width: 650px) {
   .post__theme {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .post__title {
     font-size: 1.1rem;

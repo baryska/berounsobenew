@@ -23,6 +23,21 @@
   flex-direction: column;
 }
 
+.dropdown {
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.dropdown li {
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(76, 164, 202);
+  margin: 1rem auto;
+}
+
 .dropdownButton {
   display: flex;
   justify-content: space-between;
