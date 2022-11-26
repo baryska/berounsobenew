@@ -23,6 +23,23 @@
   flex-direction: column;
 }
 
+.dropdownButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(76, 164, 202);
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: white;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  width: 12rem;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
 .paragraphs {
   width: 50%;
   margin: 0 auto;
@@ -41,12 +58,12 @@
 
 .allPosts__container {
   display: flex;
+  position: relative;
 }
 
 .allPosts__menu {
   width: 20%;
   margin: 2rem;
-  position: relative;
 }
 
 .allPosts {
@@ -74,7 +91,42 @@
   cursor: pointer;
 }
 
+.menuSmall {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .allPosts__container {
+    display: block;
+  }
+  .allPosts {
+    justify-content: center;
+  }
+  .allPosts__menu {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .arrowBack {
+    top: -1rem;
+  }
+  .menuItem {
+    font-size: 1rem;
+    margin: 0.5rem auto;
+  }
+  .menu {
+    margin-top: 2rem
+  }
+
+  .menuSmall {
+    display: block;
+  }
+
+  .menuLarge {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
   .arrowBack {
     width: 20px;
   }

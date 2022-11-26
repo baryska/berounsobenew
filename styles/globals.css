@@ -22,12 +22,3 @@ a {
     width: 100%;
 }
 }
-
-@media (max-width: 786px) {
-  #__next {
-    display: flex
-  }
-  .programme_title {
-    font-size: 20px;
-  }
-}
