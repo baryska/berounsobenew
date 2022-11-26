@@ -42,3 +42,12 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media (max-width: 650px) {
+  .post__theme {
+    font-size: 1rem;
+  }
+  .post__title {
+    font-size: 1.1rem;
+  }
+}

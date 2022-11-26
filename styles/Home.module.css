@@ -26,10 +26,6 @@
   margin: 0.5rem 0.5rem;
 }
 
-.contact {
-  padding: 2rem;
-}
-
 .whoWeAre, .smallProfiles {
   display: flex;
   flex-wrap: wrap;
@@ -273,6 +269,10 @@
   margin-top: 20%;
 }
 
+.contact {
+  min-height: 70rem;
+}
+
 @media (max-width: 1600px) {
   .statement {
     font-size: 3rem;
@@ -280,6 +280,9 @@
   }
   .aktuality {
     margin: 0 10%;
+  }
+  .contact {
+    min-height: 65rem;
   }
 }
 
@@ -306,6 +309,9 @@
   .aktuality {
     margin: 0 auto;
   }
+  .contact {
+    min-height: 70rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -331,12 +337,16 @@
   .button {
     font-size: 1.4rem;
   }
+  .contact {
+    min-height: 65rem;
+  }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 768px) {
   .contact {
     padding-left: 0;
     padding-right:0;
+    min-height: 60rem;
   }
   .arrow {
     visibility: hidden;
@@ -365,7 +375,7 @@
     text-align: center;
   }
   .logo {
-    width: 25rem;
+    width: 20rem;
   }
 
   .video {
@@ -374,6 +384,9 @@
 
   .contact {
     min-height: 70rem
+  }
+  .displayAll {
+    font-size: 1.1rem;
   }
 }
 

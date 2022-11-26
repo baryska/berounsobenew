@@ -13,7 +13,7 @@ const Sidemenu = ({open, onClose}: Props) => {
   return (
     <div className={`${styles.nav} ${open ? styles.navOpen : ''}`}>
       <Link href="/#kdojsme"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>KDO JSME</button></a></Link>
-      <Link href="/#cochceme"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>CO CHCEME</button></a></Link>
+      <Link href="/#informujeme"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>INFORMUJEME</button></a></Link>
       <Link href="/#napistenam"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>NAPIŠTE NÁM</button></a></Link>
     </div>
   )
