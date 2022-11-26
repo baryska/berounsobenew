@@ -100,25 +100,15 @@ const ContactForm = () => {
         <div>
           <div className={`${styles.resultMessage} ${styles.centered} ${messageVisible ? '' : styles.messageInvisible}`} >
             Děkujeme Vám za zprávu! Pokud obsahuje dotaz, ozveme se Vám co nejdříve!
-            <div>
-              <button className={`${styles.resend} ${messageVisible || errorMessageVisible ? '' : styles.messageInvisible}`} >
-                <Image src="/resend.svg" width="30px" height="30px" alt="resend" />
-              </button>
-            </div>
           </div>
           <div className={`${styles.resultMessage} ${styles.centered} ${errorMessageVisible ? '' : styles.messageInvisible}`}>
             Odeslání zprávy se nezdařilo :( Zkuste to prosím znovu nebo nám napište na info@berounsobe.eu. Děkujeme!
-            <div onClick={() => handleSentMessage()}>
-              <button className={`${styles.resend} ${messageVisible || errorMessageVisible ? '' : styles.messageInvisible}`} onClick={() => handleSentMessage()}>
-                <Image src="/resend.svg" width="30px" height="30px" alt="resend" />
-              </button>
-            </div>
           </div>
         </div>
         {loading ? (
           <div>
             <p className={`${styles.resultMessage} ${styles.centered}`} style={{ bottom: '15rem' }}>Čekejte, prosím</p>
-            <ThreeDots fill="#4ca4ca80" className={styles.centered} style={{ bottom: '6rem' }} />
+            <ThreeDots fill="#4ca4ca80" className={styles.centered} style={{ bottom: '-5rem' }} />
           </div>)
           : ""}
         <button className={`${styles.resend} ${messageVisible || errorMessageVisible ? '' : styles.messageInvisible}`} onClick={() => handleSentMessage()}>
