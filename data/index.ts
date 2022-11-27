@@ -6,10 +6,10 @@ import AV from '../public/adam_small.jpg';
 import JC from '../public/jana_cirkvova.jpg';
 import MK from '../public/michal_kovarik.jpg';
 import Roztocil from '../public/vaclav_roztocil.jpg';
-import tgm from '../public/tgm.jpg';
 import zas17102022 from '../public/zas17-10-2022.jpg';
 import volby from '../public/volby.jpg';
 import chodnik from '../public/chodnik.png';
+import radnice from '../public/radnice.jpg'
 
 export const Profiles = [
   {
@@ -231,7 +231,7 @@ export const Posts = [
     key: 1,
     slug: 'proc-nas-vedeni-mesta-nechce-ani-v-odbornych-komisich',
     date: '29.11. 2022',
-    image: tgm,
+    image: radnice,
     paragraphs: [
       `Na ustavujícím zastupitelstvu tohoto volebního období jsme navrhli vznik několika nových výborů zabývajících se oblastmi, které město řeší a trápí 
       – konkrétně bezpečností, územním plánem, školstvím a dopravou. Koalice však tyto výbory považovala za zbytečné, neboť pro tyto oblasti 
