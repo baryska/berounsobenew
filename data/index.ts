@@ -8,6 +8,8 @@ import MK from '../public/michal_kovarik.jpg';
 import Roztocil from '../public/vaclav_roztocil.jpg';
 import tgm from '../public/tgm.jpg';
 import zas17102022 from '../public/zas17-10-2022.jpg';
+import volby from '../public/volby.jpg';
+import chodnik from '../public/chodnik.png';
 
 export const Profiles = [
   {
@@ -36,10 +38,12 @@ export const Profiles = [
     title: "Mgr. Barbora Skálová, Ph.D.",
     profession: "Softwarová vývojářka",
     photo: BS,
-    text: `Dlouhodobě se zajímá o moderní trendy a inovace ve vzdělávání, inspiraci hledá zejména ve finském základním školství, 
+    text: `Vystudovala finštinu a moderní dějiny, ale živí se jako programátorka. Dlouhodobě se zajímá o moderní trendy a inovace ve vzdělávání, 
+    inspiraci hledá zejména ve finském základním školství, 
     s nímž měla možnost se podrobně seznámit při svých studijních pobytech ve Finsku. Navštěvuje odborné konference a angažuje se 
     v aktivitách vzdělávacích inciativ, jako je Eduzměna nebo EDUIn. 
-    Jako lektorka programování pro děti od 5 do 15 let aktivně propaguje moderní vzdělávání v oblasti IT a digitálních dovedností.`,
+    Jako lektorka programování pro děti od 5 do 15 let aktivně propaguje moderní vzdělávání v oblasti IT a digitálních dovedností.
+    Je předsedkyní osadního výboru Beroun-Hostím.`,
     topic: "Školství, digitalizace, transparentnost radnice",
     email: "barbora.skalova@berounsobe.eu",
     location: "Hostím"
@@ -222,33 +226,59 @@ export const Experts = [
 
 export const Posts = [
   {
-    title: 'Koho jsme navrhli do odborných komisí?',
+    title: 'Proč nás vedení města nechce ani v odborných komisích?',
     theme: 'Rada & zastupitelstvo',
     key: 1,
-    slug: 'koho-jsme-navrhli-do-odbornych-komisi',
-    date: '25.11. 2022',
+    slug: 'proc-nas-vedeni-mesta-nechce-ani-v-odbornych-komisich',
+    date: '29.11. 2022',
     image: tgm,
     paragraphs: [
-      `Má smysl chodit ke (komunálním) volbám? Ke každým volbám to má smysl, ale u těch komunálních je to trochu jako o té košili, 
-      která nám je blíže než pověstný kabát. Výsledky se nás týkají bezprostředně. Ovlivňují to, jaké bude naše město, náš veřejný prostor a vůbec 
-      život v našem okolí. Přes zastupitele, které si zvolíme, máme šanci se na veřejném životě podílet, podporovat to dobré, co funguje, 
-      a zlepšovat to, co je potřeba dělat lépe. `,
-      `Má to smysl i přesto, že námi zvolení zastupitelé jsou „nakonec“ v opozici. Má smysl podávat návrhy, chodit na jednání zastupitelstva, 
-      má smysl mít oči a mysl otevřené.`,
-      `Podílet se můžete i osobně, aniž byste přímo kandidovali a byli zvoleni. Máme velkou radost, že se nám již od voleb ozývají naši podporovatelé. 
-      Děkujeme, že nám nabízíte „přiložit vaše ruce a hlavy k dílu“, a těšíme se na setkání. Vážíme si toho o to víc, že nám chcete pomáhat právě v době, 
-      kdy jsme se racionálně rozhodli pro mravenčí práci v opozici. Nemůžeme vám nabídnout schůzku ve starostenské kanceláři, ale umíme uvařit třeba dobré kafe 😉`,
-      `I dnes pracujeme. Slavíme Den vzniku samostatného Československa. A chceme vám připomenout jeden z mnoha moudrých citátů T. G. Masaryka:`,
-      `„Veliké zlo je, že žijeme v myšlence, co řekne o mně soused. Ale o to běží, mít svůj úsudek, svoji osobnost, individualitu. Odhodlejme se být svými!”`,
-      `Přejeme vám krásný sváteční den a hezký podzimní víkend.`
+      `Na ustavujícím zastupitelstvu tohoto volebního období jsme navrhli vznik několika nových výborů zabývajících se oblastmi, které město řeší a trápí 
+      – konkrétně bezpečností, územním plánem, školstvím a dopravou. Koalice však tyto výbory považovala za zbytečné, neboť pro tyto oblasti 
+      existují odborné komise, do nichž můžeme nominovat své zástupce. `,
+      `Po pár týdnech od ustavujícího zastupitelstva je však nanejvýš patrné, že staronové vedení se v rozporu se svými deklaracemi o hledání široké podpory 
+      napříč celým zastupitelstvem rozhodlo, že s opozicí spolupracovat nebude vůbec. Nejen že opozici nedalo ani jedno místo ve finančním výboru a dokonce 
+      nám nenechali ani většinu ve výboru kontrolním, ale teď se zdá, že nás až na několik málo výjimek nechtějí dokonce ani v odborných komisích. 
+      Do nich jsme navrhli skutečné odborníky, s jejich expertízou se můžete seznámit <a href="/advisors" className="anchor">zde</a>. Koalice však i z odborných komisí dělá politikum – například do 
+      komise pro územní plánování byl zvolen radní David Minařík, který je komisařem v autoškole.`,
+      `Ještě zbývá dovolit několik posledních komisí – zůstanou i ty bez zástupců vítěze voleb?`,
+      `Zde jsou naši nominanti do odborných komisí:`,
+      `<strong>Komise pro územní plán</strong>: Martin Veselý – nebyl zvolen ❌, Václav Pos – nebyl zvolen ❌`,
+      `<strong>Komise školská</strong>: Eva Kotrčová – zvolena ✅, Barbora Skálová – nebyla zvolena ❌`,
+      `<strong>Komise dopravy</strong>: Václav Roztočil – nebyl zvolen ❌`,
+      `<strong>Komise životního prostředí</strong>: Adam Voldán – nebyl zvolen ❌, Kateřina Nepustilová – nebyla zvolena ❌`,
+      `<strong>Komise pro sport a sportovní dotace</strong>: Václav Roztočil – nebyl zvolen ❌, Jan Valachovič – nebyl zvolen ❌, Jan Piskáček – nebyl zvolen ❌`,
+      `<strong>Komise pro kulturu a kulturní dotace</strong>: Michal Švec – zvolen ✅, Jitka Jindřišková – nebyla zvolena ❌`,
+      `<strong>Komise zdravotnictví a sociálních věcí</strong>: Jana Valachovičová – nebyla zvolena ❌`,
+      `<strong>Komise pro cestovní ruch</strong>: Jana Církvová – nebyla zvolena ❌`,
+      `<strong>Komise pro prevenci kriminality</strong>: Aleš Frýdl ❓`,
+      `<strong>Komise výstavby</strong>: Martin Veselý ❓, Vladimír Toman ❓, Michal Kovářík ❓, Jan Kobylák ❓`
+    ]
+  },
+  {
+    title: 'Provázek už nestačí',
+    theme: 'Urbanismus',
+    key: 3,
+    slug: 'provazek-uz-nestaci',
+    date: '16.11. 2022',
+    image: chodnik,
+    paragraphs: [
+      `V poslední době se opravuje velké množství berounských ulic. Je to jistě potěšující zpráva, že vedení města plní svou funkci správce a opravuje veřejnou infrastrukturu. 
+      Bohužel ale nepřináší žádnou novou přidanou hodnotu - chybí kvalitnější zeleň nebo třeba možnost osadit v ulici nové optické sítě. Na základě podnětů od občanů jsme se 
+      podívali podrobněji na opravy některých ulic a zjistili jsme, že opravy chodníků probíhají zcela na libovůli stavební firmy:`,
+      `❌ Město nemá jednotný manuál na to, jak by měla opravená komunikace vypadat.`,
+      `❌ Stavba neprobíhá na základě projektové dokumentace, takže stavební dělníci provádějí opravu dle vlastního uvážení.`,
+      `❌ Jelikož neprobíhá stavební dozor, chyby jsou zjištěny až při předávce díla (a často až na upozornění lidí, kteří v okolí bydlí) a stavba se pak musí reklamovat a složitě předělávat.`,
+      `Ulice jako veřejný prostor musí být kvalitně spravovány a rozvíjeny. Nestačí jen zadávat opravy bez jakéhokoliv konceptu, jednotného vizuálu a představy, jak má celá síť ulic ve městě vypadat a čemu má sloužit. 
+      Řada měst má již svůj vizuální manuál veřejných prostranství. Bude ho mít někdy i Beroun?`
     ]
   },
   {
     title: 'Jak probíhalo ustavující zastupitelstvo',
     theme: 'Rada & zastupitelstvo',
     key: 1,
-    slug: 'proc-jsme-v-opozici',
-    date: '12.11. 2022',
+    slug: 'jak-probihalo-ustavujici-zastupitelstvo',
+    date: '20.10. 2022',
     image: zas17102022,
     paragraphs: [
       `V pondělí 17.10. 2022 proběhlo ustavující zasedání zastupitelstva.
@@ -265,69 +295,34 @@ export const Posts = [
     ]
   },
   {
-    title: 'Provázek už nestačí',
-    theme: 'Urbanismus',
-    key: 3,
-    slug: 'provazek-uz-nestaci',
-    date: '16.11. 2022',
-    image: tgm,
-    paragraphs: [
-      `Má smysl chodit ke (komunálním) volbám? Ke každým volbám to má smysl, ale u těch komunálních je to trochu jako o té košili, 
-      která nám je blíže než pověstný kabát. Výsledky se nás týkají bezprostředně. Ovlivňují to, jaké bude naše město, náš veřejný prostor a vůbec 
-      život v našem okolí. Přes zastupitele, které si zvolíme, máme šanci se na veřejném životě podílet, podporovat to dobré, co funguje, 
-      a zlepšovat to, co je potřeba dělat lépe. `,
-      `Má to smysl i přesto, že námi zvolení zastupitelé jsou „nakonec“ v opozici. Má smysl podávat návrhy, chodit na jednání zastupitelstva, 
-      má smysl mít oči a mysl otevřené.`,
-      `Podílet se můžete i osobně, aniž byste přímo kandidovali a byli zvoleni. Máme velkou radost, že se nám již od voleb ozývají naši podporovatelé. 
-      Děkujeme, že nám nabízíte „přiložit vaše ruce a hlavy k dílu“, a těšíme se na setkání. Vážíme si toho o to víc, že nám chcete pomáhat právě v době, 
-      kdy jsme se racionálně rozhodli pro mravenčí práci v opozici. Nemůžeme vám nabídnout schůzku ve starostenské kanceláři, ale umíme uvařit třeba dobré kafe 😉`,
-      `I dnes pracujeme. Slavíme Den vzniku samostatného Československa. A chceme vám připomenout jeden z mnoha moudrých citátů T. G. Masaryka:`,
-      `„Veliké zlo je, že žijeme v myšlence, co řekne o mně soused. Ale o to běží, mít svůj úsudek, svoji osobnost, individualitu. Odhodlejme se být svými!”`,
-      `Přejeme vám krásný sváteční den a hezký podzimní víkend.`
-    ]
-  },
-  {
-    title: 'Jak probíhala povolební vyjednávání?',
+    title: 'Proč jsme skončili v opozici?',
     theme: 'Volby',
     key: 2,
-    slug: 'jak-probihala-povolebni-vyjednavani',
-    date: '25.11. 2022',
-    image: tgm,
+    slug: 'proc-jsme-skoncili-v-opozici',
+    date: '13.10. 2022',
+    image: volby,
     paragraphs: [
-      `Má smysl chodit ke (komunálním) volbám? Ke každým volbám to má smysl, ale u těch komunálních je to trochu jako o té košili, 
-      která nám je blíže než pověstný kabát. Výsledky se nás týkají bezprostředně. Ovlivňují to, jaké bude naše město, náš veřejný prostor a vůbec 
-      život v našem okolí. Přes zastupitele, které si zvolíme, máme šanci se na veřejném životě podílet, podporovat to dobré, co funguje, 
-      a zlepšovat to, co je potřeba dělat lépe. `,
-      `Má to smysl i přesto, že námi zvolení zastupitelé jsou „nakonec“ v opozici. Má smysl podávat návrhy, chodit na jednání zastupitelstva, 
-      má smysl mít oči a mysl otevřené.`,
-      `Podílet se můžete i osobně, aniž byste přímo kandidovali a byli zvoleni. Máme velkou radost, že se nám již od voleb ozývají naši podporovatelé. 
-      Děkujeme, že nám nabízíte „přiložit vaše ruce a hlavy k dílu“, a těšíme se na setkání. Vážíme si toho o to víc, že nám chcete pomáhat právě v době, 
-      kdy jsme se racionálně rozhodli pro mravenčí práci v opozici. Nemůžeme vám nabídnout schůzku ve starostenské kanceláři, ale umíme uvařit třeba dobré kafe 😉`,
-      `I dnes pracujeme. Slavíme Den vzniku samostatného Československa. A chceme vám připomenout jeden z mnoha moudrých citátů T. G. Masaryka:`,
-      `„Veliké zlo je, že žijeme v myšlence, co řekne o mně soused. Ale o to běží, mít svůj úsudek, svoji osobnost, individualitu. Odhodlejme se být svými!”`,
-      `Přejeme vám krásný sváteční den a hezký podzimní víkend.`
-    ]
-  },
-  {
-    title: 'Jak probíhala povolební?',
-    theme: 'Volby',
-    key: 2,
-    slug: 'koho-jsme-navrhli-do-odbornych-komisi',
-    date: '25.11. 2022',
-    image: tgm,
-    paragraphs: [
-      `Má smysl chodit ke (komunálním) volbám? Ke každým volbám to má smysl, ale u těch komunálních je to trochu jako o té košili, 
-      která nám je blíže než pověstný kabát. Výsledky se nás týkají bezprostředně. Ovlivňují to, jaké bude naše město, náš veřejný prostor a vůbec 
-      život v našem okolí. Přes zastupitele, které si zvolíme, máme šanci se na veřejném životě podílet, podporovat to dobré, co funguje, 
-      a zlepšovat to, co je potřeba dělat lépe. `,
-      `Má to smysl i přesto, že námi zvolení zastupitelé jsou „nakonec“ v opozici. Má smysl podávat návrhy, chodit na jednání zastupitelstva, 
-      má smysl mít oči a mysl otevřené.`,
-      `Podílet se můžete i osobně, aniž byste přímo kandidovali a byli zvoleni. Máme velkou radost, že se nám již od voleb ozývají naši podporovatelé. 
-      Děkujeme, že nám nabízíte „přiložit vaše ruce a hlavy k dílu“, a těšíme se na setkání. Vážíme si toho o to víc, že nám chcete pomáhat právě v době, 
-      kdy jsme se racionálně rozhodli pro mravenčí práci v opozici. Nemůžeme vám nabídnout schůzku ve starostenské kanceláři, ale umíme uvařit třeba dobré kafe 😉`,
-      `I dnes pracujeme. Slavíme Den vzniku samostatného Československa. A chceme vám připomenout jeden z mnoha moudrých citátů T. G. Masaryka:`,
-      `„Veliké zlo je, že žijeme v myšlence, co řekne o mně soused. Ale o to běží, mít svůj úsudek, svoji osobnost, individualitu. Odhodlejme se být svými!”`,
-      `Přejeme vám krásný sváteční den a hezký podzimní víkend.`
+      `V sobotu 24. září jsme se radovali. Každý čtvrtý volič v Berouně nám dal hlas. A současně jsme ihned brali na vědomí, že stávající koalice má společně 11 křesel.`,
+      `Po celou dobu našeho jednání jsme byli transparentní: domluvili jsme se s Petrem Horákem ze Společně pro Beroun a deklarovali jsme, že ze stávající koalice chceme 
+      sestavit budoucí obsazení radnice jen s jedním ze tří subjektů. Pro počty to bylo nezbytné a zároveň to byla jediná možnost, jak bychom mohli správně naložit 
+      s vašimi hlasy volajícími po změně.`,
+      `Nyní již víme, že se nám naše vize „koalice změny“ nepodaří. Nedohodli jsme se. Ctíme závěry jednání s partnery, konkrétní vyjádření necháme za zavřenými dveřmi, 
+      základní informace jsou ale následující: ANO a ODS chtějí pokračovat spolu. ODS a Nezávislí Berouňáci navrhli velkou koalici o 19 členech. Nemohli jsme ustoupit 
+      a připustit rozšíření o další členy z koalice minulé. Nedovedli jsme a stále si nedovedeme představit, jak by tak velká skupina efektivně vedla město.`,
+      `Naše varianta tedy byla funkční “dvanáctka”. 6 křesel BEROUN SOBĚ, 2 pro Společně pro Beroun, 4 Nezávislí Berouňáci. Jak je ale uvedeno výše, Nezávislí Berouňáci 
+      se rozhodli zůstat ve stávající koalici.`,
+      `Jednali jsme s otevřenými kartami. Martin Veselý byl odhodlán zanechat práce ve své kanceláři architekta a s fungujícím týmem BEROUN SOBĚ v zádech usednout 
+      na starostenské křeslo. Zároveň ale víme, že konkrétní osoby mohou být „červeným praporkem“ pro řadu jednajících i zastoupených partnerů. Proto i přes tak závažné 
+      rozhodnutí Martin od této myšlenky odstoupil. Nominovali jsme schopnou a zkušenou manažerku, bez historie „kdo s kým komu a proč“ v berounském prostředí, 
+      paní Hanu Kašparovou. Počítali jsme s místostarostenskými křesly pro koaliční partnery.
+      Celou dobu jsme byli ve spojení i s Lubošem Zálomem a Zuzanou Machovou, protože jsme chtěli mluvit otevřeně opravdu se všemi.`,
+      `Ale už je hotovo.
+      Mnozí z vás jste již komentovali vyjádření starostky Soni Chalupové o tom, že koalice je domluvená a že se nyní jedná o její širší podpoře. My ale již před volbami 
+      deklarovali, že radnice potřebuje změnu. Transparentnost, slušné chování mezi jejími představiteli, respektující chování k občanům, otevřené informace. K podpoře 
+      stávajícího stavu a tedy celé koalice se nemůžeme připojit. Celé nás to mrzí. Vyhráli jsme, ale silou vítěze je i to, že respektuje okolnosti, které nemůže ovlivnit, 
+      a soustředí se na svoji práci - na to, proč vyhrál.`,
+      `Náš tým dál pracuje a informace od nás budete dostávat i nadále. Pracovali jsme i na plánech v opozici a připravujeme pro vás další novinky. Chceme vám být ještě blíž. 
+      Děkujeme za vaši podporu a těšíme se na vás! ❤️`
     ]
   },
 ]

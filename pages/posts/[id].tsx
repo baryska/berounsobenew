@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import { useRouter } from 'next/router';
 import { getAllPostSlugs, getPostData } from '../../data/posts';
+import parse from 'html-react-parser';
 import styles from './post.module.css';
 
 interface Props {
@@ -28,7 +29,7 @@ const Post = ({ paragraphs, image, title }: Props) => {
           <span className={styles.image}><Image src={image} alt="foto" width="760px" height="570px" className={styles.image} /></span>
         )}
         <div className={styles.paragraphs}>
-          {paragraphs?.map((paragraph) => <p key={paragraph} className={styles.paragraph}>{paragraph}</p>)}
+          {paragraphs?.map((paragraph) => <p key={paragraph} className={styles.paragraph}>{parse(paragraph)}</p>)}
         </div>
       
     </div>

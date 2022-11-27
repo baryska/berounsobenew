@@ -1,11 +1,14 @@
 import React from 'react';
 import SmallProfile from '../components/SmallProfile/SmallProfile';
 import { Experts } from '../data/index';
+import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Advisors = () => {
+  const router = useRouter();
+
   return (
     <section className={styles.advisors}>
       <h2 className={styles.aboutUs}><strong>S KÝM SE RADÍME</strong>
@@ -26,7 +29,7 @@ const Advisors = () => {
         )
       })
       }
-      <Link href="/#kdojsme"><a className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px"/></a></Link>
+      <button onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px"/></button>
     </section>
   );
 };

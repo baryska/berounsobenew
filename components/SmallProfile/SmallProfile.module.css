@@ -43,6 +43,8 @@
   padding: 30px 25px;
   font: 15px Raleway;
   line-height: 1.2;
+  margin-bottom: 20px;
+  height: 59%;
 }
 
 .footer {
@@ -63,9 +65,11 @@
  color: black;
 }
 
-.description {
-  margin-bottom: 20px;
-  height: 59%;
+@media (max-width: 650px) {
+  .description {
+    font: 14px Raleway;
+    padding: 15px 20px;
+  }
 }
 
 

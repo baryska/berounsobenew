@@ -16,6 +16,10 @@ a {
   font-size: 25px;
 }
 
+.anchor {
+  color: rgb(76, 164, 202);
+}
+
 @media only screen and (min-width: 2200px) {
   body {
     margin: 0 auto;
