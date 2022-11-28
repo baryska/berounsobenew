@@ -10,10 +10,9 @@ interface Props {
   text: string;
   topic: string;
   email: string;
-  location: string;
 }
 
-const Profile = ({ title, profession, photo, text, topic, email, location }: Props) => {
+const Profile = ({ title, profession, photo, text, topic, email }: Props) => {
 
   return (
     <div className={styles.container}>
