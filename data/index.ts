@@ -5,6 +5,7 @@ import MV from '../public/martin_small.jpeg';
 import AV from '../public/adam_small.jpg';
 import JC from '../public/jana_cirkvova.jpg';
 import MK from '../public/michal_kovarik.jpg';
+import JV from '../public/jana_valachovicova.jpg';
 import Roztocil from '../public/vaclav_roztocil.jpg';
 import zas17102022 from '../public/zas17-10-2022.jpg';
 import volby from '../public/volby.jpg';
@@ -88,7 +89,7 @@ export const Helpers = [
   {
     title: "Bc. Jana Valachovičová",
     profession: "Manažerka ve zdravotnictví",
-    photo: MV,
+    photo: JV,
     text: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové. Přes dvacet let se věnuje komunikaci 
     s pacienty, převážně s chronickým onemocněním. V letech 2011-2020 žila ve švýcarském Curychu, kde pracovala jako mentor a školitel 
     komunikace pro lékaře a zdravotní sestry na globální úrovni, školila ve více než 50 zemích světa. V roce 2014 se podílela na 
