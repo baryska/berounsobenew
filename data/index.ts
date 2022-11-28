@@ -18,7 +18,7 @@ export const Profiles = [
     profession: "Architekt, projektant",
     photo: MV,
     text: `Absolovent ČVUT Fakulty stavební, obor pozemní stavby a architektura. Od roku 2006 pracuje jako OSVČ ve vlastním ateliéru. 
-    Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko).`,
+    Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko). Je jedním ze zakladatelů spolku Berounská zeleň.`,
     topic: "Územní plán, výstavba",
     email: "martin.vesely@berounsobe.eu",
     nomination: "Komise pro územní plán - ❌ nezvolen"
@@ -81,7 +81,7 @@ export const Profiles = [
     Je předsedou Kontrolního výboru zastupitelstva města Beroun.`,
     topic: "Sport, kontrolní výbor (předseda)",
     email: "vaclav.roztocil@berounsobe.eu",
-    nomination:  "Komise dopravní a komise pro sport - ❌ nezvolen Kontrolní výbor - ✅ zvolen"
+    nomination:  "Komise dopravní a komise pro sport - <br>❌ nezvolen, Kontrolní výbor - ✅ zvolen"
   },
 ]
 

@@ -9,7 +9,7 @@ interface Props {
   text: string;
   topic: string;
   email: string;
-  nomination?: string;
+  nomination: string;
 }
 
 const Profile = ({ title, profession, photo, text, topic, email, nomination }: Props) => {
@@ -33,7 +33,7 @@ const Profile = ({ title, profession, photo, text, topic, email, nomination }: P
       </p>
       <div className={styles.nomination}>
         <p>Nominace do:</p>
-        {nomination}
+        {parse(nomination)}
       </div>
       <h2 className={styles.heading}>ČEMU SE VĚNUJE:
         <p>{topic}</p>
