@@ -18,13 +18,14 @@ const Advisors = () => {
         </div>
       </h2>
       {Experts.map((profile) => {
-        const { title, profession, text, topic } = profile;
+        const { title, profession, text, topic, nomination } = profile;
         return (
           <SmallProfile
             title={title}
             profession={profession}
             text={text}
             topic={topic}
+            nomination={nomination}
             key={title} />
         )
       })

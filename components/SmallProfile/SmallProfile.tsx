@@ -1,5 +1,3 @@
-import Image, { StaticImageData } from 'next/image';
-import { useState } from 'react';
 import styles from './SmallProfile.module.css';
 
 
@@ -8,9 +6,10 @@ interface Props {
   profession: string;
   text: string;
   topic: string;
+  nomination?: string
 }
 
-const Profile = ({ title, profession, text, topic }: Props) => {
+const Profile = ({ title, profession, text, topic, nomination }: Props) => {
 
   return (
     <div className={styles.container}>
@@ -25,6 +24,10 @@ const Profile = ({ title, profession, text, topic }: Props) => {
       <p className={styles.description}>
         {text}
       </p>
+      <div className={styles.nomination}>
+        <p>Nominace do:</p>
+        {nomination}
+      </div>
       <h2 className={styles.footer}>ČEMU SE VĚNUJE:
         <p>{topic}</p>
       </h2>

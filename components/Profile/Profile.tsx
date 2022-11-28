@@ -1,7 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
-import { useState } from 'react';
+import parse from 'html-react-parser';
 import styles from './Profile.module.css';
-
 
 interface Props {
   title: string;
@@ -10,9 +9,10 @@ interface Props {
   text: string;
   topic: string;
   email: string;
+  nomination?: string;
 }
 
-const Profile = ({ title, profession, photo, text, topic, email }: Props) => {
+const Profile = ({ title, profession, photo, text, topic, email, nomination }: Props) => {
 
   return (
     <div className={styles.container}>
@@ -31,6 +31,10 @@ const Profile = ({ title, profession, photo, text, topic, email }: Props) => {
       <p className={styles.description}>
         {text}
       </p>
+      <div className={styles.nomination}>
+        <p>Nominace do:</p>
+        {nomination}
+      </div>
       <h2 className={styles.heading}>ČEMU SE VĚNUJE:
         <p>{topic}</p>
       </h2>

@@ -59,7 +59,7 @@ const Home: NextPage = () => {
               </div>
             </h2>
             {Profiles.map((profile) => {
-              const { title, profession, text, photo, topic, email } = profile;
+              const { title, profession, text, photo, topic, email, nomination } = profile;
               return (
                 <Profile
                   title={title}
@@ -69,6 +69,7 @@ const Home: NextPage = () => {
                   topic={topic}
                   email={email}
                   key={title}
+                  nomination={nomination}
                 />
               )
             })}
@@ -79,7 +80,7 @@ const Home: NextPage = () => {
               </div>
             </h2>
             {Helpers.map((profile) => {
-              const { title, profession, text, photo, topic, email } = profile;
+              const { title, profession, text, photo, topic, email, nomination } = profile;
               return (
                 <Profile
                   title={title}
@@ -88,6 +89,7 @@ const Home: NextPage = () => {
                   photo={photo}
                   topic={topic}
                   email={email}
+                  nomination={nomination}
                   key={title} />
               )
             })}

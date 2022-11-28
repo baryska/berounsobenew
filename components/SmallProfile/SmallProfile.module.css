@@ -4,8 +4,8 @@
 }
 
 .container {
-  height: 500px;
-  width: 340px;
+  height: 540px;
+  width: 380px;
   margin: 30px 20px;
   border-radius: 16px;
   position: relative;
@@ -34,7 +34,7 @@
 }
 
 .title__block {
- height: 20%;
+ height: 90px;
  padding: 0.5rem
 }
 
@@ -44,7 +44,13 @@
   font: 15px Raleway;
   line-height: 1.2;
   margin-bottom: 20px;
-  height: 59%;
+  height: 260px;
+}
+
+.nomination {
+  padding: 0px 25px;
+  height: 79px;
+  font: 0.85rem Raleway;  
 }
 
 .footer {

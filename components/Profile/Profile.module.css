@@ -3,6 +3,20 @@
    padding: 15px 10px 15px;
  }
 
+ .container {
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  width: 380px;
+  margin: 30px 50px;
+  border-radius: 16px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+}
+
  .title {
    margin: 0;
    margin-left: 35%;
@@ -23,7 +37,7 @@
  }
 
  .title__block {
-  height: 18%;
+  height: 120px;
  }
 
  .pin {
@@ -36,8 +50,8 @@
  .description {
    margin: 0;
    margin-bottom: 20px;
-   height: 55%;
-   padding: 30px 25px;
+   height: 310px;
+   padding: 15px 25px;
    font: 1rem Raleway;
    line-height: 1.2;
  }
@@ -49,7 +63,7 @@
   text-align: center;
   padding: 10px;
   background: rgba(76,164,202, 0.5);
-  min-height: 80px;
+  height: 78px;
  }
 
  .heading p {
@@ -58,8 +72,10 @@
   color: black;
  }
 
- .footer {
-  position: relative;
+ .nomination {
+  padding: 0px 20px;
+  height: 80px;
+  font: 0.9rem Raleway;
  }
 
  .email {
@@ -87,18 +103,6 @@
   background-color: #70b6d5;
 }
 
- .container {
-   height: 630px;
-   width: 380px;
-   margin: 30px 50px;
-   border-radius: 16px;
-   position: relative;
-   background-color: white;
-   box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
-     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
- }
-
  .profileImg {
    height: 150px;
    width: 150px;
@@ -115,12 +119,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: absolute;
   bottom: 0;
-  height: 50px;
+  height: 70px;
   padding: 0 20px;
   margin-left: -20px;
-  margin-bottom: 0.5rem;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
  }

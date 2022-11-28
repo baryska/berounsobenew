@@ -21,6 +21,7 @@ export const Profiles = [
     Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko).`,
     topic: "Územní plán, výstavba",
     email: "martin.vesely@berounsobe.eu",
+    nomination: "Komise pro územní plán - ❌ nezvolen"
    },
   {
     title: "Mgr. Adam Voldán",
@@ -32,6 +33,7 @@ export const Profiles = [
     Je jedním ze zakladatelů spolku Berounská zeleň.`,
     topic: "Životní prostředí, městská zeleň",
     email: "adam.voldan@berounsobe.eu",
+    nomination:  "Komise životního prostředí - ❌ nezvolen"
   },
   {
     title: "Mgr. Barbora Skálová, Ph.D.",
@@ -45,6 +47,7 @@ export const Profiles = [
     Je předsedkyní osadního výboru Beroun-Hostím.`,
     topic: "Školství, digitalizace, transparentnost radnice",
     email: "barbora.skalova@berounsobe.eu",
+    nomination:  "Komise školská - ❌ nezvolena"
   },
   {
     title: "Mgr. Eva Kotrčová",
@@ -56,6 +59,7 @@ export const Profiles = [
     a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
     topic: "Školství",
     email: "eva.kotrcova@berounsobe.eu",
+    nomination:  "Komise školská - ✅ zvolena"
   },
   {
     title: "Mgr. Hana Kašparová, MBA",
@@ -66,6 +70,7 @@ export const Profiles = [
     Žila v Londýně, Rennes, Bruselu a Budapešti. V současné době působí jako konzultant v oblasti organizace, řízení a zlepšování procesů ve firmách a věnuje se také aromaterapii.`,
     topic: "Finance, rozpočet",
     email: "hana.kasparova@berounsobe.eu",
+    nomination:  "Finanční výbor - ❌ nezvolena"
   },
   {
     title: "Václav Roztočil",
@@ -76,22 +81,11 @@ export const Profiles = [
     Je předsedou Kontrolního výboru zastupitelstva města Beroun.`,
     topic: "Sport, kontrolní výbor (předseda)",
     email: "vaclav.roztocil@berounsobe.eu",
+    nomination:  "Komise dopravní a komise pro sport - ❌ nezvolen Kontrolní výbor - ✅ zvolen"
   },
 ]
 
 export const Helpers = [
-  {
-    title: "Bc. Jana Valachovičová",
-    profession: "Manažerka ve zdravotnictví",
-    photo: JV,
-    text: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové. Přes dvacet let se věnuje komunikaci 
-    s pacienty, převážně s chronickým onemocněním. V letech 2011-2020 žila ve švýcarském Curychu, kde pracovala jako mentor a školitel 
-    komunikace pro lékaře a zdravotní sestry na globální úrovni, školila ve více než 50 zemích světa. V roce 2014 se podílela na 
-    zavedení telemedicíny v nefrologii. Po celou dobu se věnuje práci s pacientskými organizacemi, pro které pořádala rekondiční pobyty 
-    jak v ČR tak v Evropě. Po návratu do Berouna v roce 2020 studuje MBA se zaměřením na řízení ve zdravotnictví.`,
-    topic: "Vztahy s veřejností, zdravotnictví, sociální služby",
-    email: "jana.valach@berounsobe.eu",
-   },
   {
     title: "Jana Církvová",
     profession: "Ekonomka",
@@ -102,6 +96,7 @@ export const Helpers = [
     Je předsedkyní školské rady na základní škole Beroun-Závodí.`,
     topic: "Finance, cestovní ruch, školství",
     email: "jana.cirkvova@berounsobe.eu",
+    nomination: "Komise pro cestovní ruch - ❌ nezvolena"
   },
   {
     title: "Ing. Michal Kovářík",
@@ -114,8 +109,21 @@ export const Helpers = [
     udržitelných staveb. V současné době dokončuje doktorské studium zaměřené na 3D tisk z betonu.`,
     topic: "Územní plán, výstavba",
     email: "michal.kovarik@berounsobe.eu",
+    nomination: "Komise pro územní plán - ❌ nezvolen"
   },
- 
+  {
+    title: "Bc. Jana Valachovičová",
+    profession: "Manažerka ve zdravotnictví",
+    photo: JV,
+    text: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové. Přes dvacet let se věnuje komunikaci 
+    s pacienty, převážně s chronickým onemocněním. V letech 2011-2020 žila ve švýcarském Curychu, kde pracovala jako mentor a školitel 
+    komunikace pro lékaře a zdravotní sestry na globální úrovni, školila ve více než 50 zemích světa. V roce 2014 se podílela na 
+    zavedení telemedicíny v nefrologii. Po celou dobu se věnuje práci s pacientskými organizacemi, pro které pořádala rekondiční pobyty 
+    jak v ČR tak v Evropě. Po návratu do Berouna v roce 2020 studuje MBA se zaměřením na řízení ve zdravotnictví. `,
+    topic: "Vztahy s veřejností, zdravotnictví, veřejný prostor",
+    email: "jana.valach@berounsobe.eu",
+    nomination: "Komise zdravotnictví a sociálních věcí - ❌ nezvolena"
+   },
 ]
 
 export const Experts = [
@@ -129,6 +137,7 @@ export const Experts = [
     policejních složek se i díky zalosti bojových umění podílel na dopadení několika pachatelů závažných trestných činů, několika 
     celostátně hledaných osob, sprejerů a zajištění odcizených vozidel.`,
     topic: "Bezpečnost",
+    nomination: "Komise pro prevenci kriminality - ❓ volba neproběhla"
   },
   {
   title: "Mgr. Jitka Jindřišková",
@@ -140,6 +149,7 @@ export const Experts = [
   v ČR zajišťuje prezentaci severských literatur na veletrhu Svět knihy Praha. Coby předsedkyně poroty ceny Zlatá stuha 
   se podílela na výběru nejlepších překladů dětské literatury.`,
   topic: "Kultura",
+  nomination: "Komise pro kulturu a kulturní dotace - ❌ nezvolena"
   },
   {
     title: "Jan Kobylák",
@@ -151,6 +161,7 @@ export const Experts = [
     jako ředitel realizací staveb, vedl stavební dozory, ISO, bezpečnost práce, stavební audity pro naše i zahraniční banky. 
     Mimo jiné se věnoval organizaci výběrových řízení na Zhotovitele staveb s posuzováním Smluv o Dílo.`,
     topic: "Územní plán, výstavba",
+    nomination: "Komise výstavby - ❓ volba neproběhla"
    },
    {
     title: "Kateřina Nepustilová",
@@ -161,6 +172,7 @@ export const Experts = [
     Fascinace přirozenými přírodními procesy ji přivedla přes ochranářskou práci až k současnému studiu oboru aplikovaná 
     ekologie na České zemědělské univerzitě.`,
     topic: "Životní prostředí, ekologie a městská zeleň",
+    nomination: "Komise životního prostředí - ❌ nezvolena"
   },
   {
     title: "Václav Pos",
@@ -172,6 +184,7 @@ export const Experts = [
     hlavního sídla VZP, několik realizací v průmyslové zóně Žebrák, projekt mateřské školky v Rychnově n K., stavební dozory, vedení 
     rozpočtů 50 mil Kč, zajištění dokumentací, stavebních povolení.`,
     topic: "Územní plán, výstavba",
+    nomination: "Komise pro územní plán - ❌ nezvolen"
   },
   {
     title: "Ing. Michaela Svatošová",
@@ -183,6 +196,7 @@ export const Experts = [
     rodinou v Berouně a stále provozuje vlastní účetní firmu, v rámci které s ostatními zaměstnanci poskytují poradenské služby více než 120 
     klientům.`,
     topic: "Finance",
+    nomination: "Finanční výbor - ❌ nezvolena"
   },
   {
     title: "Mgr. Michal Švec",
@@ -193,6 +207,7 @@ export const Experts = [
     i v zahraničí. Za svou překladatelskou činnost získal několik cen (Prémie Tomáš Hrácha, tvůrčí ocenění v rámci Ceny Josefa Jungmanna) 
     a v roce 2017 obdržel od finského prezidenta rytířský Řád finského lva. Je členem kulturní komise.`,
     topic: "Kultura",
+    nomination: "Komise pro kulturu a kulturní dotace - ✅ zvolen"
    },
    {
     title: "Ing. Vladimír Toman",
@@ -203,6 +218,7 @@ export const Experts = [
     Má zkušenosti s jednáním se státními orgány, obcemi, stavebními dodavateli, sestavováním a hodnocením stavebních rozpočtů a kontrolou 
     provedených prací.`,
     topic: "Územní plán, výstavba",
+    nomination: "Komise výstavby - ❓ volba neproběhla"
   },
   {
     title: "Jan Valachovič",
@@ -213,6 +229,7 @@ export const Experts = [
     V roce 2019 s kolegy založil oddíl Florbal pro Beroun, jehož je předsedou. Hlavním zaměřením oddílu je práce s dětmi a mládeží. 
     Aktivně se zajímá o život ve městě, angažuje se jako dobrovolník.`,
     topic: "Sport, finance",
+    nomination: "Komise sport a sportovní dotace - ❌ nezvolen"
   },
 ] 
 
@@ -235,14 +252,14 @@ export const Posts = [
       komise pro územní plánování byl zvolen radní David Minařík, který je komisařem v autoškole.`,
       `Ještě zbývá dovolit několik posledních komisí – zůstanou i ty bez zástupců vítěze voleb?`,
       `Zde jsou naši nominanti do odborných komisí:`,
-      `<strong>Komise pro územní plán</strong>: Martin Veselý – nebyl zvolen ❌, Václav Pos – nebyl zvolen ❌`,
-      `<strong>Komise školská</strong>: Eva Kotrčová – zvolena ✅, Barbora Skálová – nebyla zvolena ❌`,
-      `<strong>Komise dopravy</strong>: Václav Roztočil – nebyl zvolen ❌`,
-      `<strong>Komise životního prostředí</strong>: Adam Voldán – nebyl zvolen ❌, Kateřina Nepustilová – nebyla zvolena ❌`,
-      `<strong>Komise pro sport a sportovní dotace</strong>: Václav Roztočil – nebyl zvolen ❌, Jan Valachovič – nebyl zvolen ❌, Jan Piskáček – nebyl zvolen ❌`,
-      `<strong>Komise pro kulturu a kulturní dotace</strong>: Michal Švec – zvolen ✅, Jitka Jindřišková – nebyla zvolena ❌`,
-      `<strong>Komise zdravotnictví a sociálních věcí</strong>: Jana Valachovičová – nebyla zvolena ❌`,
-      `<strong>Komise pro cestovní ruch</strong>: Jana Církvová – nebyla zvolena ❌`,
+      `<strong>Komise pro územní plán</strong>: Martin Veselý – nevolen ❌, Václav Pos – nezvolen ❌`,
+      `<strong>Komise školská</strong>: Eva Kotrčová – zvolena ✅, Barbora Skálová – nezvolena ❌`,
+      `<strong>Komise dopravy</strong>: Václav Roztočil – nezvolen ❌`,
+      `<strong>Komise životního prostředí</strong>: Adam Voldán – nezvolen ❌, Kateřina Nepustilová – nezvolena ❌`,
+      `<strong>Komise pro sport a sportovní dotace</strong>: Václav Roztočil – nezvolen ❌, Jan Valachovič – nezvolen ❌, Jan Piskáček – nezvolen ❌`,
+      `<strong>Komise pro kulturu a kulturní dotace</strong>: Michal Švec – zvolen ✅, Jitka Jindřišková – nezvolena ❌`,
+      `<strong>Komise zdravotnictví a sociálních věcí</strong>: Jana Valachovičová – nezvolena ❌`,
+      `<strong>Komise pro cestovní ruch</strong>: Jana Církvová – nezvolena ❌`,
       `<strong>Komise pro prevenci kriminality</strong>: Aleš Frýdl ❓`,
       `<strong>Komise výstavby</strong>: Martin Veselý ❓, Vladimír Toman ❓, Michal Kovářík ❓, Jan Kobylák ❓`
     ]
