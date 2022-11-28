@@ -99,7 +99,7 @@ export const Helpers = [
     text: `Po absolvování berounského gymnázia vystudovala Vyšší odbornou školu specializační se zaměřením na cestovní ruch. 
     Pět let pracovala v centrále cestovní kanceláře. Od roku 1999 je zaměstnána ve stavební firmě. Zde se věnovala nejprve kontrolingu, 
     v současné době zde pracuje jako ekonomka. Aktivně se věnuje pořádání cyklistických závodů (například BMX Nižbor, RKCA Plzeň). 
-    Je předsedkyní školské rady v základní škole Beroun Závodí.`,
+    Je předsedkyní školské rady na základní škole Beroun-Závodí.`,
     topic: "Finance, cestovní ruch, školství",
     email: "jana.cirkvova@berounsobe.eu",
   },
@@ -228,10 +228,10 @@ export const Posts = [
       `Na ustavujícím zastupitelstvu tohoto volebního období jsme navrhli vznik několika nových výborů zabývajících se oblastmi, které město řeší a trápí 
       – konkrétně bezpečností, územním plánem, školstvím a dopravou. Koalice však tyto výbory považovala za zbytečné, neboť pro tyto oblasti 
       existují odborné komise, do nichž můžeme nominovat své zástupce. `,
-      `Po pár týdnech od ustavujícího zastupitelstva je však nanejvýš patrné, že staronové vedení se v rozporu se svými deklaracemi o hledání široké podpory 
+      `Po pár týdnech od ustavujícího zastupitelstva je však zřejmé, že staronové vedení se v rozporu se svými deklaracemi o hledání široké podpory 
       napříč celým zastupitelstvem rozhodlo, že s opozicí spolupracovat nebude vůbec. Nejen že opozici nedalo ani jedno místo ve finančním výboru a dokonce 
-      nám nenechali ani většinu ve výboru kontrolním, ale teď se zdá, že nás až na několik málo výjimek nechtějí dokonce ani v odborných komisích. 
-      Do nich jsme navrhli skutečné odborníky, s jejich expertízou se můžete seznámit <a href="/advisors" className="anchor">zde</a>. Koalice však i z odborných komisí dělá politikum – například do 
+      jí nenechali ani většinu ve výboru kontrolním, ale teď se zdá, že až na několik málo výjimek nechce ani naše zástupce v odborných komisích. 
+      Do nich jsme navrhli skutečné odborníky, s jejichž expertízou se můžete seznámit <a href="/advisors" className="anchor">zde</a>. Koalice však i z odborných komisí dělá politikum – například do 
       komise pro územní plánování byl zvolen radní David Minařík, který je komisařem v autoškole.`,
       `Ještě zbývá dovolit několik posledních komisí – zůstanou i ty bez zástupců vítěze voleb?`,
       `Zde jsou naši nominanti do odborných komisí:`,
