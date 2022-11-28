@@ -149,7 +149,7 @@ export const Experts = [
   v ČR zajišťuje prezentaci severských literatur na veletrhu Svět knihy Praha. Coby předsedkyně poroty ceny Zlatá stuha 
   se podílela na výběru nejlepších překladů dětské literatury.`,
   topic: "Kultura",
-  nomination: "Komise pro kulturu a kulturní dotace - ❌ nezvolena"
+  nomination: "Komise pro kulturu a kulturní dotace - <br>❌ nezvolena"
   },
   {
     title: "Jan Kobylák",

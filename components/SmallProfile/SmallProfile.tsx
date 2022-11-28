@@ -1,3 +1,4 @@
+import parse from 'html-react-parser';
 import styles from './SmallProfile.module.css';
 
 
@@ -6,7 +7,7 @@ interface Props {
   profession: string;
   text: string;
   topic: string;
-  nomination?: string
+  nomination: string
 }
 
 const Profile = ({ title, profession, text, topic, nomination }: Props) => {
@@ -26,7 +27,7 @@ const Profile = ({ title, profession, text, topic, nomination }: Props) => {
       </p>
       <div className={styles.nomination}>
         <p>Nominace do:</p>
-        {nomination}
+        {parse(nomination)}
       </div>
       <h2 className={styles.footer}>ČEMU SE VĚNUJE:
         <p>{topic}</p>

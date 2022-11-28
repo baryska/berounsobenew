@@ -44,7 +44,7 @@
   font: 15px Raleway;
   line-height: 1.2;
   margin-bottom: 20px;
-  height: 260px;
+  height: 273px;
 }
 
 .nomination {
@@ -60,7 +60,7 @@
  text-align: center;
  padding: 10px;
  background: rgba(76,164,202, 0.5);
- height: 17%;
+ height: 78px;
  border-bottom-left-radius: 16px;
  border-bottom-right-radius: 16px;
 }
@@ -72,9 +72,18 @@
 }
 
 @media (max-width: 650px) {
+
+  .title__block {
+    height: 120px
+  }
   .description {
+    height: 243px;
     font: 14px Raleway;
     padding: 15px 20px;
+  }
+
+  .container {
+    margin: 30px 0px;
   }
 }
 
