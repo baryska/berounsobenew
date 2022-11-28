@@ -32,10 +32,6 @@ const Profile = ({ title, profession, photo, text, topic, email, location }: Pro
       <p className={styles.description}>
         {text}
       </p>
-      <div className={styles.pin}>
-        <Image src="/pin.png" alt="pin" width="30px" height="30px" />
-        <p>{location}</p>
-        </div>
       <h2 className={styles.heading}>ČEMU SE VĚNUJE:
         <p>{topic}</p>
       </h2>

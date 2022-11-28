@@ -21,7 +21,6 @@ export const Profiles = [
     Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko).`,
     topic: "Územní plán, výstavba",
     email: "martin.vesely@berounsobe.eu",
-    location: 'Beroun-město'
    },
   {
     title: "Mgr. Adam Voldán",
@@ -33,7 +32,6 @@ export const Profiles = [
     Je jedním ze zakladatelů spolku Berounská zeleň.`,
     topic: "Životní prostředí, městská zeleň",
     email: "adam.voldan@berounsobe.eu",
-    location: "Závodí"
   },
   {
     title: "Mgr. Barbora Skálová, Ph.D.",
@@ -47,7 +45,6 @@ export const Profiles = [
     Je předsedkyní osadního výboru Beroun-Hostím.`,
     topic: "Školství, digitalizace, transparentnost radnice",
     email: "barbora.skalova@berounsobe.eu",
-    location: "Hostím"
   },
   {
     title: "Mgr. Eva Kotrčová",
@@ -59,7 +56,6 @@ export const Profiles = [
     a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
     topic: "Školství",
     email: "eva.kotrcova@berounsobe.eu",
-    location: "Zavadilka"
   },
   {
     title: "Mgr. Hana Kašparová, MBA",
@@ -70,7 +66,6 @@ export const Profiles = [
     Žila v Londýně, Rennes, Bruselu a Budapešti. V současné době působí jako konzultant v oblasti organizace, řízení a zlepšování procesů ve firmách a věnuje se také aromaterapii.`,
     topic: "Finance, rozpočet",
     email: "hana.kasparova@berounsobe.eu",
-    location: "Beroun-město"
   },
   {
     title: "Václav Roztočil",
@@ -81,7 +76,6 @@ export const Profiles = [
     Je předsedou Kontrolního výboru zastupitelstva města Beroun.`,
     topic: "Sport, kontrolní výbor (předseda)",
     email: "vaclav.roztocil@berounsobe.eu",
-    location: "Závodí"
   },
 ]
 
@@ -96,8 +90,7 @@ export const Helpers = [
     zavedení telemedicíny v nefrologii. Po celou dobu se věnuje práci s pacientskými organizacemi, pro které pořádala rekondiční pobyty 
     jak v ČR tak v Evropě. Po návratu do Berouna v roce 2020 studuje MBA se zaměřením na řízení ve zdravotnictví.`,
     topic: "Vztahy s veřejností, zdravotnictví, sociální služby",
-    email: "jana.valachovicova@berounsobe.eu",
-    location: "Beroun-město"
+    email: "jana.valach@berounsobe.eu",
    },
   {
     title: "Jana Církvová",
@@ -109,7 +102,6 @@ export const Helpers = [
     Je předsedkyní školské rady v základní škole Beroun Závodí.`,
     topic: "Finance, cestovní ruch, školství",
     email: "jana.cirkvova@berounsobe.eu",
-    location: "Závodí"
   },
   {
     title: "Ing. Michal Kovářík",
@@ -122,7 +114,6 @@ export const Helpers = [
     udržitelných staveb. V současné době dokončuje doktorské studium zaměřené na 3D tisk z betonu.`,
     topic: "Územní plán, výstavba",
     email: "michal.kovarik@berounsobe.eu",
-    location: "Závodí"
   },
  
 ]
