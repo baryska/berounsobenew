@@ -104,7 +104,8 @@ div.pullRight a:hover:before {
   nav.navPanel {
     height: 6rem;
     justify-content: space-evenly;
-    padding-left: 4rem;
+    padding-left: 5rem;
+    padding-top: 5px;
   }
 }
 
@@ -112,10 +113,6 @@ div.pullRight a:hover:before {
   .logo {
     width: 50px;
     height: 50px;
-  }
-
-  nav.navPanel {
-    padding-left: 5rem;
   }
 
   .socialIcon {
