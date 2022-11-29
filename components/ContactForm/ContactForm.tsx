@@ -107,7 +107,6 @@ const ContactForm = () => {
         </div>
         {loading ? (
           <div>
-            <p className={`${styles.resultMessage} ${styles.centered}`} style={{ bottom: '15rem' }}>Čekejte, prosím</p>
             <ThreeDots fill="#4ca4ca80" className={styles.centered} style={{ bottom: '-5rem' }} />
           </div>)
           : ""}
