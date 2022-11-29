@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             <source src="/beroun4.mp4" type="video/mp4" />
           </video>
           <div className={styles.logo}>
-            <Image src="/BerounsobeLogo.png" alt="logo" width="2001px" height="629px" />
+            <Image src="/BerounsobeLogo_small.png" alt="logo" width="2001px" height="629px" />
           </div>
           <div className={styles.statement}>Chceme moderní město, které patří do 21. století</div>
           <button onClick={handleScrollTop} className={styles.arrow}>
@@ -103,7 +103,7 @@ const Home: NextPage = () => {
             <strong><Link href="/#napistenam">Dejte nám vědět!</Link></strong>
           </p>
 
-          <Link href="/advisors">
+          <Link href="/experti">
             <a className={styles.allNews}>
               <span className={styles.displayAll}>S kým se radíme</span>
               <span style={{marginTop: "8px"}}><Image src="/double-arrow.svg" alt="šipka" width="25px" height="25px" /></span>

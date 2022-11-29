@@ -248,7 +248,7 @@ export const Posts = [
       `Po pár týdnech od ustavujícího zastupitelstva je však zřejmé, že staronové vedení se v rozporu se svými deklaracemi o hledání široké podpory 
       napříč celým zastupitelstvem rozhodlo, že s opozicí spolupracovat nebude vůbec. Nejen že opozici nedalo ani jedno místo ve finančním výboru a dokonce 
       jí nenechali ani většinu ve výboru kontrolním, ale teď se zdá, že až na několik málo výjimek nechce ani naše zástupce v odborných komisích. 
-      Do nich jsme navrhli skutečné odborníky, s jejichž expertízou se můžete seznámit <a href="/advisors" className="anchor">zde</a>. Koalice však i z odborných komisí dělá politikum – například do 
+      Do nich jsme navrhli skutečné odborníky, s jejichž expertízou se můžete seznámit <a href="/experti" className="anchor">zde</a>. Koalice však i z odborných komisí dělá politikum – například do 
       komise pro územní plánování byl zvolen radní David Minařík, který je komisařem v autoškole.`,
       `Ještě zbývá dovolit několik posledních komisí – zůstanou i ty bez zástupců vítěze voleb?`,
       `Zde jsou naši nominanti do odborných komisí:`,
