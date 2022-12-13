@@ -96,7 +96,7 @@ export const Helpers = [
     Je předsedkyní školské rady na základní škole Beroun-Závodí.`,
     topic: "Finance, cestovní ruch, školství",
     email: "jana.cirkvova@berounsobe.eu",
-    nomination: "Komise pro cestovní ruch - ❌ nezvolena"
+    nomination: "Komise pro cestovní ruch - ❌ nezvolena <br> Komise pro likvidaci majetku - ❌ nezvolena"
   },
   {
     title: "Ing. Michal Kovářík",
