@@ -21,7 +21,7 @@ export const Profiles = [
     Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko). Je jedním ze zakladatelů spolku Berounská zeleň.`,
     topic: "Územní plán, výstavba",
     email: "martin.vesely@berounsobe.eu",
-    nomination: "Komise pro územní plán - ❌ nezvolen"
+    nomination: "Komise pro územní plán - ❌ nezvolen <br> Komise výstavby - ❌ nezvolen"
    },
    {
     title: "Mgr. Hana Kašparová, MBA",
