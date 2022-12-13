@@ -23,6 +23,17 @@ export const Profiles = [
     email: "martin.vesely@berounsobe.eu",
     nomination: "Komise pro územní plán - ❌ nezvolen"
    },
+   {
+    title: "Mgr. Hana Kašparová, MBA",
+    profession: "Ekonomka",
+    photo: HK,
+    text: `Vystudovala ekonomii na Univerzitě Karlově a MBA na Ecole Superiere do Commerce v Rennes v Bretani. V letech 1997-2021 pracovala jako ekonom a manažer 
+    ve velké mezinárodní společnosti v několika zemích, z toho posledních 10 let působila jako finanční ředitelka výrobních závodů společností v Rakovníku a v Pokrov (UA). 
+    Žila v Londýně, Rennes, Bruselu a Budapešti. V současné době působí jako konzultant v oblasti organizace, řízení a zlepšování procesů ve firmách a věnuje se také aromaterapii.`,
+    topic: "Finance, rozpočet",
+    email: "hana.kasparova@berounsobe.eu",
+    nomination:  "Finanční výbor - ❌ nezvolena"
+  },
   {
     title: "Mgr. Adam Voldán",
     profession: "Učitel, pojistný matematik",
@@ -62,17 +73,6 @@ export const Profiles = [
     nomination:  "Komise školská - ✅ zvolena"
   },
   {
-    title: "Mgr. Hana Kašparová, MBA",
-    profession: "Ekonomka",
-    photo: HK,
-    text: `Vystudovala ekonomii na Univerzitě Karlově a MBA na Ecole Superiere do Commerce v Rennes v Bretani. V letech 1997-2021 pracovala jako ekonom a manažer 
-    ve velké mezinárodní společnosti v několika zemích, z toho posledních 10 let působila jako finanční ředitelka výrobních závodů společností v Rakovníku a v Pokrov (UA). 
-    Žila v Londýně, Rennes, Bruselu a Budapešti. V současné době působí jako konzultant v oblasti organizace, řízení a zlepšování procesů ve firmách a věnuje se také aromaterapii.`,
-    topic: "Finance, rozpočet",
-    email: "hana.kasparova@berounsobe.eu",
-    nomination:  "Finanční výbor - ❌ nezvolena"
-  },
-  {
     title: "Václav Roztočil",
     profession: "Podnikatel, hokejový trenér",
     photo: Roztocil,
@@ -109,7 +109,7 @@ export const Helpers = [
     udržitelných staveb. V současné době dokončuje doktorské studium zaměřené na 3D tisk z betonu.`,
     topic: "Územní plán, výstavba",
     email: "michal.kovarik@berounsobe.eu",
-    nomination: "Komise pro územní plán - ❌ nezvolen"
+    nomination: "Komise výstavby - ❌ nezvolen"
   },
   {
     title: "Bc. Jana Valachovičová",
@@ -161,7 +161,7 @@ export const Experts = [
     jako ředitel realizací staveb, vedl stavební dozory, ISO, bezpečnost práce, stavební audity pro naše i zahraniční banky. 
     Mimo jiné se věnoval organizaci výběrových řízení na Zhotovitele staveb s posuzováním Smluv o Dílo.`,
     topic: "Územní plán, výstavba",
-    nomination: "Komise výstavby - ❓ volba neproběhla"
+    nomination: "Komise výstavby - ❌ nezvolen"
    },
    {
     title: "Kateřina Nepustilová",
@@ -218,7 +218,7 @@ export const Experts = [
     Má zkušenosti s jednáním se státními orgány, obcemi, stavebními dodavateli, sestavováním a hodnocením stavebních rozpočtů a kontrolou 
     provedených prací.`,
     topic: "Územní plán, výstavba",
-    nomination: "Komise výstavby - ❓ volba neproběhla"
+    nomination: "Komise výstavby - ✅ zvolen"
   },
   {
     title: "Jan Valachovič",
@@ -243,13 +243,14 @@ export const Posts = [
     image: radnice,
     paragraphs: [
       `Na ustavujícím zastupitelstvu tohoto volebního období jsme navrhli vznik několika nových výborů zabývajících se oblastmi, které město řeší a trápí 
-      – konkrétně bezpečností, územním plánem, školstvím a dopravou. Koalice však tyto výbory považovala za zbytečné, neboť pro tyto oblasti 
-      existují odborné komise, do nichž můžeme nominovat své zástupce. `,
+      – konkrétně bezpečností, územním plánem, školstvím a dopravou. Chtěli jsme mít možnost se aktivně podílet na jejich zlepšování. Koalice to považovala za zbytečné, 
+      neboť existují odborné komise, do nichž můžeme nominovat své zástupce. `,
       `Po pár týdnech od ustavujícího zastupitelstva je však zřejmé, že staronové vedení se v rozporu se svými deklaracemi o hledání široké podpory 
-      napříč celým zastupitelstvem rozhodlo, že s opozicí spolupracovat nebude vůbec. Nejen že opozici nedalo ani jedno místo ve finančním výboru a dokonce 
-      jí nenechali ani většinu ve výboru kontrolním, ale teď se zdá, že až na několik málo výjimek nechce ani naše zástupce v odborných komisích. 
-      Do nich jsme navrhli skutečné odborníky, s jejichž expertízou se můžete seznámit <a href="/experti" className="anchor">zde</a>. Koalice však i z odborných komisí dělá politikum – například do 
-      komise pro územní plánování byl zvolen radní David Minařík, který je komisařem v autoškole.`,
+      napříč celým zastupitelstvem rozhodlo, že s opozicí spolupracovat nebude vůbec.  Opozici nedalo ani jedno místo ve finančním výboru a dokonce nemáme ani většinu 
+      ve výboru kontrolním. Zdá se, že až na několik málo výjimek nechce koalice ani naše zástupce v odborných komisích.  
+      Do nich jsme navrhli skutečné odborníky, s jejichž expertízou se můžete seznámit <a href="/experti" className="anchor">zde</a>. 
+      Koalice však i z odborných komisí dělá politikum – například do 
+      komise pro územní plánování byl zvolen radní David Minařík, který je profesí komisařem v autoškole.`,
       `Ještě zbývá dovolit několik posledních komisí – zůstanou i ty bez zástupců vítěze voleb?`,
       `Zde jsou naši nominanti do odborných komisí:`,
       `<strong>Komise pro územní plán</strong>: Martin Veselý – nevolen ❌, Václav Pos – nezvolen ❌`,
@@ -260,8 +261,8 @@ export const Posts = [
       `<strong>Komise pro kulturu a kulturní dotace</strong>: Michal Švec – zvolen ✅, Jitka Jindřišková – nezvolena ❌`,
       `<strong>Komise zdravotnictví a sociálních věcí</strong>: Jana Valachovičová – nezvolena ❌`,
       `<strong>Komise pro cestovní ruch</strong>: Jana Církvová – nezvolena ❌`,
+      `<strong>Komise výstavby</strong>: Martin Veselý - nezvolen ❌, Vladimír Toman – zvolen ✅, Michal Kovářík - nezvolen ❌, Jan Kobylák - nezvolen ❌`,
       `<strong>Komise pro prevenci kriminality</strong>: Aleš Frýdl ❓`,
-      `<strong>Komise výstavby</strong>: Martin Veselý ❓, Vladimír Toman ❓, Michal Kovářík ❓, Jan Kobylák ❓`
     ]
   },
   {
