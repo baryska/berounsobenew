@@ -10,7 +10,8 @@ import Roztocil from '../public/vaclav_roztocil.jpg';
 import zas17102022 from '../public/zas17-10-2022.jpg';
 import volby from '../public/volby.jpg';
 import chodnik from '../public/chodnik.png';
-import radnice from '../public/radnice.jpg'
+import radnice from '../public/radnice.jpg';
+import manual from '../public/manual.png';
 
 export const Profiles = [
   {
@@ -235,6 +236,25 @@ export const Experts = [
 
 export const Posts = [
   {
+    title: 'Chceme odborné manuály pro lepší rozvoj města',
+    theme: 'Urbanismus',
+    key: 3,
+    slug: 'chceme-odborne-manualy-pro-lepsi-rozvoj-mesta',
+    date: '5.1. 2023',
+    image: manual,
+    paragraphs: [
+      `Dlouhodobě voláme po <strong>vytvoření manuálu pro veřejná prostranství</strong>, aby například všechny chodníky v Berouně byly rekonstruovány jednotně a vypadaly všude stejně. Stejně tak by mělo mít město vizi, kam se chce ubírat a jak toho chce dosáhnout, a mělo by se při tom radit s odborníky (architekty, urbanisty, zahradníky a dalšími). Naposledy manuál toho jak město efektivně a strategicky rozvíjet vytvořilo město Benešov, tedy obec podobné velikosti jako Beroun. Posuďte sami, zda by Berounu podobné zásady také neprospěly:`,
+      `⭐️ <strong>Jak dobře komunikovat?</strong> Vše začíná u vizuální identity, pokračuje Městským orientačním a informačním systémem (MIOS) a končí u webu, sociálních sítí a participativních setkání. Cílem je komunikovat otevřeně, důsledně ctít emoce a potřeby lidí a nebojovat proti nim, vyslechnout je bez hodnocení a snažit se pochopit. Není na to potřeba žádné velké školení – stačí chtít, odložit ego, poslouchat a snažit se slyšet co dotyčný opravdu říká, bez svých projekcí. Je dobré, když lidé přesně vědí kam se obracet a kde najdou informace (nástěnka, web, sociální sítě). Taková místa by měla být přehledná a jasná. `,
+      `⭐️ <strong>Jak zapojit lidi?</strong> Je třeba dělat průběžnou osvětu o fungování města, vzdělávat už od školek, zapojovat veřejnost do projektů v jejich okolí. Mezi dětmi rostou budoucí zastupitelé, mezi sousedy také. Každého se týká mnoho projektů města, protože město i krajinu využívá každý. Nebude to hned. Navázat důvěru s veřejností, která byla v minulém století zvyklá poslouchat rozkazy shora trvá minimálně rok, ale výsledkem jsou hladší schvalovací procesy, pestřejší město a hlavně spokojenější obyvatelé.`,
+      `⭐️ <strong>Jak dělat město živé a čitelné?</strong> Vhodné je podporovat spolky, kulturní a sportovní akce, vytvářet nové příležitosti k setkávání. dobře funguje také dočasné využívání míst, o kterých víme, že budou příští roky nevyužitá. Proluku je možné dočasně proměnit na komunitní zahradu nebo plácek s dětskými prvky. Pro lidi už poté nebudou existovat místa, kterým nerozumí a působí ošklivě, ale jen místa, které se proměňují, ale fungují pořád. Stejně pokud potřebujeme někam dostat větší energii, abychom ukázali lidem, že si mohou místo vzít za své, nebo abychom předcházeli sociálním problémům, můžeme tu umístit rozhlednu, kavárnu, dětské hřiště a přitáhnout sem nové lidi. Všechny aktivity by měly být pestré a měly by umět přitáhnout děti, rodiny, seniory, mladistvé i všechny ostatní.`,
+      `⭐️ <strong>Jak se starat o energetiku města?</strong> Cílem je co největší soběstačnost. Mít svou pitnou vodu, elektřinu z fotovoltaických (FV) panelů nebo tepelných čerpadel, využívat kompost a odpady na výrobu bioplynu, vytvářet re-use centra, recyklovat, podporovat komunitní energetiku.`,
+      `⭐️ <strong>Jak to funguje ekonomicky?</strong> Za každého obyvatele dostane město drobný příspěvek od státu. Ten ale rozhodně nepokryje všechny potřeby nových obyvatel. Proto musí město vyžadovat Příspěvek na infrastrukturu, aby zajistilo parkování, školy a školky, sportoviště, údržbu nových ulic, opravy nových podzemních sítí nebo provoz MHD. Jedině tak město bude mít peníze na to starat se samo o sebe. Při výstavbě větších celků potom může pomocí Plánovací smlouvy vyžadovat po investorovi výstavbu sítí, školky nebo předání části bytů do obecního fondu. `,
+      `Celý manuál ke stažení <strong><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.benesov-city.cz%2Fassets%2FFile.ashx%3Fid_org%3D219%26id_dokumenty%3D101978%26fbclid%3DIwAR0tkNgB-ucNVblHlO1c5bXPUETnaNJFmEcSaS_12JmRJqRr_sXQYeEKmPQ&h=AT1pQ3fQEGy5Y_qtIuKTx3OA5qucn2C9Q6x1NfufpSKOI03WiIu_TsTAl69PJ4oBodY6VZ-gXNY7tgCeD5w2sWFZIb-S-teOv-kWhmpGBgjrnIoRIxcoQUiB8y1qyrtnbnfv&__tn__=-UK-R&c[0]=AT3oOn3DGW6uy4ofWBCYzX6T9Pq7MJCz-a7765-4-_4EriCCDIqIyMfLNXvusYspFSOxODRHjsEUv_DOSeFjnS6p11OQN4-uD9sYo7mOZ3LVn9-6n_Q3SJzTGVyfscYv4RYxYu-QUhHzNNV77N3o4732moNHFQb268OaCJ7F-BEIIFuvbNgvDlbfmyTmCMu67TiRbmPpBe8dccuXc8XFHr6_6he4htIr8sjObw" target="_blank"><u>zde</u></a></strong>`,
+      `A mimochodem - Benešov má i <strong><u><a href="https://www.benesov-city.cz/assets/File.ashx?id_org=219&id_dokumenty=49486" target="_blank">manuál městských povrchů</a></u></strong>, <strong><u><a href="https://www.benesov-city.cz/assets/File.ashx?id_org=219&id_dokumenty=100223" target="_blank">manuál vizuálního stylu</a></u></strong> nebo <strong><u><a href="https://www.benesov-city.cz/assets/File.ashx?id_org=219&id_dokumenty=49487" target="_blank">manuál městského mobiliáře</a></u></strong>`,
+      `Manuál & foto: <strong><a href="https://www.tecka.city/">ateliér • tečka</a></strong>`
+    ]
+  },
+  {
     title: 'Proč nás vedení města nechce ani v odborných komisích?',
     theme: 'Rada & zastupitelstvo',
     key: 1,
@@ -335,5 +355,6 @@ export const Posts = [
       Děkujeme za vaši podporu a těšíme se na vás! ❤️`
     ]
   },
+ 
 ]
 
