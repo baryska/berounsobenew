@@ -20,6 +20,10 @@ const LINKS = [
     name: "INFORMUJEME"
   },
   {
+    link: "program",
+    name: "PROGRAM"
+  },
+  {
     link: "#napistenam",
     name: "NAPIŠTE NÁM"
   },

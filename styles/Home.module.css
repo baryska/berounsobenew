@@ -252,6 +252,14 @@
   flex-direction: column;
 }
 
+.arrowBack__programme {
+  position: absolute;
+  top: 12rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .video {
   object-fit: cover;
   width: 100vw;
@@ -283,6 +291,27 @@
 
 .contact {
   min-height: 70rem;
+}
+
+.programme__info {
+  font-family: Raleway;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.programme__download {
+  font-family: Raleway;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(76, 164, 202);
+}
+
+.programme__download:hover {
+  cursor: pointer;
+  color:#70b6d5;
 }
 
 @media (max-width: 1600px) {
