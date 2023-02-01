@@ -26,7 +26,7 @@ const Post = ({ paragraphs, image, title }: Props) => {
       <button style={{textAlign: 'left', left: '0'}} onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px"/></button>
       <h1 className={styles.title}>{title}</h1>
         {image !== undefined && (
-          <span className={styles.image}><Image src={image} alt="foto" width="760px" height="570px" className={styles.image} /></span>
+          <span className={styles.image}><Image src={image} alt="foto" width="760px" height="507px" className={styles.image} /></span>
         )}
         <div className={styles.paragraphs}>
           {paragraphs?.map((paragraph) => <p key={paragraph} className={styles.paragraph}>{parse(paragraph)}</p>)}

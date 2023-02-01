@@ -12,6 +12,8 @@ import volby from '../public/volby.jpg';
 import chodnik from '../public/chodnik.png';
 import radnice from '../public/radnice.jpg';
 import manual from '../public/manual.png';
+import telocvicna from '../public/telocvicna.jpg';
+import autobusak from '../public/autobusak.jpeg';
 
 export const Profiles = [
   {
@@ -235,6 +237,48 @@ export const Experts = [
 ] 
 
 export const Posts = [
+  {
+    title: 'Zasedání zastupitelstva 21.12.2022 - kdo je odpovědný za škodu na autobusovém nádraží?',
+    theme: 'Rada & zastupitelstvo',
+    key: 1,
+    slug: 'kdo-je-odpovedny-za-skodu-na-autobusovem-nadrazi',
+    date: '25.1. 2023',
+    image: autobusak,
+    paragraphs: [
+      `Prosincové zasedání zastupitelstva mělo na programu důležitý bod – schválení rozpočtu na příští rok. Protože navzdory zvyklostem koalice nezvolila 
+      do finančního výboru ani jednoho zástupce opozice, studiem materiálů a dotazy na příslušné odbory jsme strávili velké množství času. 
+      I tak ale mnoho našich otázek zůstalo nezodpovězeno, a proto jsme je plánovali předložit přímo na zastupitelstvu. Bohužel koalice 
+      předčasně ukončila rozpravu a nedala nám tak možnost zeptat se na všechny nejasné body. Nevíme tedy, zda s penězi nás všech bude 
+      město nakládat opravdu efektivně, a hospodaření města i městských firem zůstává nadále v mnoha ohledech netransparentní. Z osmihodinového 
+      zasedání pro vás postupně rozebíráme ta nejdůležitější témata.  Jedním z nich jsou zrezlé přístřešky a mobiliář na autobusovém nádraží. 
+      Městu vznikla škoda necelý 1 milion Kč. Měli bychom ji zaplatit z nově zpoplatneného parkoviště na Závodí. Ptali jsme se, kdo z 
+      vedení města je za to zodpovědný...`,
+      `Na sestřih toho nejlepšího z diskuze najdete <strong><a href="https://www.youtube.com/watch?v=-cm19FY-yPk" target="_blank"><u>zde</u></a></strong>`
+    ]
+  },
+  {
+    title: 'Tělocvična za 55 milionů - špatně investované peníze',
+    theme: 'Urbanismus',
+    key: 3,
+    slug: 'telocvicna-za-55-milionu',
+    date: '26.1. 2023',
+    image: telocvicna,
+    paragraphs: [
+      `Školství je pro nás jednou z priorit. Podporujeme zkvalitnění výuky i prostředí škol, a proto stavba nové tělocvičny u 2. ZŠ 
+      Preislerova byla pro nás dobrou zprávou a s chutí jsme ji chtěli podpořit. 
+      Investici 55 milionů by si děti určitě zasloužily. Nebýt jednoho drobného detailu: je malá. 
+      Nemá rozměr plnohodnotného basketbalového hřiště. Naši basketbalisté tedy budou muset nadále trénovat v Litni.
+      Požadavek na její velikost přitom padl už loni v době příprav projektu. Důvody, proč to nejde, jsme už slyšeli 
+      postupně čtyři. Ani jeden není neřešitelný. Kdo chce, hledá způsoby, kdo nechce, hledá důvody.`,
+      `Dokument, který by řádně odůvodnil stávající velikost, neexistuje. Chceme, aby vedení města projekt řádně odůvodnilo a 
+      vysvětlilo, proč nemůže být tělocvična postavena větší.`, 
+      `Větší tělocvična, tak jak je všude zvykem, není jen pro sport. 
+      Je to i prostor pro společenské události spojené se školou nebo místní komunitou.`,
+      `Nemůžeme si dovolit investovat 
+      55 milionů korun a nemít vypořádané veškeré námitky a připomínky v uceleném dokumentu. V tuto chvíli považujeme 
+      stavbu tělocvičny za špatně vynaložené peníze. Projekt se dá vždy přepracovat, ale hotová stavba už ne.`
+    ]
+  },
   {
     title: 'Chceme odborné manuály pro lepší rozvoj města',
     theme: 'Urbanismus',
