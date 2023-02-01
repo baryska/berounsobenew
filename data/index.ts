@@ -253,7 +253,7 @@ export const Posts = [
       zasedání pro vás postupně rozebíráme ta nejdůležitější témata.  Jedním z nich jsou zrezlé přístřešky a mobiliář na autobusovém nádraží. 
       Městu vznikla škoda necelý 1 milion Kč. Měli bychom ji zaplatit z nově zpoplatneného parkoviště na Závodí. Ptali jsme se, kdo z 
       vedení města je za to zodpovědný...`,
-      `Na sestřih toho nejlepšího z diskuze najdete <strong><a href="https://www.youtube.com/watch?v=-cm19FY-yPk" target="_blank"><u>zde</u></a></strong>`
+      `Na sestřih toho nejlepšího z diskuze se můžete podívat <strong><a href="https://www.youtube.com/watch?v=-cm19FY-yPk" target="_blank"><u>zde</u></a></strong>`
     ]
   },
   {

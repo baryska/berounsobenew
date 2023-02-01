@@ -4,7 +4,7 @@ import { Experts } from '../data/index';
 import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
-import Link from 'next/link';
+
 
 const Advisors = () => {
   const router = useRouter();
