@@ -8,7 +8,7 @@ const ProgrammePage = () => {
   const router = useRouter();
   return (
     <>
-      <div className={styles.programme__info}>Program, s kterým jsme šli do komunálních voleb 2022:</div>
+      <div className={styles.programme__info}>Program, se kterým jsme šli do komunálních voleb 2022:</div>
       <div className={styles.programme__download}><a
         href="/program_Berounsobe.pdf"
         target="_blank"
