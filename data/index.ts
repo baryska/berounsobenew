@@ -14,6 +14,9 @@ import radnice from '../public/radnice.jpg';
 import manual from '../public/manual.png';
 import telocvicna from '../public/telocvicna.jpg';
 import autobusak from '../public/autobusak.jpeg';
+import popelnice from '../public/popelnice.jpeg';
+import menda from '../public/menda.jpg';
+
 
 export const Profiles = [
   {
@@ -238,22 +241,47 @@ export const Experts = [
 
 export const Posts = [
   {
-    title: 'Zasedání zastupitelstva 21.12.2022 - kdo je odpovědný za škodu na autobusovém nádraží?',
-    theme: 'Rada & zastupitelstvo',
-    key: 1,
-    slug: 'kdo-je-odpovedny-za-skodu-na-autobusovem-nadrazi',
-    date: '25.1. 2023',
-    image: autobusak,
+    title: 'Nevyvezli vám popelnici? Štve vás rozbitá lavička?',
+    theme: 'Městské služby',
+    key: 5,
+    slug: 'nevyvezli-vam-popelnici',
+    date: '16.2. 2023',
+    image: popelnice,
     paragraphs: [
-      `Prosincové zasedání zastupitelstva mělo na programu důležitý bod – schválení rozpočtu na příští rok. Protože navzdory zvyklostem koalice nezvolila 
-      do finančního výboru ani jednoho zástupce opozice, studiem materiálů a dotazy na příslušné odbory jsme strávili velké množství času. 
-      I tak ale mnoho našich otázek zůstalo nezodpovězeno, a proto jsme je plánovali předložit přímo na zastupitelstvu. Bohužel koalice 
-      předčasně ukončila rozpravu a nedala nám tak možnost zeptat se na všechny nejasné body. Nevíme tedy, zda s penězi nás všech bude 
-      město nakládat opravdu efektivně, a hospodaření města i městských firem zůstává nadále v mnoha ohledech netransparentní. Z osmihodinového 
-      zasedání pro vás postupně rozebíráme ta nejdůležitější témata.  Jedním z nich jsou zrezlé přístřešky a mobiliář na autobusovém nádraží. 
-      Městu vznikla škoda necelý 1 milion Kč. Měli bychom ji zaplatit z nově zpoplatneného parkoviště na Závodí. Ptali jsme se, kdo z 
-      vedení města je za to zodpovědný...`,
-      `Na sestřih toho nejlepšího z diskuze se můžete podívat <strong><a href="https://www.youtube.com/watch?v=-cm19FY-yPk" target="_blank"><u>zde</u></a></strong>`
+      `Nevyvezli vám popelnice, štve vás rozbitá lavička nebo špatné dopravní značení? Málo se to ví, ale existuje několik kanálů, 
+      kterými můžete na město snadno nahlásit nějakou závadu, problém nebo návrhy na zlepšení:`,
+      `Své podněty můžete hlásit přes Munipolis, je to snadné a rychlé a dostanete informaci o tom, jak s vaším podnětem město 
+      naložilo: <a href="https://mesto-beroun.munipolis.cz/podnety-a-zavady"><u>https://mesto-beroun.munipolis.cz/podnety-a-zavady</u></a>`, 
+      ` Podobně funguje stránka podnětů na webu města, zde můžete klást i jakékoliv dotazy, které na vedení města nebo úřad máte: 
+      <a href="https://www.mesto-beroun.cz/pro-obcany/dotazy-obcanu/"><u>https://www.mesto-beroun.cz/pro-obcany/dotazy-obcanu/</u></a>`,
+      `Vybrané odpovědi pak město zveřejňuje: <a href="https://www.mesto-beroun.cz/pro-obcany/dotazy-obcanu/odpovedi/?fbclid=IwAR1TPQNctnpr_BK-9bQHR7IFxlr3C_B2c4N_umvr3lhpXtBqcC7aJLFbcGA">
+      <u>https://www.mesto-beroun.cz/pro.../dotazy-obcanu/odpovedi/</u></a>`,
+      `Problém s vyvážením popelnic, odklízením sněhu, sečením trávy apod. můžete hlásit na beroun@ave.cz, pokud je záležitost urgentní, volejte na následující čísla: 311 548 210, 311 548 200`,
+      `Nefunkční veřejné osvětlení můžete hlásit na nonstop telefonní lince 259 259 266. Je vhodné oznámit číslo sloupu veřejného osvětlení, pokud je samozřejmě na příslušné lampě tento údaj umístěn. Majitelé 
+      chytrých telefonů si mohou načíst QR kód uvedený na štítku na sloupu veřejného osvětlení a prostřednictví aplikace nahlásit problém.`,
+      `Moc vás prosíme, abyste závady hlásili, k lepší verzi našeho města můžeme přispět my všichni `
+    ]
+  },
+  {
+    title: 'Revitalizace Městské hory',
+    theme: 'Zeleň',
+    key: 4,
+    slug: 'architektonicka-studie-na-mestskou-horu',
+    date: '13.2. 2023',
+    image: menda,
+    paragraphs: [
+      `Jsme rádi, že se do rozpočtu na příští rok dostala i studie na revitalizaci Městské hory. Společně s kolegy z komise 
+      životního prostředí to náš zastupitel Adam Voldán opakovaně požadoval na všech jednáních komise v roce 2022 (v lednu, v březnu i 
+        v červnu), a až na třetí pokus rada tento požadavek vyslyšela.`,
+      `Plán revitalizace je nadějným příslibem, ale nelze usnout na vavřínech. Podobných slibů už jsme totiž slyšeli mnoho - park Na Špici, 
+      Zábranský park nebo park Homolka, a k žádné realizaci bohužel v těchto lokalitách nedošlo.`, 
+      `Chtěli bychom vás tedy vyzvat, abyste nám napsali své návrhy a potřeby – buď sem do komentářů, nebo na náš e-mail info@berounsobe.eu. 
+      Za Beroun sobě tím chceme zajistit poctivou diskuzi jednotlivých nápadů a maximálně efektivní realizaci. `,
+      `Městská hora je ostrovem přírody uprostřed města, který mimo jiné poskytuje stín a ochlazení. Rádi bychom, aby to tak zůstalo i nadále 
+      a investice byla hlavně do stabilizace parku a nikoli do realizace velkolepých zábavních atrakcí.`,
+      `O revitalizaci Městské hory jsme diskutovali i na prosincovém zastupitelstvu, na sestřih se můžete podívat <strong><a href="https://www.youtube.com/watch?v=TTwkF5IksiY" 
+      target="_blank"><u>zde</u></a></strong>. Jsme rádi, 
+      že náš návrh na vypsání architektonické soutěže, kterou vedení města odmítalo, byl nakonec vyslyšen.`
     ]
   },
   {
@@ -279,6 +307,26 @@ export const Posts = [
       stavbu tělocvičny za špatně vynaložené peníze. Projekt se dá vždy přepracovat, ale hotová stavba už ne.`
     ]
   },
+  {
+    title: 'Zasedání zastupitelstva 21.12.2022 - kdo je odpovědný za škodu na autobusovém nádraží?',
+    theme: 'Rada & zastupitelstvo',
+    key: 1,
+    slug: 'kdo-je-odpovedny-za-skodu-na-autobusovem-nadrazi',
+    date: '25.1. 2023',
+    image: autobusak,
+    paragraphs: [
+      `Prosincové zasedání zastupitelstva mělo na programu důležitý bod – schválení rozpočtu na příští rok. Protože navzdory zvyklostem koalice nezvolila 
+      do finančního výboru ani jednoho zástupce opozice, studiem materiálů a dotazy na příslušné odbory jsme strávili velké množství času. 
+      I tak ale mnoho našich otázek zůstalo nezodpovězeno, a proto jsme je plánovali předložit přímo na zastupitelstvu. Bohužel koalice 
+      předčasně ukončila rozpravu a nedala nám tak možnost zeptat se na všechny nejasné body. Nevíme tedy, zda s penězi nás všech bude 
+      město nakládat opravdu efektivně, a hospodaření města i městských firem zůstává nadále v mnoha ohledech netransparentní. Z osmihodinového 
+      zasedání pro vás postupně rozebíráme ta nejdůležitější témata.  Jedním z nich jsou zrezlé přístřešky a mobiliář na autobusovém nádraží. 
+      Městu vznikla škoda necelý 1 milion Kč. Měli bychom ji zaplatit z nově zpoplatneného parkoviště na Závodí. Ptali jsme se, kdo z 
+      vedení města je za to zodpovědný...`,
+      `Na sestřih toho nejlepšího z diskuze se můžete podívat <strong><a href="https://www.youtube.com/watch?v=-cm19FY-yPk" target="_blank"><u>zde</u></a></strong>`
+    ]
+  },
+  
   {
     title: 'Chceme odborné manuály pro lepší rozvoj města',
     theme: 'Urbanismus',

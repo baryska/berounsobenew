@@ -8,7 +8,9 @@ import Image from 'next/image';
 const menuItems = [
   { title: 'Rada & zastupitelstvo', key: 1 },
   { title: 'Volby', key: 2 },
-  { title: 'Urbanismus', key: 3 }
+  { title: 'Urbanismus', key: 3 },
+  { title: 'Zeleň', key: 4 },
+  { title: 'Městské služby', key: 5 }
 ]
 
 const News = () => {
