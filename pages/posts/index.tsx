@@ -10,7 +10,8 @@ const menuItems = [
   { title: 'Volby', key: 2 },
   { title: 'Urbanismus', key: 3 },
   { title: 'Zeleň', key: 4 },
-  { title: 'Městské služby', key: 5 }
+  { title: 'Městské služby', key: 5 },
+  { title: 'Školství', key: 6 }
 ]
 
 const News = () => {
