@@ -281,6 +281,7 @@ export const Posts = [
     slug: 'nevyvezli-vam-popelnici',
     date: '16.2. 2023',
     image: popelnice,
+    additionalImages: [],
     paragraphs: [
       `Nevyvezli vám popelnice, štve vás rozbitá lavička nebo špatné dopravní značení? Málo se to ví, ale existuje několik kanálů, 
       kterými můžete na město snadno nahlásit nějakou závadu, problém nebo návrhy na zlepšení:`,
@@ -303,6 +304,7 @@ export const Posts = [
     slug: 'architektonicka-studie-na-mestskou-horu',
     date: '13.2. 2023',
     image: menda,
+    additionalImages: [],
     paragraphs: [
       `Jsme rádi, že se do rozpočtu na příští rok dostala i studie na revitalizaci Městské hory. Společně s kolegy z komise 
       životního prostředí to náš zastupitel Adam Voldán opakovaně požadoval na všech jednáních komise v roce 2022 (v lednu, v březnu i 
@@ -325,6 +327,7 @@ export const Posts = [
     slug: 'telocvicna-za-55-milionu',
     date: '26.1. 2023',
     image: telocvicna,
+    additionalImages: [],
     paragraphs: [
       `Školství je pro nás jednou z priorit. Podporujeme zkvalitnění výuky i prostředí škol, a proto stavba nové tělocvičny u 2. ZŠ 
       Preislerova byla pro nás dobrou zprávou a s chutí jsme ji chtěli podpořit. 
@@ -348,6 +351,7 @@ export const Posts = [
     slug: 'kdo-je-odpovedny-za-skodu-na-autobusovem-nadrazi',
     date: '25.1. 2023',
     image: autobusak,
+    additionalImages: [],
     paragraphs: [
       `Prosincové zasedání zastupitelstva mělo na programu důležitý bod – schválení rozpočtu na příští rok. Protože navzdory zvyklostem koalice nezvolila 
       do finančního výboru ani jednoho zástupce opozice, studiem materiálů a dotazy na příslušné odbory jsme strávili velké množství času. 
@@ -368,6 +372,7 @@ export const Posts = [
     slug: 'chceme-odborne-manualy-pro-lepsi-rozvoj-mesta',
     date: '5.1. 2023',
     image: manual,
+    additionalImages: [],
     paragraphs: [
       `Dlouhodobě voláme po <strong>vytvoření manuálu pro veřejná prostranství</strong>, aby například všechny chodníky v Berouně byly rekonstruovány jednotně a vypadaly všude stejně. Stejně tak by mělo mít město vizi, kam se chce ubírat a jak toho chce dosáhnout, a mělo by se při tom radit s odborníky (architekty, urbanisty, zahradníky a dalšími). Naposledy manuál toho jak město efektivně a strategicky rozvíjet vytvořilo město Benešov, tedy obec podobné velikosti jako Beroun. Posuďte sami, zda by Berounu podobné zásady také neprospěly:`,
       `⭐️ <strong>Jak dobře komunikovat?</strong> Vše začíná u vizuální identity, pokračuje Městským orientačním a informačním systémem (MIOS) a končí u webu, sociálních sítí a participativních setkání. Cílem je komunikovat otevřeně, důsledně ctít emoce a potřeby lidí a nebojovat proti nim, vyslechnout je bez hodnocení a snažit se pochopit. Není na to potřeba žádné velké školení – stačí chtít, odložit ego, poslouchat a snažit se slyšet co dotyčný opravdu říká, bez svých projekcí. Je dobré, když lidé přesně vědí kam se obracet a kde najdou informace (nástěnka, web, sociální sítě). Taková místa by měla být přehledná a jasná. `,
@@ -387,6 +392,7 @@ export const Posts = [
     slug: 'proc-nas-vedeni-mesta-nechce-ani-v-odbornych-komisich',
     date: '29.11. 2022',
     image: radnice,
+    additionalImages: [],
     paragraphs: [
       `Na ustavujícím zastupitelstvu tohoto volebního období jsme navrhli vznik několika nových výborů zabývajících se oblastmi, které město řeší a trápí 
       – konkrétně bezpečností, územním plánem, školstvím a dopravou. Chtěli jsme mít možnost se aktivně podílet na jejich zlepšování. Koalice to považovala za zbytečné, 
@@ -418,6 +424,7 @@ export const Posts = [
     slug: 'provazek-uz-nestaci',
     date: '16.11. 2022',
     image: chodnik,
+    additionalImages: [],
     paragraphs: [
       `V poslední době se opravuje velké množství berounských ulic. Je to jistě potěšující zpráva, že vedení města plní svou funkci správce a opravuje veřejnou infrastrukturu. 
       Bohužel ale nepřináší žádnou novou přidanou hodnotu - chybí kvalitnější zeleň nebo třeba možnost osadit v ulici nové optické sítě. Na základě podnětů od občanů jsme se 
@@ -436,6 +443,7 @@ export const Posts = [
     slug: 'jak-probihalo-ustavujici-zastupitelstvo',
     date: '20.10. 2022',
     image: zas17102022,
+    additionalImages: [],
     paragraphs: [
       `V pondělí 17.10. 2022 proběhlo ustavující zasedání zastupitelstva.
       S radostí jsme zjistili, že jsme se tam s řadou z vás setkali. Děkujeme za přízeň a podporu. Přijďte i příště! 😊 `,
@@ -457,6 +465,7 @@ export const Posts = [
     slug: 'proc-jsme-skoncili-v-opozici',
     date: '13.10. 2022',
     image: volby,
+    additionalImages: [],
     paragraphs: [
       `V sobotu 24. září jsme se radovali. Každý čtvrtý volič v Berouně nám dal hlas. A současně jsme ihned brali na vědomí, že stávající koalice má společně 11 křesel.`,
       `Po celou dobu našeho jednání jsme byli transparentní: domluvili jsme se s Petrem Horákem ze Společně pro Beroun a deklarovali jsme, že ze stávající koalice chceme 

@@ -9,7 +9,7 @@ interface Props {
   slug: string,
   date: string
   image: StaticImageData,
-  additionalImages?: StaticImageData[],
+  additionalImages: StaticImageData[],
   paragraphs: string[]
 }
 
