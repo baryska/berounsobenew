@@ -250,7 +250,7 @@ export const Posts = [
     slug: 'chybejici-skoly',
     date: '28.3. 2023',
     image: deti,
-    additionalImages: [tab2, tab1],
+    additionalImages: [tab1, tab2],
     paragraphs: [
       `👉 V následujících dnech bychom vám rádi přinesli shrnutí nejdůležitějších bodů posledního zasedání zastupitelstva - dnes k již hojně propíranému tématu <strong>ŠKOLSTVÍ</strong>:`,
       `Jedním z hlavních bodů zastupitelstva byla kapacita základních škol a uzavření smluv s Hýskovem, Nižborem, Chyňavou a Srbskem ohledně docházky jejich dětí do berounských škol. 
