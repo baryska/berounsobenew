@@ -247,7 +247,7 @@ export const Posts = [
     title: 'Budou v Berouně za několik let chybět stovky míst ve školách?',
     theme: 'Školství',
     key: 6,
-    slug: 'chybejici-skoly',
+    slug: 'chybejici-mista-ve-skolach',
     date: '28.3. 2023',
     image: deti,
     additionalImages: [tab1, tab2],
