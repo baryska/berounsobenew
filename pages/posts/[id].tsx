@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { useRouter } from 'next/router';
 import { getAllPostSlugs, getPostData } from '../../data/posts';
@@ -9,7 +8,8 @@ import styles from './post.module.css';
 interface Props {
   paragraphs: string[] | undefined,
   image: StaticImageData | undefined,
-  title: string | undefined
+  title: string | undefined,
+  additionalImages?: StaticImageData[]
 }
 
 interface Params {
@@ -18,20 +18,23 @@ interface Params {
   }
 }
 
-const Post = ({ paragraphs, image, title }: Props) => {
+const Post = ({ paragraphs, image, title, additionalImages }: Props) => {
   const router = useRouter();
 
   return (
     <div className={styles.container}>
-      <button style={{textAlign: 'left', left: '0'}} onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px"/></button>
+      <button style={{ textAlign: 'left', left: '0' }} onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px" /></button>
       <h1 className={styles.title}>{title}</h1>
-        {image !== undefined && (
-          <span className={styles.image}><Image src={image} alt="foto" width="760px" height="507px" className={styles.image} /></span>
-        )}
-        <div className={styles.paragraphs}>
-          {paragraphs?.map((paragraph) => <p key={paragraph} className={styles.paragraph}>{parse(paragraph)}</p>)}
-        </div>
-      
+      {image !== undefined && (
+        <span className={styles.image}><Image src={image} alt="foto" width="760px" height="507px" className={styles.image} placeholder="blur" /></span>
+      )}
+      <div className={styles.paragraphs}>
+        {paragraphs?.map((paragraph) => <p key={paragraph} className={styles.paragraph}>{parse(paragraph)}</p>)}
+      </div>
+      {additionalImages?.map((image) =>
+        <span className={styles.image} key={title}>
+          <Image src={image} alt="foto" width="760px" height="507px" className={styles.image} placeholder="blur" />
+        </span>)}
     </div>
 
   )
@@ -52,7 +55,8 @@ export async function getStaticProps({ params }: Params) {
     props: {
       paragraphs: data.post?.paragraphs,
       image: data.post?.image,
-      title: data.post?.title
+      title: data.post?.title,
+      additionalImages: data.post?.additionalImages
     }
   }
 }

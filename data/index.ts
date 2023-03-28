@@ -16,6 +16,9 @@ import telocvicna from '../public/telocvicna.jpg';
 import autobusak from '../public/autobusak.jpeg';
 import popelnice from '../public/popelnice.jpeg';
 import menda from '../public/menda.jpg';
+import deti from '../public/schoolkids.jpg';
+import tab1 from '../public/tab1_form.png';
+import tab2 from '../public/tab2_form.png';
 
 
 export const Profiles = [
@@ -241,6 +244,37 @@ export const Experts = [
 
 export const Posts = [
   {
+    title: 'Budou v Berouně za několik let chybět stovky míst ve školách?',
+    theme: 'Školství',
+    key: 6,
+    slug: 'chybejici-skoly',
+    date: '28.3. 2023',
+    image: deti,
+    additionalImages: [tab2, tab1],
+    paragraphs: [
+      `👉 V následujících dnech bychom vám rádi přinesli shrnutí nejdůležitějších bodů posledního zasedání zastupitelstva - dnes k již hojně propíranému tématu <strong>ŠKOLSTVÍ</strong>:`,
+      `Jedním z hlavních bodů zastupitelstva byla kapacita základních škol a uzavření smluv s Hýskovem, Nižborem, Chyňavou a Srbskem ohledně docházky jejich dětí do berounských škol. 
+      Při studiu podkladů k zastupitelstvu, které jsme dostali těsně před jarními prázdninami, jsme si všimli <strong>zásadní výpočetní chyby v predikci počtu žáků</strong>, a po přepočtu se ukázalo, že 
+       <strong>z původních 34 přebývajících míst v roce 2028 jich je 611 chybějících</strong>. V Berouně by tedy kvůli masivní výstavbě za několik let chyběla v podstatě celá jedna škola.`, 
+      ` Na chybu jsme hned po prázdninách upozornili odbor školství, který ještě před zastupitelstvem materiál přepracoval a znovu rozeslal zastupitelům. Přesto oba místostarostové na 
+      zastupitelstvu mluvili o „alternativní metodice“ a „jiném úhlu pohledu“ – zda se jedná o početní chybu, nebo o „alternativní fakta“, můžete posoudit sami v přiložených tabulkách 
+      (v prvním případě se přírůstky nepočítaly kumulativně, ale vždy jen za jeden konkrétní rok – jeden rok tedy 300 dětí přibylo, ale druhý rok stejných 300 dětí zmizelo).`,
+      `Chybu může udělat každý, alarmující ovšem je, že tento materiál jednomyslně schválila rada města, aniž by si chyby kdokoliv, včetně místostarosty pro školství pana Tomča, všimnul. Rada tedy 
+      plánovala předložit zastupitelstvu zcela chybné údaje. <strong>Chybějící kapacity chce město řešit stopkou pro přijímání dětí z okolních obcí.</strong> Avšak dle našich výpočtů (za použití totožných vstupních dat, 
+        jiné k dispozici nemáme) by <strong>i po úplném vyloučení dětí z okolních obcí chybělo v roce 2028 kolem 300 míst</strong>. Náš návrh, aby město začalo situaci okamžitě řešit a v rozpočtu vyčlenilo částku na 
+        studii proveditelnosti nové školy, byl i tak zamítnut. Koalice argumentuje zpomalením výstavby developerských projektů, ale projekt nové školy není otázkou dvou, tří, dokonce ani pěti let. 
+        Ze zkušeností jiných obcí vyplývá, že <strong>pokud chceme mít do osmi let novou školu, musíme začít okamžitě.</strong>`,
+      `Hlasovali jsme i <strong>proti uzavření smluv s okolními obcemi</strong> zejména proto, že jsme měli v ruce dva nezávislé posudky, které smlouvy zhodnotily jako <strong>právní paskvil</strong>. Právní posudek dokonce hovořil o 
+      možném rozporu s rovným přístupem žáků ke vzdělání dle Listiny základních práv a svobod a doporučuje okolním obcím obrátit se na Středočeský kraj. K uzavření smluv byly okolní obce v podstatě 
+      donuceny a platba 32 000 Kč za žáka jim místo v berounských školách nijak negarantuje. Obce sice budou platit jen za umístěné děti, ale pan místostarosta Tomčo přímo na zastupitelstvu potvrdil, 
+      že <strong>znovu může dojít k losování o zbylá místa</strong>. Podobné praktiky považujeme za neetické, zvláště pokud se jedná o jedenáctileté děti. Je dobře, že samotné obce chtějí také situaci řešit a již ji řeší 
+      (Hýskov, Chyňava a Nižbor již připravují svazkovou školu). Ale jestliže za rok nebo dva oznámíme stop stav pro okolní obce, rozjede se <strong>"školská turistika"</strong>, proti níž zatím město nemá vůbec žádné nástroje.`,
+      `Z výše zmíněných důvodů dlouhodobě prosazujeme <strong>rychlé a významné navýšení kapacit berounských škol a hledání krátkodobých i dlouhodobějších řešení</strong>, radnice však bohužel problém nadále zlehčuje a strká 
+      před ním hlavu do písku. I pokud by se prognózy nakonec v plné míře nenaplnily, nová škola by v Berouně jistě našla své uplatnění - mohli bychom konečně přispět ke zvýšení kvality výuky a 
+      docílit toho, že ve třídách bude 27, 26 nebo dokonce 25 dětí, nikoliv 30, jak je tomu zcela běžně dnes.`,
+    ]
+  },
+   {
     title: 'Nevyvezli vám popelnici? Štve vás rozbitá lavička?',
     theme: 'Městské služby',
     key: 5,

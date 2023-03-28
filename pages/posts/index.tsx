@@ -60,7 +60,7 @@ const News = () => {
 
         <div className={styles.allPosts}>
           {posts.map((post) => {
-            const { title, theme, slug, date, image, paragraphs } = post;
+            const { title, theme, slug, date, image, paragraphs, additionalImages } = post;
             return (
               <NewsItem
                 title={title}
@@ -69,6 +69,7 @@ const News = () => {
                 date={date}
                 image={image}
                 paragraphs={paragraphs}
+                additionalImages={additionalImages}
                 key={title}
               />
             )
