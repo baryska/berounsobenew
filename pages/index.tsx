@@ -119,7 +119,7 @@ const Home: NextPage = () => {
               </div>
             </h2>
             {Posts.slice(0, 4).map((post) => {
-              const { title, theme, slug, date, image, paragraphs } = post;
+              const { title, theme, slug, date, image, paragraphs, additionalImages } = post;
               return (
                 <NewsItem
                   title={title}
@@ -128,6 +128,7 @@ const Home: NextPage = () => {
                   date={date}
                   image={image}
                   paragraphs={paragraphs}
+                  additionalImages={additionalImages}
                   key={title}
                 />
               )
