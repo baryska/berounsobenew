@@ -261,7 +261,7 @@ export const Posts = [
     ]
   },
   {
-    title: 'Tělocvična za 55 miliónů bez veřejné debaty',
+    title: 'Tělocvična za 55 milionů bez veřejné debaty',
     theme: 'Urbanismus',
     key: 3,
     slug: 'telocvicna-bez-verejne-debaty',
