@@ -19,6 +19,8 @@ import menda from '../public/menda.jpg';
 import deti from '../public/schoolkids.jpg';
 import tab1 from '../public/tab1_form.png';
 import tab2 from '../public/tab2_form.png';
+import telocvicna3 from '../public/telocvicna3.jpg';
+import rozpocet from '../public/rozpocet.jpg';
 
 
 export const Profiles = [
@@ -243,6 +245,36 @@ export const Experts = [
 ] 
 
 export const Posts = [
+  {
+    title: 'Peníze na novou školu koalice nevyčlenila',
+    theme: 'Rada & zastupitelstvo',
+    key: 1,
+    slug: 'penize-na-novou-skolu-koalice-nevyclenila',
+    date: '11.4. 2023',
+    image: rozpocet,
+    additionalImages: [],
+    paragraphs: [
+      `👉 Shrnutí zastupitelstva, díl třetí. Tentokrát o ROZPOČTU.`,
+      `Stále jsme se však nedočkali dlouhodobého plánu investic, který vedení města slibovalo již v lednu spolu s programovým prohlášením. Dozvěděli jsme se, že dokument popisující strategické investice sice existuje, ale je již zastaralý a několik let nebyl aktualizován, dle místostarosty Mišiny kvůli covidu... Pan místostarosta nicméně slíbil, že dokument bude do měsíce dokončen, takže snad se máme v nejbližších dnech na co těšit.`,
+      `Po opravě zásadní výpočetní chyby z výhledu počtu žáků vyplývá, že Berounu bude za několik let chybět několik set míst ve školách. Navrhli jsme proto změnu v rozpočtu, která by vyčlenila 500 tisíc Kč pro urgentní projektovou přípravu možných variant umístění nové školy. Tento návrh byl zamítnut celou radniční koalicí spolu se zastupitelkou za Lidé pro Beroun, která s koalicí hlasuje v podstatě ve všech důležitých bodech.`,
+      `Ptali jsme se také na chybějící položku v rozpočtu na sanaci skal nad cyklostezkou do Srbska, která je oficiálně uzavřena již od roku 2016. O zabezpečení cyklostezky nemají zájem jen občané Berouna, ale i vedení obce Srbsko, které dosud marně žádalo Beroun o spolupráci. Po našem dotazu proběhla schůzka se starostou Srbska a CHKO, které potvrdilo, že nebude bránit šetrné sanaci rizikových míst na skále. Město Beroun nyní musí vypracovat nový projekt a uvolnit prostředky na tuto sanaci (resp. zajistit dotace z fondů určených na rizikové sanace).`
+    ]
+  },
+  {
+    title: 'Tělocvična za 55 miliónů bez veřejné debaty',
+    theme: 'Urbanismus',
+    key: 3,
+    slug: 'telocvicna-bez-verejne-debaty',
+    date: '30.3. 2023',
+    image: telocvicna3,
+    additionalImages: [],
+    paragraphs: [
+      `👉 Shrnutí zastupitelstva, díl druhý, tentokrát o TĚLOCVIČNĚ.`,
+      `Na posledním zasedání zastupitelstva se kromě škol dlouze diskutovalo i o stavbě nové tělocvičny u 2. ZŠ. Koalice nám vyčetla, že jsme zveřejnili oponentní návrh, který má prý zásadní chyby. Hlavním problémem je údajně chybějící výtah a zastínění učeben v přilehlém pavilonu. Jsme přesvědčeni, že každý potenciální problém má své řešení - výtah lze doplnit a zastínění lze řešit například prostorem pod tělocvičnou. Rádi bychom o tom s vedením diskutovali, požadavek na schůzku ohledně řešení stavby jsme zaslali už 4.1. tohoto roku, ale dosud nebyl reflektován. Prostor na reakci jsme nedostali ani u článku v Radničním listu. `, 
+      ` Dalším důvodem k zamítnutí návrhu ze strany vedení města byla cena, která prý převyšuje dle tzv. kubíkových cen 100 milionů Kč . Dali jsme dohromady několik zrealizovaných staveb velkých tělocvičen podobných parametrů na území ČR, na které byly vyhlášeny i architektonické soutěže, a sepsali je pro porovnání do přehledné tabulky. Sta milionů se nemůžeme dopočítat.`,
+      `Hlavní námitky, které jsme naopak ke stavbě tělocvičny u 2. ZŠ měli my, se týkaly především úplné absence jakékoliv veřejné diskuze. Věříme, že veřejná stavba za 55 milionů by měla být výsledkem veřejné debaty  široké veřejnosti i berounských sportovních klubů, které by halu mohly využívat. V jiných městech je u takto velké veřejné stavby zcela běžné i vypsání architektonické soutěže. Ptali jsme se tedy, proč žádná z těchto podmínek transparentní veřejné zakázky nebyla splněna, ale odpovědí jsme se dosud nedočkali.`,
+    ]
+  },
   {
     title: 'Budou v Berouně za několik let chybět stovky míst ve školách?',
     theme: 'Školství',
