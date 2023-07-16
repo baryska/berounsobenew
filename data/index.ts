@@ -21,6 +21,16 @@ import tab1 from '../public/tab1_form.png';
 import tab2 from '../public/tab2_form.png';
 import telocvicna3 from '../public/telocvicna3.jpg';
 import rozpocet from '../public/rozpocet.jpg';
+import namesti1 from '../public/namesti1.jpg';
+import namesti2 from '../public/namesti2.jpg';
+import namesti3 from '../public/namesti3.jpg';
+import namesti4 from '../public/namesti4.jpg';
+import namesti5 from '../public/namesti5.jpeg';
+import namesti6 from '../public/namesti6.jpg';
+import namesti7 from '../public/namesti7.jpg';
+import namesti8 from '../public/namesti8.jpg';
+import namesti9 from '../public/namesti9.jpg';
+
 
 
 export const Profiles = [
@@ -245,6 +255,22 @@ export const Experts = [
 ] 
 
 export const Posts = [
+  {
+    title: 'Jak má vypadat Husovo náměstí?',
+    theme: 'Ubranismus',
+    key: 3,
+    slug: 'jak-ma-vypadat-husovo-namesti',
+    date: '13.7. 2023',
+    image: namesti1,
+    additionalImages: [namesti2, namesti3, namesti4, namesti5, namesti6, namesti7, namesti8, namesti9],
+    paragraphs: [
+      `Na začátku měsíce byly na Husovo náměstí nainstalovány dva parklety za finanční podpory Nadace Tipsport jako součást projektu Skrze město. Cílem tohoto projektu je zklidnění dopravy a úprava parkovacích míst v centru města. `,
+      `V současné době bohužel postrádáme celkovou koncepci náměstí, aby sloužilo jako klidová zóna, ale i zároveň jako místo pro setkávání a pořádání různých akcí. Byli bychom rádi, kdyby postupně došlo k oživení celého náměstí a toto místo se stalo více navštěvováno i po zavírací době obchodů a úřadů.`,
+      `Zároveň je potřeba jednat s podnikateli a nabídnout jim vizi, do níž oni zasadí svoje podnikání, které oživí celé centrum Berouna. Líbí se nám nápad kolegy Záloma z Lepšího Berouna o postupné přeměně části náměstí v částečnou pěší zónu. Pěší zóna by umožnila rozšíření kavárenských a restauračních zahrádek a vybudování provizorního pódia pro kulturní akce (např. koncerty ZUŠ nebo divadelní představení).`,
+      `Také bychom byli rádi, kdyby náměstí poskytovalo více stínu a prostoru k příjemnému odpočinku – dokud nevyrostou vzrostlejší stromy, řešením mohou být zastíněné lavičky a zelené prvky (viz fotogalerie). Parkování na náměstí lze omezovat až v okamžiku, kdy bude dostatečná nabídka parkovacích míst mimo náměstí v docházkové vzdálenosti. Město také může motivovat řidiče ke krátkodobému parkování pro vyřízení nezbytných pochůzek pomocí parkovacího tarifu (např. prvních 15 minut zdarma, po té vyšší tarif).`,
+      `Uvědomujeme si, že podobné změny vyžadují dlouhodobou koncepci a realizace neproběhne ze dne na den, nicméně rádi bychom viděli snahu s těmito aktivitami alespoň začít a konkrétní koncepci vytvořit. Zároveň se domníváme, že podoba hlavního berounského náměstí by měla být aktivně diskutována s odbornou i laickou veřejností. Proto bychom se vás chtěli zeptat, jakou podobu náměstí byste uvítali vy. Napište nám do na náš email info@berounsobe.eu.`
+    ]
+  },
   {
     title: 'Peníze na novou školu koalice nevyčlenila',
     theme: 'Rada & zastupitelstvo',
