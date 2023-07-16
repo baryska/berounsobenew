@@ -20,6 +20,7 @@ import deti from '../public/schoolkids.jpg';
 import tab1 from '../public/tab1_form.png';
 import tab2 from '../public/tab2_form.png';
 import telocvicna3 from '../public/telocvicna3.jpg';
+import studie from '../public/studie.jpg';
 import rozpocet from '../public/rozpocet.jpg';
 import namesti1 from '../public/namesti1.jpg';
 import namesti2 from '../public/namesti2.jpg';
@@ -269,6 +270,20 @@ export const Posts = [
       `Zároveň je potřeba jednat s podnikateli a nabídnout jim vizi, do níž oni zasadí svoje podnikání, které oživí celé centrum Berouna. Líbí se nám nápad kolegy Záloma z Lepšího Berouna o postupné přeměně části náměstí v částečnou pěší zónu. Pěší zóna by umožnila rozšíření kavárenských a restauračních zahrádek a vybudování provizorního pódia pro kulturní akce (např. koncerty ZUŠ nebo divadelní představení).`,
       `Také bychom byli rádi, kdyby náměstí poskytovalo více stínu a prostoru k příjemnému odpočinku – dokud nevyrostou vzrostlejší stromy, řešením mohou být zastíněné lavičky a zelené prvky (viz fotogalerie). Parkování na náměstí lze omezovat až v okamžiku, kdy bude dostatečná nabídka parkovacích míst mimo náměstí v docházkové vzdálenosti. Město také může motivovat řidiče ke krátkodobému parkování pro vyřízení nezbytných pochůzek pomocí parkovacího tarifu (např. prvních 15 minut zdarma, po té vyšší tarif).`,
       `Uvědomujeme si, že podobné změny vyžadují dlouhodobou koncepci a realizace neproběhne ze dne na den, nicméně rádi bychom viděli snahu s těmito aktivitami alespoň začít a konkrétní koncepci vytvořit. Zároveň se domníváme, že podoba hlavního berounského náměstí by měla být aktivně diskutována s odbornou i laickou veřejností. Proto bychom se vás chtěli zeptat, jakou podobu náměstí byste uvítali vy. Napište nám do na náš email info@berounsobe.eu.`
+    ]
+  },
+  {
+    title: 'Konečně se dočkáme demografické studie',
+    theme: 'Školství',
+    key: 6,
+    slug: 'konecne-se-dockame-demograficke-studie',
+    date: '8.6. 2023',
+    image: studie,
+    additionalImages: [],
+    paragraphs: [
+      `Jsme rádi, že vedení města konečně vyslyšelo náš opakovaně vznášený návrh, aby si radnice nechala vypracovat NEZÁVISLOU, ODBORNOU demografickou studii pro výhled kapacit základních škol v Berouně. Jak jsme již mnohokrát informovali, interní materiál, který si zpracovává samo město, vzbuzuje mnoho pochyb, mimo jiné i proto, že historicky obsahoval zásadní výpočetní chybu, které si bohužel za mnoho let nikdo z vedení města nevšimnul.`,
+      `Na konci léta budeme mít tedy konečně odborný odhad toho, jestli kapacity berounských škol budou stačit i po masivní výstavbě, která nás v Berouně v příštích letech čeká.`,
+      `Problému se intenzivně věnujeme, provádíme vlastní výpočty a snažíme se dostat k informacím z radnice, bohužel vedení města se rozhodlo s námi přerušit veškerou konstruktivní komunikaci. O materiály k výpočtu školských kapacit jsme opakovaně žádali v březnu, dubnu i květnu, ale bohužel jsme nakonec byli nuceni použít § 106, tedy zákon o svobodném přístupu k informacím. Ani přes něj jsme se však k relevantním materiálům nedostali…`
     ]
   },
   {
