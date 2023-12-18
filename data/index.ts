@@ -31,6 +31,8 @@ import namesti6 from '../public/namesti6.jpg';
 import namesti7 from '../public/namesti7.jpg';
 import namesti8 from '../public/namesti8.jpg';
 import namesti9 from '../public/namesti9.jpg';
+import demostudie from '../public/demostudie.png';
+import mestskahora from '../public/mestskahora.jpg';
 
 
 
@@ -54,7 +56,7 @@ export const Profiles = [
     Žila v Londýně, Rennes, Bruselu a Budapešti. V současné době působí jako konzultant v oblasti organizace, řízení a zlepšování procesů ve firmách a věnuje se také aromaterapii.`,
     topic: "Finance, rozpočet",
     email: "hana.kasparova@berounsobe.eu",
-    nomination:  "Finanční výbor - ❌ nezvolena"
+    nomination:  "Finanční výbor - ✅ dodatečně zvolena"
   },
   {
     title: "Mgr. Adam Voldán",
@@ -66,7 +68,7 @@ export const Profiles = [
     Je jedním ze zakladatelů spolku Berounská zeleň.`,
     topic: "Životní prostředí, městská zeleň",
     email: "adam.voldan@berounsobe.eu",
-    nomination:  "Komise životního prostředí - ❌ nezvolen"
+    nomination:  "Komise životního prostředí - ✅ dodatečně zvolen"
   },
   {
     title: "Mgr. Barbora Skálová, Ph.D.",
@@ -257,8 +259,57 @@ export const Experts = [
 
 export const Posts = [
   {
+    title: 'Revitalizace Městské hory a Husova náměstí',
+    theme: 'Zeleň',
+    key: 4,
+    slug: 'revitalizace-mestske-hory-a-husova-namesti',
+    date: '26.9. 2023',
+    image: mestskahora,
+    additionalImages: [],
+    paragraphs: [
+      `V  září odstartovala veřejná diskuze ohledně revitalizace parku na
+      Městské hoře, řízená profesionální firmou. V říjnu pak diskuze k rekonstrukci Husova náměstí. To je dobře, je to příležitost připravit oba projekty tak, aby zohledňovaly co možná nejširší okruh potřeb. Čas a peníze
+      věnované do přípravy se snad vrátí.`,
+      `Harmonogram revitalizace Městské hory můžete sledovat <a href="https://mestskahoraberoun.cityupgrade.cz/" target="_blank"><u>zde.</u></a>`,
+      `Participace dává každému možnost se vyjádřit dopředu a ne jen smutně koukat, jak to zase dopadlo. Zde musíme připomenout – rekonstrukce veřejného osvětlení v ulici Svatojánská a Drašarova, kde pokládka kabelů vedla ke zničení do té doby vitálních stromů,
+      přitom stačilo vést kabel na druhé straně ulice. Prostor u Medicentra,
+      kde mohl vzniknout opravdový park, ale je tam jen travnatý plácek se
+      záhonem. Nikde nebyla možnost se k projektům vyjádřit.`,
+      `O to více jsme se báli, jak to dopadne s Městskou horou. Na jaře 2021
+      jsme s komisí životního prostředí upozorňovali radu na intenzivní prosychání stromů na Městské hoře a snažili se prosadit zadání arboristické
+      studie na její obnovu. Rada tento záměr nakonec schválila, ale v rozpočtu se objevila architektonická studie s velkorysým rozpočtem 2 milionu
+      Kč. Báli jsme se, že místo obnovy stromů se plánují investice do betonu`,
+      `Nakonec zde máme otevřenou veřejnou debatu, ze které vzejde zadání pro architekty. Je to pokrok, věříme, že můžeme očekávat transparentnost a opravdu dobré řešení.`,
+      `Celý proces participace stojí nemalé peníze. Jsme si toho vědomi.
+      Pro takto velké projekty jako je městská hora, nebo náměstí ale vidíme
+      odůvodnění. Pro menší projekty by nám stačilo, kdyby byly konzultovány
+      s příslušnými odbornými komisemi, ideálně i v rámci zastupitelstva, které kromě schvalování celkového rozpočtu města podobu projektů nijak
+      neovlivňuje.`,
+      `Obě zahájené veřejné debaty tedy vnímáme jako přínos, ale stále nám
+      chybí plán investičních projektů na dalších 5 let. Jen transparentní plán
+      investičních projektů bude dávat možnost držet rozumné náklady na
+      veřejnou diskuzi a bude se týkat všech projektů, nikoli jen vybraných.`
+    ]
+  },
+  {
+    title: 'Co říká demografická studie?',
+    theme: 'Školství',
+    key: 6,
+    slug: 'co-rika-demograficka-studie',
+    date: '13.9. 2023',
+    image: demostudie,
+    additionalImages: [],
+    paragraphs: [
+      `Pokud se nic nezmění, v roce 2027 nebude dostatek míst v berounských základních školách.`,
+      `Na posledním zasedání zastupitelstva byla prezentována demografická studie, kterou si nechalo město vypracovat od nezávislého odborníka. Studie pracovala s aktualizovanými daty z odboru územního plánování. Původní městská studie z března předpokládala, že cca 2400 bytových jednotek bude stát už v roce 2028, současná demografická studie pracuje s předpokladem, že stejný objem výstavby bude hotov až o deset let později.`,
+      `I s takto upravenou výstavbou však ze studie vyplývá, že od roku 2027 nebude stačit kapacita berounských škol pro všechny - tedy pro berounské děti s trvalým bydlištěm v Berouně, pro berounské děti bez trvalého bydliště v Berouně a pro děti z okolních obcí, které mají s Berounem uzavřenou smlouvu o školní docházce. Kapacita škol by těsně stačila jen v případě, pokud by Beroun přestal přijímat všechny děti z okolních obcí. Autor studie uvedl, že smlouvy s okolními obcemi bude třeba vypovědět nejspíše už za rok.      `,
+      `Co se však stane, pokud Beroun smlouvy s okolními obcemi vypoví? Nižbor, Hýskov ani Chyňava nestihnou do roka ani do dvou postavit vlastní školu, děti z okolních obcí tedy zůstanou bez druhého stupně. Jsme přesvědčeni, že to povede stejně jako na jiných místech ve Středočeském kraji a v Praze ke školské turistice – rodiče začnou přepisovat svým dětem trvalé bydliště do Berouna.`,
+      `Přestože se na tento problém snažíme neustále upozorňovat, vedení města nás opakovaně obviňuje z toho, že nekopeme za zájmy berounských dětí. Je to ale přesně naopak - pokud dojde ke školské turistice, budou o místa bojovat i berounské děti. A tomu chceme za každou cenu zabránit. Dlouhodobě proto voláme po urychleném řešení situace. Jsme proto rádi, že bude konečně svolána pracovní skupina pro školství, která snad posune problém blíže k jeho řešení.`
+    ]
+  },
+  {
     title: 'Jak má vypadat Husovo náměstí?',
-    theme: 'Ubranismus',
+    theme: 'Urbanismus',
     key: 3,
     slug: 'jak-ma-vypadat-husovo-namesti',
     date: '13.7. 2023',
