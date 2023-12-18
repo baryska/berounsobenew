@@ -33,6 +33,9 @@ import namesti8 from '../public/namesti8.jpg';
 import namesti9 from '../public/namesti9.jpg';
 import demostudie from '../public/demostudie.png';
 import mestskahora from '../public/mestskahora.jpg';
+import stavka from '../public/stavka.jpg';
+import obcevdatech from '../public/obcevdatech.png';
+import pozemky from '../public/pozemky.jpg';
 
 
 
@@ -258,6 +261,51 @@ export const Experts = [
 ] 
 
 export const Posts = [
+  {
+    title: 'Proč se Beroun propadá v žebříčku kvality života?',
+    theme: 'Školství',
+    key: 6,
+    slug: 'proc-se-beroun-propada-v-zebricku-kvality-zivota',
+    date: '12.12. 2023',
+    image: obcevdatech,
+    additionalImages: [],
+    paragraphs: [
+      `Vyšla každoroční analýza kvality života v českých obcích Obce v datech. Beroun si od loňska o 12 míst pohoršil a spadnul z 14. místa na 26.`,
+      `Zdaleka nejhorší hodnocení má Beroun u indexu dostupnosti mateřských a základních škol, kde je naše město bohužel nejen na chvostu Středočeského kraje, ale i celé České republiky.`,
+      `Proto toto téma jako Beroun sobě opakovaně otvíráme na zastupitelstvu i dalších jednáních na radnici a snažíme se ho i z opozice aktivně řešit. Na včerejším zasedání zastupitelstva jsme opět apelovali na urychlené svolání pracovní skupiny pro školství.`,
+      `Kompletní výsledky najdete na adrese <a href="https://www.obcevdatech.cz/beroun/" target="_blank"><u>www.obcevdatech.cz/beroun</u></a>`
+    ]
+  },
+  {
+    title: 'Proč město prodává pozemky v atraktivní lokalitě?',
+    theme: 'Urbanismus',
+    key: 3,
+    slug: 'proc-mesto-prodava-pozemky-v-atraktivni-lokalite',
+    date: '29.11. 2023',
+    image: pozemky,
+    additionalImages: [],
+    paragraphs: [
+      `Téměř všechny obce se dnes potýkají s nedostatkem učitelů, lékařů a dalších profesí veřejné služby, a ani v Berouně tomu není jinak. Jednou z možností, jak je přilákat do města, je bydlení v obecním bytě na dobré adrese.`,
+      `Proto je pro nás nepochopitelné, že se chce město zbavit kvalitních pozemků v lokalitě nad Paloučkem určených pro stavbu individuálního bydlení. Tato lokalita navíc umožňuje i výstavbu domu pro seniory, školky, školy nebo zdravotnického zařízení, pro jejichž další rozvoj v Berouně nejsou pozemky (kromě jediného pozemku nad Židovským hřbitovem, který nepojme více než jedno z těchto zařízení).`,
+      `Na posledním zastupitelstvu radniční koalice společně s paní Machovou za Lidé pro Beroun schválila prodej obecních pozemků formou elektronické aukce v lokalitě nad Paloučkem (v ulici v Zahrádkách). Důvodem je údajně zisk prostředků pro nákup pozemků od Českých drah, v budoucnu určených pro sportovní vyžití. Město má však na nákup těchto pozemků vlastní zdroje (hospodaření tohoto roku skončí vysokým přebytkem) nebo si může vzít úvěr.`,
+      `V Berouně je nedostatek všeho - obecních pozemků, obecních bytů, sportovních areálů i lékařů. Prodejem městských pozemků pro individuální bydlení sice získáme finance, ale zbavíme se pozemků, které už nikdy zpět nezískáme. Můžeme si to v současné situaci dovolit? Za Beroun sobě se domníváme, že město by si mělo pozemky nechat a připravit se co nejdříve na situaci, kdy se obce začnou přetahovat o kvalitní učitele i lékaře, kterých je už teď jako šafránu.`
+    ]
+  },
+  {
+    title: 'Stávka na berounských školách',
+    theme: 'Školství',
+    key: 6,
+    slug: 'stavka-na-berounskych-skolach',
+    date: '23.11. 2023',
+    image: stavka,
+    additionalImages: [],
+    paragraphs: [
+      `Dvě ze čtyř berounských základních škol a všechny mateřské školy se v pondělí připojují ke stávce za zachování kvality škol a za podporu nepedagogických pracovníků (psychologů, asistentů, kuchařek, školníků, IT pracovníků apod.).`,
+      `O tom, že s 30 dětmi ve třídě nelze zaručit kvalitní výuku, mluvíme již dlouho, a i proto prosazujeme stavbu nové školy. Vedení města to však dosud za problém nepovažovalo a navíc na předposledním zasedání zastupitelstva zaznělo, že se s vysokým počtem dětí ve třídě se stejně nedá nic dělat. Možná i proto dosud nebyla svolána pracovní skupina pro školství, kterou vedení města slíbilo svolat na zářijovém zastupitelstvu.`,
+      `Jsme rádi, že naše opakované apely na snížení počtu dětí ve třídě sdílejí i učitelé. Připomínáme, že podle demografické studie budou do několika let zcela naplněny třídy berounských škol i v případě, že Beroun přestane okamžitě přijímat děti z okolních obcí.`,
+      `Děkujeme všem učitelům, kteří se i s velkým počtem dětí ve třídách snaží o maximum možného.`,
+    ]
+  },
   {
     title: 'Revitalizace Městské hory a Husova náměstí',
     theme: 'Zeleň',
