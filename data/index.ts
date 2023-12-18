@@ -59,7 +59,7 @@ export const Profiles = [
     Žila v Londýně, Rennes, Bruselu a Budapešti. V současné době působí jako konzultant v oblasti organizace, řízení a zlepšování procesů ve firmách a věnuje se také aromaterapii.`,
     topic: "Finance, rozpočet",
     email: "hana.kasparova@berounsobe.eu",
-    nomination:  "Finanční výbor - ✅ dodatečně zvolena"
+    nomination:  "Finanční výbor - ✅ dodatečně zvolena v září 2023"
   },
   {
     title: "Mgr. Adam Voldán",
@@ -71,7 +71,7 @@ export const Profiles = [
     Je jedním ze zakladatelů spolku Berounská zeleň.`,
     topic: "Životní prostředí, městská zeleň",
     email: "adam.voldan@berounsobe.eu",
-    nomination:  "Komise životního prostředí - ✅ dodatečně zvolen"
+    nomination:  "Komise životního prostředí - ✅ dodatečně zvolen v září 2023"
   },
   {
     title: "Mgr. Barbora Skálová, Ph.D.",
