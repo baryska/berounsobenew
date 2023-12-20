@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 const archiveItems = [
   {
     title: 'Prosinec 2023',
-    link: "https://us21.campaign-archive.com/?e=[UNIQID]&u=ccdb159ab05877f01c61c9e47&id=232faa452e"
+    link: "https://mailchi.mp/9f0061e599d9/jak-se-m-beroune-1-berounsk-newsletter-12676328"
   }
 ]
 
