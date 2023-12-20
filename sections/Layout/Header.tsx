@@ -24,6 +24,10 @@ const LINKS = [
     name: "PROGRAM"
   },
   {
+    link: "newsletter",
+    name: "NEWSLETTER"
+  },
+  {
     link: "#napistenam",
     name: "NAPIŠTE NÁM"
   },
