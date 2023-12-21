@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 const archiveItems = [
   {
     title: 'Prosinec 2023',
-    link: "https://mailchi.mp/9f0061e599d9/jak-se-m-beroune-1-berounsk-newsletter-12676328"
+    link: "https://mailchi.mp/c3ae39ee3d7a/jak-se-m-beroune-1-berounsk-newsletter-12676389?e=[UNIQID]"
   }
 ]
 
