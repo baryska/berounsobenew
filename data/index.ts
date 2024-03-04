@@ -286,6 +286,25 @@ export const Posts = [
     ]
   },
   {
+    title: 'Zápisy do základních škol - otázky a odpovědi',
+    theme: 'Školství',
+    key: 6,
+    slug: 'zapisy-do-zakladnich-skol-otazky-a-odpovedi',
+    date: '4.3. 2024',
+    image: deti,
+    additionalImages: [],
+    paragraphs: [
+      `<strong>Do jaké základní školy spadá moje dítě?</strong>`,
+      `Nové spádové oblasti schválilo zastupitelstvo teprve na únorovém zasedání, proto raději zkontrolujte, zda se nezměnila vaše spádová škola. Některé ulice, které dříve spadaly na Jungmannku a Wagnerku, nově spadají na Závodí. Celá vyhláška o spádových obvodech je <a href="https://www.mesto-beroun.cz/mesto-a-urad/vyhlasky-a-narizeni/obecne-zavazna-vyhlaska-c-1-2024-kterou-se-stanovi-skolske-obvody-spadovych-zakladnich-skol-zrizenych-mestem-beroun-20526.html?kshow=67" target="_blank"><u>zde</u></a>.`,
+      `<strong>Musí mé dítě chodit na spádovou základní školu?</strong>`,
+      `Nemusí. Své dítě můžete přivést k zápisu na jakoukoliv berounskou školu. Byli jsme opakovaně ujištění od vedení města i od odboru školství, že spádovost je jen formální záležitost, kterou vyžaduje zákon. Spádovost je sice jedním z kritérií přijetí, ale toto kritérium by bylo aplikováno jen v případě, že by se k zápisu dostavilo více dětí, než je kapacita tříd. V takovém případě vás kontaktuje sama škola a bude s vámi situaci řešit individuálně.`,
+      `<strong>Co když chodí mé starší dítě na jednu školu a nyní s mladším dítětem spadáme na školu jinou? Vezmou mi mladšího sourozence na školu ke staršímu sourozenci?</strong>`,
+      `Ano - jak vyplývá z předchozí odpovědi, své dítě můžete přivést k zápisu i na školu, kam spádově nepatříte. Na zastupitelstvu jsme se ptali, zda lze tuto situaci formálně upravit v kritériích pro přijetí. Byli jsme ujištěni, že všichni ředitelé/ředitelky přistupují k těmto případům individuálně a snaží se všem rodičům vyjít vstříc. Sourozeneckou doložku však nelze zanést do kritérií pro přijetí, protože to zákon považuje za diskriminační. Pokud tedy máte obavy, aby vaše děti nechodily do různých škol, neváhejte se obrátit na ředitele/ředitelku své školy.`,
+      `<strong>Vztahují se spádové obvody i na mateřské školy?</strong>`,
+      `Ne, nevztahují. Pro mateřské školy je spádový obvod celý Beroun, takže své dítě můžete zapsat kamkoliv.`,
+    ]
+  },
+  {
     title: 'Proč se Beroun propadá v žebříčku kvality života?',
     theme: 'Školství',
     key: 6,
