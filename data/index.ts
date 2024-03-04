@@ -36,6 +36,7 @@ import mestskahora from '../public/mestskahora.jpg';
 import stavka from '../public/stavka.jpg';
 import obcevdatech from '../public/obcevdatech.png';
 import pozemky from '../public/pozemky.jpg';
+import simpsonovi from '../public/simpsonovi.png';
 
 
 
@@ -261,6 +262,29 @@ export const Experts = [
 ] 
 
 export const Posts = [
+  {
+    title: 'Špičkový jazz v Berouně - rozhovor s manželi Simpsonovými',
+    theme: 'Kultura',
+    key: 7,
+    slug: 'spickovy-jazz-v-beroune-rozhovor-s-manzeli-simpsonovymi',
+    date: '4.3. 2024',
+    image: simpsonovi,
+    additionalImages: [],
+    paragraphs: [
+      `<strong>Do Berouna jste se přestěhovali před nedávnem z USA, konkrétně z newyorského Brooklynu. Jak jste se z Brooklynu ocitli v Berouně na Zavadilce?</strong>`,
+      `To by bylo asi na delší vyprávění (a rádi to zájemcům při dané příležitosti zodpovíme). Ale v kostce jsme se z různých důvodů chtěli přestěhovat do Česka, zamilovali jsme si tuhle oblast a našli tu skvělé bydlení. A Beroun zatím jedině předčil naše očekávání!`,
+      `<strong>Jak se vám v Berouně líbí? Jak moc velký kulturní šok to byl přestěhovat se do Berouna z New Yorku?</strong>`,
+      `Beroun je super! Má ideální velikost, kde má člověk v podstatě vše, co potřebuje a zároveň tu snadno narazí na známého. Šok to nebyl vlastně vůbec, on Jesse byl v česku před stěhováním víc jak desetkrát a do Evropy jezdil na turné ještě dřív, než jsme se poznali. Navíc má Jesse v Evropě spoustu přátel, kteří ho na místní kulturní scénu připravili. Vlastně jsme byli oba spíše mile překvapeni, jak velká je jazzová scéna v Praze a že i v Berouně to, obzvlášť v létě, celkem žije. Samozřejmě, ona ta úroveň kultury v New Yorku člověka lehce "rozmazlí", takže v něčem to možná byl víc šok pro mě (Báru), protože věci, co mi dřív připadaly super, mi už tak super nepřijdou, takže Jesse má v něčem výhodu jakožto “nováček”.`,
+      `<strong>Jak vás napadlo u sebe doma začít pořádat jazzové koncerty? Inspirovali jste se někde?</strong>`,
+      `My jsme oba společensky zaměřené bytosti a večírky a oslavy jsme pořádali ještě než jsme se poznali. V našem brooklynskem bytě se často scházeli přátelé umělci z celého světa a už jsme se nemohli dočkat, až budeme mít dostatečně velký ozvučený prostor, kde se budeme moci tomuto našemu koníčku věnovat bez zábran. Jednou z inspirací byl určitě Ernie Shelton, na jehož domácí koncerty chodil Jesse když bydlel v Kalifornii a mimo jiné vzpomíná na to, jak skvělé bylo zajít si poslechnout špičkové hudebníky pár minut od domu a nemusel vážit  tříhodinovou zpáteční cestu do San Francisca.`,
+      `<strong>Na své jazzové večery se vám daří zvát špičkové muzikanty z celého světa - jak je do Berouna lákáte?</strong>`,
+      `Doposud u nás vlastně hráli samí přátelé a známí. Jesse vždycky říká, že nejlepší způsob, jak si udělat přátele po celém světě, je žít 10 let v New Yorku. Přidejte k tomu “jako jazzový hudebník” a odpověď na vaši otázku je nasnadě. No a já věřím že na tom snad má také podíl moje kulinářské a pohostinské schopnosti. Přijevšim skupinám totiž nenabízíme jen možnost zahrát si, ale i all inclusive pobyt 30 minut od Prahy a na úpatí Českého krasu a Křivoklátska. A nechci nás nějak vychvalovat, ale zatím kdo u nás byl, tak už se chystá přijet zase. Od ledna navíc díky finanční podpoře města Beroun můžeme k tomu navíc nabídnout i decentní finanční ohodnocení, no a tak už se k nám kapely začínají zvát samy.`,
+      `<strong>Jaké máte další plány se svým Ateliérem 57? Nechtěli byste třeba uspořádat nějaký větší koncert na Plzeňce, případně v rámci nějakého berounského kulturního festivalu? Jaká podpora od města by se vám hodila?</strong>`,
+      `Naším hlavním cílem je udržet kvalitu hudby, pohoštění a prostředí a přitom postupně zvýšit počet posluchačů. Důležité je, aby to navyšování bylo postupné a organické a opravdu každý, kdo přišel si koncert užil natolik, aby se rád nejen vrátil, ale i doporučil dál. Doposud jsme měli naprosto skvělé a spokojené publikum a rádi bychom v tomto trendu pokračovali, protože obzvláště u těchto menších komorních koncertů na publiku opravdu záleží.
+
+      V Plzeňce bychom samozřejmě moc rádi vystupovali (Jesse). Moc rád si s někým popovídám o tom, co je třeba, aby se to uskutečnilo. I festivalu se můžeme účastnit. Sami se chystáme pořádat menší hudební festival na naší zahradě v letních měsících a jsme rozhodně nakloněni spojit to s jiným berounským festivalem.`
+    ]
+  },
   {
     title: 'Proč se Beroun propadá v žebříčku kvality života?',
     theme: 'Školství',

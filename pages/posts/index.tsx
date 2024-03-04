@@ -11,7 +11,8 @@ const menuItems = [
   { title: 'Urbanismus', key: 3 },
   { title: 'Zeleň', key: 4 },
   { title: 'Městské služby', key: 5 },
-  { title: 'Školství', key: 6 }
+  { title: 'Školství', key: 6 },
+  {title: 'Kultura', key: 7},
 ]
 
 const News = () => {
