@@ -10,6 +10,10 @@ const archiveItems = [
   {
     title: 'Březen 2024',
     link: "https://mailchi.mp/8092684619fc/jak-se-mas-beroune-2"
+  },
+  {
+    title: 'Květen 2024',
+    link: "https://mailchi.mp/96a8edbb3a4e/jak-se-mas-beroune-3"
   }
 ]
 
