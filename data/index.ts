@@ -127,19 +127,6 @@ export const Helpers = [
     nomination: "Komise pro cestovní ruch - ❌ nezvolena <br> Komise pro likvidaci majetku - ❌ nezvolena"
   },
   {
-    title: "Ing. Michal Kovářík",
-    profession: "Projektant, odborný asistent na ČVUT",
-    photo: MK,
-    text: `Vystudoval pozemní stavitelství na ČVUT v Praze. 10 let pracoval jako projektant, hlavní inženýr projektu a projekt 
-    manažer v České republice, jako architekt působil 4 roky v Číně. Podílel se na návrzích bytových a kancelářských budov, 
-    obchodních center a hotelů pro investory ze tří kontinentů. Od roku 2015 pracuje jako odborný asistent na Katedře technologie 
-    staveb FSv ČVUT v Praze, kde vyučuje a vede výzkum v oblasti digitálních a robotických technologií, Stavebnictví 4.0 a trvale 
-    udržitelných staveb. V současné době dokončuje doktorské studium zaměřené na 3D tisk z betonu.`,
-    topic: "Územní plán, výstavba",
-    email: "michal.kovarik@berounsobe.eu",
-    nomination: "Komise výstavby - ❌ nezvolen"
-  },
-  {
     title: "Bc. Jana Valachovičová",
     profession: "Manažerka ve zdravotnictví",
     photo: JV,
