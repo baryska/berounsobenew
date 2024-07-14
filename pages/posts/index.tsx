@@ -14,7 +14,7 @@ const menuItems = [
   { title: 'Školství', key: 6 },
   {title: 'Kultura', key: 7},
   {title: 'Obecné informace', key: 8},
-  {title: 'Doprava', key: 7},
+  {title: 'Doprava', key: 9},
 ]
 
 const News = () => {
