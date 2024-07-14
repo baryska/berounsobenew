@@ -37,7 +37,12 @@ import stavka from '../public/stavka.jpg';
 import obcevdatech from '../public/obcevdatech.png';
 import pozemky from '../public/pozemky.jpg';
 import simpsonovi from '../public/simpsonovi.png';
-
+import kolik from '../public/kolik.png';
+import vrt from '../public/vrt.png';
+import fotbal from '../public/fotbal.jpg';
+import school from '../public/school.jpg';
+import pozemky2 from '../public/pozemky.png';
+import kola from '../public/kola.jpg';
 
 
 export const Profiles = [
@@ -250,6 +255,104 @@ export const Experts = [
 
 export const Posts = [
   {
+    title: 'Prodej městských pozemků neproběhl a snad ani neproběhne',
+    theme: 'Urbanismus',
+    key: 8,
+    slug: 'prodej-mestskych-pozemku-neprobehl',
+    date: '4.6. 2024',
+    image: pozemky2,
+    additionalImages: [],
+    paragraphs: [
+      `Na zastupitelstvu 24. dubna se radniční koalice postavila proti našemu návrhu na zrušení usnesení o prodeji městských pozemků v ulici K zahrádkám z října 2023. Podle zdůvodnění podaném na zastupitelstvu dne 18.10.2023 byl reálným důvodem prodeje těchto pozemků nedostatek finančních prostředků v rozpočtu města na plánovaný nákup pozemků od Českých drah. V době schvalování záměru na prodej byl předpokládaný schodek v hospodaření města Beroun za rok 2023 ve výši 196 mil. CZK. Nakonec město v loňském roce hospodařilo s výrazným neplánovaným přebytkem ve výši 85 mil. CZK. Nákup pozemků je možné tedy realizovat z prostředků města a není nutno k jeho financování prodávat pozemky. Na tuto skutečnost (tj. že rok 2023 nejspíše skončí přebytkem a není třeba pozemky prodávat) jsme upozorňovali již na zastupitelstvu v říjnu 2023 a z tohoto důvodu jsme záměr prodeje jako Beroun sobě nepodpořil`,
+      `Opět se tedy potvrdilo, že naše opakované poukazování na výrazné odchylky rozpočtu města od reality (v tomto případě to byla odchylka ve výši více než 41% celkových příjmů města), a tedy i špatná rozhodnutí na základě nesprávných dat, jsou oprávněná.`,
+      `Diskuse k samotnému bodu zrušení rozhodnutí o prodeji byla poměrně složitá, protože koalice k prodeji pozemků několikrát změnila stanovisko ohledně toho, jestli původní rozhodnutí o prodeji stále platí nebo již vypršelo. Na začátku února, tedy předtím, než jsme podali návrh na zrušení prodeje, paní starostka písemně potvrdila, že pozemky sice v lednové aukci pro nezájem prodány nebyly, ale rozhodnutí o prodeji pozemků je stále platné. Dubnové stanovisko rady k našemu návrhu ale konstatovalo, že návrh je nedůvodný, protože původní souhlas platil jen pro jednu aukci, která neúspěšně proběhla v lednu 2024. Doufáme, že poslední výklad ve smyslu, že souhlas s prodejem pozemků byl jen jednorázový a již není platný, je opravdu správným výkladem a pozemky již nadále nemohou být prodány.`
+    ]
+  },
+  {
+    title: 'Co bude dál s elektrokoly?',
+    theme: 'Doprava',
+    key: 9,
+    slug: 'co-bude-dal-s-elektrokoly',
+    date: '28.5. 2024',
+    image: kola,
+    additionalImages: [],
+    paragraphs: [
+      `Elektrokola se v Berouně stala oblíbeným dopravním prostředkem. Současnému provozovateli, firmě Nextbike, však v létě končí čtyřletá smlouva a město se musí rozhodnout, jak s elektrokoly dále naloží. Pro přípravu koncesního řízení si rada města vybrala advokátní kancelář Havel & Partners a podmínky pro dalšího provozovatele ponechala stejné - město si nadále přeje, aby prvních 15 minut bylo pro uživatele kol zdarma. Vzhledem k tomu, že firmě Nextbike hradí náklady na těchto 15 minut Nadace Tipsport, a vzhledem k tomu, že firma Nextbike vlastní současné dobíjecí stanice i elektrokola, neočekáváme u vítěze tenderu žádné velké překvapení `,
+      `Fandíme cyklistice a eletrokola považujeme za dobrou službu obyvatelům Berouna. Přesto  jsme na zastupitelstvu upozorňovali na několik problematických bodů:`,
+      `👉 Město si neudělalo žádnou detailní analýzu toho, jak se vlastně elektrokola používají, přestože od firmy Nextbike dostává každých šest měsíců podrobná data. Nevíme tedy, kdo, k čemu, jak často a na jakých trasách kola používá. Byli bychom také rádi, aby tato data byla pravidelně zveřejňována a přístupná pro všechny.`,
+      `👉 Pravidelně se stává, že na některých stanicích kola přebývají a naopak na stanicích, kde by měly být k dispozici (typicky na nádraží v podvečer, když se lidé vrací z práce) není kolo ani jedno. Přestože jsme o řešení tohoto problému opakovaně v průběhu posledního roku žádali na zastupitelstvu, město dostatečný servis s firmou Nextbike dosud nevyjednalo.`,
+      `👉 Chtěli bychom, aby byla vypracována studie, ve kterých lokalitách město plánuje postavit další stanice. Tuto žádost jsme již v minulosti předložili, ale byla radou města zamítnuta.`,
+      `👉 Beroun má nedostatečnou cyklistickou infrastrukturu - je zde málo cyklostezek, které na sebe navíc nenavazují. Uživatelé eletkrokol proto velmi často jezdí po chodníku a ohrožují tak chodce. Analýza využívání elektrokol mohla vést mimo jiné i k naplánování nových cyklostezek. Navíc dostud nebyla plně realizována dopravní studie z roku 2018, ve které je cyklistika jedním z hlavních řešení dopravy v Berouně.`,
+      `👉 Neproběhla žádná diskuze o tom, jaký model pro další provozování eletrokol vybereme. Rada města rozhodla, že prvních 15 minut bude nadále zdarma, přestože to s sebou nese i nevýhody (kola jsou často ve špatném technickém stavu, jezdí na nich děti, které na nich jezdit nesmí apod.). I samotná firma Nextbike, která provozuje kola a elektrokola po celé ČR, má v každém městě nastavený jiný model. Žádné srovnání s jinými modely však rada města neprovedla.`
+    ]
+  },
+  {
+    title: 'Co bude pro Beroun znamenat stavba vysokorychlostní trati Praha-Beroun a rozšíření dálnice D5?',
+    theme: 'Doprava',
+    key: 9,
+    slug: 'co-bude-pro-beroun-znamenat-vrt',
+    date: '15.5. 2024',
+    image: vrt,
+    additionalImages: [],
+    paragraphs: [
+      `V minulých týdnech proběhla dvě veřejná projednávání vlivu na životní prostředí (EIA) - nejprve plánovaného tunelu Praha Smíchov – Beroun a o dva týdny později rozšíření dálnice D5 na 6 pruhů od km 0 po km 22 (od Zličína po sjezd Beroun – západ, tj. Králův Dvůr). Na obou akcích jsme měli svého zástupce. V obou případech bude většina připomínek řešena až v dalším stupni dokumentace. Koordinace všech dopravních akcí, které Beroun a okolí v nejbližších letech čekají, je ze strany státu bohužel velmi chabá. Údajně proběhla koordinační schůzka mezi Ředitelstvím silnic a dálnic (ŘSD) a Správou železnic (SŽ), nicméně bez veřejných výstupů. Zatím neexistuje jakékoliv podmínění jedné stavby druhou (při stavbě tunelu je počítáno s využitím dopravy po D5) a reálně tak hrozí souběh několika z nich, a to po dobu nikoliv týdnů, ale měsíců až let. K úplné rekonstrukci hlavního berounského mostu TGM s vyloučením provozu (doufejme, že s provizorním přemostěním pro část dopravy) tedy
+      v nejhorším scénáři přibyde ještě výstavba mostu nového na „obchvatu“
+      bez návaznosti na další komunikace na Závodí a obě výše zmíněné stavby.`,
+      `ŘSD plánuje oba dálniční mosty v Berouně rozšířit, ale stále není zcela vyloučena
+        ani možnost kompletní demolice. Jakým způsobem by se měla tato
+        část řešit, zůstává ještě na dalším posouzení, nicméně i ta nejoptimističtější
+        varianta bude znamenat jak omezení provozu na mostě samém, tak komplikace
+        ze stavby v městě. Nejenže neprobíhá důsledná koordinace jednotlivých
+        staveb, ale zároveň je vliv jednotlivých staveb posuzován samostatně.
+        Souběh obou velkých staveb v Berouně vyhodnocen není. Podporujeme
+        tedy snahu vedení města o vyhotovení oponentní hlukové studie, která vyhodnotí
+        souběh všech vlivů na obyvatele města a zároveň provede měření
+        za všech, nikoliv jen optimálních podmínek. Vedení města předložilo jak
+        ŘSD tak SŽ celou řadu podstatných připomínek k oběma stavbám tak,
+        aby obě tyto stavby projednávané v EIA měly nižší dopad nejen na životní
+        prostředí v okolí Berouna, ale především na obyvatele města. Doufejme, že
+        budou tyto připomínky důkladně vypořádány.`,
+    ]
+  },
+  {
+    title: 'Kolik lidí žije v Berouně?',
+    theme: 'Obecné informace',
+    key: 8,
+    slug: 'kolik-lidi-zije-v-beroune',
+    date: '3.5. 2024',
+    image: kolik,
+    additionalImages: [],
+    paragraphs: [
+      `Na posledním zastupitelstvu jsme prosadili vlastní návrh, který ukládá radě zažádat o geolokační data mobilních operátorů. Tato data nakoupilo Ministerstvo vnitra a obcím je poskytuje zdarma. Geolokační data ze sítě mobilních operátorů představují unikátní zdroj údajů o mobilitě obyvatelstva. `,
+      `Data mimo jiné obsahují údaje o počtu obyvatel obce, kolik jich z obce a jak často vyjíždí, zda mají druhé bydliště, mezi kterými obcemi obyvatelé nejčastěji cestují atd. Údaje jsou anonymizované a neztotožnitelné s jakoukoli osobou. Data navíc nepředstavují aktuálně přesnou situaci, ale průměr z doby měření. Nehrozí tak jejich zneužití.`,
+      `O data mobilních operátorů již zažádalo několik středočeských měst a všechna zjistila, že na jejich území trvale žije mnohem více lidí, než je přihášeno k trvalému bydlišti. Města tak přicházejí o desítky milionů ročně z rozpočtového určení daní, které by obce mohly investovat do rozvoje infrastruktury. Podobná situace nejspíše panuje i v Berouně.`,
+      `Pokud v Berouně bydlíte a nemáte zde trvalé bydliště, napište nám prosím klidně anonymně na náš email info@berounsobe.eu, co by vás přimělo si bydliště do Berouna přehlásit 😊 Děkujeme!`,
+    ]
+  },
+  {
+    title: '„Pojď si zahrát fotbal…“ „Kdy a kam?“',
+    theme: 'Obecné informace',
+    key: 8,
+    slug: 'pojd-si-zahrat-fotbal',
+    date: '15.3. 2024',
+    image: fotbal,
+    additionalImages: [],
+    paragraphs: [
+      `<strong>Do Berouna jste se přestěhovali před nedávnem z USA, konkrétně z newyorského Brooklynu. Jak jste se z Brooklynu ocitli v Berouně na Zavadilce?</strong>`,
+      `To by bylo asi na delší vyprávění (a rádi to zájemcům při dané příležitosti zodpovíme). Ale v kostce jsme se z různých důvodů chtěli přestěhovat do Česka, zamilovali jsme si tuhle oblast a našli tu skvělé bydlení. A Beroun zatím jedině předčil naše očekávání!`,
+      `<strong>Jak se vám v Berouně líbí? Jak moc velký kulturní šok to byl přestěhovat se do Berouna z New Yorku?</strong>`,
+      `Beroun je super! Má ideální velikost, kde má člověk v podstatě vše, co potřebuje a zároveň tu snadno narazí na známého. Šok to nebyl vlastně vůbec, on Jesse byl v česku před stěhováním víc jak desetkrát a do Evropy jezdil na turné ještě dřív, než jsme se poznali. Navíc má Jesse v Evropě spoustu přátel, kteří ho na místní kulturní scénu připravili. Vlastně jsme byli oba spíše mile překvapeni, jak velká je jazzová scéna v Praze a že i v Berouně to, obzvlášť v létě, celkem žije. Samozřejmě, ona ta úroveň kultury v New Yorku člověka lehce "rozmazlí", takže v něčem to možná byl víc šok pro mě (Báru), protože věci, co mi dřív připadaly super, mi už tak super nepřijdou, takže Jesse má v něčem výhodu jakožto “nováček”.`,
+      `<strong>Jak vás napadlo u sebe doma začít pořádat jazzové koncerty? Inspirovali jste se někde?</strong>`,
+      `My jsme oba společensky zaměřené bytosti a večírky a oslavy jsme pořádali ještě než jsme se poznali. V našem brooklynskem bytě se často scházeli přátelé umělci z celého světa a už jsme se nemohli dočkat, až budeme mít dostatečně velký ozvučený prostor, kde se budeme moci tomuto našemu koníčku věnovat bez zábran. Jednou z inspirací byl určitě Ernie Shelton, na jehož domácí koncerty chodil Jesse když bydlel v Kalifornii a mimo jiné vzpomíná na to, jak skvělé bylo zajít si poslechnout špičkové hudebníky pár minut od domu a nemusel vážit  tříhodinovou zpáteční cestu do San Francisca.`,
+      `<strong>Na své jazzové večery se vám daří zvát špičkové muzikanty z celého světa - jak je do Berouna lákáte?</strong>`,
+      `Doposud u nás vlastně hráli samí přátelé a známí. Jesse vždycky říká, že nejlepší způsob, jak si udělat přátele po celém světě, je žít 10 let v New Yorku. Přidejte k tomu “jako jazzový hudebník” a odpověď na vaši otázku je nasnadě. No a já věřím že na tom snad má také podíl moje kulinářské a pohostinské schopnosti. Přijevšim skupinám totiž nenabízíme jen možnost zahrát si, ale i all inclusive pobyt 30 minut od Prahy a na úpatí Českého krasu a Křivoklátska. A nechci nás nějak vychvalovat, ale zatím kdo u nás byl, tak už se chystá přijet zase. Od ledna navíc díky finanční podpoře města Beroun můžeme k tomu navíc nabídnout i decentní finanční ohodnocení, no a tak už se k nám kapely začínají zvát samy.`,
+      `<strong>Jaké máte další plány se svým Ateliérem 57? Nechtěli byste třeba uspořádat nějaký větší koncert na Plzeňce, případně v rámci nějakého berounského kulturního festivalu? Jaká podpora od města by se vám hodila?</strong>`,
+      `Naším hlavním cílem je udržet kvalitu hudby, pohoštění a prostředí a přitom postupně zvýšit počet posluchačů. Důležité je, aby to navyšování bylo postupné a organické a opravdu každý, kdo přišel si koncert užil natolik, aby se rád nejen vrátil, ale i doporučil dál. Doposud jsme měli naprosto skvělé a spokojené publikum a rádi bychom v tomto trendu pokračovali, protože obzvláště u těchto menších komorních koncertů na publiku opravdu záleží.
+
+      V Plzeňce bychom samozřejmě moc rádi vystupovali (Jesse). Moc rád si s někým popovídám o tom, co je třeba, aby se to uskutečnilo. I festivalu se můžeme účastnit. Sami se chystáme pořádat menší hudební festival na naší zahradě v letních měsících a jsme rozhodně nakloněni spojit to s jiným berounským festivalem.`
+    ]
+  },
+  {
     title: 'Špičkový jazz v Berouně - rozhovor s manželi Simpsonovými',
     theme: 'Kultura',
     key: 7,
@@ -289,6 +392,36 @@ export const Posts = [
       `Ano - jak vyplývá z předchozí odpovědi, své dítě můžete přivést k zápisu i na školu, kam spádově nepatříte. Na zastupitelstvu jsme se ptali, zda lze tuto situaci formálně upravit v kritériích pro přijetí. Byli jsme ujištěni, že všichni ředitelé/ředitelky přistupují k těmto případům individuálně a snaží se všem rodičům vyjít vstříc. Sourozeneckou doložku však nelze zanést do kritérií pro přijetí, protože to zákon považuje za diskriminační. Pokud tedy máte obavy, aby vaše děti nechodily do různých škol, neváhejte se obrátit na ředitele/ředitelku své školy.`,
       `<strong>Vztahují se spádové obvody i na mateřské školy?</strong>`,
       `Ne, nevztahují. Pro mateřské školy je spádový obvod celý Beroun, takže své dítě můžete zapsat kamkoliv.`,
+    ]
+  },
+  {
+    title: 'Konkurzy na ředitele/ředitelky základních škol – ANO, nebo NE?',
+    theme: 'Školství',
+    key: 6,
+    slug: 'konkurzy-na-redidetele',
+    date: '1.2. 2024',
+    image: school,
+    additionalImages: [],
+    paragraphs: [
+      `Na posledním zasedání zastupitelstva jsme vznesli dotaz, zda se rada města chystá vypsat konkurz na ředitele
+      4. ZŠ na Závodí, neboť současné paní ředitelce v červenci končí mandát (po 2x 6 letech, kdy je ve funkci). Domníváme se, že po
+      12 letech by již mohl ředitel v konkurzu představit novou koncepci na další období, a to zejména pokud má zřizovatel jakékoliv po-
+      chyby o kvalitě jeho práce. Přestože si uvědomujeme specifika práce ředitele ZŠ, nemyslíme si, že je dobrá (i když rozšířená) praxe
+      nechávat stejné osoby na jejich postech desítky let a nevystavit je čas od času konkurenci. Myslíme si, že to v mnoha případech vede
+      ke stagnaci - konkurz je prakticky jediný nástroj, který zřizovatel má, pokud chce pozitivním směrem ovlivnit směřování svých škol.`,
+      `Smyslem konkurzů je najít člověka, který bude školu posouvat, nikoliv konzervovat daný stav s přesvědčením, že není co zlepšovat.
+      Nicméně i tak se samozřejmě může přihlásit stávající ředitel a svou pozici transparentně obhájit. Školy musí čím dál častěji reagovat
+      na turbulentní změny ve společnosti, ostatně i právě proto nás čeká velká revize rámcových vzdělávacích programů, s níž si berounské
+      školy také budou muset poradit.Nová konkurzní vyhláška posílila odbornost v komisích: určuje do komise dva externí odborníky
+      a zavedla také témata pro vedení řízeného rozhovoru s uchazečem – rozhovor klade důraz zejména na pedagogické řízení školy.
+      To by mělo být zárukou, že komise vybere opravdu toho nejlepšího uchazeče.`,
+      `Známe samozřejmě nejčastější námitku, která v souvislosti s konkurzy zaznívá – tedy že se do konkurzů hlásí málo lidí.
+      Tuto námitku nám ostatně opakuje i vedení města, které se konkurzům brání. Záleží však jen a jen na zřizovateli, s jakou vervou
+      se pustí do hledání vhodných kandidátů, kde všude bude pozici
+      inzerovat a zda bude uchazeče aktivně vyhledávat. Tento proaktivní přístup vedl k tomu, že se do konkurzu v Letech u Dobřichovic
+      přihlásilo 11 uchazečů. Opravdu si vedení města myslí, že Beroun
+      je pro případné kandidáty na ředitele škol málo atraktivní místo?
+      A pokud ano, tak proč?`,
     ]
   },
   {
