@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Posts } from '../../data/index';
 import NewsItem from '../../components/NewsItem/NewsItem';
 import styles from './post.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import { getPosts } from '../../data/posts';
 
 const menuItems = [
   { title: 'Rada & zastupitelstvo', key: 1 },
@@ -17,16 +18,28 @@ const menuItems = [
 
 const News = () => {
   const [posts, setPosts] = useState(Posts);
+  const [strapiPosts, setStrapiPosts] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const fetchPosts = async () => {
+    const posts = await getPosts();
+    setStrapiPosts(posts.sort((a, b) => b.id - a.id));
+  }
+
+  useEffect(() => {
+    fetchPosts();
+  }, [])
+
+  console.log(strapiPosts)
+  
   const handleFilterPosts = (key: number) => {
-    const filteredPosts = Posts.filter((post) => post.key === key)
-    setPosts(filteredPosts)
+    const filteredPosts = strapiPosts.filter((post) => post.key === key)
+    setStrapiPosts(filteredPosts)
     setDropdownOpen(false)
   }
 
-  const handleChooseAllPosts = () => {
-    setPosts(Posts);
+  const handleChooseAllPosts = async () => {
+    await fetchPosts();
     setDropdownOpen(false);
   }
 
@@ -61,17 +74,17 @@ const News = () => {
         </div>
 
         <div className={styles.allPosts}>
-          {posts.map((post) => {
-            const { title, theme, slug, date, image, paragraphs, additionalImages } = post;
+          {strapiPosts.map((post) => {
+            const { title, theme, slug, date, imageUrl, paragraphs, additionalImagesUrls } = post;
             return (
               <NewsItem
                 title={title}
                 theme={theme}
                 slug={slug}
                 date={date}
-                image={image}
+                image={imageUrl}
                 paragraphs={paragraphs}
-                additionalImages={additionalImages}
+                additionalImages={additionalImagesUrls}
                 key={title}
               />
             )

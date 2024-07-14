@@ -7,6 +7,8 @@ import ContactForm from '../components/ContactForm/ContactForm';
 import NewsItem from '../components/NewsItem/NewsItem';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { getPosts } from '../data/posts';
 
 const Home: NextPage = () => {
 
@@ -17,6 +19,18 @@ const Home: NextPage = () => {
       behavior: 'smooth',
     });
   }
+
+  const [strapiPosts, setStrapiPosts] = useState([]);
+
+  const fetchPosts = async () => {
+    const posts = await getPosts()
+    setStrapiPosts(posts.sort((a, b) => b.id - a.id));
+  }
+
+  useEffect(() => {
+    fetchPosts();
+  }, [])
+
 
   return (
     <div className={styles.container}>
@@ -118,17 +132,17 @@ const Home: NextPage = () => {
                 <div className={styles.blueDot} />
               </div>
             </h2>
-            {Posts.slice(0, 4).map((post) => {
-              const { title, theme, slug, date, image, paragraphs, additionalImages } = post;
+            {strapiPosts.slice(0, 4).map((post) => {
+              const { title, theme, slug, date, imageUrl, paragraphs, additionalImagesUrls } = post;
               return (
                 <NewsItem
                   title={title}
                   theme={theme}
                   slug={slug}
                   date={date}
-                  image={image}
+                  image={imageUrl}
                   paragraphs={paragraphs}
-                  additionalImages={additionalImages}
+                  additionalImages={additionalImagesUrls}
                   key={title}
                 />
               )

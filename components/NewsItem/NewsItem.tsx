@@ -14,6 +14,7 @@ interface Props {
 }
 
 const NewsItem = ({ title, theme, slug, date, image }: Props) => {
+  console.log(image)
   return (
     <Link href={{
       pathname: '/posts/[slug]',
@@ -21,12 +22,18 @@ const NewsItem = ({ title, theme, slug, date, image }: Props) => {
         slug: slug,
       }
     }}><a className={styles.post}>
-      <Image src={image} alt="obrazek" width="400px" height="266px" className={styles.post__image} placeholder="blur"/>
-      <div className={styles.post__text}>
-        <div className={styles.post__theme}><span>{theme}</span><span>{date}</span></div>
-        <div className={styles.post__title}>{title}</div>
-      </div>
-    </a>
+        <Image
+          src={`https://infinite-beyond-27081-4bb7e61c8ac8.herokuapp.com${image}`}
+          alt="obrazek"
+          width="400px"
+          height="266px"
+          className={styles.post__image}
+           />
+        <div className={styles.post__text}>
+          <div className={styles.post__theme}><span>{theme}</span><span>{date}</span></div>
+          <div className={styles.post__title}>{title}</div>
+        </div>
+      </a>
     </Link>
   )
 }

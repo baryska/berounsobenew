@@ -66,6 +66,15 @@
   margin: 20px 30px;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.anchor {
+  color: rgb(76, 164, 202);
+  text-decoration: underline; 
+}
+
 .image {
   margin: 0 auto;
 }
