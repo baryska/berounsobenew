@@ -257,7 +257,7 @@ export const Posts = [
   {
     title: 'Prodej městských pozemků neproběhl a snad ani neproběhne',
     theme: 'Urbanismus',
-    key: 8,
+    key: 3,
     slug: 'prodej-mestskych-pozemku-neprobehl',
     date: '4.6. 2024',
     image: pozemky2,
