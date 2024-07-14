@@ -13,6 +13,8 @@ const menuItems = [
   { title: 'Městské služby', key: 5 },
   { title: 'Školství', key: 6 },
   {title: 'Kultura', key: 7},
+  {title: 'Obecné informace', key: 8},
+  {title: 'Doprava', key: 7},
 ]
 
 const News = () => {
