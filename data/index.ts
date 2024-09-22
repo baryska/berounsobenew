@@ -43,6 +43,7 @@ import fotbal from '../public/fotbal.jpg';
 import school from '../public/school.jpg';
 import pozemky2 from '../public/pozemky.png';
 import kola from '../public/kola.jpg';
+import balog from '../public/balog2.jpg';
 
 
 export const Profiles = [
@@ -254,6 +255,31 @@ export const Experts = [
 ] 
 
 export const Posts = [
+  {
+    title: 'Rozhovor s majitelem antikvariátu Tisíc a jedna kniha, panem Robertem Balogem',
+    theme: 'Kultura',
+    key: 7,
+    slug: 'rozhovor-s-panem-balogem',
+    date: '22.9. 2024',
+    image: balog,
+    additionalImages: [],
+    paragraphs: [
+      `Znáte antikvariát Tisíc a jedna kniha v Hornohradební ulici? Tento krásný obchod provozuje <strong>Robert Balog</strong>, který po 22 letech opustil práci v berounské továrně a splnil si svůj sen.`,
+      `<strong>Jak dlouho už svůj antikvariát provozujete a jak jste se k tomu vůbec dostali? Věřili jste, že se antikvariát v Berouně uchytí a uživí?</strong>`,
+      `Antikvariát v současné době běží už tři roky. A dostal jsem se k němu tak, že jsem od dětství četl dobrodružné knížky, a když jsem postavil dům, tak jsem začal knížky sbírat.  Hlavně stará vydání, která jsou prostě dražší. Takže tím sbíráním jsem získával víc a víc knížek a prodával jsem je na internetu, abych získal peníze na ta dražší vydání těch prvorepublikových tisků. To jsem dělal samozřejmě při práci. A když se potom firma, kde jsem pracoval, po 20 letech přesouvala, tak jsem s nimi už nešel. Ten nápad mít vlastní antikvariát už ve mně hlodal delší dobu, a asi rok po tom, co jsem opustil práci, jsem našel vhodný prostor.`,
+      `No a že se antikvariát uchytí a uživí, jsem samozřejmě věřil díky té praxi osmiletého prodeje na internetu. A protože hlavní byl právě prodej přes internet, tak jsem počítal s tím, že si sám antikvariát, tedy kamenný obchod, na sebe vydělá, ale hlavní obživou měl být nadále prodej přes internet. Během těch tří let se to ale trošičku změnilo.`,
+      `<strong>Máte pocit, že čtenářství upadá, nebo je pořád dostatek lidí, kteří stále rádi čtou staré dobré papírové knihy?</strong>`,
+      `Myslím si, že čtenářství mezi lidmi úplně neupadá, jenom se proměnilo. Mezi mladými se čte jenom určitý segment, hlavně fantasy a sem tam něco z běžné beletrie, ale dost málo. Jinak to většinou drží ty starší generace. No a hlavně knížka nesmí být silná. Nesmí mít prostě moc stránek.`,
+      `<strong>Máte v nabídce i nějaké vzácné knihy? </strong>`,
+      `Lidé si často představují, že v antikvariátu se prodávají jenom ty levné věci, levné knížky, že tady prostě koupí knížku za 5 Kč. Ale to je samozřejmě jen určitý podíl té nabídky. Hodnota antikvariátu spočívá v tom, že se tady najdou knížky od desetikoruny do někdy vyšších desítek tisíc. A prodávám tu i LP desky, pohledy, různé tiskoviny, motoristické plakáty, filmové plakáty a podobně.`,
+      `<strong>Sháníte i knížky na objednávku?</strong>`,
+      `Občas ano, ale většinou už jen pro vybrané zákazníky. Abych měl jistotu, že mi tu ta kniha potom nezůstane, což se mi na začátku občas stalo.`,
+      `<strong>Po jakých knížkách je teď největší poptávka?</strong>`,
+      `V tomto období jsou to hlavně učebnice, tam je to vždycky nadoraz.  A jinak se kupují hodně knihy z nostalgie, často lidé kupují knihy, které četli v dětství. A potom různě ke studiu, nejenom do školy, ale třeba na vysokou nebo k práci. A pak také lidé hodně shání díly, které jim chybí do nějaké série.`,
+      `<strong>Ve vašem podnikání vás podporuje i vaše žena Stanislava Miková - můžete nám o ní něco říct?</strong>`,
+      `Moje žena je spisovatelka, píše převážně kratší povídky a teď chystá jednu delší povídkovou knihu. Píše hlavně v romštině, to má tradici už od jejího dědy Andreje Giňy, který byl taky spisovatel. A teď se můžu trochu pochlubit, protože její poslední kniha - což je dětské leporelo – bylo aktuálně zařazeno Asociací knihkupců mezi 40 knih doporučených k prodeji.`
+    ]
+  },
   {
     title: 'Prodej městských pozemků neproběhl a snad ani neproběhne',
     theme: 'Urbanismus',
