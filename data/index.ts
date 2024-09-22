@@ -265,7 +265,7 @@ export const Posts = [
     additionalImages: [],
     paragraphs: [
       `Znáte antikvariát Tisíc a jedna kniha v Hornohradební ulici? Tento krásný obchod provozuje <strong>Robert Balog</strong>, který po 22 letech opustil práci v berounské továrně a splnil si svůj sen.`,
-      `<strong>Jak dlouho už svůj antikvariát provozujete a jak jste se k tomu vůbec dostali? Věřili jste, že se antikvariát v Berouně uchytí a uživí?</strong>`,
+      `<strong>Jak dlouho už svůj antikvariát provozujete a jak jste se k tomu vůbec dostal? Věřil jste, že se antikvariát v Berouně uchytí a uživí?</strong>`,
       `Antikvariát v současné době běží už tři roky. A dostal jsem se k němu tak, že jsem od dětství četl dobrodružné knížky, a když jsem postavil dům, tak jsem začal knížky sbírat.  Hlavně stará vydání, která jsou prostě dražší. Takže tím sbíráním jsem získával víc a víc knížek a prodával jsem je na internetu, abych získal peníze na ta dražší vydání těch prvorepublikových tisků. To jsem dělal samozřejmě při práci. A když se potom firma, kde jsem pracoval, po 20 letech přesouvala, tak jsem s nimi už nešel. Ten nápad mít vlastní antikvariát už ve mně hlodal delší dobu, a asi rok po tom, co jsem opustil práci, jsem našel vhodný prostor.`,
       `No a že se antikvariát uchytí a uživí, jsem samozřejmě věřil díky té praxi osmiletého prodeje na internetu. A protože hlavní byl právě prodej přes internet, tak jsem počítal s tím, že si sám antikvariát, tedy kamenný obchod, na sebe vydělá, ale hlavní obživou měl být nadále prodej přes internet. Během těch tří let se to ale trošičku změnilo.`,
       `<strong>Máte pocit, že čtenářství upadá, nebo je pořád dostatek lidí, kteří stále rádi čtou staré dobré papírové knihy?</strong>`,
