@@ -18,6 +18,10 @@ const archiveItems = [
   {
     title: 'Červenec 2024',
     link: "https://mailchi.mp/13f4526c97d8/jak-se-mas-beroune-12757795?e=26bbea4f35"
+  },
+  {
+    title: 'Září 2024',
+    link: "https://mailchi.mp/290eeba21c95/jak-se-mas-beroune-5"
   }
 ]
 
@@ -52,7 +56,7 @@ const MailChimpForm = () => {
 
       </div>
       <h3 className={styles.archiveTitle}>Archiv čísel:</h3>
-      {archiveItems.map((item) => (
+      {archiveItems.reverse().map((item) => (
         <a href={item.link} key={item.title} target="_blank" rel="noreferrer">
           <p className={styles.archiveItem}>{item.title}</p>
         </a>
