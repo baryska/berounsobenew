@@ -4,8 +4,9 @@ import { Posts } from './index';
     const res = await fetch('https://infinite-beyond-27081-4bb7e61c8ac8.herokuapp.com/api/posts?populate=*');
     const posts = await res.json();
     console.log(posts)
-
+    //@ts-ignore
     const data = posts.data.map((post) => {
+      //@ts-ignore
       const paragraphs = post.attributes.text.map((paragraph) => paragraph.children)
       const title = post.attributes.title;
       const date = post.attributes.date;
@@ -33,6 +34,7 @@ import { Posts } from './index';
 
   export async function getPostData(id: string) {
     const posts = await getPosts();
+    //@ts-ignore
     const post = posts.find((post) => post.slug === id);
     return {
       id,
