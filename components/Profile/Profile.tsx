@@ -41,7 +41,7 @@ const Profile = ({ title, profession, photo, text, topic, email, nomination }: P
       <footer className={styles.footer}>
         <h2 className={styles.email}>{email}</h2>
         <a className={styles.email__icon} href={`mailto:${email}`}>
-          <Image src="/email.svg" alt="email" width="50px" height="50px" />
+          <Image src="/email.svg" alt="email" width="50" height="50" />
         </a>
       </footer>
     </div>

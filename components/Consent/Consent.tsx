@@ -33,7 +33,7 @@ function Consent() {
         }`}
     >
       <div className="flex justify-around items-center">
-        <Image src="/cookie.svg" width="40px" height="40px" alt="cookie" />
+        <Image src="/cookie.svg" width="40" height="40" alt="cookie" />
         <div className="md:flex justify-center items-center">
           <p className="ml-4 mb-4 md:mb-0 text-[0.7rem] md:text-[1rem]">Ano, používáme analytické cookies. Ale můžete je odmítnout.</p>
           <button
@@ -57,7 +57,7 @@ function Consent() {
           }}
           className="ml-2"
         >
-          <Image src="/close.svg" width="20px" height="20px" alt="close" />
+          <Image src="/close.svg" width="20" height="20" alt="close" />
         </button>
       </div>
     </div>

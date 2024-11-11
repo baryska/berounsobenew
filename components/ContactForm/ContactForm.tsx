@@ -111,7 +111,7 @@ const ContactForm = () => {
           </div>)
           : ""}
         <button className={`${styles.resend} ${messageVisible || errorMessageVisible ? '' : styles.messageInvisible}`} onClick={() => handleSentMessage()}>
-          <Image src="/resend.svg" width="30px" height="30px" alt="resend" />
+          <Image src="/resend.svg" width="30" height="30" alt="resend" />
         </button>
       </div>
     </>

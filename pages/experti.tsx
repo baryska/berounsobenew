@@ -30,7 +30,7 @@ const Advisors = () => {
         )
       })
       }
-      <button onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px"/></button>
+      <button onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40" height="40"/></button>
     </section>
   );
 };

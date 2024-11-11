@@ -25,8 +25,8 @@ const NewsItem = ({ title, theme, slug, date, image }: Props) => {
         <Image
           src={`https://infinite-beyond-27081-4bb7e61c8ac8.herokuapp.com${image}`}
           alt="obrazek"
-          width="400px"
-          height="266px"
+          width="400"
+          height="266"
           className={styles.post__image}
            />
         <div className={styles.post__text}>

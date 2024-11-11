@@ -22,22 +22,22 @@ const Post = ({ paragraphs, image, title, additionalImages }: Props) => {
 
   return (
     <div className={styles.container}>
-      <button style={{ textAlign: 'left', left: '0' }} onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px" /></button>
+      <button style={{ textAlign: 'left', left: '0' }} onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40" height="40" /></button>
       <h1 className={styles.title}>{title}</h1>
       {image !== undefined && (
         <span className={styles.image}>
           <Image
             src={`https://infinite-beyond-27081-4bb7e61c8ac8.herokuapp.com${image}`}
             alt="foto"
-            width="760px"
-            height="507px"
+            width="760"
+            height="507"
             className={styles.image}
           />
         </span>
       )}
       <div className={styles.paragraphs}>
         {paragraphs?.map((texts) => <p key={Math.random()} className={styles.paragraph}>{texts.map(
-          (paragraph) => {
+          (paragraph: any) => {
             if (paragraph.type === 'text') {
               return (
                 <span
@@ -59,8 +59,8 @@ const Post = ({ paragraphs, image, title, additionalImages }: Props) => {
           <Image
           src={`https://infinite-beyond-27081-4bb7e61c8ac8.herokuapp.com${image.attributes.url}`} 
           alt="foto" 
-          width="760px" 
-          height="507px" 
+          width="760" 
+          height="507" 
           className={styles.image} 
            />
         </span>)}
@@ -71,7 +71,7 @@ const Post = ({ paragraphs, image, title, additionalImages }: Props) => {
 
 export async function getStaticPaths() {
   const strapiPosts = await getPosts();
-  const slugs = strapiPosts.map((post) => {
+  const slugs = strapiPosts.map((post: any) => {
     return {
       params: {
         id: post.slug,
