@@ -9,6 +9,7 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { getPosts } from '../data/posts';
+import client from '../lib/sanity';
 
 const Home: NextPage = () => {
 
@@ -20,17 +21,26 @@ const Home: NextPage = () => {
     });
   }
 
-  const [strapiPosts, setStrapiPosts] = useState([]);
+  // const [strapiPosts, setStrapiPosts] = useState([]);
 
-  const fetchPosts = async () => {
-    const posts = await getPosts()
-    setStrapiPosts(posts.sort((a: any, b: any) => b.id - a.id));
-  }
+  // const fetchPosts = async () => {
+  //   const posts = await getPosts()
+  //   setStrapiPosts(posts.sort((a, b) => b.id - a.id));
+  // }
+
+  // useEffect(() => {
+  //   fetchPosts();
+  // }, [])
 
   useEffect(() => {
-    fetchPosts();
+    const fetchData = async() => {
+      const data = await client.fetch(`*[_type == "postContent"]`);
+      console.log(data)
+    }
+    void fetchData()
   }, [])
 
+  
 
   return (
     <div className={styles.container}>
