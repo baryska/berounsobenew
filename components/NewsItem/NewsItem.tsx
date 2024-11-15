@@ -21,7 +21,7 @@ const NewsItem = ({ title, theme, slug, date, image }: Props) => {
         slug: slug,
       }
     }}><a className={styles.post}>
-      <Image src={image} alt="obrazek" width="400px" height="266px" className={styles.post__image} placeholder="blur"/>
+      <Image src={image} alt="obrazek" width={400} height={266} className={styles.post__image} placeholder="blur"/>
       <div className={styles.post__text}>
         <div className={styles.post__theme}><span>{theme}</span><span>{date}</span></div>
         <div className={styles.post__title}>{title}</div>
