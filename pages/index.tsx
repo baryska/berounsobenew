@@ -43,11 +43,11 @@ const Home: NextPage = () => {
             <source src="/beroun4.mp4" type="video/mp4" />
           </video>
           <div className={styles.logo}>
-            <Image src="/BerounsobeLogo_small.png" alt="logo" width="2001px" height="629px" />
+            <Image src="/BerounsobeLogo_small.png" alt="logo" width={2001} height={629} />
           </div>
           <div className={styles.statement}>Chceme moderní město, které patří do 21. století</div>
           <button onClick={handleScrollTop} className={styles.arrow}>
-            <Image src="/up.svg" width="40px" height="40px" alt="arrow" />
+            <Image src="/up.svg" width={40} height={40} alt="arrow" />
           </button>
         </section>
         <section id="kdojsme" >
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
           <Link href="/experti">
             <a className={styles.allNews}>
               <span className={styles.displayAll}>S kým se radíme</span>
-              <span style={{marginTop: "8px"}}><Image src="/double-arrow.svg" alt="šipka" width="25px" height="25px" /></span>
+              <span style={{marginTop: "8px"}}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
             </a>
           </Link>
         </div>
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
           <Link href="/posts">
             <a className={styles.allNews}>
               <span className={styles.displayAll}>Zobrazit vše</span>
-              <span style={{marginTop: "1px"}}><Image src="/double-arrow.svg" alt="šipka" width="25px" height="25px" /></span>
+              <span style={{marginTop: "1px"}}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
             </a>
           </Link>
         </section>

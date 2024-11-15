@@ -27,7 +27,7 @@ const ProgrammePage = () => {
         rel="noopener noreferrer"
       >Stáhnout v PDF</a></div>
       <Programme />
-      <button onClick={() => router.back()} className={styles.arrowBack__programme}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px"/></button>
+      <button onClick={() => router.back()} className={styles.arrowBack__programme}><Image src="/arrow4.svg" alt="sipka" width={40} height={40}/></button>
     </>
   )
 }

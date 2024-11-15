@@ -23,17 +23,17 @@ const Post = ({ paragraphs, image, title, additionalImages }: Props) => {
 
   return (
     <div className={styles.container}>
-      <button style={{ textAlign: 'left', left: '0' }} onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px" /></button>
+      <button style={{ textAlign: 'left', left: '0' }} onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width={40} height={40} /></button>
       <h1 className={styles.title}>{title}</h1>
       {image !== undefined && (
-        <span className={styles.image}><Image src={image} alt="foto" width="760px" height="507px" className={styles.image} placeholder="blur" /></span>
+        <span className={styles.image}><Image src={image} alt="foto" width={760} height={507} className={styles.image} placeholder="blur" /></span>
       )}
       <div className={styles.paragraphs}>
         {paragraphs?.map((paragraph) => <p key={paragraph} className={styles.paragraph}>{parse(paragraph)}</p>)}
       </div>
       {additionalImages?.map((image) =>
         <span className={styles.image} key={title}>
-          <Image src={image} alt="foto" width="760px" height="507px" className={styles.image} placeholder="blur" />
+          <Image src={image} alt="foto" width={760} height={507} className={styles.image} placeholder="blur" />
         </span>)}
     </div>
 

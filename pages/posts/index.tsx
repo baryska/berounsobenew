@@ -36,10 +36,10 @@ const News = () => {
     <>
       <div className={styles.allPosts__container}>
         <div className={styles.allPosts__menu}>
-          <Link href="/#informujeme"><a className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width="40px" height="40px" /></a></Link>
+          <Link href="/#informujeme"><a className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width={40} height={40} /></a></Link>
           <div className={styles.menu}>
             <div className={styles.menuSmall}>
-              <button className={styles.dropdownButton} onClick={() => setDropdownOpen(!dropdownOpen)}>Témata<Image src={dropdownOpen ? "/arrowUp.svg" : "/arrowDown.svg"} alt="sipka" width="15px" height="15px"/></button>
+              <button className={styles.dropdownButton} onClick={() => setDropdownOpen(!dropdownOpen)}>Témata<Image src={dropdownOpen ? "/arrowUp.svg" : "/arrowDown.svg"} alt="sipka" width={15} height={15}/></button>
               {dropdownOpen && (
                 <div className={styles.dropdown}>
                   <ul className="py-1 text-sm text-gray-700 dark:text-gray-200">

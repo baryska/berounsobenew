@@ -79,16 +79,16 @@ export const Header = () => {
             </ul>
           </div>
           <a href="https://www.instagram.com/beroun_sobe/" className={styles.socialIcon} target="_blank" rel="noreferrer">
-            <Image src={Instagram} alt="instagram" width="40px" height="40px" />
+            <Image src={Instagram} alt="instagram" width={40} height={40} />
           </a>
           <a href="https://www.facebook.com/BEROUN-SOB%C4%9A-220079674674602" className={styles.socialIcon} target="_blank" rel="noreferrer">
-            <Image src={Facebook} alt="facebook" width="40px" height="40px" />
+            <Image src={Facebook} alt="facebook" width={40} height={40} />
           </a>
           <a href="https://twitter.com/berounsobe" className={styles.socialIcon} target="_blank" rel="noreferrer">
-            <Image src={Twitter} alt="twitter" width="40px" height="40px" />
+            <Image src={Twitter} alt="twitter" width={40} height={40} />
           </a>
           <a href="https://www.youtube.com/channel/UCaTXZfzLqp87bN7-mPttypw" className={styles.socialIcon} target="_blank" rel="noreferrer">
-            <Image src={Youtube} alt="youtube" width="40px" height="40px" />
+            <Image src={Youtube} alt="youtube" width={40} height={40} />
           </a>
         </nav>
 
