@@ -91,7 +91,6 @@ export const Header = () => {
             <Image src={Youtube} alt="youtube" width={40} height={40} />
           </a>
         </nav>
-
       </header>
     </>
   );
