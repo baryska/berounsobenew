@@ -80,11 +80,6 @@ export function getAllPostSlugs() {
   
     const posts = await sanityClient.fetch(query);
     const post = posts.find((post: Post) => post.slug.current === id);
-    if (!post) {
-      return {
-        notFound: true,
-      };
-    }
     return {
       id,
       post,

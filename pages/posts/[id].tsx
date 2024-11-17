@@ -65,6 +65,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: Params) {
   const post = await fetchPost(params.id);
+  if (!post) {
+    return {
+      notFound: true,
+    };
+  }
   return {
     props: {
       paragraphs: post.post.paragraphs,
