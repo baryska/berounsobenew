@@ -2,16 +2,22 @@ import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import { useRouter } from 'next/router';
 import { fetchPost, getAllPostSlugs, Paragraphs } from '../../data/posts';
-import parse from 'html-react-parser';
 import styles from './post.module.css';
 
 
 
 interface Props {
-  paragraphs: Paragraphs[] | undefined,
-  image: StaticImageData | undefined,
-  title: string | undefined,
-  additionalImages?: StaticImageData[]
+  post: {
+    paragraphs: Paragraphs[] | undefined,
+    image: {
+      asset: {
+        url: string
+      }
+    },
+    title: string | undefined,
+    additionalImages?: StaticImageData[]
+  }
+
 }
 
 interface Params {
@@ -20,18 +26,17 @@ interface Params {
   }
 }
 
-const Post = ({ paragraphs, image, title, additionalImages }: Props) => {
+const Post = ({ post }: Props) => {
+  const { paragraphs, image, title, additionalImages } = post;
+  console.log(post)
   const router = useRouter();
-  if (paragraphs === undefined) {
-    return <p>Loading...</p>
-  }
 
   return (
     <div className={styles.container}>
       <button style={{ textAlign: 'left', left: '0' }} onClick={() => router.back()} className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width={40} height={40} /></button>
       <h1 className={styles.title}>{title}</h1>
       {image !== undefined && (
-        <span className={styles.image}><Image src={image} alt="foto" width={760} height={507} className={styles.image} /></span>
+        <span className={styles.image}><Image src={image.asset.url} alt="foto" width={760} height={507} className={styles.image} /></span>
       )}
       <div className={styles.paragraphs}>
         {paragraphs !== undefined ? (
@@ -67,18 +72,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const post = await fetchPost(params.id);
-  if (!post || !post.post.paragraphs) {
-    return {
-      notFound: true,
-    };
-  }
+  const data = await fetchPost(params.id);
+  
   return {
     props: {
-      paragraphs: post.post.paragraphs ?? [],
-      image: post.post.image.asset.url ?? '',
-      title: post.post.title ?? '',
-      additionalImages: post.post.additionalImages ?? []
+      post: data.post
     },
     revalidate: 60,
   };

@@ -29,16 +29,7 @@ export interface Post {
   additionalImages?: string[]
 }
 
-export function getAllPostSlugs() {
-    const data = Posts.map((post) => {
-      return {
-        params: {
-          id: post.slug,
-        },
-      };
-    });
-    return data
-  }
+
 
   export async function fetchPosts() {
     const query = `*[_type == "postContent"] {
@@ -84,4 +75,16 @@ export function getAllPostSlugs() {
       id,
       post,
     };
+  }
+
+  export async function getAllPostSlugs() {
+    const posts = await fetchPosts();
+    const data = posts.map((post) => {
+      return {
+        params: {
+          id: post.slug.current,
+        },
+      };
+    });
+    return data
   }

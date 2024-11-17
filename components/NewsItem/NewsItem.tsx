@@ -12,6 +12,7 @@ interface Props {
 }
 
 const NewsItem = ({ title, theme, slug, date, image }: Props) => {
+  console.log(slug)
   return (
     <Link href={{
       pathname: '/posts/[slug]',
