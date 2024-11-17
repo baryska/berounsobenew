@@ -65,7 +65,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: Params) {
   const post = await fetchPost(params.id);
-  if (!post) {
+  if (!post || !post.post.paragraphs) {
     return {
       notFound: true,
     };
