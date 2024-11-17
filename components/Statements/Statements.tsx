@@ -23,7 +23,7 @@ function Statements() {
       </div>
      
       <div className={styles.buttonDiv} >
-        <Link href="/#cochceme">
+        <Link href="/#cochceme" legacyBehavior>
           <a className={styles.button}>Chci vědět víc</a>
         </Link>
       </div>

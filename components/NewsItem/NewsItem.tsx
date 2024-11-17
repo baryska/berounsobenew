@@ -7,10 +7,8 @@ interface Props {
   title: string,
   theme: string,
   slug: string,
-  date: string
+  date: string,
   image: StaticImageData,
-  additionalImages: StaticImageData[],
-  paragraphs: string[]
 }
 
 const NewsItem = ({ title, theme, slug, date, image }: Props) => {
@@ -20,8 +18,9 @@ const NewsItem = ({ title, theme, slug, date, image }: Props) => {
       query: {
         slug: slug,
       }
-    }}><a className={styles.post}>
-      <Image src={image} alt="obrazek" width={400} height={266} className={styles.post__image} placeholder="blur"/>
+    }}
+    legacyBehavior><a className={styles.post}>
+      <Image src={image} alt="obrazek" width={400} height={266} className={styles.post__image} />
       <div className={styles.post__text}>
         <div className={styles.post__theme}><span>{theme}</span><span>{date}</span></div>
         <div className={styles.post__title}>{title}</div>

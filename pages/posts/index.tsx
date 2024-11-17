@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
-import { Posts } from '../../data/index';
 import NewsItem from '../../components/NewsItem/NewsItem';
 import styles from './post.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
+import { urlFor } from '../../lib/sanity';
+import { fetchPosts, Post } from '../../data/posts';
+
+export async function getStaticProps() {
+  const fetchedPosts: Post[] = await fetchPosts();
+
+  return {
+    props: {
+      fetchedPosts,
+    },
+    revalidate: 60,
+  };
+}
 
 const menuItems = [
   { title: 'Rada & zastupitelstvo', key: 1 },
@@ -12,23 +24,24 @@ const menuItems = [
   { title: 'Zeleň', key: 4 },
   { title: 'Městské služby', key: 5 },
   { title: 'Školství', key: 6 },
-  {title: 'Kultura', key: 7},
-  {title: 'Obecné informace', key: 8},
-  {title: 'Doprava', key: 9},
+  { title: 'Kultura', key: 7 },
+  { title: 'Obecné informace', key: 8 },
+  { title: 'Doprava', key: 9 },
 ]
 
-const News = () => {
-  const [posts, setPosts] = useState(Posts);
+const News = ({ fetchedPosts }: any) => {
+  const [posts, setPosts] = useState<Post[]>(fetchedPosts);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  console.log(posts)
 
   const handleFilterPosts = (key: number) => {
-    const filteredPosts = Posts.filter((post) => post.key === key)
+    const filteredPosts = fetchedPosts.filter((post: Post) => post.key === key)
     setPosts(filteredPosts)
     setDropdownOpen(false)
   }
 
   const handleChooseAllPosts = () => {
-    setPosts(Posts);
+    setPosts(fetchedPosts);
     setDropdownOpen(false);
   }
 
@@ -36,10 +49,10 @@ const News = () => {
     <>
       <div className={styles.allPosts__container}>
         <div className={styles.allPosts__menu}>
-          <Link href="/#informujeme"><a className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width={40} height={40} /></a></Link>
+          <Link href="/#informujeme" legacyBehavior><a className={styles.arrowBack}><Image src="/arrow4.svg" alt="sipka" width={40} height={40} /></a></Link>
           <div className={styles.menu}>
             <div className={styles.menuSmall}>
-              <button className={styles.dropdownButton} onClick={() => setDropdownOpen(!dropdownOpen)}>Témata<Image src={dropdownOpen ? "/arrowUp.svg" : "/arrowDown.svg"} alt="sipka" width={15} height={15}/></button>
+              <button className={styles.dropdownButton} onClick={() => setDropdownOpen(!dropdownOpen)}>Témata<Image src={dropdownOpen ? "/arrowUp.svg" : "/arrowDown.svg"} alt="sipka" width={15} height={15} /></button>
               {dropdownOpen && (
                 <div className={styles.dropdown}>
                   <ul className="py-1 text-sm text-gray-700 dark:text-gray-200">
@@ -57,23 +70,22 @@ const News = () => {
               {menuItems.map((item) =>
                 <h1 key={item.title} className={styles.menuItem} onClick={() => handleFilterPosts(item.key)}>{item.title}</h1>
               )}
-              <h1 className={styles.menuItem} style={{ fontStyle: 'italic', marginTop: '2rem' }} onClick={() => setPosts(Posts)}>Vše</h1>
+              <h1 className={styles.menuItem} style={{ fontStyle: 'italic', marginTop: '2rem' }} onClick={() => setPosts(fetchedPosts)}>Vše</h1>
             </div>
           </div>
         </div>
 
         <div className={styles.allPosts}>
           {posts.map((post) => {
-            const { title, theme, slug, date, image, paragraphs, additionalImages } = post;
+            const { title, theme, slug, date, image} = post;
             return (
               <NewsItem
                 title={title}
                 theme={theme}
-                slug={slug}
+                slug={slug.current}
                 date={date}
-                image={image}
-                paragraphs={paragraphs}
-                additionalImages={additionalImages}
+                //@ts-ignore
+                image={urlFor(image.asset.url).url()}
                 key={title}
               />
             )
@@ -86,4 +98,3 @@ const News = () => {
 }
 
 export default News;
-
