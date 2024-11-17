@@ -22,6 +22,9 @@ interface Params {
 
 const Post = ({ paragraphs, image, title, additionalImages }: Props) => {
   const router = useRouter();
+  if (paragraphs === undefined) {
+    return <p>Loading...</p>
+  }
 
   return (
     <div className={styles.container}>
