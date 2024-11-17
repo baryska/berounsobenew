@@ -127,8 +127,6 @@ const Home: NextPage = () => {
                   slug={slug}
                   date={date}
                   image={image}
-                  paragraphs={paragraphs}
-                  additionalImages={additionalImages}
                   key={title}
                 />
               )

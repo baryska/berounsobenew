@@ -56,8 +56,8 @@ export function getAllPostSlugs() {
         }
       }
     }`;
-  
-    const posts = await sanityClient.fetch(query);
+
+    const posts = await sanityClient.fetch<Post[]>(query);
     return posts;
   }
 
