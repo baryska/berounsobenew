@@ -13,6 +13,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@googleapis/calendar": "^9.3.2",
+    "@sanity/client": "^6.22.4",
+    "@sanity/image-url": "^1.1.0",
     "axios": "^1.6.2",
     "cookies-next": "^2.1.1",
     "email-validator": "^2.0.4",
