@@ -75,10 +75,10 @@ export async function getStaticProps({ params }: Params) {
   }
   return {
     props: {
-      paragraphs: post.post.paragraphs,
-      image: post.post.image.asset.url,
-      title: post.post.title,
-      additionalImages: post.post.additionalImages
+      paragraphs: post.post.paragraphs ?? [],
+      image: post.post.image.asset.url ?? '',
+      title: post.post.title ?? '',
+      additionalImages: post.post.additionalImages ?? []
     },
     revalidate: 60,
   };
