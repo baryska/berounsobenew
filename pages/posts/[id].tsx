@@ -22,7 +22,6 @@ interface Params {
 
 const Post = ({ paragraphs, image, title, additionalImages }: Props) => {
   const router = useRouter();
-  console.log(paragraphs)
 
   return (
     <div className={styles.container}>
@@ -66,7 +65,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }: Params) {
   const post = await fetchPost(params.id);
-  console.log(post)
   return {
     props: {
       paragraphs: post.post.paragraphs,
