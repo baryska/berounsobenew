@@ -28,7 +28,6 @@ interface Params {
 
 const Post = ({ post }: Props) => {
   const { paragraphs, image, title, additionalImages } = post;
-  console.log(post)
   const router = useRouter();
 
   return (
@@ -64,7 +63,7 @@ const Post = ({ post }: Props) => {
 
 
 export async function getStaticPaths() {
-  const slug = getAllPostSlugs();
+  const slug = await getAllPostSlugs();
   return {
     paths: slug,
     fallback: false,

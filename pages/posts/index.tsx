@@ -31,7 +31,6 @@ const menuItems = [
 
 const News = ({ fetchedPosts }: any) => {
   const [posts, setPosts] = useState<Post[]>(fetchedPosts);
-  console.log(posts)
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleFilterPosts = (key: number) => {

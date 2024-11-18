@@ -47,7 +47,7 @@ export interface Post {
         }
       }
     }`;
-
+  //@ts-ignore
     const posts = await sanityClient.fetch<Post[]>(query);
     return posts;
   }
@@ -68,7 +68,7 @@ export interface Post {
         }
       }
     }`;
-  
+   //@ts-ignore
     const posts = await sanityClient.fetch(query);
     const post = posts.find((post: Post) => post.slug.current === id);
     return {
@@ -86,5 +86,5 @@ export interface Post {
         },
       };
     });
-    return data
+    return data;
   }

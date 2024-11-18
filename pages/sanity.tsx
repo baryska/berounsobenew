@@ -13,7 +13,7 @@ export async function getStaticProps() {
       }
     }
   }`;
-
+ 
   const posts = await sanityClient.fetch(query);
 
   return {
