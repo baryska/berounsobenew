@@ -1,20 +1,90 @@
 import { Posts } from '../data/index'
+import sanityClient from '../lib/sanity';
 
-export function getAllPostSlugs() {
-    const data = Posts.map((post) => {
-      return {
-        params: {
-          id: post.slug,
-        },
-      };
-    });
-    return data
+interface ParagraphChildren {
+  marks: string[],
+  text: string,
+  _key: string
+}
+
+export interface Paragraphs {
+  children: ParagraphChildren[],
+  _key: string
+}
+
+export interface Post {
+  key: number,
+  date: string,
+  image: {
+    asset: {
+      url: string
+    }
+  },
+  slug: {
+    current: string
+  },
+  theme: string,
+  title: string,
+  paragraphs: Paragraphs[],
+  additionalImages?: string[]
+}
+
+
+
+  export async function fetchPosts() {
+    const query = `*[_type == "postContent"] {
+      key,
+      title,
+      theme,
+      slug,
+      date,
+      paragraphs,
+      additionalImages,
+      image {
+        asset->{
+          _id,
+          url
+        }
+      }
+    }`;
+  //@ts-ignore
+    const posts = await sanityClient.fetch<Post[]>(query);
+    return posts;
   }
 
-  export function getPostData(id: string) {
-    const post = Posts.find((post) => post.slug === id);
+  export async function fetchPost(id: string) {
+    const query = `*[_type == "postContent"] {
+      key,
+      title,
+      theme,
+      slug,
+      date,
+      paragraphs,
+      additionalImages,
+      image {
+        asset->{
+          _id,
+          url
+        }
+      }
+    }`;
+   //@ts-ignore
+    const posts = await sanityClient.fetch(query);
+    const post = posts.find((post: Post) => post.slug.current === id);
     return {
       id,
       post,
     };
+  }
+
+  export async function getAllPostSlugs() {
+    const posts = await fetchPosts();
+    const data = posts.map((post) => {
+      return {
+        params: {
+          id: post.slug.current,
+        },
+      };
+    });
+    return data;
   }

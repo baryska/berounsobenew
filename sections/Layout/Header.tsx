@@ -58,7 +58,7 @@ export const Header = () => {
       </div>
       <header>
         <nav className={styles.navPanel}>
-          <Link href="/">
+          <Link href="/" legacyBehavior>
             <a className={styles.logo}>
               <Image src={Logo} alt="logo" />
             </a>
@@ -70,7 +70,7 @@ export const Header = () => {
                   <li
                     key={index}
                   >
-                    <Link href={`/${link}`}>
+                    <Link href={`/${link}`} legacyBehavior>
                       <a>{name}</a>
                     </Link>
                   </li>
@@ -91,7 +91,6 @@ export const Header = () => {
             <Image src={Youtube} alt="youtube" width={40} height={40} />
           </a>
         </nav>
-
       </header>
     </>
   );

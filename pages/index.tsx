@@ -103,7 +103,7 @@ const Home: NextPage = () => {
             <strong><Link href="/#napistenam">Dejte nám vědět!</Link></strong>
           </p>
 
-          <Link href="/experti">
+          <Link href="/experti" legacyBehavior>
             <a className={styles.allNews}>
               <span className={styles.displayAll}>S kým se radíme</span>
               <span style={{marginTop: "8px"}}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
@@ -127,14 +127,12 @@ const Home: NextPage = () => {
                   slug={slug}
                   date={date}
                   image={image}
-                  paragraphs={paragraphs}
-                  additionalImages={additionalImages}
                   key={title}
                 />
               )
             })}
           </div>
-          <Link href="/posts">
+          <Link href="/posts" legacyBehavior>
             <a className={styles.allNews}>
               <span className={styles.displayAll}>Zobrazit vše</span>
               <span style={{marginTop: "1px"}}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
