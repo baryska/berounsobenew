@@ -674,6 +674,7 @@
 .doc {
   display: flex; 
   flex-direction: column;
+  justify-content: space-between;
   border-radius: 25px;
   padding: 1.5em;
   width: 20rem;
