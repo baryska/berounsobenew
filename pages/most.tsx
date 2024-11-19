@@ -54,7 +54,8 @@ const Most = ({ groups, faqs, timeline }: Props) => {
 
   return (
     <div className={styles.bridgeSection}>
-      <h2 className={styles.aboutUs}>
+      <div className={styles.bridgeHeader}>
+      <h2 className={styles.bridgeTitle}>
         <strong>VŠE, CO VÍME O REKONSTRUKCI MOSTU TGM</strong>
         <div>
           <div className={styles.blueDot} /> <div className={styles.blueDot} />
@@ -62,6 +63,7 @@ const Most = ({ groups, faqs, timeline }: Props) => {
       </h2>
       <p className={styles.bridgeInfo}>Informace o rekonstrukci mostu TGM i stavbě provizorního mostu se neustále mění.
         Tato stránka je aktualizována dle nejnovějšího stavu poznání. Datum poslední aktualizace: <strong>19. 11. 2024</strong></p>
+        </div>
       <FAQ faqs={faqs} />
       <Timeline timeline={timeline} />
       <h2 className={styles.heading}>DOSTUPNÁ DOKUMENTACE:</h2>

@@ -11,7 +11,7 @@ interface Props {
 
 const Timeline = ({ timeline }: Props) => {
   return (
-    <>
+    <div className={styles.main}>
       <h2 className={styles.heading}>JAK ŠEL ČAS S BEROUNSKÝM MOSTEM:</h2>
       <VerticalTimeline
         layout="2-columns"
@@ -43,7 +43,7 @@ const Timeline = ({ timeline }: Props) => {
             </VerticalTimelineElement>
           ))}
       </VerticalTimeline>
-    </>
+    </div>
   )
 }
 
