@@ -49,6 +49,10 @@
   cursor: pointer;
 }
 
+.question {
+  width: 90%;
+}
+
 .icon {
   fill: #161534; 
   height: 1.5rem; 

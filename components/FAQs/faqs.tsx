@@ -29,7 +29,7 @@ const FAQ = ({ faqs }: Props) => {
                   onClick={() => handleToggle(index)}
                   className={styles.listItemHeading}
                 >
-                  <span>{faq.question}</span>
+                  <span className={styles.question}>{faq.question}</span>
                   <svg
                     className={`${styles.icon} ${activeTab === index ? styles.iconRotate : ''
                       }`}
