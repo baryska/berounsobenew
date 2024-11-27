@@ -24,8 +24,8 @@ const Timeline = ({ timeline }: Props) => {
             <VerticalTimelineElement
               key={item.text}
               className="vertical-timeline-element--work"
-              contentStyle={{ background: index % 2 === 0 ? '#ebf8ff' : '#fff', borderRadius: '25px' }}
-              contentArrowStyle={{ borderRight: index % 2 === 0 ? '7px solid #ebf8ff' : '7px solid #fff' }}
+              contentStyle={{ background: index % 2 === 0 ? '#ebf8ff' : '#f7f7f7', borderRadius: '25px' }}
+              contentArrowStyle={{ borderRight: index % 2 === 0 ? '7px solid #ebf8ff' : '7px solid #f7f7f7' }}
               icon={<span style={{ fontWeight: 'bold', fontFamily: 'Montserrat' }}>{item.year}</span>}
               iconStyle={{
                 background: '#161534',

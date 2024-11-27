@@ -94,7 +94,7 @@ const Most = ({ groups, faqs, timeline }: Props) => {
         {pressGroup
           .sort((a, b) => a.key - b.key)
           .map((group, index) => (
-            <div className={styles.doc}  style={{background: '#fff'}} key={group.title}>
+            <div className={styles.doc}  style={{background: '#f7f7f7'}} key={group.title}>
               <h2>{group.description}</h2>
               <div style={{ textAlign: 'right' }}>
                 <button onClick={() => setOpenLightbox({ group: 'pressGroup', index })}>
