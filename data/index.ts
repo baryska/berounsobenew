@@ -4,7 +4,7 @@ import HK from '../public/hanka_small.jpg';
 import MV from '../public/martin_small.jpeg';
 import AV from '../public/adam_small.jpg';
 import JC from '../public/jana_cirkvova.jpg';
-import MK from '../public/michal_kovarik.jpg';
+import JV2 from '../public/jvsmall.jpg';
 import JV from '../public/jana_valachovicova.jpg';
 import Roztocil from '../public/vaclav_roztocil.jpg';
 import zas17102022 from '../public/zas17-10-2022.jpg';
@@ -89,7 +89,7 @@ export const Profiles = [
     s nímž měla možnost se podrobně seznámit při svých studijních pobytech ve Finsku. Navštěvuje odborné konference a angažuje se 
     v aktivitách vzdělávacích inciativ, jako je Eduzměna nebo EDUIn. 
     Jako lektorka programování pro děti od 5 do 15 let aktivně propaguje moderní vzdělávání v oblasti IT a digitálních dovedností.
-    Je předsedkyní osadního výboru Beroun-Hostím.`,
+    Je místopředsedkyní osadního výboru Beroun-Hostím.`,
     topic: "Školství, digitalizace, transparentnost radnice",
     email: "barbora.skalova@berounsobe.eu",
     nomination:  "Komise školská - ❌ nezvolena"
@@ -113,8 +113,8 @@ export const Profiles = [
     text: `Berounský podnikatel, projektant a dodavatel městských mobiliářů. Celý život se věnuje sportu a již 28 let je provozovatelem
     bruslařské školy a trenérem ledního hokeje žen HC Berounské lvice. V roce 2003 obdržel zvláštní ocenění za dlouhodobý přínos ženskému hokeji. 
     Je předsedou Kontrolního výboru zastupitelstva města Beroun.`,
-    topic: "Sport, kontrolní výbor (předseda)",
-    email: "vaclav.roztocil@berounsobe.eu",
+    topic: "Od září 2024 již není členem sdružení Beroun sobě. ",
+    email: '',
     nomination:  "Komise dopravní a komise pro sport - <br>❌ nezvolen, Kontrolní výbor - ✅ zvolen"
   },
 ]
@@ -127,7 +127,7 @@ export const Helpers = [
     text: `Po absolvování berounského gymnázia vystudovala Vyšší odbornou školu specializační se zaměřením na cestovní ruch. 
     Pět let pracovala v centrále cestovní kanceláře. Od roku 1999 je zaměstnána ve stavební firmě. Zde se věnovala nejprve kontrolingu, 
     v současné době zde pracuje jako ekonomka. Aktivně se věnuje pořádání cyklistických závodů (například BMX Nižbor, RKCA Plzeň). 
-    Je předsedkyní školské rady na základní škole Beroun-Závodí.`,
+    Byla předsedkyní školské rady na základní škole Beroun-Závodí.`,
     topic: "Finance, cestovní ruch, školství",
     email: "jana.cirkvova@berounsobe.eu",
     nomination: "Komise pro cestovní ruch - ❌ nezvolena <br> Komise pro likvidaci majetku - ❌ nezvolena"
@@ -136,15 +136,29 @@ export const Helpers = [
     title: "Bc. Jana Valachovičová",
     profession: "Manažerka ve zdravotnictví",
     photo: JV,
-    text: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové. Přes dvacet let se věnuje komunikaci 
-    s pacienty, převážně s chronickým onemocněním. V letech 2011-2020 žila ve švýcarském Curychu, kde pracovala jako mentor a školitel 
-    komunikace pro lékaře a zdravotní sestry na globální úrovni, školila ve více než 50 zemích světa. V roce 2014 se podílela na 
-    zavedení telemedicíny v nefrologii. Po celou dobu se věnuje práci s pacientskými organizacemi, pro které pořádala rekondiční pobyty 
-    jak v ČR tak v Evropě. Po návratu do Berouna v roce 2020 studuje MBA se zaměřením na řízení ve zdravotnictví. `,
+    text: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové. 
+    Přes dvacet let se věnuje komunikaci s pacienty a práci s pacientskými organizacemi. 
+    V letech 2011-2020 žila ve švýcarském Curychu, kde pracovala jako mentor komunikace pro lékaře a zdravotní sestry 
+    na globální úrovni, školila ve více než 50 zemích světa.  Po návratu do Berouna v roce 2020 se věnuje výuce 
+    komunikace pro lékaře a sestry. Školí lékaře, sestry a studenty nácvik náročných situací a sdělování 
+    závažných zpráv ve virtuální realitě. Mezi její celoživotní zájmy patří umění, architektura a grafický 
+    design a i proto se angažuje v projektech vedoucích ke zlepšování veřejného prostoru.  `,
     topic: "Vztahy s veřejností, zdravotnictví, veřejný prostor",
     email: "jana.valach@berounsobe.eu",
     nomination: "Komise zdravotnictví a sociálních věcí - ❌ nezvolena"
    },
+   {
+    title: "Jan Valachovič",
+    profession: "Finanční poradce, regionální ředitel, florbalový funkcionář",
+    photo: JV2,
+    text: `Po absolvování Gymnázia v Berouně studoval VŠCHT. Více než 20 let pracuje jako finanční poradce, vede tým spolupracovníků 
+    jako regionální ředitel. Přibližně stejnou dobu se věnuje florbalu, posledních 7 let jako registrovaný hráč, 5 let jako funkcionář. 
+    V roce 2019 s kolegy založil oddíl Florbal pro Beroun, jehož je předsedou. Hlavním zaměřením oddílu je práce s dětmi a mládeží. 
+    Aktivně se zajímá o život ve městě, angažuje se jako dobrovolník.`,
+    topic: "Sport, finance",
+    email: "jan.valachovic@berounsobe.eu",
+    nomination: "Komise sport a sportovní dotace - ❌ nezvolen"
+  },
 ]
 
 export const Experts = [
@@ -241,17 +255,7 @@ export const Experts = [
     topic: "Územní plán, výstavba",
     nomination: "Komise výstavby - ✅ zvolen"
   },
-  {
-    title: "Jan Valachovič",
-    profession: "Finanční poradce, regionální ředitel, florbalový funkcionář",
-    photo: BS,
-    text: `Po absolvování Gymnázia v Berouně studoval VŠCHT. Více než 20 let pracuje jako finanční poradce, vede tým spolupracovníků 
-    jako regionální ředitel. Přibližně stejnou dobu se věnuje florbalu, posledních 7 let jako registrovaný hráč, 5 let jako funkcionář. 
-    V roce 2019 s kolegy založil oddíl Florbal pro Beroun, jehož je předsedou. Hlavním zaměřením oddílu je práce s dětmi a mládeží. 
-    Aktivně se zajímá o život ve městě, angažuje se jako dobrovolník.`,
-    topic: "Sport, finance",
-    nomination: "Komise sport a sportovní dotace - ❌ nezvolen"
-  },
+ 
 ] 
 
 export const Posts = [

@@ -10,9 +10,10 @@ interface Props {
   topic: string;
   email: string;
   nomination: string;
+  withEmail: boolean
 }
 
-const Profile = ({ title, profession, photo, text, topic, email, nomination }: Props) => {
+const Profile = ({ title, profession, photo, text, topic, email, nomination, withEmail }: Props) => {
 
   return (
     <div className={styles.container}>
@@ -39,11 +40,16 @@ const Profile = ({ title, profession, photo, text, topic, email, nomination }: P
         <p>{topic}</p>
       </h2>
       <footer className={styles.footer}>
-        <h2 className={styles.email}>{email}</h2>
-        <a className={styles.email__icon} href={`mailto:${email}`}>
-          <Image src="/email.svg" alt="email" width={50} height={50} />
-        </a>
+        {withEmail && (
+          <>
+            <h2 className={styles.email}>{email}</h2>
+            <a className={styles.email__icon} href={`mailto:${email}`}>
+              <Image src="/email.svg" alt="email" width={50} height={50} />
+            </a>
+          </>
+        )}
       </footer>
+
     </div>
   )
 }

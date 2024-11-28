@@ -18,6 +18,9 @@ const Home: NextPage = () => {
     });
   }
 
+  const activeProfiles = Profiles.filter((profile) => profile.title !== 'Václav Roztočil');
+  const passiveProfile = Profiles.filter((profile) => profile.title === 'Václav Roztočil');
+
   return (
     <div className={styles.container}>
       <Head>
@@ -58,7 +61,7 @@ const Home: NextPage = () => {
                 <div className={styles.blueDot} />
               </div>
             </h2>
-            {Profiles.map((profile) => {
+            {activeProfiles.map((profile) => {
               const { title, profession, text, photo, topic, email, nomination } = profile;
               return (
                 <Profile
@@ -70,9 +73,21 @@ const Home: NextPage = () => {
                   email={email}
                   key={title}
                   nomination={nomination}
+                  withEmail
                 />
               )
             })}
+            <Profile
+              title={passiveProfile[0].title}
+              profession={passiveProfile[0].profession}
+              text={passiveProfile[0].text}
+              photo={passiveProfile[0].photo}
+              topic={passiveProfile[0].topic}
+              email={passiveProfile[0].email}
+              key={passiveProfile[0].title}
+              nomination={passiveProfile[0].nomination}
+              withEmail={false}
+            />
             <h2 className={styles.coworkers}><strong>NAŠI SPOLUPRACOVNÍCI</strong>
               <div>
                 <div className={styles.blueDot} />
@@ -90,7 +105,9 @@ const Home: NextPage = () => {
                   topic={topic}
                   email={email}
                   nomination={nomination}
-                  key={title} />
+                  key={title} 
+                  withEmail
+                  />
               )
             })}
           </div>
@@ -106,7 +123,7 @@ const Home: NextPage = () => {
           <Link href="/experti">
             <a className={styles.allNews}>
               <span className={styles.displayAll}>S kým se radíme</span>
-              <span style={{marginTop: "8px"}}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
+              <span style={{ marginTop: "8px" }}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
             </a>
           </Link>
         </div>
@@ -137,7 +154,7 @@ const Home: NextPage = () => {
           <Link href="/posts">
             <a className={styles.allNews}>
               <span className={styles.displayAll}>Zobrazit vše</span>
-              <span style={{marginTop: "1px"}}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
+              <span style={{ marginTop: "1px" }}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
             </a>
           </Link>
         </section>
