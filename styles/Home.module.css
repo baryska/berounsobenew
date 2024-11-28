@@ -640,3 +640,67 @@
   text-decoration: underline;
 }
 
+.bridgeSection {
+  font-family: Montserrat;
+}
+
+.bridgeInfo {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 83.333333%;
+  }
+  @media (min-width: 1024px) {
+    width: 50%; 
+  }
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.heading {
+  font-size: 1.25rem; 
+  font-weight: 600; 
+  color: #161534; 
+  margin-bottom: 0.5rem; 
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.docs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.doc {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 25px;
+  padding: 1.5em;
+  width: 20rem;
+  box-shadow: 0 3px 0 #ddd;
+  margin: 1rem;
+}
+
+.bridgeHeader {
+  padding: 1rem;
+}
+
+.bridgeTitle {
+  display: flex;
+  width: 100%;
+  color: #161534;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+  }
+}
+
