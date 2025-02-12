@@ -28,6 +28,10 @@ const LINKS = [
     name: "NEWSLETTER"
   },
   {
+    link: "most",
+    name: "MOST"
+  },
+  {
     link: "#napistenam",
     name: "NAPIŠTE NÁM"
   },
@@ -63,7 +67,7 @@ export const Header = () => {
               <Image src={Logo} alt="logo" />
             </a>
           </Link>
-          <div className={`${styles.container} ${styles.yellow} ${styles.pullRight}`}>
+          <div className={`${styles.container} ${styles.pullRight}`}>
             <ul>
               {LINKS.map(({ name, link }, index) => {
                 return (

@@ -23,6 +23,7 @@ div.container {
 div.container ul {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 div.container a {
@@ -60,7 +61,7 @@ div.pullRight a:hover:before {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .sidemenuVisible {
     display: block;
   }
@@ -75,7 +76,7 @@ div.pullRight a:hover:before {
     height: 8rem
   }
   div.container a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .logo {
     width: 100px;
@@ -85,14 +86,14 @@ div.pullRight a:hover:before {
 
 @media (max-width: 1024px) {
   div.container a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   div.container a {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin: 0;
   }
   .logo {

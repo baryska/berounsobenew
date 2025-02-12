@@ -17,6 +17,7 @@ const Sidemenu = ({open, onClose}: Props) => {
       <Link href="/program"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>PROGRAM</button></a></Link>
       <Link href="/newsletter"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>NEWSLETTER</button></a></Link>
       <Link href="/#napistenam"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>NAPIŠTE NÁM</button></a></Link>
+      <Link href="/most"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>MOST</button></a></Link>
     </div>
   )
 }
