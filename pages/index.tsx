@@ -163,7 +163,7 @@ const Home: NextPage<ApiPosts> = ({ apiPosts }: ApiPosts) => {
         <section id="napistenam" className={styles.contact}>
           <ContactForm />
         </section>
-        <footer className={styles.footer}>© 2023 BEROUN SOBĚ | Barbora Skálová</footer>
+        <footer className={styles.footer}>© 2025 BEROUN SOBĚ | Barbora Skálová</footer>
       </main>
     </div>
   )
