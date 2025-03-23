@@ -2,37 +2,7 @@ import React from 'react';
 import styles from './NewsItem.module.css';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-
-export interface Paragraph {
-  children: {
-    marks: string[],
-    text: string,
-    _key: string,
-    _type: string
-  }[],
-  markDefs: {
-    style: string,
-    href: string,
-    _key: string,
-    _type: string,
-  }[],
-  style: string,
-  _key: string,
-  _type: string
-}
-
-export interface ApiImg {
-  asset: {
-    url: string,
-    metadata: {
-      lqip: string,
-      dimensions: {
-        width: number,
-        height: number
-      }
-    }
-  }
-}
+import { ApiImg, Paragraph, Post } from '../../pages/api/posts';
 
 interface Props {
   title: string,

@@ -95,14 +95,14 @@ export async function getStaticProps({ params }: Params) {
   const currentPost = posts.find((post) => post.slug.current === params.id)
   return {
     props: {
-      title: currentPost.title,
-      date: currentPost.date,
-      key: currentPost.key,
-      slug: currentPost.slug.current,
-      theme: currentPost.theme,
-      additionalImages: currentPost.additionalImages,
-      paragraphs: currentPost.paragraphs,
-      image: currentPost.image
+      title: currentPost?.title,
+      date: currentPost?.date,
+      key: currentPost?.key,
+      slug: currentPost?.slug.current,
+      theme: currentPost?.theme,
+      additionalImages: currentPost?.additionalImages,
+      paragraphs: currentPost?.paragraphs,
+      image: currentPost?.image
     }
   }
 }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import NewsItem, { ApiImg, Paragraph } from '../../components/NewsItem/NewsItem';
+import NewsItem from '../../components/NewsItem/NewsItem';
 import styles from './post.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import { fetchPosts } from '../api/posts';
+import { ApiImg, fetchPosts, Paragraph } from '../api/posts';
 
 export interface ApiPost {
   title: string,
