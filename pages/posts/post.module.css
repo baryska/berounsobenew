@@ -109,6 +109,10 @@
   display: none;
 }
 
+.link {
+  text-decoration: underline;
+}
+
 @media (max-width: 1600px) {
   .title {
     font-size: 2.5rem

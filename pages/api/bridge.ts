@@ -41,3 +41,20 @@ export const fetchTimeline = async () => {
   const data = await sanityClient.fetch(query);
   return data;
 };
+
+export const fetchPosts = async () => {
+  const query = `
+  *[_type == "postContent"]{
+      title,
+      theme,
+      key,
+      slug,
+      date,
+      image,
+      additionalImages,
+      paragraphs
+    }
+  `
+  const data = await sanityClient.fetch(query);
+  return data;
+}

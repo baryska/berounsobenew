@@ -7,8 +7,10 @@ import ContactForm from '../components/ContactForm/ContactForm';
 import NewsItem from '../components/NewsItem/NewsItem';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import { fetchPosts } from './api/posts';
+import { ApiPosts, sortPostsByDate } from './posts';
 
-const Home: NextPage = () => {
+const Home: NextPage<ApiPosts> = ({ apiPosts }: ApiPosts) => {
 
   const handleScrollTop = () => {
     window.scrollTo({
@@ -135,7 +137,7 @@ const Home: NextPage = () => {
                 <div className={styles.blueDot} />
               </div>
             </h2>
-            {Posts.slice(0, 4).map((post) => {
+            {sortPostsByDate(apiPosts).slice(0, 4).map((post) => {
               const { title, theme, slug, date, image, paragraphs, additionalImages } = post;
               return (
                 <NewsItem
@@ -166,5 +168,24 @@ const Home: NextPage = () => {
     </div>
   )
 }
+
+export async function getStaticProps() {
+  const posts = await fetchPosts();
+  return {
+    props: {
+      apiPosts: posts.map((post) => ({
+        title: post.title,
+        date: post.date,
+        key: post.key,
+        slug: post.slug.current,
+        theme: post.theme,
+        additionalImages: post.additionalImages,
+        paragraphs: post.paragraphs,
+        image: post.image
+      }))
+    }
+  }
+}
+
 
 export default Home
