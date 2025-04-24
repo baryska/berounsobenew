@@ -24,9 +24,10 @@ const archiveItems = [
     link: "https://mailchi.mp/290eeba21c95/jak-se-mas-beroune-5"
   },
   {
-    title: 'Prosinec 2024',
-    link: "https://mailchi.mp/59073989baca/jak-se-mas-beroune-6"
-  }
+    title: 'Duben 2025',
+    link: "https://mailchi.mp/6ee46af4f7eb/jak-se-mas-beroune-12927744"
+  },
+
 ]
 
 const MailChimpForm = () => {
