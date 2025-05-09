@@ -132,21 +132,6 @@ export const Helpers = [
     email: "jana.cirkvova@berounsobe.eu",
     nomination: "Komise pro cestovní ruch - ❌ nezvolena <br> Komise pro likvidaci majetku - ❌ nezvolena"
   },
-  {
-    title: "Bc. Jana Valachovičová",
-    profession: "Manažerka ve zdravotnictví",
-    photo: JV,
-    text: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové. 
-    Přes dvacet let se věnuje komunikaci s pacienty a práci s pacientskými organizacemi. 
-    V letech 2011-2020 žila ve švýcarském Curychu, kde pracovala jako mentor komunikace pro lékaře a zdravotní sestry 
-    na globální úrovni, školila ve více než 50 zemích světa.  Po návratu do Berouna v roce 2020 se věnuje výuce 
-    komunikace pro lékaře a sestry. Školí lékaře, sestry a studenty nácvik náročných situací a sdělování 
-    závažných zpráv ve virtuální realitě. Mezi její celoživotní zájmy patří umění, architektura a grafický 
-    design a i proto se angažuje v projektech vedoucích ke zlepšování veřejného prostoru.  `,
-    topic: "Vztahy s veřejností, zdravotnictví, veřejný prostor",
-    email: "jana.valach@berounsobe.eu",
-    nomination: "Komise zdravotnictví a sociálních věcí - ❌ nezvolena"
-   },
    {
     title: "Jan Valachovič",
     profession: "Finanční poradce, regionální ředitel, florbalový funkcionář",
