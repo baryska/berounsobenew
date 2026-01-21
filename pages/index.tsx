@@ -2,15 +2,13 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Profile from '../components/Profile/Profile';
-import { Profiles, Helpers, Posts } from '../data/index';
+import { Profiles, Helpers } from '../data/index';
 import ContactForm from '../components/ContactForm/ContactForm';
-import NewsItem from '../components/NewsItem/NewsItem';
+import FacebookFeed from '../components/FacebookFeed/FacebookFeed';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import { fetchPosts } from './api/posts';
-import { ApiPosts, sortPostsByDate } from './posts';
 
-const Home: NextPage<ApiPosts> = ({ apiPosts }: ApiPosts) => {
+const Home: NextPage = () => {
 
   const handleScrollTop = () => {
     window.scrollTo({
@@ -131,34 +129,14 @@ const Home: NextPage<ApiPosts> = ({ apiPosts }: ApiPosts) => {
         </div>
         <section id="informujeme" className={styles.aktualityContainer}>
           <div className={styles.aktuality}>
-            <h2 className={styles.aboutUs}><strong>INFORMUJEME</strong>
+            <h2 className={styles.aboutUs}><strong>SLEDUJTE NÁS NA FACEBOOKU</strong>
               <div>
                 <div className={styles.blueDot} />
                 <div className={styles.blueDot} />
               </div>
             </h2>
-            {sortPostsByDate(apiPosts).slice(0, 4).map((post) => {
-              const { title, theme, slug, date, image, paragraphs, additionalImages } = post;
-              return (
-                <NewsItem
-                  title={title}
-                  theme={theme}
-                  slug={slug}
-                  date={date}
-                  image={image}
-                  paragraphs={paragraphs}
-                  additionalImages={additionalImages}
-                  key={title}
-                />
-              )
-            })}
+            <FacebookFeed />
           </div>
-          <Link href="/posts">
-            <a className={styles.allNews}>
-              <span className={styles.displayAll}>Zobrazit vše</span>
-              <span style={{ marginTop: "1px" }}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
-            </a>
-          </Link>
         </section>
         <section id="napistenam" className={styles.contact}>
           <ContactForm />
@@ -168,24 +146,5 @@ const Home: NextPage<ApiPosts> = ({ apiPosts }: ApiPosts) => {
     </div>
   )
 }
-
-export async function getStaticProps() {
-  const posts = await fetchPosts();
-  return {
-    props: {
-      apiPosts: posts.map((post) => ({
-        title: post.title,
-        date: post.date,
-        key: post.key,
-        slug: post.slug.current,
-        theme: post.theme,
-        additionalImages: post.additionalImages,
-        paragraphs: post.paragraphs,
-        image: post.image
-      }))
-    }
-  }
-}
-
 
 export default Home
