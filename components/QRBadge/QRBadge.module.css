@@ -63,12 +63,13 @@
 .imageWrapper {
   width: 140px;
   height: 140px;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
 .text {
   font-family: Montserrat, sans-serif;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #161534;
   line-height: 1.5;
@@ -77,10 +78,10 @@
 
 .volby {
   font-family: Montserrat, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: rgb(76, 164, 202);
-  margin: 12px 0 0 0;
+  margin: 12px 0 15px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
