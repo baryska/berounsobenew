@@ -5,6 +5,7 @@ import Profile from '../components/Profile/Profile';
 import { Profiles, Helpers } from '../data/index';
 import ContactForm from '../components/ContactForm/ContactForm';
 import FacebookFeed from '../components/FacebookFeed/FacebookFeed';
+import QRBadge from '../components/QRBadge/QRBadge';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
@@ -41,6 +42,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
+        <QRBadge />
         <section className={styles.home}>
           <video autoPlay muted loop className={styles.video}>
             <source src="/beroun4.mp4" type="video/mp4" />
