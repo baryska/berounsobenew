@@ -89,6 +89,8 @@ const FacebookFeed = () => {
                 src={post.full_picture}
                 alt="Facebook příspěvek"
                 className={styles.postImage}
+                loading="lazy"
+                decoding="async"
               />
             </div>
           )}

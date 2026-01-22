@@ -2,7 +2,7 @@
   position: fixed;
   top: 150px;
   right: 0;
-  height: 320px;
+  height: 350px;
   background-color: rgb(76, 164, 202);
   border-radius: 15px 0 0 15px;
   box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.2);
@@ -28,6 +28,11 @@
   white-space: nowrap;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: padding 0.3s ease;
+}
+
+.badge:hover .collapsed {
+  padding: 15px 25px;
 }
 
 .expanded {
@@ -63,7 +68,7 @@
 .imageWrapper {
   width: 140px;
   height: 140px;
-  margin-top: 10px;
+  margin-top: 25px;
   margin-bottom: 15px;
 }
 
@@ -81,7 +86,7 @@
   font-size: 1.3rem;
   font-weight: 800;
   color: rgb(76, 164, 202);
-  margin: 12px 0 15px 0;
+  margin: 12px 0 25px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
 }

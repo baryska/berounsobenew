@@ -440,10 +440,7 @@
 
 
 .cardBigShadow:before {
-  background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, transparent 70%);
   bottom: -12%;
   content: "";
   display: block;
