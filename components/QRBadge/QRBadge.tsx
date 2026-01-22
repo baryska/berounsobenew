@@ -1,12 +1,30 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import styles from './QRBadge.module.css';
 
 const QRBadge = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const badgeRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (badgeRef.current && !badgeRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <div
+      ref={badgeRef}
       className={`${styles.badge} ${isOpen ? styles.open : ''}`}
       onClick={() => setIsOpen(!isOpen)}
     >
