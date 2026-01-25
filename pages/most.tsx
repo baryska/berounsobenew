@@ -62,7 +62,7 @@ const Most = ({ groups, faqs, timeline }: Props) => {
         </div>
       </h2>
       <p className={styles.bridgeInfo}>Informace o rekonstrukci mostu TGM i stavbě provizorního mostu se neustále mění.
-        Tato stránka je aktualizována dle nejnovějšího stavu poznání. Datum poslední aktualizace: <strong>2. 2. 2025</strong></p>
+        Tato stránka je aktualizována dle nejnovějšího stavu poznání. Datum poslední aktualizace: <strong>25. 1. 2026</strong></p>
         </div>
       <FAQ faqs={faqs} />
       <Timeline timeline={timeline} />
