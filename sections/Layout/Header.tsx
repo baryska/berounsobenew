@@ -20,6 +20,10 @@ const LINKS = [
     name: "INFORMUJEME"
   },
   {
+    link: "podpisy",
+    name: "PODPISY"
+  },
+  {
     link: "program",
     name: "PROGRAM"
   },
