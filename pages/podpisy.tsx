@@ -24,6 +24,7 @@ const PodpisyPage = () => {
             Abychom mohli kandidovat v <strong>komunálních volbách 2026</strong> a znovu se pokusit o vítězství, potřebujeme pod naši kandidátní listinu posbírat dostatečné množství podpisů vás, obyvatel Berouna. 
             Jsme sdružení nezávislých kandidátů, <strong>nikdo z nás není členem žádné politické strany</strong>, a proto potřebujeme vaši pomoc.
           </p>
+          <p>Váš podpis pod kandidátní listinou <strong>neznamená, že nás musíte volit</strong>. Jen nám umožníte kandidovat.</p>
           <h2 className={programmeStyles.subheading}>Jak nám můžete pomoci:</h2>
           <p style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
             <span className={programmeStyles.blueDot} style={{ flexShrink: 0, marginTop: '0.4rem' }} />
