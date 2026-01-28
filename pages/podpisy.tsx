@@ -26,30 +26,35 @@ const PodpisyPage = () => {
           </p>
           <p>Váš podpis pod kandidátní listinou <strong>neznamená, že nás musíte volit</strong>. Jen nám umožníte kandidovat.</p>
           <h2 className={programmeStyles.subheading}>Jak nám můžete pomoci:</h2>
-          <p style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-            <span className={programmeStyles.blueDot} style={{ flexShrink: 0, marginTop: '0.4rem' }} />
-            <span>Stáhněte si podpisový arch, vyplňte ho za sebe, dejte ho podepsat i svým blízkým nebo přátelům a napište nám na email info@berounsobe.eu. Rádi si pro váš arch přijedeme.</span>
+          <p className={programmeStyles.bulletItem}>
+            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot}`} />
+            <span>Stáhněte si podpisový arch, vyplňte ho za sebe, dejte ho podepsat i svým blízkým nebo přátelům a napište nám na email <a href="mailto:info@berounsobe.eu?subject=Podpisový%20arch%20VOLBY%202026" className={programmeStyles.emailLink}>info@berounsobe.eu</a>. Rádi si pro váš arch přijedeme.</span>
           </p>
-          <p style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-            <span className={programmeStyles.blueDot} style={{ flexShrink: 0, marginTop: '0.4rem' }} />
-            <span>Můžete nám pomoci i se sběrem podpisů. Pokud byste se k nám chtěli přidat jako <strong>dobrovolníci pro sběr podpisů</strong> v ulicích Berouna, ozvěte se nám, rádi vás vezmeme mezi sebe.</span>
+          <p className={programmeStyles.bulletItem}>
+            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot}`} />
+            <span>Můžete nám pomoci i se sběrem podpisů. Pokud byste se k nám chtěli přidat jako <strong>dobrovolníci pro sběr podpisů</strong> v ulicích Berouna, <a href="mailto:info@berounsobe.eu?subject=Podpisový%20arch%20VOLBY%202026" className={programmeStyles.emailLink}>ozvěte se nám</a>, rádi vás vezmeme mezi sebe.</span>
           </p>
-          <p style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-            <span className={programmeStyles.blueDot} style={{ flexShrink: 0, marginTop: '0.4rem' }} />
-            <span>Pokud vlastníte v Berouně podnik, kam chodí veřejnost (obchod, restaurace, kavárna apod.), a byli byste ochotni mít u vás na přístupném místě <strong>vystavený podpisový arch</strong>, prosíme napište nám!</span>
+          <p className={programmeStyles.bulletItem}>
+            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot}`} />
+            <span>Pokud vlastníte v Berouně podnik, kam chodí veřejnost (obchod, restaurace, kavárna apod.), a byli byste ochotni mít u vás na přístupném místě <strong>vystavený podpisový arch</strong>, prosíme <a href="mailto:info@berounsobe.eu?subject=Podpisový%20arch%20VOLBY%202026" className={programmeStyles.emailLink}>napište nám</a>!</span>
           </p>
+          <p>Petiční archy <strong>nečíslujte</strong>!</p>
           <h2 className={programmeStyles.subheading}>Kdo může podpisový arch podepsat?</h2>
           <p>Všichni dospělí obyvatelé Berouna, kteří mají v Berouně <strong>trvalé bydliště</strong>, včetně cizinců.</p>
+          <p>Petiční archy je třeba vyplnit <strong>HŮLKOVÝM písmem modrou či černou propiskou</strong>.</p>
+          <p>Na petičním archu musí být vyplněny <strong>všechny údaje</strong>, jinak je arch neplatný.</p>
         </div>
       </div>
 
       <h2 className={programmeStyles.emailHeading}>
-        info@berounsobe.eu
+        <a href="mailto:info@berounsobe.eu?subject=Podpisový%20arch%20VOLBY%202026" className={programmeStyles.emailLink}>
+          info@berounsobe.eu
+        </a>
       </h2>
 
       <div className={styles.buttonDiv}>
         <a
-          href="/Podpsiovy arch.pdf"
+          href="/Podpisovy arch BS.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.button}

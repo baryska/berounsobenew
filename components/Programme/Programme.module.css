@@ -22,7 +22,7 @@
 
 .container {
   width: 95%;
-  max-width: 1220px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -100,6 +100,26 @@
   color: #161534;
   text-align: center;
   margin: 2rem 0 1rem 0;
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.bulletDot {
+  flex-shrink: 0;
+  margin-top: 0.4rem;
+}
+
+.emailLink {
+  color: #161534;
+  text-decoration: underline;
+}
+
+.emailLink:hover {
+  color: #161534;
 }
 
 .themeImage {
