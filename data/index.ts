@@ -120,18 +120,21 @@ export const Profiles = [
 ]
 
 export const Helpers = [
-  {
-    title: "Jana Církvová",
-    profession: "Ekonomka",
-    photo: JC,
-    text: `Po absolvování berounského gymnázia vystudovala Vyšší odbornou školu specializační se zaměřením na cestovní ruch. 
-    Pět let pracovala v centrále cestovní kanceláře. Od roku 1999 je zaměstnána ve stavební firmě. Zde se věnovala nejprve kontrolingu, 
-    v současné době zde pracuje jako ekonomka. Aktivně se věnuje pořádání cyklistických závodů (například BMX Nižbor, RKCA Plzeň). 
-    Byla předsedkyní školské rady na základní škole Beroun-Závodí.`,
-    topic: "Finance, cestovní ruch, školství",
-    email: "jana.cirkvova@berounsobe.eu",
-    nomination: "Komise pro cestovní ruch - ❌ nezvolena <br> Komise pro likvidaci majetku - ❌ nezvolena"
-  },
+   {
+    title: "Bc. Jana Valachovičová",
+    profession: "Manažerka ve zdravotnictví",
+    photo: JV,
+    text: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové. 
+    Přes dvacet let se věnuje komunikaci s pacienty a práci s pacientskými organizacemi. 
+    V letech 2011-2020 žila ve švýcarském Curychu, kde pracovala jako mentor komunikace pro lékaře a zdravotní sestry 
+    na globální úrovni, školila ve více než 50 zemích světa.  Po návratu do Berouna v roce 2020 se věnuje výuce 
+    komunikace pro lékaře a sestry. Školí lékaře, sestry a studenty nácvik náročných situací a sdělování 
+    závažných zpráv ve virtuální realitě. Mezi její celoživotní zájmy patří umění, architektura a grafický 
+    design a i proto se angažuje v projektech vedoucích ke zlepšování veřejného prostoru.  `,
+    topic: "Vztahy s veřejností, zdravotnictví, veřejný prostor",
+    email: "jana.valach@berounsobe.eu",
+    nomination: "Komise zdravotnictví a sociálních věcí - ❌ nezvolena"
+   },
    {
     title: "Jan Valachovič",
     profession: "Finanční poradce, regionální ředitel, florbalový funkcionář",
@@ -148,18 +151,6 @@ export const Helpers = [
 
 export const Experts = [
   {
-    title: "Aleš Frýdl",
-    profession: "Policista",
-    photo: BS,
-    text: `Vystudoval Střední školu veřejnoprávní Praha v oboru Veřejnoprávní ochrana. Po ukončení ZVS působil 8 let u vojenské police 
-    na pozici policejní inspektor. Poté působil 10 let jako strážník u Městské policie Beroun. Od roku 2019 vykonává službu v hodnosti 
-    vrchního praporčíka na obvodním ředitelství MP pro Prahu 1, se zařazením do linkové Hlídky rychlé reakce. Za dobu svého působení u 
-    policejních složek se i díky zalosti bojových umění podílel na dopadení několika pachatelů závažných trestných činů, několika 
-    celostátně hledaných osob, sprejerů a zajištění odcizených vozidel.`,
-    topic: "Bezpečnost",
-    nomination: "Komise pro prevenci kriminality - ❓ volba neproběhla"
-  },
-  {
   title: "Mgr. Jitka Jindřišková",
   profession: "Literární překladatelka, jazyková redaktorka a historička",
   photo: MV,
@@ -171,18 +162,6 @@ export const Experts = [
   topic: "Kultura",
   nomination: "Komise pro kulturu a kulturní dotace - <br>❌ nezvolena"
   },
-  {
-    title: "Jan Kobylák",
-    profession: "Ředitel realizací staveb",
-    photo: MV,
-    text: `Po Střední průmyslové škole stavební, obor pozemní stavby, složil autorizační zkoušky jako Autorizovaný Stavitel. 
-    Pracoval jako mistr na stavbě, následně 5 let jako projektant a poté jako stavební dozor. Od roku 1994 spolumajitel 
-    inženýrské stavební formy JANS s.r.o. která zaměstnávala cca 25 inženýrů a stavebních techniků. Zde působil 
-    jako ředitel realizací staveb, vedl stavební dozory, ISO, bezpečnost práce, stavební audity pro naše i zahraniční banky. 
-    Mimo jiné se věnoval organizaci výběrových řízení na Zhotovitele staveb s posuzováním Smluv o Dílo.`,
-    topic: "Územní plán, výstavba",
-    nomination: "Komise výstavby - ❌ nezvolen"
-   },
    {
     title: "Kateřina Nepustilová",
     profession: "Ochranářka a ekoložka",
@@ -193,30 +172,6 @@ export const Experts = [
     ekologie na České zemědělské univerzitě.`,
     topic: "Životní prostředí, ekologie a městská zeleň",
     nomination: "Komise životního prostředí - ❌ nezvolena"
-  },
-  {
-    title: "Václav Pos",
-    profession: "Autorizovaný projektant a stavební technik, nyní v důchodu",
-    photo: AV,
-    text: `Několik let místopředseda hospodářské komory v Berouně, 
-    člen představenstva VZP, člen komise pro územní plánování Beroun. Pracoval jako projektant, později vedl vlastí projektový atelier. 
-    Mezi jeho realizace patří například půdní vestavba pokojů lékařů v nemocnici Beroun, domov pro seniory v Hořovicích, rekonstrukce 
-    hlavního sídla VZP, několik realizací v průmyslové zóně Žebrák, projekt mateřské školky v Rychnově n K., stavební dozory, vedení 
-    rozpočtů 50 mil Kč, zajištění dokumentací, stavebních povolení.`,
-    topic: "Územní plán, výstavba",
-    nomination: "Komise pro územní plán - ❌ nezvolen"
-  },
-  {
-    title: "Ing. Michaela Svatošová",
-    profession: "Ekonomka, účetní",
-    photo: BS,
-    text: `Po absolvování SEŠ, studovala VŠE v Praze, kdy již při studiu pracovala jako účetní. Po ukončení VŠE v roce 1999 začala pracovat 
-    jako metodik účetnictví v mezinárodní poradenské firmě, v rámci které absolvovala roční stáž v USA, kde se opět věnovala oboru účetnictví. 
-    V roce 2009 založila v Praze vlastní účetní kancelář a udělala si zkoušky daňového poradce. V současné době již osmým rokem žije se svou 
-    rodinou v Berouně a stále provozuje vlastní účetní firmu, v rámci které s ostatními zaměstnanci poskytují poradenské služby více než 120 
-    klientům.`,
-    topic: "Finance",
-    nomination: "Finanční výbor - ❌ nezvolena"
   },
   {
     title: "Mgr. Michal Švec",
