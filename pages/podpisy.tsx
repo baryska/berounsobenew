@@ -40,8 +40,8 @@ const PodpisyPage = () => {
           </p>
           <p>Petiční archy <strong>nečíslujte</strong>!</p>
           <h2 className={programmeStyles.subheading}>Kdo může podpisový arch podepsat?</h2>
-          <p>Všichni dospělí obyvatelé Berouna, kteří mají v Berouně <strong>trvalé bydliště</strong>, včetně cizinců.</p>
-          <p>Petiční archy je třeba vyplnit <strong>HŮLKOVÝM písmem modrou či černou propiskou</strong>.</p>
+          <p>Všichni dospělí obyvatelé Berouna, kteří mají v Berouně <strong>trvalé bydliště</strong>.</p>
+          <p>Petiční archy je třeba vyplnit <strong>ČITELNĚ HŮLKOVÝM písmem modrou či černou propiskou</strong>.</p>
           <p>Na petičním archu musí být vyplněny <strong>všechny údaje</strong>, jinak je arch neplatný.</p>
         </div>
       </div>
