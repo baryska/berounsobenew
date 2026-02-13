@@ -22,7 +22,7 @@ export const fetchImageGroups = async () => {
 
 export const fetchFAQ = async () => {
   const query = `
-    *[_type == "faqContent"]{
+    *[_type == "faqContent"] | order(order asc){
       question,
       answer,
     }
