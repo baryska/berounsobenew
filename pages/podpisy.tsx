@@ -10,7 +10,7 @@ const PodpisyPage = () => {
         <strong>PODPISY PRO KANDIDÁTKU</strong>
         <div>
           <div className={programmeStyles.blueDot} />
-          <div className={programmeStyles.blueDot} />
+          <div className={`${programmeStyles.blueDot} ${programmeStyles.blueDotBottom}`} />
         </div>
       </h1>
       
@@ -27,15 +27,15 @@ const PodpisyPage = () => {
           <p>Váš podpis pod kandidátní listinou <strong>neznamená, že nás musíte volit</strong>. Jen nám umožníte kandidovat.</p>
           <h2 className={programmeStyles.subheading}>Jak nám můžete pomoci:</h2>
           <p className={programmeStyles.bulletItem}>
-            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot}`} />
+            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot} ${programmeStyles.bulletDotBlue}`} />
             <span>Stáhněte si podpisový arch, vyplňte ho za sebe, dejte ho podepsat i svým blízkým nebo přátelům a napište nám na email <a href="mailto:info@berounsobe.eu?subject=Podpisový%20arch%20VOLBY%202026" className={programmeStyles.emailLink}>info@berounsobe.eu</a>. Rádi si pro váš arch přijedeme.</span>
           </p>
           <p className={programmeStyles.bulletItem}>
-            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot}`} />
+            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot} ${programmeStyles.bulletDotGreen}`} />
             <span>Můžete nám pomoci i se sběrem podpisů. Pokud byste se k nám chtěli přidat jako <strong>dobrovolníci pro sběr podpisů</strong> v ulicích Berouna, <a href="mailto:info@berounsobe.eu?subject=Podpisový%20arch%20VOLBY%202026" className={programmeStyles.emailLink}>ozvěte se nám</a>, rádi vás vezmeme mezi sebe.</span>
           </p>
           <p className={programmeStyles.bulletItem}>
-            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot}`} />
+            <span className={`${programmeStyles.blueDot} ${programmeStyles.bulletDot} ${programmeStyles.bulletDotOrange}`} />
             <span>Pokud vlastníte v Berouně podnik, kam chodí veřejnost (obchod, restaurace, kavárna apod.), a byli byste ochotni mít u vás na přístupném místě <strong>vystavený podpisový arch</strong>, prosíme <a href="mailto:info@berounsobe.eu?subject=Podpisový%20arch%20VOLBY%202026" className={programmeStyles.emailLink}>napište nám</a>!</span>
           </p>
           <p>Petiční archy <strong>nečíslujte</strong>!</p>

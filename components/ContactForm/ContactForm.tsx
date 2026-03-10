@@ -56,7 +56,7 @@ const ContactForm = () => {
           <strong>DOTAZY & PODNĚTY</strong>
           <div>
             <div className={styles.blueDot} />
-            <div className={styles.blueDot} />
+            <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
           </div>
         </h1>
         <div className={styles.text}>
@@ -107,7 +107,7 @@ const ContactForm = () => {
         </div>
         {loading ? (
           <div>
-            <ThreeDots fill="#4ca4ca80" className={styles.centered} style={{ bottom: '-5rem' }} />
+            <ThreeDots fill="#3C96D7" className={styles.centered} style={{ bottom: '-5rem' }} />
           </div>)
           : ""}
         <button className={`${styles.resend} ${messageVisible || errorMessageVisible ? '' : styles.messageInvisible}`} onClick={() => handleSentMessage()}>

@@ -11,7 +11,7 @@ function Programme() {
         <strong>CO CHCEME</strong>
         <div>
           <div className={styles.blueDot} />
-          <div className={styles.blueDot} />
+          <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
         </div>
       </h1>
       {ProgrammePoints.map((point) => {

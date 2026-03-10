@@ -1,9 +1,10 @@
 .heading {
-  font-size: 1.25rem; 
-  font-weight: 600; 
-  color: #161534; 
-  margin-bottom: 0.5rem; 
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #161534;
+  margin-bottom: 0.5rem;
   text-align: center;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
   margin: 1rem 0;
 }
 

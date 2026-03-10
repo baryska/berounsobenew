@@ -29,8 +29,9 @@ function Consent() {
   }
   return (
     <div
-      className={`sticky bottom-3 xl:w-[50%] lg:w-[70%] m-auto p-3 rounded-3xl bg-[#4ea5cbcc] text-center font-['Montserrat'] ${consent ? 'hidden' : ''
+      className={`sticky bottom-3 xl:w-[50%] lg:w-[70%] m-auto p-3 rounded-3xl bg-[#3C96D7cc] text-center ${consent ? 'hidden' : ''
         }`}
+      style={{ fontFamily: 'Inria Sans, sans-serif' }}
     >
       <div className="flex justify-around items-center">
         <Image src="/cookie.svg" width={40} height={40} alt="cookie" />
@@ -40,13 +41,13 @@ function Consent() {
             onClick={() => {
               acceptCookie();
             }}
-            className="p-2 ml-4 text-[0.7rem] md:text-[1rem] border rounded-xl bg-[#4CA4CA]"
+            className="p-2 ml-4 text-[0.7rem] md:text-[1rem] border rounded-xl bg-[#3C96D7]"
           >
             Přijmout
           </button>
           <button
             onClick={(e) => denyCookie()}
-            className="p-2 ml-4 text-[0.7rem] md:text-[1rem] border rounded-xl bg-[#4CA4CA]"
+            className="p-2 ml-4 text-[0.7rem] md:text-[1rem] border rounded-xl bg-[#3C96D7]"
           >
             Odmítnout
           </button>

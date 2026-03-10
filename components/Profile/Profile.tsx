@@ -10,13 +10,14 @@ interface Props {
   topic: string;
   email: string;
   nomination: string;
-  withEmail: boolean
+  withEmail: boolean;
+  className?: string;
 }
 
-const Profile = ({ title, profession, photo, text, topic, email, nomination, withEmail }: Props) => {
+const Profile = ({ title, profession, photo, text, topic, email, nomination, withEmail, className }: Props) => {
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className || ''}`}>
       <div
         className={styles.profileImg}
         style={{ backgroundImage: `url(${photo.src})` }}

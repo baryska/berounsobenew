@@ -14,7 +14,7 @@ const Advisors = () => {
       <h2 className={styles.aboutUs}><strong>S KÝM SE RADÍME</strong>
         <div>
           <div className={styles.blueDot} />
-          <div className={styles.blueDot} />
+          <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
         </div>
       </h2>
       {Experts.map((profile) => {

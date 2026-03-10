@@ -1,7 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cutive&family=Lekton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap&family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cutive&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lekton&family=Nunito:wght@400;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap&family=Indie+Flower');
+
+/* Písmo pro nadpisy - PuffinDisplay */
+@font-face {
+  font-family: 'PuffinDisplay';
+  src: url('/fonts/PuffinDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PuffinDisplay';
+  src: url('/fonts/PuffinDisplay-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 1.1rem; /* 17.6px – efektivně +0.1rem pro všechny rem hodnoty */
+}
+
+:root {
+  /* Písmo nadpisů */
+  --font-heading: 'PuffinDisplay', 'Inria Sans', sans-serif;
+  /* Písmo běžného textu */
+  --font-body: 'Inria Sans', sans-serif;
+
+  /* Barevná paleta */
+  --color-primary: #3C96D7;
+  --color-secondary: #00C864;
+  --color-accent: #FFAF4B;
+  --color-primary-light: rgba(60, 150, 215, 0.1);
+  --color-primary-medium: rgba(60, 150, 215, 0.5);
+  --color-secondary-light: rgba(0, 200, 100, 0.15);
+  --color-secondary-medium: rgba(0, 200, 100, 0.5);
+  --color-accent-light: rgba(255, 175, 75, 0.2);
+  --color-accent-medium: rgba(255, 175, 75, 0.5);
+}
 
 a {
   color: inherit;
@@ -12,13 +51,53 @@ a {
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+/* Tlačítka – PuffinDisplay */
+button,
+input[type="submit"],
+input[type="button"] {
+  font-family: var(--font-heading);
+}
+
+/* Nadpisy – vlastní písmo */
+h1, h2, h3, h4, h5, h6,
+.aboutUs, .currentRepresentatives, .coworkers,
+.whatWeWant, .bridgeTitle, .heading,
+.contactUs, .heroTitle, .subheading,
+.programme_title, .listItemHeading {
+  font-family: var(--font-heading);
+}
+
 .programme_title {
-  font-size: 25px;
+  font-size: 27px;
 }
 
 .anchor {
-  color: rgb(76, 164, 202);
+  color: var(--color-primary);
 }
+
+.anchor:hover {
+  color: var(--color-accent);
+}
+
+/* Modal fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Line clamp utility for candidate perex */
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 
 @media only screen and (min-width: 2200px) {
   body {

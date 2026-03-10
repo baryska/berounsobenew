@@ -22,18 +22,18 @@
 .post__theme {
   display: flex;
   justify-content: space-between;
-  font-family: Montserrat;
+  font-family: var(--font-body);
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .post__theme span:first-child {
-  color: rgb(76, 164, 202);
+  color: var(--color-primary);
 }
 
 .post__title {
-  font-family: Montserrat;
+  font-family: var(--font-body);
   font-size: 1.5rem;
   font-weight: 600;
 }

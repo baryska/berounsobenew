@@ -44,18 +44,18 @@
 .postMeta {
   display: flex;
   justify-content: space-between;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .postSource {
-  color: rgb(76, 164, 202);
+  color: var(--color-primary);
 }
 
 .postTitle {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
   margin-top: 0.5rem;
@@ -72,7 +72,7 @@
   align-items: center;
   width: 100%;
   padding: 4rem;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   font-size: 1.2rem;
   color: #666;
 }
@@ -83,14 +83,14 @@
   align-items: center;
   width: 100%;
   padding: 2rem;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   text-align: center;
 }
 
 .fallbackLink {
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background-color: rgb(76, 164, 202);
+  background-color: var(--color-primary);
   color: white;
   border-radius: 25px;
   text-decoration: none;
@@ -99,7 +99,7 @@
 }
 
 .fallbackLink:hover {
-  background-color: #70b6d5;
+  background-color: var(--color-accent);
 }
 
 @media (max-width: 1600px) {

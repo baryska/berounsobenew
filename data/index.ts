@@ -1,153 +1,90 @@
-import BS from '../public/bara_small.jpg';
-import EK from '../public/eva_small.jpg';
-import HK from '../public/hanka_small.jpg';
-import MV from '../public/martin_small.jpeg';
-import AV from '../public/adam_small.jpg';
-import JC from '../public/jana_cirkvova.jpg';
-import JV2 from '../public/jvsmall.jpg';
-import JV from '../public/jana_valachovicova.jpg';
-import Roztocil from '../public/vaclav_roztocil.jpg';
-import zas17102022 from '../public/zas17-10-2022.jpg';
-import volby from '../public/volby.jpg';
-import chodnik from '../public/chodnik.png';
-import radnice from '../public/radnice.jpg';
-import manual from '../public/manual.png';
-import telocvicna from '../public/telocvicna.jpg';
-import autobusak from '../public/autobusak.jpeg';
-import popelnice from '../public/popelnice.jpeg';
-import menda from '../public/menda.jpg';
-import deti from '../public/schoolkids.jpg';
-import tab1 from '../public/tab1_form.png';
-import tab2 from '../public/tab2_form.png';
-import telocvicna3 from '../public/telocvicna3.jpg';
-import studie from '../public/studie.jpg';
-import rozpocet from '../public/rozpocet.jpg';
-import namesti1 from '../public/namesti1.jpg';
-import namesti2 from '../public/namesti2.jpg';
-import namesti3 from '../public/namesti3.jpg';
-import namesti4 from '../public/namesti4.jpg';
-import namesti5 from '../public/namesti5.jpeg';
-import namesti6 from '../public/namesti6.jpg';
-import namesti7 from '../public/namesti7.jpg';
-import namesti8 from '../public/namesti8.jpg';
-import namesti9 from '../public/namesti9.jpg';
-import demostudie from '../public/demostudie.png';
-import mestskahora from '../public/mestskahora.jpg';
-import stavka from '../public/stavka.jpg';
-import obcevdatech from '../public/obcevdatech.png';
-import pozemky from '../public/pozemky.jpg';
-import simpsonovi from '../public/simpsonovi.png';
-import kolik from '../public/kolik.png';
-import vrt from '../public/vrt.png';
-import fotbal from '../public/fotbal.jpg';
-import school from '../public/school.jpg';
-import pozemky2 from '../public/pozemky.png';
-import kola from '../public/kola.jpg';
-import balog from '../public/balog2.jpg';
+import BS from '../public/bara2_small.png';
+import EK from '../public/eva2_small.png';
+import MV from '../public/martin2_small.png';
+import JV from '../public/jana_valach.png';
+import JZ from '../public/jan_zykan_small.png';
+import LucieSmall from '../public/lucie2_small.png';
+import JVSmall from '../public/jvsmall.jpg';
+import TomasSmall from '../public/tomas_small.png';
+import KristynaSmall from '../public/kristyna2_small.png';
 
-
-export const Profiles = [
+export const Candidates = [
   {
-    title: "Ing. Martin Veselý",
-    profession: "Architekt, projektant",
-    photo: MV,
-    text: `Absolovent ČVUT Fakulty stavební, obor pozemní stavby a architektura. Od roku 2006 pracuje jako OSVČ ve vlastním ateliéru. 
-    Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko). Je jedním ze zakladatelů spolku Berounská zeleň.`,
-    topic: "Územní plán, výstavba",
-    email: "martin.vesely@berounsobe.eu",
-    nomination: "Komise pro územní plán - ❌ nezvolen <br> Komise výstavby - ❌ nezvolen"
-   },
-   {
-    title: "Mgr. Hana Kašparová, MBA",
-    profession: "Ekonomka",
-    photo: HK,
-    text: `Vystudovala ekonomii na Univerzitě Karlově a MBA na Ecole Superiere do Commerce v Rennes v Bretani. V letech 1997-2021 pracovala jako ekonom a manažer 
-    ve velké mezinárodní společnosti v několika zemích, z toho posledních 10 let působila jako finanční ředitelka výrobních závodů společností v Rakovníku a v Pokrov (UA). 
-    Žila v Londýně, Rennes, Bruselu a Budapešti. V současné době působí jako konzultant v oblasti organizace, řízení a zlepšování procesů ve firmách a věnuje se také aromaterapii.`,
-    topic: "Finance, rozpočet",
-    email: "hana.kasparova@berounsobe.eu",
-    nomination:  "Finanční výbor - ✅ dodatečně zvolena v září 2023"
-  },
-  {
-    title: "Mgr. Adam Voldán",
-    profession: "Učitel, pojistný matematik",
-    photo: AV,
-    text: `Absolvent Matematicko-fyzikální fakulty UK v Praze, obor teorie pravděpodobnosti. Jako pojistný matematik  přes 10 let pracoval 
-    pro poradenskou společnost Deloitte, kde se podílel na řadě mezinárodních projektů v oblasti akvizic a fúzí pojišťoven, 
-    tvorbě zátěžových testů, oceňování rizik z hlediska penzí, životního i neživotního pojištění. Nyní pracuje jako učitel matematiky a informatiky. 
-    Je jedním ze zakladatelů spolku Berounská zeleň.`,
-    topic: "Životní prostředí, městská zeleň",
-    email: "adam.voldan@berounsobe.eu",
-    nomination:  "Komise životního prostředí - ✅ dodatečně zvolen v září 2023"
-  },
-  {
-    title: "Mgr. Barbora Skálová, Ph.D.",
-    profession: "Softwarová vývojářka",
+    titles: "Mgr., Ph.D.",
+    name: "Barbora Skálová",
     photo: BS,
-    text: `Vystudovala finštinu a moderní dějiny, ale živí se jako programátorka. Dlouhodobě se zajímá o moderní trendy a inovace ve vzdělávání, 
-    inspiraci hledá zejména ve finském základním školství, 
-    s nímž měla možnost se podrobně seznámit při svých studijních pobytech ve Finsku. Navštěvuje odborné konference a angažuje se 
-    v aktivitách vzdělávacích inciativ, jako je Eduzměna nebo EDUIn. 
-    Jako lektorka programování pro děti od 5 do 15 let aktivně propaguje moderní vzdělávání v oblasti IT a digitálních dovedností.
-    Je místopředsedkyní osadního výboru Beroun-Hostím.`,
-    topic: "Školství, digitalizace, transparentnost radnice",
-    email: "barbora.skalova@berounsobe.eu",
-    nomination:  "Komise školská - ❌ nezvolena"
+    tags: ["IT", "OTEVŘENÁ RADNICE"],
+    perex: "Softwarová vývojářka, která ví, že moderní město stojí na chytrých službách a otevřené komunikaci. Zkušenosti z IT chce přinést i na radnici. Hrdá obyvatelka Hostíma, kde už roky bojuje za vodovod a kanalizaci.",
+    fullText: `Vystudovala finštinu a moderní dějiny, ale zakotvila ve světě IT a už mnoho let se živí jako softwarová vývojářka. Absolvovala několik studijních pobytů ve Finsku, kde zjistila, že moderní město 21. století stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a otevřené komunikaci s občany. Tuto praxi by chtěla přinést i do Berouna. Již 15 let je hrdou obyvatelkou Hostíma, kde už desátým rokem jako místopředsedkyně osadního výboru bojuje o vodovod a kanalizaci. V létě mění klávesnici za pádlo a jako vedoucí jezdí na vodácký tábor. Je spoluzakladatelkou sousedského spolku Berounský rybníček.`,
   },
   {
-    title: "Mgr. Eva Kotrčová",
-    profession: "Učitelka, speciální pedagožka",
+    titles: "Mgr.",
+    name: "Eva Kotrčová",
     photo: EK,
-    text: `Absolventka Pedagogické fakulty Univerzity Karlovy, obor učitelství na prvním stupni. Dále vystudovala speciální pedagogiku, logopedii a psychopedii.
-     Během své praxe působila na různých typech škol v státním i soukromém sektoru. 
-    Má zkušenosti s vedením školy, působila jako zástupce ředitele, dále s prezentací inovativních metod ve výuce 
-    a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
-    topic: "Školství",
-    email: "eva.kotrcova@berounsobe.eu",
-    nomination:  "Komise školská - ✅ zvolena"
+    tags: ["ŠKOLSTVÍ", "INOVACE"],
+    perex: "Pedagožka s dlouholetou praxí v běžných školách i ve speciálním vzdělávání. Používá moderní inovativní metody ve výuce, které dětem pomáhají učit se s radostí a bez stresu. Jejím cílem je vytvořit ve školách podporující prostředí pro každé dítě a skutečné partnerství s rodiči.",
+    fullText: `Absolventka Pedagogické fakulty Univerzity Karlovy, obor učitelství na prvním stupni. Dále vystudovala speciální pedagogiku, logopedii a psychopedii. Během své praxe působila na různých typech škol v státním i soukromém sektoru. Má zkušenosti s vedením školy, působila jako zástupce ředitele, dále s prezentací inovativních metod ve výuce a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
   },
   {
-    title: "Václav Roztočil",
-    profession: "Podnikatel, hokejový trenér",
-    photo: Roztocil,
-    text: `Berounský podnikatel, projektant a dodavatel městských mobiliářů. Celý život se věnuje sportu a již 28 let je provozovatelem
-    bruslařské školy a trenérem ledního hokeje žen HC Berounské lvice. V roce 2003 obdržel zvláštní ocenění za dlouhodobý přínos ženskému hokeji. 
-    Je předsedou Kontrolního výboru zastupitelstva města Beroun.`,
-    topic: "Od září 2024 již není členem sdružení Beroun sobě. ",
-    email: '',
-    nomination:  "Komise dopravní a komise pro sport - <br>❌ nezvolen, Kontrolní výbor - ✅ zvolen"
+    titles: "Ing.",
+    name: "Martin Veselý",
+    photo: MV,
+    tags: ["ARCHITEKTURA", "ZELEŇ"],
+    perex: "Architekt s mezinárodními zkušenostmi. Je zakladatelem spolku Berounská zeleň a dlouhodobě se zasazuje o kvalitní územní rozvoj a ochranu městské zeleně.",
+    fullText: `Absolvent ČVUT Fakulty stavební, obor pozemní stavby a architektura. Od roku 2006 pracuje jako OSVČ ve vlastním ateliéru. Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko). Je jedním ze zakladatelů spolku Berounská zeleň.`,
   },
-]
-
-export const Helpers = [
-   {
-    title: "Bc. Jana Valachovičová",
-    profession: "Manažerka ve zdravotnictví",
+  {
+    titles: "Ing., DiS.",
+    name: "Kristýna Kymličková",
+    photo: KristynaSmall,
+    tags: ["STAVEBNICTVÍ", "VEŘEJNÝ PROSTOR"],
+    perex: "Stavební inženýrka s praxí v řízení rekonstrukcí. Dlouhodobě se věnuje správě bytového fondu a aktivně usiluje o smysluplný rozvoj, modernizaci bytové infrastruktury a zkvalitnění veřejného prostoru.",
+    fullText: `Berounská rodačka, která vystudovala stavební inženýrství. V posledních letech se aktivně zapojuje do dění v místě, kde žije. Ujala se správy bytového domu na Velkém sídlišti, kde jako předsedkyně SVJ koordinovala jeho kompletní revitalizaci. Zároveň se dlouhodobě zajímá o kvalitu veřejného prostoru a snaží se o jeho zlepšení.`,
+  },
+  {
+    titles: "PhDr.",
+    name: "Tomáš Procházka",
+    photo: TomasSmall,
+    tags: ["KOMUNIKACE", "DOPRAVA"],
+    perex: "Zkušený novinář, vedoucí zahraniční redakce Hospodářských novin. Zastánce živé občanské společnosti a spolehlivé veřejné dopravy. Věří, že otevřená komunikace je klíčem k úspěšnému městu.",
+    fullText: `V médiích začal pracovat už během studia na gymnáziu. Řadu let působil v regionálním Deníku, kde ho zajímal život v městech a obcích. Nyní vede zahraniční redakci Hospodářských novin a magazín Víkend HN. V Berouně žije s rodinou více než deset let. Otec tří synů je fanouškem veřejné dopravy, vidí kde jsou bolavá místa, která stojí za to vyléčit. Věří, že kvalitní vzdělání a odolná společnost mohou věcmi pohnout víc, než se může na první pohled zdát.`,
+  },
+  {
+    titles: "Ing.",
+    name: "Lucie Šimečková",
+    photo: LucieSmall,
+    tags: ["PODNIKÁNÍ", "MARKETING"],
+    perex: "Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem a také založila úspěšný lokální profil @ziju_v_beroune.",
+    fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a na České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat jako marketérka v IT. Během studií na VŠ strávila tři měsíce na studijním stáži na Generálním konzulátu České republiky v Los Angeles. Zkušenosti z nadnárodní IT korporace a technologického startupu přetavila ve vlastní podnikání, poskytuje marketingové služby začínajícím startupům. Od roku 2020 s hrdostí nazývá Beroun svým domovem. Během rodičovské založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.`,
+  }, 
+  {
+    titles: "",
+    name: "Jan Valachovič",
+    photo: JVSmall,
+    tags: ["EKONOMIKA", "SPORT"],
+    perex: "Finanční expert se zaměřením na efektivní hospodaření a odpovědný rozpočet. Jako předseda florbalového oddílu navíc dlouhodobě vede děti k aktivnímu pohybu.",
+    fullText: `Po absolvování Gymnázia v Berouně studoval VŠCHT. Více než 20 let pracuje jako finanční poradce, vede tým spolupracovníků jako regionální ředitel. Přibližně stejnou dobu se věnuje florbalu, posledních 9 let jako registrovaný hráč, 7 let jako funkcionář. V roce 2019 s kolegy založil oddíl Florbal pro Beroun, jehož je předsedou. Hlavním zaměřením oddílu je práce s dětmi a mládеží. Aktivně se zajímá o život ve městě, angažuje se jako dobrovolník. Coby ekonomicky vzdělaný profesionál vnímá rozpočet města jako prostředek k rozvoji a klade důraz na to, aby každá investice byla smysluplná a udržitelná.`,
+  },
+  {
+    titles: "Bc., MBA",
+    name: "Jana Valachovičová",
     photo: JV,
-    text: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové. 
-    Přes dvacet let se věnuje komunikaci s pacienty a práci s pacientskými organizacemi. 
-    V letech 2011-2020 žila ve švýcarském Curychu, kde pracovala jako mentor komunikace pro lékaře a zdravotní sestry 
-    na globální úrovni, školila ve více než 50 zemích světa.  Po návratu do Berouna v roce 2020 se věnuje výuce 
-    komunikace pro lékaře a sestry. Školí lékaře, sestry a studenty nácvik náročných situací a sdělování 
-    závažných zpráv ve virtuální realitě. Mezi její celoživotní zájmy patří umění, architektura a grafický 
-    design a i proto se angažuje v projektech vedoucích ke zlepšování veřejného prostoru.  `,
-    topic: "Vztahy s veřejností, zdravotnictví, veřejný prostor",
-    email: "jana.valach@berounsobe.eu",
-    nomination: "Komise zdravotnictví a sociálních věcí - ❌ nezvolena"
-   },
-   {
-    title: "Jan Valachovič",
-    profession: "Finanční poradce, regionální ředitel, florbalový funkcionář",
-    photo: JV2,
-    text: `Po absolvování Gymnázia v Berouně studoval VŠCHT. Více než 20 let pracuje jako finanční poradce, vede tým spolupracovníků 
-    jako regionální ředitel. Přibližně stejnou dobu se věnuje florbalu, posledních 7 let jako registrovaný hráč, 5 let jako funkcionář. 
-    V roce 2019 s kolegy založil oddíl Florbal pro Beroun, jehož je předsedou. Hlavním zaměřením oddílu je práce s dětmi a mládeží. 
-    Aktivně se zajímá o život ve městě, angažuje se jako dobrovolník.`,
-    topic: "Sport, finance",
-    email: "jan.valachovic@berounsobe.eu",
-    nomination: "Komise sport a sportovní dotace - ❌ nezvolen"
+    tags: ["ZDRAVOTNICTVÍ", "VEŘEJNÝ PROSTOR"],
+    perex: "Manažerka s mezinárodní zkušeností a vysokoškolská lektorka. Více než dvacet let pracuje s lidmi ve zdravotnictví a učí, jak zvládat náročné situace s respektem a porozuměním. Stejné principy chce přinášet i do veřejného života – otevřenost, spolupráci a péči o místo, kde žijeme.",
+    fullText: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové a management ve zdravotnictví (MBA). Více než dvacet let se věnuje komunikaci s pacienty, práci s pacientskými organizacemi a vzdělávání zdravotníků.
+              V letech 2011–2020 žila ve švýcarském Curychu, kde pracovala v medicínském marketingu a jako lektorka komunikace školila zdravotníky ve více než 50 zemích světa. Po návratu do Berouna v roce 2020 vede praktické kurzy pro lékaře, sestry a manažery ve zdravotnictví, přednáší na vysoké škole. 
+              Mezi její celoživotní zájmy patří umění, architektura a grafický design, a i proto se angažuje v projektech, které podporují živý veřejný prostor a sousedskou komunitu. Je spoluzakladatelkou sousedského spolku Berounský rybníček`,
   },
-]
+  {
+    titles: "Mgr.",
+    name: "Jan Zykán",
+    photo: JZ, 
+    tags: ["KULTURA", "PODNIKÁNÍ"],
+    fullText: 'Hostinský a vystudovaný politolog. Z hostímské Hospůdky U Krobiána vybudoval respektované kulturní centrum, kam na debaty pravidelně přijíždí špičky české vědy, žurnalistiky i politiky. Vedle intelektuálního přesahu se zaměřuje i na lokální gastronomii – jeho podnik sází na kvalitní suroviny od regionálních dodavatelů a ctí tradici poctivého pohostinství. Kulturní akce pořádá bez nároku na zisk – dobrovolné vstupné věnuje na charitativní projekty. Jan Zykán tak v Berouně vytváří prostor, kde se lidé setkávají, diskutují a kde se klade důraz na lokální hodnoty i společenskou odpovědnost.',
+    perex: 'Hostinský a politolog, který z hostímské hospůdky vytvořil významné kulturní centrum. Vedle špičkových veřejných debat do regionu přináší poctivou gastronomii postavenou na lokálních potravinách.',
+  },
+];
+
 
 export const Experts = [
   {
@@ -196,161 +133,5 @@ export const Experts = [
     nomination: "Komise výstavby - ✅ zvolen"
   },
  
-] 
-
-export const Posts = [ 
-  
- 
-]
-
-export const ProgrammePoints = [
-  {
-    theme: '',
-    anchor: '',
-    image: 'empty',
-    paragraphs: [
-      `Beroun je krásné město, ale je čím dál více sužováno <strong>dlouho neřešenými problémy</strong>. Město přitom vedou <strong>stále stejní lidé a politické strany</strong>.`,
-      `Hlavní příčinou problémů je mnoho let trvající <strong>neřízené povolování developerské bytové výstavby</strong> bez ohledu na kapacitu městské infrastruktury. Poslední změny územního plánu, které koalice povolila, umožní v průběhu příštích pěti let výstavbu <strong>1&nbsp;840 bytů a příchod 6&nbsp;500 nových obyvatel, z toho 550 školou povinných dětí!</strong> `,
-      `Beroun na <strong>30% nárůst obyvatel</strong> není připraven téměř v žádném ohledu - <strong>nestačí kapacita školek a škol</strong>, <strong>zácpy a hustá doprava</strong> jsou na denním pořádku a město má již nyní <strong>problémy s kapacitou vodovodu</strong>.`,
-      `Radnice nejen že situaci neřeší, ale navíc <strong>plánovala umožnit i další výstavbu v přírodní lokalitě Na Ptáku</strong>, kterou se nám z lavic opozičních zastupitelů prozatím podařilo zastavit.`,
-      `S obyvateli Berouna navíc současné vedení města <strong>komunikuje arogantně a povýšeně</strong> - ať na jednání zastupitelstva, nebo na sociálních sítích.`,
-      `V opozici se nám mnohé věci podařily, ale sílu připravit se na překotné změny budeme mít jen v radě města. Po mnoha letech vlády stále stejných lidí a stran (ODS, ANO, Nezávislí Berouňáci, ČSSD) <strong>Beroun konečně potřebuje změnu</strong>.`
-    ],
-  },
-  {
-    theme: 'Školy & školky',
-    anchor: 'skolstvi',
-    image: 'schoolbag',
-    paragraphs: [
-      `&#9899<strong className="programme_title"> JAK JE TO U NÁS:</strong>`,
-      `<strong>Do roku 2027</strong> přibude v Berouně podle demografických odhadů <strong>minimálně 550 dětí</strong> ve školním věku.`,
-    `Vedení Berouna utratilo v posledních dvou letech <strong>235 milionů</strong> za rekonstrukci dvou základních škol a navýšilo
-    jejich kapacitu o <strong>pouhých 90 míst</strong>. To je cca <strong>2,5 milionu na jedno místo</strong>.`,
-    `<strong>Kapacita mateřských škol</strong> je již dnes <strong>zcela naplněna</strong>. Současné vedení města navýšilo kapacitu školek za poslední 4 roky o <strong>pouhých 44 míst</strong>. 
-    <strong>Stavba plánované školky Na Máchovně je ve skluzu</strong>, zatím není připravena ani 
-    projektová dokumentace, přestože město plánovalo otevřít školku již ve školním roce 2024/2025. Kvůli neregulované výstavbě bude v roce 2030 <strong>chybět v Berouně
-    minimálně 80 míst v MŠ</strong>, a to jen v případě, že se zdárně dokončí školka Na Máchovně.`,
-    `V příštích letech hrozí kvůli nárůstu počtu bytů ještě větší <strong>nedostatek míst ve školách a školkách</strong>. Při zachování stávající
-    spádovosti je kapacita již dnes nedostatečná. Proto současná radnice navrhuje <strong>vyloučení dětí z okolních
-    obcí</strong> z možnosti navštěvovat školy v Berouně. Za celé volební období nebylo vedení města schopno dojít ke konstruktivní dohodě s okolními obcemi, ani zásadně navýšit kapacitu škol a školek.`,
-    `Radnice ve svých plánech zcela otevřeně <strong>spoléhá na soukromé školky, dětské skupiny a soukromé školy</strong>, přestože každé berounské dítě má nárok na bezplatné vzdělávání a město je povinno
-    mu jej nabídnout. V současnosti z 97 dětí v berounských soukromých školkách je jen 30 z Berouna.`,
-    `Investorovi soukromé školy <strong>odpustilo současné vedení 90 % developerského poplatku (téměř 7 milionů Kč)</strong>, který bude v rozpočtu města chybět.`,
-    `&#9899; <strong className="programme_title">JAK TO DĚLAJÍ JINDE:</strong>`,
-    `V Mníšku pod Brdy postavili zcela nový pavilon základní školy, který sbírá architektonické ceny, za 112 milionů Kč. Vytvořili 160 nových míst, jedno tedy vyšlo na cca 700&nbsp;000 Kč.`,
-    `V Letech u Dobřichovic postavili novou školu. Vzniklo 125 nových míst a stavba vyšla na 52 milionů. Za jedno nové místo tedy Lety zaplatily cca 400&nbsp;000 Kč.`,
-    `&#9899; <strong className="programme_title" id="skolstvi">CO NAVRHUJEME:</strong>`,
-    `Dáme <strong>absolutní prioritu výstavbě nové školy a školky</strong>, neexistuje důležitější investice než do vzdělání našich dětí.`,
-    `Než budou nové budovy postaveny, <strong>najdeme alternativní prostory ve vlastnictví města a kraje</strong>. Máme již vytipované konkrétní objekty.`,
-    `Začneme konstruktivně a se vzájemným respektem <strong>vyjednávat s okolními obcemi a hledat společné řešení</strong>. Současné vedení města chce řešit problémy, které samo zanedbalo, na úkor dětí z okolních obcí.`,
-    `Kapacita škol ale není všechno, chceme pro naše děti <strong>moderní vzdělání</strong>, které je dostatečně připraví na budoucnost:`,
-    `<strong>&#9679;</strong> Budeme aktivně podporovat <strong>moderní a inovativní výuku</strong> - podpoříme <strong>profesní růst a vzdělávání učitelů</strong> a přivedeme do Berouna učitele s proaktivním přístupem a kladným vztahem k moderním vzdělávacím
-    trendům.`,
-    `<strong>&#9679;</strong> Podpoříme mezinárodní spolupráci, <strong>kvalitní výuku jazyků</strong> a výměnné pobyty.`,
-    `<strong>&#9679;</strong> Podpoříme <strong>moderní výuku IT</strong> a programování. Připravíme děti na život v 21. století.`,
-    `<strong>&#9679;</strong> Vytvoříme <strong>platformu pro lepší komunikaci mezi školami, rodiči a městem</strong>. Chceme vědět, co rodiče i školy trápí, a pomoci najít řešení.`,
-    `<strong>&#9679;</strong> Zapojíme studenty a žáky do návrhů na zlepšování kvality života v Berouně v rámci <strong>studentského participativního rozpočtu</strong>.`,
-    `<strong>&#9679;</strong> <strong>Zrekonstruujeme "Wagnerku"</strong>, tj. berounskou 3. základní školu.`
-    ]
-  },
-  {
-    theme: 'Doprava',
-    anchor: 'doprava',
-    image: 'bus',
-    paragraphs: [
-      `&#9899<strong className="programme_title"> JAK JE TO U NÁS:</strong>`,
-    `Podle poslední studie jsou všechny páteřní komunikace v Berouně <strong>přetíženy cca o třetinu</strong> své kapacity.`,
-    `Město stále čeká na dotace z kraje, mezitím řešení a nápady postupně ztrácejí smysl, od roku 2007 má Beroun již 3 dopravní studie, ale <strong>realizuje se sotva 10% návrhů</strong>.`,
-    `Již více než 3 volební období mluví vedení města o stavbě nového jižního mostu, ale mezitím hlavní most přes Berounku zchátral tak, že bude nutno jeho větší část zcela vyměnit. <strong>Nově plánovanému jižnímu mostu budou chybět navazující komunikace, a tak to zatím vypadá, že bude vybudována pouze dočasná náhrada pro pokrytí dopravy po dobu opravy mostu stávajícího.</strong>`,
-    `Přestože všechny dopravní studie již léta doporučují zprůjezdnit Beroun vybudováním alternativních komunikací tak, že se propojí stávající trasy, fakticky se <strong>v těchto záměrech nijak nepokročilo</strong> (Tyršova – Koněpruská, Viničná - Palouček, Třída míru – Lidl, ÖMV jih – Maxit, Golf - K Zabitému).`,
-    `Vybudování obchvatových komunikací ÖMV jih – Maxit a Golf - K Zabitému <strong>mělo být zajištěno soukromými investory</strong> jako součást souhlasu města s jejich investičními záměry. Město z nepochopitelných důvodů na splnění těchto závazků netrvalo, investorům v rozporu se smlouvami i vydanými povoleními záměry zkolaudovalo a dokonce jim <strong>prominulo i pokuty v celkové výši 45 milionů korun.</strong>`,
-    `<strong>Obyvatelé Závodí mají kvůli těmto kauzám oprávněné obavy</strong> z opakování situace při povolení <strong>developerského projektu Pískovna (asi 280 bytů)</strong> a radnicí slibovaném dopravním řešení situace, založeném na „severním obchvatu“. Zůstane stejně jako golf a Maxit také jen na papíře, aby se podmínkám územního plánu učinilo za dost? <strong>Město ani developer nemají totiž potřebné pozemky pro obchvat ve svém vlastnictví.</strong>`,
-    `&#9899; <strong className="programme_title">JAK TO DĚLAJÍ JINDE:</strong>`,
-    `Města, kde se vedení řídí zájmem svých občanů, neodpouští developerům jejich závazky. Naopak například Říčany efektivně uzavírají plánovací smlouvy a silnice jsou stavěny za významné spoluúčasti developerů zároveň s novou výstavbou.`,
-    `V rámci smysluplného územního plánování jsou povolovány městské čtvrti tak, aby měly plnou občanskou vybavenost a neparazitovaly na zbytku města. V Berouně radnice největší záměry stále připravuje téměř bez škol, školek a bez obchodů.`,
-    `&#9899; <strong className="programme_title" id="doprava">CO NAVRHUJEME:</strong>`,
-    `Naší prioritou bude <strong>bezpečná cesta do škol, tak aby rodiče nemuseli taxikařit</strong>. Věříme, že jde o quick-win, který se v Berouně dlouho podceňuje a zanedbává.`,
-    `V součinnosti s krajem budeme prosazovat:`,
-    `<strong>&#9679;</strong> Nutnou <strong>opravu mostu T.G.M.</strong> tak, aby byl co nejméně dotčen provoz a život v Berouně.`,
-    `<strong>&#9679;</strong> <strong>Velkorysý jižní most včetně jižního napojení k Zabitému</strong> jako alternativu pro rozšíření dálnice D5 na 6 pruhů.`,
-    `<strong>&#9679;</strong> Projekt a výstavbu propojení, která <strong>odlehčí páteřním komunikacím a již léta jsou odkládána</strong>, tj. Tyršova – Koněpruská, Viničná - Palouček, Třída míru – Lidl, OMV jih – Maxit, Golf - K Zabitému.`,
-    `<strong>&#9679;</strong> Snížení <strong>rychlosti v noci na 80km/hod na dálnici</strong> v katastru města. `,
-    `<strong>&#9679;</strong> Další vymezení modrých zón a <strong>důslednou komunikaci s okolními obcemi o možnosti parkování nebo jejich podílu na nákladech na dojíždění</strong>.`,
-    `<strong>&#9679;</strong> <strong>Optimalizaci MHD</strong> - návaznost na autobusové i vlakové spoje z Prahy, podporu vytíženosti a dostatečné frekvence spojů.`,
-    `<strong>&#9679;</strong> <strong>Podporu cyklistické dopravy,</strong> zejména zlepšení sítě cyklostezek, a dále optimalizaci sítě sdílených elektrokol (doplnění o sdílená kola bez elektřiny a posílení sítě, zlevnění provozu).`
-
-    ]
-  },
-  {
-    theme: 'Městská zeleň & voda',
-    anchor: 'zelen',
-    image: 'tree',
-    paragraphs: [
-      `&#9899<strong className="programme_title"> JAK JE TO U NÁS:</strong>`,
-    `Již minimálně od roku 2016 se v Berouně mluví o <strong>vyčerpání kapacity pro zásobování pitnou vodou</strong>, přesto schválilo vedení města územní plán s novou výstavbou až pro 1&nbsp;840 bytů.
-    Je s podivem, že se za této krizové situace město <strong>nesnaží nijak získat vlastní zdroje vody.</strong> Naopak v rozporu se starým územním plánem jsme dovolili zastavět lokalitu pro nový berounský vodojem. Kvůli tomu jsme plně závislí na stavbě vodojemu Praha-Kopanina, který se zasekl v projektové přípravě. `,
-    `Beroun extrémně zatěžuje dálnice D5 ať už jde o hluk, nebo oxidy dusíku, kvůli kterým je Beroun <strong>jedním z nejhorších míst v Čechách, co se týká kvality ovzduší</strong>.`,
-    `Přestože parky a investice do ozelenění města opakovaně vyhrávají ankety co v Berouně zlepšit, většina takových investic se odkládá. 
-    <strong>Kde jsou parky „Na Špici“ a „Homolka“, které slibovalo vedení města před svým znovuzvolením v květnu 2018?</strong>`,
-    `V letech 2017-2019 město sázelo <strong>do 50 stromů ročně</strong>. Až vznik spolku <strong>Berounská zeleň</strong> a jeho důsledný tlak na náhradní výsadby vedlo k postupnému vyrovnání kácení a výsadeb na cca 250 stromů ročně. 
-    Proč město <strong>nebylo schopno samo vytipovat náhradní plochy a vymáhat adekvátní náhradní výsadbu</strong> po investorech již dříve?`,
-    `Rada města bez jakékoli diskuze souhlasila <strong>s výstavbou v přírodní lokalitě Na Ptáku</strong>, která by de facto umožnila <strong>zástavbu na pravém břehu mezi Berounem a Hýskovem</strong>. Naopak <strong>ignorovala doporučení odborníků</strong> z komise životního prostředí, 
-    ať už v případě revitalizace parku Městská hora, nebo změny struktury investic do zeleně a její údržby.`,
-    `&#9899; <strong className="programme_title" id="zelen">CO NAVRHUJEME:</strong>`,
-    `Bereme nedostatek vody jako zásadní limit pro rozvoj města a využijeme všech zákonných prostředků, abychom <strong>nepovolili výstavbu dříve, než bude dostatečná kapacita vodovodu</strong>.`,
-    `Máme <strong>zmapované alternativní zdroje vody</strong> a budeme jako významný akcionář a člen dozorčí rady Vodovodů a kanalizací (VaK) <strong>prosazovat napojení na tyto alternativní zdroje vody</strong>.`,
-    `Konečně postavíme <strong>vodovodní přípojku na vodovod ve Svatém Janu pod Skalou v městské části Beroun-Hostím</strong>, jejíž obyvatelé čekají na pitnou vodu déle než pět let.`,
-    `Vysadíme až <strong>350 stromů každý rok</strong>.`,
-    `Postupně revitalizujeme všech 5 větších parků - <strong>Zábranský park, park Homolka, propojení Štulovna – Ostrov (park na Špici), revitalizace městské hory a park kolem bývalého autobusového nádraží.</strong>`,
-    `Vstoupíme do jednání s ministerstvem životního prostředí a ministerstvem dopravy a budeme důsledně vyžadovat ekonomické zdůvodnění přínosů rozšíření dálnice D5. 
-    Naším cílem bude <strong>prosadit úplné odstoupení od záměru rozšiřovat D5 mezi exity Beroun-Východ a Beroun-Západ</strong>. Věříme, že levnější a lepší alternativou bude <strong>stavba kapacitního jižního obchvatu</strong> jako krajské komunikace včetně tunelů a napojení na D5 v exitu Beroun-Východ, které budeme prosazovat.`,
-    `Připojíme se ke Svazu energetických manažerů měst a obcí a budeme po vzoru ostatních měst <strong>systematicky snižovat energetickou zátěž jednotlivých veřejných budov</strong>.` 
-    ]
-  },
-  {
-    theme: 'Otevřená radnice',
-    anchor: 'transparentnost',
-    image: 'handshake',
-    paragraphs: [
-      `&#9899<strong className="programme_title"> JAK JE TO U NÁS:</strong>`,
-      `Současné vedení města má <strong>zásadní problém s transparentností</strong>. Není například možné sledovat vyřizování jednotlivých podnětů a podání. Vedení radnice se rovněž rozhodlo <strong>nezveřejňovat zápisy z rady města</strong>.`,
-      `Na námitky nebo dotazy berounských občanů na zasedání zastupitelstva reaguje vedení města i radní <strong>arogantně a přehlíživě</strong>. Vystupování současného vedení se <strong>proslavilo i v celostátních médiích</strong>.
-      Vstřícných a respektujících reakcí nejsou představitelé města schopni ani na sociálních sítích.`,
-      `Další klíčový problém spočívá v <strong>nekoncepčním územním plánování a plánování investic</strong>, kdy město často jedná <strong>v rozporu se svými strategickými dokumenty</strong>.`,
-      `<strong>&#9679;</strong> <strong>Rekonstrukce MŠ Vrchlického na Závodí</strong> – přístavba s novými okny a opravou kuchyně za cca 2,5 milionů kč v roce 2017 následovaná kompletní rekonstrukcí v roce 2022 za 50 milionů, okna i kuchyně jsou opět vybourány.`,
-      `<strong>&#9679;</strong> V květnu 2018 před volbami do zastupitelstva prezentuje vedení města <strong>záměr parků „Homolka“ a „Na Špici“</strong>, příprava parků je následně <strong>vyškrtnuta z rozpočtu hned na jaře 2019</strong>.`,
-      `<strong>&#9679;</strong> Před Vánocemi 2019 byl na sídlišti na objednávku vedení města <strong>pokácen vzrostlý smrk</strong>, po záplavě negativních reakcí přišlo město s vysvětlením, že zde byl již zamýšlen park a nezdravý strom se stejně musel porazit. 
-      Do rozpočtu města se však příprava projektové dokumentaci dostala až po nesmyslném pokácení stromu.`,
-      `<strong>&#9679;</strong> <strong>Studie proveditelnosti vodovodu v Hostímě</strong>, kterou odhlasovalo zastupitelstvo, byla bez opětovného hlasování zastupitelstva <strong>zamítnuta místostarostou</strong>.`,
-      `<strong>&#9679;</strong> Do klíčové <strong>komise územního plánování</strong>, která předkládá vedení města návrhy změn, se <strong>nedostal žádný ze zástupců opozice</strong>, přestože náš zastupitel Martin Veselý je architektem. Naopak se do komise dostávají lidé, 
-      kteří k územnímu plánování nemají žádné vzdělání. Ve městě bují <strong>klientelismus</strong>.`,
-      `<strong>&#9679;</strong> Poslední velká <strong>změna územního plánu</strong> proběhla v roce 2017, územní plán by měl být právně závazný dokument s dlouhodobým výhledem (cca 10 let), vedení města však umožnilo jeho důkladnou revizi již v roce 2019, 
-      tj. <strong>po pouhých 2 letech</strong>.`,
-      `<strong>&#9679;</strong> Termín podání připomínek k územnímu plánu byl začátek roku 2020, přesto se <strong>nejvýznamnější a nejkontroverznější návrh nové výstavby 40 domů Na Ptáku</strong> dostal do řízení podáním z února 2020.
-      Balík 64 návrhů na pořízení změn územního plánu byl pak projednáván ve stejný den jako rozpočet na příští rok. Pro zrychlení přijetí tohoto kontroverzního návrhu navíc vedení města navrhlo schvalovat celý balík najednou, jen díky aktivitě nás opozičních zastupitelů k tomu nedošlo.`,
-      `<strong>&#9679;</strong> Vedení města <strong>nebere v potaz návrhy některých odborných komisí</strong>, např. komise životního prostředí.`,
-      `&#9899; <strong className="programme_title">JAK TO DĚLAJÍ JINDE:</strong>`,
-      `Dlouhodobý plán investic přesahující jedno volební období doporučuje Národní síť zdravých měst, která se snaží šířit zásady dobré praxe. Například Turnov má pětiletý výhled investičních priorit, občané mají přehled o plnění slibů i přípravě projektů a 
-      mohou připomínkami vylepšovat projektovou přípravu i realizaci.`,
-      `V mnoha obcích funguje skvěle participativní rozpočet, kdy obyvatelé dané obce spolurozhodují o veřejných investicích. V Berouně je sice rovněž nastaven podobný systém, ale není zde politická vůle efektivně sbírat podněty od občanů a hlavně o nich veřejně diskutovat.`,
-      `V Jihlavě funguje systém PUPík - internetové Připomínkování územního plánu. Pro návštěvníky jsou připraveny všechny potřebné informace o územním plánu a postup připomínkování. Zájemce si může pomocí jednoduchého ovládání návrh územního plánu projít a potom odeslat připomínku. Zpět obdrží e-mail o doručení, následně je informován o dalším zpracování připomínky.`,
-      `Město Brno uveřejňuje rozsáhlé informace k rozpočtu, které jsou dostupné nejen v pdf, ale
-      i xls formátech. Rozpočet je možné prohlížet i v klikací formě, kde může uživatel mimo jiné
-      sledovat přehledně plnění rozpočtu po jednotlivých čtvrtletích.`,
-      `&#9899; <strong className="programme_title" id="transparentnost">CO NAVRHUJEME:</strong>`,
-      `<strong>Nebudeme měnit územní plán</strong>, pokud k tomu nebudou zákonné důvody.`,
-      `<strong>Nepřipustíme rozšíření zastavitelných ploch</strong> územního plánu.`,
-      `<strong>Stanovíme plán investic</strong> na celé volební období, budeme <strong>jasně komunikovat své záměry</strong> a vysvětlovat, proč je považujeme za vhodné.`,
-      `Mezi naše investiční priority bude patřit <strong>náprava dluhu vedení města</strong> z minulých 15 let, tj. výstavba obchvatu a nových obecních škol a školek.`,
-      `Zvýšíme objem projektů, které budou odsouhlaseny formou <strong>participativního rozpočtu</strong>.`,
-      `Vytvoříme <strong>transparentní rozpočet</strong>, který bude skutečně umožňovat sledování efektivity jednotlivých veřejných výdajů a záměrů. `,
-      `Budeme <strong>otevření, slušní a vstřícní k podnětům a názorům občanů</strong>.`,
-      `Dohlédneme, aby <strong>městem financované stavby byly kvalitní</strong> a jejich provoz efektivní.`,
-      `Budeme <strong>otevřeně komunikovat se všemi zastupiteli</strong> o prioritách, připravovaných projektech a klíčových rozhodnutích.`,
-      `Provedeme <strong>uživatelský audit webových stránek města</strong> a nastavíme je tak, aby byly přehledné, uživatelsky přívětivé a reprezentovaly město ve 21. století`,
-      `Na webových stránkách města bude <strong>snadno dohledatelný program zastupitelstva</strong> včetně potřebných materiálů a dokumentů. <strong>Zápisy z rady budou opět veřejné</strong>.`,
-      `Posuneme <strong>začátek zasedání zastupitelstva na 16 hodinu</strong>.`  
-    ]
-  },
 ]
 

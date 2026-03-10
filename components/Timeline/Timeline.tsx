@@ -26,10 +26,10 @@ const Timeline = ({ timeline }: Props) => {
               className="vertical-timeline-element--work"
               contentStyle={{ background: index % 2 === 0 ? '#ebf8ff' : '#f7f7f7', borderRadius: '25px' }}
               contentArrowStyle={{ borderRight: index % 2 === 0 ? '7px solid #ebf8ff' : '7px solid #f7f7f7' }}
-              icon={<span style={{ fontWeight: 'bold', fontFamily: 'Montserrat' }}>{item.year}</span>}
+              icon={<span style={{ fontWeight: 'bold', fontFamily: "'Inria Sans'" }}>{item.year}</span>}
               iconStyle={{
-                background: '#161534',
-                color: 'rgb(76, 164, 202)',
+                background: 'var(--color-accent)',
+                color: 'white',
                 width: '50px',
                 height: '50px',
                 display: 'flex',

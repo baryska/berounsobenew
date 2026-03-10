@@ -58,7 +58,7 @@ const Most = ({ groups, faqs, timeline }: Props) => {
       <h2 className={styles.bridgeTitle}>
         <strong>VŠE, CO VÍME O REKONSTRUKCI MOSTU TGM</strong>
         <div>
-          <div className={styles.blueDot} /> <div className={styles.blueDot} />
+          <div className={styles.blueDot} /> <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
         </div>
       </h2>
       <p className={styles.bridgeInfo}>Informace o rekonstrukci mostu TGM i stavbě provizorního mostu se neustále mění.

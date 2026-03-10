@@ -1,8 +1,11 @@
 import type { NextPage } from 'next';
+import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Profile from '../components/Profile/Profile';
-import { Profiles, Helpers } from '../data/index';
+import CandidateProfileCard from '../components/CandidateProfileCard/CandidateProfileCard';
+import CandidateModal, { CandidateModalData } from '../components/CandidateModal/CandidateModal';
+import { Candidates } from '../data/index';
 import ContactForm from '../components/ContactForm/ContactForm';
 import FacebookFeed from '../components/FacebookFeed/FacebookFeed';
 import QRBadge from '../components/QRBadge/QRBadge';
@@ -10,6 +13,19 @@ import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
 const Home: NextPage = () => {
+  const [selectedCandidate, setSelectedCandidate] = useState<CandidateModalData | null>(null);
+
+  const handleOpenModal = (candidate: typeof Candidates[0]) => {
+    setSelectedCandidate({
+      name: candidate.name,
+      titles: candidate.titles,
+      tags: candidate.tags,
+      fullText: candidate.fullText,
+      photo: candidate.photo,
+    });
+  };
+
+  const handleCloseModal = () => setSelectedCandidate(null);
 
   const handleScrollTop = () => {
     window.scrollTo({
@@ -19,16 +35,13 @@ const Home: NextPage = () => {
     });
   }
 
-  const activeProfiles = Profiles.filter((profile) => profile.title !== 'Václav Roztočil');
-  const passiveProfile = Profiles.filter((profile) => profile.title === 'Václav Roztočil');
-
   return (
     <div className={styles.container}>
       <Head>
         <title>Beroun sobě</title>
         <meta name="description" content="Beroun sobě - Beroun má na víc!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/nove_logo.png" type="image/png" />
         <meta name="referrer" content="no-referrer" />
         <meta property="og:image" content="https://www.berounsobe.eu/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvsichni_small.793a465f.jpeg&w=1920&q=75" />
         <meta property="og:image:width" content="1200" />
@@ -47,70 +60,55 @@ const Home: NextPage = () => {
           <video autoPlay muted loop className={styles.video}>
             <source src="/beroun4.mp4" type="video/mp4" />
           </video>
-          <div className={styles.logo}>
-            <Image src="/BerounsobeLogo_small.png" alt="logo" width={2001} height={629} />
+          <div className={styles.slogan}>
+            <Image src="/novy_slogan.png" alt="Beroun sobě - slogan" width={1200} height={400} />
           </div>
-          <div className={styles.statement}>Chceme moderní město, které patří do 21. století</div>
           <button onClick={handleScrollTop} className={styles.arrow}>
             <Image src="/up.svg" width={40} height={40} alt="arrow" />
           </button>
         </section>
-        <section id="kdojsme" >
-          <div className={styles.whoWeAre}>
-            <h2 className={styles.aboutUs}><strong>NAŠI ZASTUPITELÉ</strong>
-              <div>
-                <div className={styles.blueDot} />
-                <div className={styles.blueDot} />
-              </div>
-            </h2>
-            {activeProfiles.map((profile) => {
-              const { title, profession, text, photo, topic, email, nomination } = profile;
+        <section id="kdojsme" className="bg-slate-50 py-16">
+          {/* Candidate Profiles - Concept A: Clean minimalism with color accents */}
+          <div className="px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto mb-8">
+            <div className={`w-full ${styles.orangeFrame}`}>
+            <div className="text-gray-700 text-sm sm:text-base leading-relaxed text-left space-y-4" style={{ fontFamily: 'var(--font-heading)' }}>
+              <p>Jsme <strong>nezávislá, občanská kandidátka</strong>, nejsilnější opoziční síla v Berouně. 
+              Nejsme spojeni s žádnou celostátní politickou stranou. V posledních komunálních volbách jsme získali <strong>nejvíce hlasů a mandátů</strong>, ale i tak jsme skončili v opozici.</p>
+              <p>Tuto situaci jsme využili k tomu, abychom hlídali, co se na radnici děje, a zároveň se připravovali na vlastní řešení, 
+              která městu <strong>konečně přinesou změnu</strong>.</p>
+              <p>Více než deset let v berounské komunální politice nám dalo hluboké znalosti města, jeho problémů i potenciálu. 
+              Zůstali jsme věrní svému přesvědčení, že Beroun si zaslouží <strong>lepší správu, otevřenost a skutečný pokrok</strong>.</p>
+              <p>Náš tým jsme posílili o <strong>nové osobnosti a odborníky</strong> a dnes jsme připraveni Beroun zodpovědně a kompetentně vést.</p>
+            </div>
+            </div>
+          </div>
+          <h2 className={styles.aboutUs}><strong>NAŠI KANDIDÁTI</strong>
+            <div>
+              <div className={styles.blueDot} />
+              <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
+            </div>
+          </h2>
+          {/* Karty kandidátů - responzivní: 1 sloupec na mobile, 2 na tablet, 3 na desktop */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 grid-auto-rows-[minmax(420px,1fr)] px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+            {Candidates.map((candidate) => {
+              const badgeMap: Record<string, string> = {
+                'Barbora Skálová': 'současná zastupitelka',
+                'Eva Kotrčová': 'současná zastupitelka',
+                'Martin Veselý': 'současný zastupitel',
+              };
+              const badge = badgeMap[candidate.name];
               return (
-                <Profile
-                  title={title}
-                  profession={profession}
-                  text={text}
-                  photo={photo}
-                  topic={topic}
-                  email={email}
-                  key={title}
-                  nomination={nomination}
-                  withEmail
+                <CandidateProfileCard
+                  key={candidate.name}
+                  name={candidate.name}
+                  titles={candidate.titles}
+                  tags={candidate.tags}
+                  perex={candidate.perex}
+                  photo={candidate.photo}
+                  badge={badge}
+                  onReadMore={() => handleOpenModal(candidate)}
                 />
-              )
-            })}
-            <Profile
-              title={passiveProfile[0].title}
-              profession={passiveProfile[0].profession}
-              text={passiveProfile[0].text}
-              photo={passiveProfile[0].photo}
-              topic={passiveProfile[0].topic}
-              email={passiveProfile[0].email}
-              key={passiveProfile[0].title}
-              nomination={passiveProfile[0].nomination}
-              withEmail={false}
-            />
-            <h2 className={styles.coworkers}><strong>NAŠI SPOLUPRACOVNÍCI</strong>
-              <div>
-                <div className={styles.blueDot} />
-                <div className={styles.blueDot} />
-              </div>
-            </h2>
-            {Helpers.map((profile) => {
-              const { title, profession, text, photo, topic, email, nomination } = profile;
-              return (
-                <Profile
-                  title={title}
-                  profession={profession}
-                  text={text}
-                  photo={photo}
-                  topic={topic}
-                  email={email}
-                  nomination={nomination}
-                  key={title} 
-                  withEmail
-                  />
-              )
+              );
             })}
           </div>
         </section>
@@ -121,20 +119,13 @@ const Home: NextPage = () => {
           <p className={styles.letUsKnow}>
             <strong><Link href="/#napistenam">Dejte nám vědět!</Link></strong>
           </p>
-
-          <Link href="/experti">
-            <a className={styles.allNews}>
-              <span className={styles.displayAll}>S kým se radíme</span>
-              <span style={{ marginTop: "8px" }}><Image src="/double-arrow.svg" alt="šipka" width={25} height={25} /></span>
-            </a>
-          </Link>
         </div>
         <section id="informujeme" className={styles.aktualityContainer}>
           <div className={styles.aktuality}>
             <h2 className={styles.aboutUs}><strong>SLEDUJTE NÁS NA FACEBOOKU</strong>
               <div>
                 <div className={styles.blueDot} />
-                <div className={styles.blueDot} />
+                <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
               </div>
             </h2>
             <FacebookFeed />
@@ -144,6 +135,8 @@ const Home: NextPage = () => {
           <ContactForm />
         </section>
         <footer className={styles.footer}>© 2026 BEROUN SOBĚ | Barbora Skálová</footer>
+
+        <CandidateModal candidate={selectedCandidate} onClose={handleCloseModal} />
       </main>
     </div>
   )

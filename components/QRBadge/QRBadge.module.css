@@ -3,7 +3,7 @@
   top: 150px;
   right: 0;
   height: 350px;
-  background-color: rgb(76, 164, 202);
+  background-color: var(--color-primary);
   border-radius: 15px 0 0 15px;
   box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
@@ -21,7 +21,7 @@
   padding: 0 20px;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  font-family: Montserrat, sans-serif;
+  font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 800;
   color: white;
@@ -73,7 +73,7 @@
 }
 
 .text {
-  font-family: Montserrat, sans-serif;
+  font-family: 'Inria Sans', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #161534;
@@ -82,10 +82,10 @@
 }
 
 .volby {
-  font-family: Montserrat, sans-serif;
+  font-family: var(--font-heading);
   font-size: 1.3rem;
   font-weight: 800;
-  color: rgb(76, 164, 202);
+  color: var(--color-primary);
   margin: 12px 0 25px 0;
   text-transform: uppercase;
   letter-spacing: 2px;

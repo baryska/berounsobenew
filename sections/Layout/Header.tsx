@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import Logo from '../../public/mainLogo_small.png';
+import Logo from '../../public/nove_logo.png';
 import Facebook from '../../public/Facebook.png';
 import Twitter from '../../public/Twitter.png';
 import Youtube from '../../public/Youtube.png';
@@ -22,10 +22,6 @@ const LINKS = [
   {
     link: "podpisy",
     name: "PODPISY"
-  },
-  {
-    link: "program",
-    name: "PROGRAM"
   },
   {
     link: "newsletter",
@@ -68,7 +64,7 @@ export const Header = () => {
         <nav className={styles.navPanel}>
           <Link href="/">
             <a className={styles.logo}>
-              <Image src={Logo} alt="logo" />
+              <Image src={Logo} alt="Beroun sobě" width={220} height={220} className={styles.logoImage} />
             </a>
           </Link>
           <div className={`${styles.container} ${styles.pullRight}`}>

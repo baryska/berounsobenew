@@ -1,34 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200;400&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700&family=Special+Elite&display=swap');
+
 .main {
   padding: 15px 10px 15px;
 }
 
+/* SmallProfile podle vizuální identity BS */
 .container {
   height: 540px;
   width: 380px;
   margin: 30px 20px;
-  border-radius: 16px;
+  border-radius: 20px;
   position: relative;
   background-color: white;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  border-left: 5px solid var(--color-secondary);
+  box-shadow: 0 4px 20px rgba(0, 200, 100, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
 .title {
   text-align: center;
-  line-height: 1;
-  font: 18px Raleway;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.15;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #161534;
   padding: 20px 0 5px 0;
 }
 
 .title__profession {
   text-align: center;
-  margin-top: 10px;
-  font: 16px Raleway;
-  color: rgb(76, 164, 202);
+  margin-top: 8px;
+  font: 1rem var(--font-body);
+  color: var(--color-secondary);
   font-style: italic;
   font-weight: 500;
 }
@@ -41,7 +45,8 @@
 .description {
   margin: 0;
   padding: 30px 25px;
-  font: 15px Raleway;
+  font: 15px var(--font-body);
+  font-weight: 300;
   line-height: 1.2;
   margin-bottom: 20px;
   height: 273px;
@@ -50,19 +55,20 @@
 .nomination {
   padding: 0px 25px;
   height: 79px;
-  font: 0.85rem Raleway;  
+  font: 0.85rem var(--font-body);
+  font-weight: 300;
 }
 
 .footer {
- font: 16px Raleway;
+ font: 16px var(--font-body);
  color: white;
  font-weight: 700;
  text-align: center;
  padding: 10px;
- background: rgba(76,164,202, 0.5);
+ background: var(--color-primary);
  height: 78px;
  border-bottom-left-radius: 16px;
- border-bottom-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .footer p {
@@ -78,7 +84,7 @@
   }
   .description {
     height: 243px;
-    font: 14px Raleway;
+    font: 14px var(--font-body);
     padding: 15px 20px;
   }
 

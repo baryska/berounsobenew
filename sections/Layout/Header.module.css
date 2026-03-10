@@ -1,18 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200;400&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inria+Sans:ital,wght@0,300;0,400;0,700&family=Square+Peg&display=swap');
 
 nav.navPanel {
   display: flex;
   align-items: center;
-  height: 10rem;
+  height: 12rem;
   padding: 0 2rem;
   box-shadow: 0 5px 5px -5px gray;
   background-color: #fafafa;
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
-  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+}
+
+.logoImage {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
 }
 
 
@@ -28,7 +35,9 @@ div.container ul {
 
 div.container a {
   text-decoration: none;
-  font: 1.5rem Raleway;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
   margin: 0px 10px;
   padding: 10px 10px;
   position: relative;
@@ -44,7 +53,7 @@ div.pullRight a:before {
   left: 0px;
   top: 0px;
   content: '';
-  background: rgba(76,164,202, 0.8);
+  background: var(--color-accent);
   border-radius: 10px;
   opacity: 0.3;
   transition: all 0.3s;
@@ -55,6 +64,8 @@ div.pullRight a:hover:before {
 }
 
 .socialIcon {
+  display: flex;
+  align-items: center;
   margin: 0 1rem;
 }
 
@@ -81,12 +92,11 @@ div.pullRight a:hover:before {
     height: 6rem;
     justify-content: space-evenly;
     padding-left: 5rem;
-    padding-top: 5px;
+    padding-top: 0;
   }
   .logo {
-    width: 60px;
-    height: 60px;
-    padding: 0;
+    width: 80px;
+    height: 80px;
   }
 }
 

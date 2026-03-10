@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cutive&family=Lekton&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap&family=Indie+Flower&family=Gochi+Hand');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Cutive&family=Lekton&family=Oswald:wght@200;300;400;500;600;700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap&family=Indie+Flower&family=Gochi+Hand');
 
 .home {
   position: relative;
@@ -12,10 +12,15 @@
   color: #161534;
   justify-content: center;
   align-items: center;
-  font-family: Montserrat;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 3rem 0 2rem 0;
+}
+
+.aboutUs strong,
+.currentRepresentatives strong {
+  font-weight: 400;
 }
 
 .coworkers {
@@ -24,18 +29,95 @@
   color: #161534;
   justify-content: center;
   align-items: center;
-  font-family: Montserrat;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 400;
   margin: 8rem 0 2rem 0;
+}
+
+.representativesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.currentRepresentatives {
+  display: flex;
+  width: 100%;
+  color: rgba(22, 21, 52, 0.6);
+  justify-content: center;
+  align-items: center;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 6rem 0 1.5rem 0;
+}
+
+.simpleProfilesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 1800px;
+}
+
+.smallerProfileWrapper {
+  transform: scale(0.9);
+  opacity: 0.85;
+}
+
+.smallerProfileWrapper > * {
+  margin: 20px 30px !important;
+}
+
+@media (max-width: 1024px) {
+  .currentRepresentatives {
+    font-size: 1.3rem;
+    margin: 4rem 0 1rem 0;
+  }
+  
+  .smallerProfileWrapper {
+    transform: scale(0.95);
+  }
+  
+  .smallerProfileWrapper > * {
+    margin: 15px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .currentRepresentatives {
+    font-size: 1.1rem;
+    margin: 3rem 0 1rem 0;
+  }
+  
+  .simpleProfilesContainer {
+    padding: 1rem;
+  }
+  
+  .smallerProfileWrapper {
+    transform: scale(1);
+  }
+  
+  .smallerProfileWrapper > * {
+    margin: 10px 0px !important;
+  }
 }
 
 .blueDot {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: rgba(76, 164, 202, 0.5);
+  background-color: var(--color-primary-medium);
   margin: 0.5rem 0.5rem;
+}
+
+.blueDotBottom {
+  background-color: var(--color-accent-medium);
 }
 
 .whoWeAre, .smallProfiles {
@@ -44,6 +126,55 @@
   justify-content: center;
   padding: 2rem;
   margin: 0 auto;
+}
+
+.candidatesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.25rem;
+  justify-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.candidatesGridSecondRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.25rem;
+  justify-items: center;
+  padding: 0 2rem 2rem 2rem;
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+@media (max-width: 1400px) {
+  .candidatesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .candidatesGridSecondRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .candidatesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .candidatesGridSecondRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .candidatesGrid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .candidatesGridSecondRow {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 1rem 1rem;
+  }
 }
 
 .advisors {
@@ -64,7 +195,7 @@
 .aktualityContainer {
   margin-top: 4rem;
   margin-bottom: 2rem;
-  background-color: rgba(76, 164, 202, 0.1);
+  background-color: var(--color-primary-light);
 }
 
 .programme {
@@ -86,7 +217,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #70b6d5;
+  background-color: var(--color-primary);
   border: solid white 1px;
   border-radius: 50%;
   width: 70px;
@@ -115,7 +246,7 @@
 
 .programme__text {
   font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-body);
   margin-top: 1rem;
   color: #fff;
 }
@@ -135,8 +266,8 @@
   width: 150px;
   height: 150px;
   background: repeating-linear-gradient(50deg,
-      rgba(76, 164, 202, 0.1),
-      rgba(76, 164, 202, 0.1) 3px,
+      var(--color-primary-light),
+      var(--color-primary-light) 3px,
       #FFF 3px,
       #FFF 5px);
 
@@ -149,8 +280,8 @@
   width: 200px;
   height: 200px;
   background: repeating-linear-gradient(-40deg,
-      rgba(76, 164, 202, 0.1),
-      rgba(76, 164, 202, 0.1) 3px,
+      var(--color-primary-light),
+      var(--color-primary-light) 3px,
       #FFF 3px,
       #FFF 5px);
   bottom: 10rem;
@@ -161,7 +292,7 @@
 .blueCircle__3 {
   width: 100px;
   height: 100px;
-  background-color: rgba(76, 164, 202, 0.1);
+  background-color: var(--color-primary-light);
   bottom: -3rem;
   left: 30%;
 }
@@ -175,7 +306,7 @@
 .footer {
   height: 2rem;
   text-align: center;
-  font-family: Raleway;
+  font-family: var(--font-body);
   font-size: 1rem;
   margin-top: 2rem;
 }
@@ -194,15 +325,18 @@
 }
 
 .displayAll {
-  font-family: Raleway;
+  font-family: var(--font-body);
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 600;
   margin-right: 1rem;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
 }
 
 .displayAll:hover {
   text-decoration: underline;
+  color: var(--color-accent);
 }
 
 .buttonDiv {
@@ -217,11 +351,11 @@
 }
 
 .button {
-  background-color: rgb(76, 164, 202);
+  background-color: var(--color-primary);
   border-radius: 30px;
   padding: 20px 25px;
   color: white;
-  font-family: Montserrat;
+  font-family: var(--font-heading);
   font-size: 1.6rem;
   font-weight: 500;
   text-align: center;
@@ -231,17 +365,26 @@
 }
 
 .button:hover {
-  background-color: #70b6d5;
+  background-color: var(--color-accent);
 }
 
 .experts {
   width: 60%;
   margin: 0 auto;
   font-size: 1.4rem;
-  font-family: Raleway;
+  font-family: var(--font-body);
   line-height: 2;
   margin-top: 3rem;
   text-align: center;
+}
+
+.letUsKnow a {
+  color: var(--color-secondary);
+  transition: color 0.3s ease;
+}
+
+.letUsKnow a:hover {
+  color: var(--color-accent);
 }
 
 .arrowBack {
@@ -281,10 +424,25 @@
   margin-top: 5rem;
 }
 
+.slogan {
+  width: 50rem;
+  max-width: 90vw;
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.slogan img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .statement {
   font-size: 4rem;
   color: white;
-  font-family: Montserrat;
+  font-family: var(--font-body);
   margin: 0 auto;
   margin-top: 20%;
 }
@@ -294,7 +452,7 @@
 }
 
 .programme__info {
-  font-family: Raleway;
+  font-family: var(--font-body);
   font-size: 1.4rem;
   text-align: center;
   font-weight: 600;
@@ -302,16 +460,16 @@
 }
 
 .programme__download {
-  font-family: Raleway;
+  font-family: var(--font-body);
   font-size: 1.2rem;
   text-align: center;
   font-weight: 600;
-  color: rgb(76, 164, 202);
+  color: var(--color-primary);
 }
 
 .programme__download:hover {
   cursor: pointer;
-  color: #70b6d5;
+  color: var(--color-accent);
 }
 
 @media (max-width: 1600px) {
@@ -345,7 +503,7 @@
     margin-top: 35%;
   }
 
-  .logo {
+  .logo, .slogan {
     width: 40rem;
   }
 
@@ -452,7 +610,7 @@
 }
 
 .card .description {
-  font-size: 16px;
+  font-size: 18px;
   color: #66615b;
 }
 
@@ -461,34 +619,38 @@
 
 }
 
-/*======== COLORS ===========*/
+/*======== COLORS - paleta #3C96D7 #00C864 #FFAF4B ===========*/
 .card[data-color="blue"] {
-  background: #b8d8d8;
+  background: rgba(60, 150, 215, 0.2);
 }
-
 
 .card[data-color="green"] {
-  background: #d5e5a3;
+  background: rgba(0, 200, 100, 0.2);
 }
-
 
 .card[data-color="yellow"] {
-  background: #ffe28c;
+  background: rgba(255, 175, 75, 0.25);
 }
-
 
 .card[data-color="brown"] {
-  background: #d6c1ab;
+  background: rgba(60, 150, 215, 0.15);
 }
-
 
 .card[data-color="purple"] {
-  background: #baa9ba;
+  background: rgba(0, 200, 100, 0.15);
 }
 
-
 .card[data-color="orange"] {
-  background: #ff8f5e;
+  background: rgba(255, 175, 75, 0.2);
+}
+
+/* Tenký oranžový rámeček - barva palety #FFAF4B, 50% opacity */
+.orangeFrame {
+  border: 2px solid rgba(255, 175, 75, 0.5);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  overflow: visible;
 }
 
 
@@ -511,9 +673,8 @@
     visibility: hidden;
   }
 
-  .logo {
+  .logo, .slogan {
     width: 35rem;
-    margin-top: 8rem;
   }
 
   .statement {
@@ -534,7 +695,7 @@
     text-align: center;
   }
 
-  .logo {
+  .logo, .slogan {
     width: 20rem;
   }
 
@@ -561,21 +722,21 @@
 }
 
 .subscribeBox {
-  font-family: Montserrat;
+  font-family: var(--font-body);
   padding: 6em 0;
   text-align: center;
 }
 
 .subscribeBox h2 {
   margin: 0 0 .85em 0;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .newsletterWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Montserrat;
+  font-family: var(--font-body);
 }
 
 .newsletter {
@@ -592,9 +753,9 @@
   border-bottom: 1px solid;
   padding: 1em 0 .8em;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family: inherit;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   color: inherit;
   outline: none;
@@ -607,12 +768,13 @@
 .newsletter button {
   all: unset;
   margin-top: 2.4em;
-  background: #4CA4CA;
+  background: var(--color-primary);
   color: white;
   padding: 1em 4em;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
+  font-family: var(--font-heading);
   font-weight: 700;
   position: relative;
   transition: all 300ms ease;
@@ -622,6 +784,7 @@
 
 .newsletter button:hover {
   transform: translateX(10px);
+  background: var(--color-accent);
 }
 
 .archiveTitle {
@@ -638,7 +801,7 @@
 }
 
 .bridgeSection {
-  font-family: Montserrat;
+  font-family: var(--font-body);
 }
 
 .bridgeInfo {
@@ -654,11 +817,12 @@
 }
 
 .heading {
-  font-size: 1.25rem; 
-  font-weight: 600; 
-  color: #161534; 
-  margin-bottom: 0.5rem; 
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #161534;
+  margin-bottom: 0.5rem;
   text-align: center;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
   margin: 3rem 0;
 }
 
@@ -689,9 +853,13 @@
   color: #161534;
   justify-content: center;
   align-items: center;
-  font-family: Montserrat;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+.bridgeTitle strong {
+  font-weight: 400;
   text-align: center;
   @media (min-width: 768px) {
     font-size: 1.5rem;
