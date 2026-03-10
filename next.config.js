@@ -4,9 +4,9 @@ const nextConfig = {
 }
 
 module.exports = {
-  nextConfig, 
+  ...nextConfig,
   optimizeFonts: false,
   images: {
-    domains: ['cdn.sanity.io'], 
+    domains: ['cdn.sanity.io'],
   },
 }
