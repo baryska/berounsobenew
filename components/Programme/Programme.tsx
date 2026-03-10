@@ -1,8 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import { ProgrammePoints } from '../../data/index';
 import parse from 'html-react-parser';
 import styles from './Programme.module.css';
+
+const programmePoints: { image: string; theme: string; paragraphs: string[] }[] = [];
 
 function Programme() {
   return (
@@ -14,7 +15,7 @@ function Programme() {
           <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
         </div>
       </h1>
-      {ProgrammePoints.map((point) => {
+      {programmePoints.map((point) => {
         const { image, theme, paragraphs } = point;
         return (
           <article className={styles.programme} key={Math.random()}>

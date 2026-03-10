@@ -18,9 +18,9 @@ const CompactProfile = ({ title, profession, photo, text, variant = 'blue' }: Pr
           <Image
             src={photo}
             alt={title}
-            fill
-            sizes="120px"
-            style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
+            width={120}
+            height={120}
+            className={styles.profileImgPhoto}
           />
         </div>
         <div className={styles.title__block}>

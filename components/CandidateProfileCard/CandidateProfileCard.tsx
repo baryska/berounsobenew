@@ -29,9 +29,9 @@ const CandidateProfileCard = ({
           <Image
             src={photo}
             alt={name}
-            fill
-            sizes="112px"
-            className="object-cover object-center"
+            width={112}
+            height={112}
+            className="object-cover object-center w-full h-full"
           />
         </div>
 
