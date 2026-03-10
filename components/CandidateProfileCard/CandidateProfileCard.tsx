@@ -24,14 +24,13 @@ const CandidateProfileCard = ({
       className="relative flex flex-col w-full h-full min-h-[420px] bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 overflow-visible"
     >
       <div className="pt-10 pb-6 px-6 flex flex-1 flex-col items-center">
-        {/* Avatar - 112x112, clean, se stínem */}
         <div className="relative mb-4 w-28 h-28 rounded-full overflow-hidden flex-shrink-0 bg-slate-100 shadow-[0_8px_24px_rgba(0,0,0,0.12)]">
           <Image
             src={photo}
             alt={name}
-            width={112}
-            height={112}
-            className="object-cover object-center w-full h-full"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center 20%"
           />
         </div>
 
