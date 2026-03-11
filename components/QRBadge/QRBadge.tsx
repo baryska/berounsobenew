@@ -39,7 +39,7 @@ const QRBadge = () => {
           Pomozte nám změnit Beroun ❤️
         </p>
         <p className={styles.text}>
-          Přispějte na kampaň jediné <strong>nezávislé</strong> kandidátky v Berouně.
+          Přispějte na kampaň <strong>nezávislé</strong> berounské kandidátky.
         </p>
         <p className={styles.volby}>VOLBY 2026</p>
       </div>
