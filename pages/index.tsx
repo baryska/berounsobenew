@@ -76,8 +76,8 @@ const Home: NextPage = () => {
               Nejsme spojeni s žádnou celostátní politickou stranou. V posledních komunálních volbách jsme získali <strong>nejvíce hlasů a mandátů</strong>, ale i tak jsme skončili v opozici.</p>
               <p>Tuto situaci jsme využili k tomu, abychom hlídali, co se na radnici děje, a zároveň se připravovali na vlastní řešení, 
               která městu <strong>konečně přinesou změnu</strong>.</p>
-              <p>Více než deset let v berounské komunální politice nám dalo hluboké znalosti města, jeho problémů i potenciálu. 
-              Zůstali jsme věrní svému přesvědčení, že Beroun si zaslouží <strong>lepší správu, otevřenost a skutečný pokrok</strong>.</p>
+              <p>Během více než deseti let v berounské komunální politice jsme pochopili, co město skutečně potřebuje a jak ho můžeme reálně posunout dál. 
+              Nadále jsme přesvědčení, že Beroun si zaslouží <strong>lepší správu, otevřenost a skutečný pokrok</strong>.</p>
               <p>Náš tým jsme posílili o <strong>nové osobnosti a odborníky</strong> a dnes jsme připraveni Beroun zodpovědně a kompetentně vést.</p>
             </div>
             </div>
