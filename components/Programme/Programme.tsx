@@ -9,7 +9,7 @@ function Programme() {
   return (
     <div className={styles.container}>
       <h1 className={styles.whatWeWant}>
-        <strong>CO CHCEME</strong>
+        <strong>Co chceme</strong>
         <div>
           <div className={styles.blueDot} />
           <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />

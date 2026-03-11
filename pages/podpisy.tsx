@@ -7,7 +7,7 @@ const PodpisyPage = () => {
   return (
     <>
       <h1 className={programmeStyles.whatWeWant}>
-        <strong>PODPISY PRO KANDIDÁTKU</strong>
+        <strong>Podpisy pro kandidátku</strong>
         <div>
           <div className={programmeStyles.blueDot} />
           <div className={`${programmeStyles.blueDot} ${programmeStyles.blueDotBottom}`} />
@@ -59,7 +59,7 @@ const PodpisyPage = () => {
           rel="noopener noreferrer"
           className={styles.button}
         >
-          Stáhnout podpisový arch
+          stáhnout podpisový arch
         </a>
       </div>
 

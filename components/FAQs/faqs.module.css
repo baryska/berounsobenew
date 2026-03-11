@@ -23,12 +23,11 @@
 
 .heading {
   font-size: 1.25rem;
-  font-weight: 600;
-  color: #161534;
+  font-weight: 700;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
   text-align: center;
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
-  font-weight: 400;
 }
 
 .list {

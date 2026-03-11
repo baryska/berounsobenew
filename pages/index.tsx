@@ -82,7 +82,7 @@ const Home: NextPage = () => {
             </div>
             </div>
           </div>
-          <h2 className={styles.aboutUs}><strong>NAŠI KANDIDÁTI</strong>
+          <h2 className={styles.aboutUs}><strong>Naši kandidáti</strong>
             <div>
               <div className={styles.blueDot} />
               <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
@@ -122,7 +122,7 @@ const Home: NextPage = () => {
         </div>
         <section id="informujeme" className={styles.aktualityContainer}>
           <div className={styles.aktuality}>
-            <h2 className={styles.aboutUs}><strong>SLEDUJTE NÁS NA FACEBOOKU</strong>
+            <h2 className={styles.aboutUs}><strong>Sledujte nás na Facebooku</strong>
               <div>
                 <div className={styles.blueDot} />
                 <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />

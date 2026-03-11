@@ -3,17 +3,17 @@
 .whatWeWant {
   display: flex;
   width: 100%;
-  color: #161534;
+  color: var(--color-primary);
   justify-content: center;
   align-items: center;
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin: 3rem 0 2rem 0;
 }
 
 .whatWeWant strong {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .blueDot {
@@ -96,16 +96,16 @@
 .subheading {
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
-  color: #161534;
+  font-weight: 700;
+  color: var(--color-primary);
   margin: 2rem 0 1rem 0;
 }
 
 .emailHeading {
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
   font-size: 1.8rem;
-  font-weight: 400;
-  color: #161534;
+  font-weight: 700;
+  color: var(--color-primary);
   text-align: center;
   margin: 2rem 0 1rem 0;
 }
@@ -134,12 +134,12 @@
 }
 
 .emailLink {
-  color: #161534;
+  color: var(--color-primary);
   text-decoration: underline;
 }
 
 .emailLink:hover {
-  color: #161534;
+  color: var(--color-accent);
 }
 
 .themeImage {

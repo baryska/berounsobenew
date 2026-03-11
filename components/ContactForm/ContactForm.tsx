@@ -53,7 +53,7 @@ const ContactForm = () => {
     <>
       <div className={`${sent ? styles.sent : ''} ${styles.contactSection}`}>
         <h1 className={styles.contactUs}>
-          <strong>DOTAZY & PODNĚTY</strong>
+          <strong>Dotazy a podněty</strong>
           <div>
             <div className={styles.blueDot} />
             <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />

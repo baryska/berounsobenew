@@ -21,7 +21,7 @@ const FAQ = ({ faqs }: Props) => {
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={`${styles.inner}`}>
-          <h2 className={styles.heading}>OTÁZKY & ODPOVĚDI</h2>
+          <h2 className={styles.heading}>Otázky a odpovědi</h2>
           <ul className={styles.list}>
             {faqs.map((faq, index) => (
               <li key={index} className={styles.listItem}>

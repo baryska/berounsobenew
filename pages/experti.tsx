@@ -11,7 +11,7 @@ const Advisors = () => {
 
   return (
     <section className={styles.advisors}>
-      <h2 className={styles.aboutUs}><strong>S KÝM SE RADÍME</strong>
+      <h2 className={styles.aboutUs}><strong>S kým se radíme</strong>
         <div>
           <div className={styles.blueDot} />
           <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />

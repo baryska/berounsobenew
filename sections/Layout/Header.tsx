@@ -11,30 +11,12 @@ import SideMenu from '../Layout/SideMenu/Sidemenu'
 import styles from './Header.module.css';
 
 const LINKS = [
-  {
-    link: "#kdojsme",
-    name: "KDO JSME"
-  },
-  {
-    link: "#informujeme",
-    name: "INFORMUJEME"
-  },
-  {
-    link: "podpisy",
-    name: "PODPISY"
-  },
-  {
-    link: "newsletter",
-    name: "NEWSLETTER"
-  },
-  {
-    link: "most",
-    name: "MOST"
-  },
-  {
-    link: "#napistenam",
-    name: "NAPIŠTE NÁM"
-  },
+  { link: "#kdojsme", name: "kdo jsme" },
+  { link: "#informujeme", name: "informujeme" },
+  { link: "podpisy", name: "podpisy" },
+  { link: "newsletter", name: "newsletter" },
+  { link: "most", name: "most" },
+  { link: "#napistenam", name: "napište nám" },
 ]
 
 export const Header = () => {

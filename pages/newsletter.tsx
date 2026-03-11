@@ -37,7 +37,9 @@ const MailChimpForm = () => {
   return (
     <div className={styles.newsletterWrapper}>
       <div className={styles.subscribeBox}>
-        <h2>Přihlašte se k odběru našeho newsletteru!</h2>
+        <h2 className={styles.aboutUs}>
+          <strong>Přihlaste se k odběru našeho newsletteru!</strong>
+        </h2>
         <p>(Newsletter vydáváme cca jednou za dva měsíce)</p>
         <Mailchimp
           action={process.env.NEXT_PUBLIC_NEWSLETTER}
@@ -56,7 +58,7 @@ const MailChimpForm = () => {
               error: "Neočekávána chyba :(",
               empty: "Zadejte prosím svůj email",
               duplicate: "Příliš mnoho pokusů se stejnou emailovou adresou",
-              button: "ODEBÍRAT"
+              button: "odebírat"
             }
           }
           className={styles.newsletter}

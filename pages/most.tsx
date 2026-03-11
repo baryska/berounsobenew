@@ -56,7 +56,7 @@ const Most = ({ groups, faqs, timeline }: Props) => {
     <div className={styles.bridgeSection}>
       <div className={styles.bridgeHeader}>
       <h2 className={styles.bridgeTitle}>
-        <strong>VŠE, CO VÍME O REKONSTRUKCI MOSTU TGM</strong>
+        <strong>Vše, co víme o rekonstrukci mostu TGM</strong>
         <div>
           <div className={styles.blueDot} /> <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
         </div>
@@ -66,7 +66,7 @@ const Most = ({ groups, faqs, timeline }: Props) => {
         </div>
       <FAQ faqs={faqs} />
       <Timeline timeline={timeline} />
-      <h2 className={styles.heading}>DOSTUPNÁ DOKUMENTACE:</h2>
+      <h2 className={styles.heading}>Dostupná dokumentace:</h2>
       <div className={styles.docs}>
         {docsGroup
           .sort((a, b) => a.key - b.key)
@@ -89,7 +89,7 @@ const Most = ({ groups, faqs, timeline }: Props) => {
             </div>
           ))}
       </div>
-      <h2 className={styles.heading}>Z TISKU:</h2>
+      <h2 className={styles.heading}>Z tisku:</h2>
       <div className={styles.docs}>
         {pressGroup
           .sort((a, b) => a.key - b.key)

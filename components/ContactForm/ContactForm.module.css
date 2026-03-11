@@ -10,17 +10,17 @@
 .contactUs {
   display: flex;
   width: 100%;
-  color: #161534;
+  color: var(--color-primary);
   justify-content: center;
   align-items: center;
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin: 3rem 0 2rem 0;
 }
 
 .contactUs strong {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .text {

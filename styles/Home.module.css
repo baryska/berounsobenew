@@ -9,18 +9,18 @@
 .aboutUs {
   display: flex;
   width: 100%;
-  color: #161534;
+  color: var(--color-primary);
   justify-content: center;
   align-items: center;
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin: 3rem 0 2rem 0;
 }
 
 .aboutUs strong,
 .currentRepresentatives strong {
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .coworkers {
@@ -348,6 +348,30 @@
   text-align: center;
   margin: 2rem auto;
   animation: press 0.2s 1 linear;
+}
+
+/* Tlačítko v .buttonDiv – stejný styl jako newsletter ODEBÍRAT */
+.buttonDiv .button,
+.buttonDiv a.button {
+  display: inline-block;
+  width: auto;
+  background: var(--color-primary);
+  color: white;
+  padding: 1em 4em;
+  border-radius: 50px;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttonDiv .button:hover,
+.buttonDiv a.button:hover {
+  transform: translateX(10px);
+  background: var(--color-accent);
 }
 
 .button {
@@ -727,7 +751,7 @@
   text-align: center;
 }
 
-.subscribeBox h2 {
+.subscribeBox h2:not(.aboutUs) {
   margin: 0 0 .85em 0;
   font-size: 32px;
 }
@@ -818,8 +842,8 @@
 
 .heading {
   font-size: 1.25rem;
-  font-weight: 400;
-  color: #161534;
+  font-weight: 700;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
   text-align: center;
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
@@ -850,22 +874,16 @@
 .bridgeTitle {
   display: flex;
   width: 100%;
-  color: #161534;
+  color: var(--color-primary);
   justify-content: center;
   align-items: center;
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .bridgeTitle strong {
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
-  @media (min-width: 768px) {
-    font-size: 1.5rem;
-  }
-  @media (min-width: 1024px) {
-    font-size: 2rem;
-  }
 }
 
