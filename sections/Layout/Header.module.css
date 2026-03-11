@@ -36,7 +36,7 @@ div.container ul {
 div.container a {
   text-decoration: none;
   font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--color-primary);
   margin: 0px 10px;
@@ -77,7 +77,7 @@ div.pullRight a:hover::after {
 
 @media (max-width: 1600px) {
   div.container a {
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     margin: 0px 5px;
     padding: 8px 5px;
   }
