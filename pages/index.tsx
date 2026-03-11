@@ -74,7 +74,7 @@ const Home: NextPage = () => {
             <div className="text-gray-700 text-sm sm:text-base leading-relaxed text-left space-y-4" style={{ fontFamily: 'var(--font-heading)' }}>
               <p>Jsme <strong>nezávislá, občanská kandidátka</strong>, nejsilnější opoziční síla v Berouně. 
               Nejsme spojeni s žádnou celostátní politickou stranou. V posledních komunálních volbách jsme získali <strong>nejvíce hlasů a mandátů</strong>, ale i tak jsme skončili v opozici.</p>
-              <p>Tuto situaci jsme využili k tomu, abychom hlídali, co se na radnici děje, a zároveň se připravovali na vlastní řešení, 
+              <p>Tuto situaci jsme využili k tomu, abychom hlídali, co se na radnici děje, a zároveň hledali vlastní řešení, 
               která městu <strong>konečně přinesou změnu</strong>.</p>
               <p>Během více než deseti let v berounské komunální politice jsme pochopili, co město skutečně potřebuje a jak ho můžeme reálně posunout dál. 
               Nadále jsme přesvědčení, že Beroun si zaslouží <strong>lepší správu, otevřenost a skutečný pokrok</strong>.</p>
