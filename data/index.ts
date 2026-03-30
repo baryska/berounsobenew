@@ -7,6 +7,7 @@ import LucieSmall from '../public/lucie2_small.png';
 import JVSmall from '../public/jvsmall.jpg';
 import TomasSmall from '../public/tomas_small.png';
 import KristynaSmall from '../public/kristyna2_small.png';
+import MichalSmall from '../public/michal_svec_small.png'
 
 export const Candidates = [
   {
@@ -56,6 +57,14 @@ export const Candidates = [
     tags: ["PODNIKÁNÍ", "MARKETING"],
     perex: "Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem a také založila úspěšný lokální profil @ziju_v_beroune.",
     fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a na České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat jako marketérka v IT. Během studií na VŠ strávila tři měsíce na studijním stáži na Generálním konzulátu České republiky v Los Angeles. Zkušenosti z nadnárodní IT korporace a technologického startupu přetavila ve vlastní podnikání, poskytuje marketingové služby začínajícím startupům. Od roku 2020 s hrdostí nazývá Beroun svým domovem. Během rodičovské založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.`,
+  }, 
+  {
+    titles: "Mgr.",
+    name: "Michal Švec",
+    photo: MichalSmall,
+    tags: ["KULTURA"],
+    perex: "Literární překladatel a dlouholetý předseda Skandinávského domu, za jehož práci mu finský prezident udělil Řád finského lva. Věří, že živá kultura je základem pro zdravé sousedské vztahy, a své zkušenosti z vedení kulturních organizací i inspiraci ze severských zemí chce nyní využít pro rozvoj Berouna, kde před lety našel svůj domov.",
+    fullText: `Vystudoval finštinu a klasickou archeologii. Pracuje jako literární a audiovizuální překladatel, turistický průvodce po severských zemích a jazykový lektor. Téměř dvacet let působí v kulturních neziskových organizacích, zejména jako předseda Skandinávského domu. Za to obdržel od finského prezidenta rytířský Řád finského lva. Nový domov našel se ženou před šesti lety v Berouně, kde se ve volném čase zapojil do činnosti kulturní komise. V severských zemích čerpá inspiraci, že dobře fungující živá městská kultura může být skvělou platformou pro setkávání občanů, rozvoj pozitivních vztahů, vznik nových myšlenek i propagaci města.`,
   }, 
   {
     titles: "",
