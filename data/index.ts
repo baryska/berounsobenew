@@ -7,7 +7,8 @@ import LucieSmall from '../public/lucie2_small.png';
 import JVSmall from '../public/jvsmall.jpg';
 import TomasSmall from '../public/tomas_small.png';
 import KristynaSmall from '../public/kristyna2_small.png';
-import MichalSmall from '../public/michal_svec_small.png'
+import MichalSmall from '../public/michal_svec_small.png';
+import VaclavSmall from '../public/vaclav_kovar_small.png';
 
 export const Candidates = [
   {
@@ -33,6 +34,19 @@ export const Candidates = [
     tags: ["ARCHITEKTURA", "ZELEŇ"],
     perex: "Architekt s mezinárodními zkušenostmi. Je zakladatelem spolku Berounská zeleň a dlouhodobě se zasazuje o kvalitní územní rozvoj a ochranu městské zeleně.",
     fullText: `Absolvent ČVUT Fakulty stavební, obor pozemní stavby a architektura. Od roku 2006 pracuje jako OSVČ ve vlastním ateliéru. Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko). Je jedním ze zakladatelů spolku Berounská zeleň.`,
+  },
+  {
+    titles: "",
+    name: "Václav Kovář",
+    photo: VaclavSmall,
+    tags: ["VEŘEJNÝ PROSTOR", "OTEVŘENÁ RADNICE"],
+    perex: `Odborník na zapojování veřejnosti do rozhodování. 
+            Od studia novinařiny a práce v kultuře se dostal až k rozvoji komunit, 
+            zapojování veřejnosti a veřejnému prostoru. 
+            Šest let vedl spolek Berounská zeleň. Do komunální politiky přináší téma 
+            město pro lidi. Beroun potřebuje kvalitní veřejná prostranství, 
+            která slouží všem a také otevřenou radnici, která s lidmi komunikuje a zařídí, že se jejich hlas propisuje do podoby a fungování města.`,
+    fullText: `Po studiích novinařiny pracoval v kultuře. Věnoval se produkci a vedení projektových týmů. Profesní život ho dovedl až k rozvoji komunitního života a zapojování veřejnosti do rozhodovacích procesů (participaci). Tomu se začal naplno věnovat před dvěma lety jako designér participativních procesů, lektor a facilitátor. Od malička má blízko k přírodě, což mohl naplno zužitkovat při vedení dobrovolnického spolku Berounská zeleň. Deset let žije se ženou a dvěma dětmi v Berouně a stejně dlouho se zabývá současnými přístupy k navrhování a správě veřejného prostoru. Věří, že pouze otevřená radnice může přinést důvěru a spokojenost lidí. Město vnímá jako živý organismus, ve kterém se setkává řada důležitých funkcí. Úroveň veřejného prostoru určuje jak se ve městě cítíme a kolik času v něm chceme trávit. Jeho rozvoj je proto potřeba připravovat s ohledem na potřeby všech.`,
   },
   {
     titles: "Ing., DiS.",
