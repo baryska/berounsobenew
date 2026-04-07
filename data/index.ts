@@ -4,7 +4,7 @@ import MV from '../public/martin2_small.png';
 import JV from '../public/jana_valach.png';
 import JZ from '../public/jan_zykan_small.png';
 import LucieSmall from '../public/lucie2_small.png';
-import JVSmall from '../public/jvsmall.jpg';
+import JVSmall from '../public/jv_small.png';
 import TomasSmall from '../public/tomas_small.png';
 import KristynaSmall from '../public/kristyna2_small.png';
 import MichalSmall from '../public/michal_svec_small.png';
