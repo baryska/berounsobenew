@@ -18,17 +18,22 @@
   height: 266px;
   overflow: hidden;
   border-radius: 8px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .postImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   transition: transform ease 0.5s;
 }
 
 .post:hover .postImage {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .postText {
