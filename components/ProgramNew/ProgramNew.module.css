@@ -1,4 +1,7 @@
-/* HERO */
+/* ═══════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════ */
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -63,169 +66,368 @@
   line-height: 1.6;
 }
 
-/* PERSONA SELECTOR */
-.personaSection {
+/* ═══════════════════════════════════════════
+   TOC TILES (rozcestník — přívětivé karty)
+   ═══════════════════════════════════════════ */
+
+.tocSection {
   background: white;
-  padding: 2.5rem 2rem 3rem;
+  padding: 2.5rem 2rem 2.5rem;
   border-bottom: 1px solid #e2e8f0;
 }
 
-.personaSectionTitle {
+.tocTitle {
   font-family: var(--font-heading);
-  font-size: 1rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  text-align: center;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.personaGrid {
+.tocGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1rem;
-  max-width: 900px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
-.personaCard {
+.tocTile {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.25rem 1.4rem;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: #161534;
+  transition: all 0.22s ease;
   cursor: pointer;
-  border-radius: 14px;
-  overflow: hidden;
   position: relative;
-  aspect-ratio: 3/4;
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-  user-select: none;
-  border: 3px solid transparent;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
-.personaCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+.tocTileGreen {
+  background: linear-gradient(135deg, rgba(0,153,77,0.06) 0%, rgba(0,153,77,0.12) 100%);
+  border-color: rgba(0,153,77,0.18);
 }
 
-.personaCardActive {
-  border-color: var(--color-accent);
-  box-shadow: 0 8px 28px rgba(255, 175, 75, 0.35);
-  transform: translateY(-4px);
+.tocTileGreen:hover {
+  border-color: rgba(0,153,77,0.45);
+  background: linear-gradient(135deg, rgba(0,153,77,0.1) 0%, rgba(0,153,77,0.18) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,153,77,0.12);
 }
 
-.personaPhoto {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s ease;
+.tocTileBlue {
+  background: linear-gradient(135deg, rgba(60,150,215,0.06) 0%, rgba(60,150,215,0.12) 100%);
+  border-color: rgba(60,150,215,0.18);
 }
 
-.personaCard:hover .personaPhoto {
-  transform: scale(1.04);
+.tocTileBlue:hover {
+  border-color: rgba(60,150,215,0.45);
+  background: linear-gradient(135deg, rgba(60,150,215,0.1) 0%, rgba(60,150,215,0.18) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(60,150,215,0.12);
 }
 
-.personaOverlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(10, 30, 60, 0.88) 0%,
-    rgba(10, 30, 60, 0.3) 55%,
-    transparent 100%
-  );
-  transition: background 0.2s;
+.tocIcon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
 }
 
-.personaCardActive .personaOverlay {
-  background: linear-gradient(
-    to top,
-    rgba(60, 150, 215, 0.85) 0%,
-    rgba(60, 150, 215, 0.3) 55%,
-    transparent 100%
-  );
+.tocIcon svg {
+  width: 100%;
+  height: 100%;
 }
 
-.personaContent {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1rem 1rem 1.1rem;
+.tocText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 0;
 }
 
-.personaName {
+.tocLabel {
   font-family: var(--font-heading);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: white;
-  line-height: 1.3;
-  display: block;
+  color: #161534;
 }
 
-.personaCheck {
-  display: none;
-  margin-top: 0.4rem;
-  background: var(--color-accent);
-  color: white;
-  font-family: var(--font-heading);
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 0.2rem 0.6rem;
-  border-radius: 50px;
-  letter-spacing: 0.05em;
-}
-
-.personaCardActive .personaCheck {
-  display: inline-block;
-}
-
-.personaHint {
-  text-align: center;
-  margin-top: 1.2rem;
-  font-size: 0.85rem;
+.tocSubtitle {
+  font-size: 0.82rem;
   color: #64748b;
-  font-style: italic;
+  line-height: 1.4;
 }
 
-.personaReset {
+.tocArrow {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #94a3b8;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.tocTile:hover .tocArrow {
+  transform: translateX(3px);
+  color: #475569;
+}
+
+/* ═══════════════════════════════════════════
+   PERSONA FILTER (compact checkboxes)
+   ═══════════════════════════════════════════ */
+
+.filterSection {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.9rem 2rem;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+  font-family: var(--font-body);
+  max-width: 100%;
+  justify-content: center;
+}
+
+.filterSectionLabel {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.checkboxGroup {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.checkboxLabel {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  margin: 1.2rem auto 0;
-  padding: 0.45rem 1.1rem;
-  border: 1.5px solid #e2e8f0;
+  cursor: pointer;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  border: 1.5px solid #cbd5e1;
+  background: white;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.checkboxLabel:hover {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.checkboxInput {
+  display: none;
+}
+
+.checkboxCustom {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #94a3b8;
+  border-radius: 3px;
+  flex-shrink: 0;
+  position: relative;
+  transition: all 0.15s ease;
+}
+
+.checkboxInput:checked ~ .checkboxCustom {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.checkboxInput:checked ~ .checkboxCustom::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkboxInput:checked ~ .checkboxText {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.checkboxText {
+  font-size: 0.82rem;
+  color: #475569;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.filterClear {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #cbd5e1;
   border-radius: 50px;
   background: white;
   color: #64748b;
   font-family: var(--font-heading);
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.18s ease;
+  transition: all 0.15s ease;
 }
 
-.personaReset:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-  background: var(--color-primary-light);
+.filterClear:hover {
+  border-color: #ef4444;
+  color: #ef4444;
 }
 
-/* PROGRAMME SECTION */
-.progSection {
-  padding: 4.5rem 2rem;
+/* ═══════════════════════════════════════════
+   SIDEBAR NAV
+   ═══════════════════════════════════════════ */
+
+.sideNav {
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border-radius: 12px;
 }
 
-.progSectionOdd {
-  background: #f8fafc;
+.sideNavVisible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.progSectionEven {
+.sideNavItem {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 0;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* vertical timeline line */
+.sideNavItem::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #cbd5e1;
+  transition: background 0.3s ease;
+}
+
+.sideNavItem:first-child::before {
+  top: 50%;
+}
+
+.sideNavItem:last-child::before {
+  bottom: 50%;
+}
+
+.sideNavItemActive::before {
+  background: var(--color-primary);
+}
+
+.sideNavDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
   background: white;
+  border: 2.5px solid #cbd5e1;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
 }
 
-.progInner {
-  max-width: 780px;
-  margin: 0 auto;
+.sideNavItemActive .sideNavDot {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(60,150,215,0.18);
+}
+
+.sideNavItem:hover .sideNavDot {
+  border-color: var(--color-primary);
+}
+
+.sideNavLabel {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #94a3b8;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.sideNavItemActive .sideNavLabel {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.sideNavItem:hover .sideNavLabel {
+  color: #475569;
+}
+
+/* ═══════════════════════════════════════════
+   PROGRAMME SECTION
+   ═══════════════════════════════════════════ */
+
+.progSection {
+  scroll-margin-top: 2rem;
+}
+
+/* Split-screen section header */
+.sectionHero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 340px;
+  background: #0f2a4a;
+  color: white;
+}
+
+.sectionHeroText {
+  padding: 3.5rem 3rem 3.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionHeroImage {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.sectionHeroImage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #0f2a4a 0%, transparent 30%);
 }
 
 .progEyebrow {
@@ -239,27 +441,34 @@
   text-transform: uppercase;
   padding: 0.35rem 0.85rem;
   border-radius: 50px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+  width: fit-content;
 }
 
 .progEyebrowBlue {
-  background: var(--color-primary-light);
-  color: var(--color-primary);
+  background: rgba(60, 150, 215, 0.25);
+  color: #7ec8f0;
 }
 
 .progEyebrowGreen {
-  background: var(--color-secondary-light);
-  color: #00994d;
+  background: rgba(0, 153, 77, 0.2);
+  color: #66cc99;
 }
 
 .progHeadline {
   font-family: var(--font-heading);
-  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 1.75rem;
-  color: var(--color-primary);
+  color: white;
   text-wrap: balance;
+}
+
+/* Content area below split header */
+.progContent {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
 }
 
 .progPerex {
@@ -273,16 +482,19 @@
   margin-bottom: 2rem;
 }
 
-/* QUOTE */
+/* ═══════════════════════════════════════════
+   QUOTE (larger, more prominent)
+   ═══════════════════════════════════════════ */
+
 .progQuote {
   margin: 2.5rem 0;
   border-radius: 14px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 280px 1fr;
   background: rgba(255, 175, 75, 0.15);
   border: 1.5px solid rgba(255, 175, 75, 0.5);
-  min-height: 260px;
+  min-height: 300px;
 }
 
 .quotePhotoCol {
@@ -294,14 +506,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
   display: block;
 }
 
 .quoteAvatarPlaceholder {
   width: 100%;
   height: 100%;
-  min-height: 260px;
+  min-height: 300px;
   background: rgba(60, 150, 215, 0.12);
   display: flex;
   align-items: center;
@@ -320,10 +532,11 @@
 .quoteBody {
   font-family: var(--font-body);
   font-style: italic;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #1e293b;
   margin-bottom: 1.25rem;
+  font-weight: 500;
 }
 
 .quoteBody::before {
@@ -332,30 +545,43 @@
   font-size: 3.5rem;
   line-height: 1;
   color: var(--color-accent);
-  opacity: 0.5;
+  opacity: 0.6;
   display: block;
   margin-bottom: 0.25rem;
 }
 
-.quoteMeta {
-  font-size: 0.9rem;
+.quoteBody::after {
+  content: '\201C';
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--color-accent);
+  opacity: 0.6;
+  display: block;
+  text-align: right;
+  margin-top: 0.25rem;
 }
 
 .quoteName {
   font-family: var(--font-heading);
   font-weight: 700;
   color: #161534;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
-.quoteRole {
-  color: #64748b;
-  margin-top: 0.1rem;
-}
+/* ═══════════════════════════════════════════
+   ACCORDION
+   ═══════════════════════════════════════════ */
 
-/* ACCORDION */
 .accordion {
   margin-top: 2.5rem;
+}
+
+.accordionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 .accordionTitle {
@@ -365,7 +591,29 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #64748b;
-  margin-bottom: 1rem;
+  margin: 0;
+}
+
+.expandAllBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.8rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 50px;
+  background: white;
+  color: #64748b;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.expandAllBtn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: var(--color-primary-light);
 }
 
 .accItem {
@@ -455,7 +703,7 @@
 }
 
 .accItemOpen .accBody {
-  max-height: 400px;
+  max-height: 600px;
 }
 
 .accBodyInner {
@@ -478,7 +726,7 @@
   flex-shrink: 0;
 }
 
-/* FILTER BAR */
+/* FILTER BAR (inside accordion) */
 .filterBar {
   display: flex;
   align-items: center;
@@ -503,7 +751,10 @@
   border: 1px solid rgba(60, 150, 215, 0.3);
 }
 
-/* FEEDBACK FORM */
+/* ═══════════════════════════════════════════
+   FEEDBACK FORM
+   ═══════════════════════════════════════════ */
+
 .feedbackSection {
   background: #f8fafc;
   padding: 4rem 2rem;
@@ -599,14 +850,50 @@
   transform: translateY(-1px);
 }
 
-/* RESPONSIVE */
-@media (max-width: 680px) {
-  .personaGrid {
-    grid-template-columns: repeat(2, 1fr);
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  .sectionHero {
+    grid-template-columns: 1fr;
+    min-height: auto;
   }
 
-  .progSection {
-    padding: 3rem 1.25rem;
+  .sectionHeroText {
+    padding: 2.5rem 2rem;
+  }
+
+  .sectionHeroImage {
+    height: 220px;
+  }
+
+  .sectionHeroImage::before {
+    background: linear-gradient(180deg, #0f2a4a 0%, transparent 40%);
+  }
+
+  .sideNav {
+    display: none !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .tocGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .filterSection {
+    padding: 0.75rem 1.25rem;
+    gap: 0.5rem;
+  }
+
+  .checkboxGroup {
+    gap: 0.4rem;
+  }
+
+  .progContent {
+    padding: 2.5rem 1.25rem 3rem;
   }
 
   .feedbackRow {
@@ -624,11 +911,23 @@
   }
 
   .quotePhotoCol {
-    height: 220px;
+    height: 340px;
+  }
+
+  .quotePhotoCol .quoteAvatarLarge {
+    object-position: center 15%;
   }
 
   .quoteTextCol {
     border-left: none;
     border-top: 4px solid var(--color-accent);
+  }
+
+  .checkboxLabel {
+    padding: 0.3rem 0.5rem;
+  }
+
+  .checkboxText {
+    font-size: 0.75rem;
   }
 }
