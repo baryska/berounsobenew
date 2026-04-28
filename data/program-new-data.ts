@@ -65,7 +65,7 @@ const SEKCE_CHYTRE: Sekce = {
   perex2: 'Vedle toho zavedeme Berounskou kartu, protože obyvatelům našeho města se život v Berouně zkrátka musí vyplatit. Tato karta bude součástí připravované aplikace, takže ať už se rozhodnete pro digitální verzi nebo s sebou budete raději nosit tu plastovou, získáte nárok na praktické výhody.\n\nV programových bodech je pak rozebíráme podrobněji, stejně jako naši snahu otevřít městská data veřejnosti.',
   quote: 'Vadí mi, že běžné věci vyžadují půlden volna z práce - třeba přihlásit své miminko na vítání občánků dnes člověk musí osobně na úřadě. A to ani nemluvím o tom, že předpis na poplatek za popelnice přijde dřív než pozvánka na vítání občánků. Taky mi vadí, že vám rozkopou ulici pod okny a vy ani nevíte proč a jak dlouho to bude trvat. Tyhle věci úplně zbytečně znepříjemňují lidem v Berouně život. Aplikace Beroun v mobilu a Berounská karta to mají změnit — pozvánku na vítání občánku pro své miminko dostanete automaticky při narození dítěte, na mapě plánovaných výkopů uvidíte, co se kde chystá, na úřad si zarezervujete čas přes mobil. A kdo bude chtít přijít osobně, samozřejmě bude moct.',
   quoteName: 'Barbora Skálová',
-  quoteRole: 'Beroun Sobě',
+  quoteRole: 'Berouncars aoSobě',
   quoteAvatar: '/bara_small.jpg',
   heroImage: '/phonecard.jpg',
   points: [
