@@ -44,7 +44,6 @@ const MailChimpForm = () => {
         <h2 className={styles.aboutUs}>
           <strong>Přihlaste se k odběru našeho newsletteru!</strong>
         </h2>
-        <p>(Newsletter vydáváme cca jednou za dva měsíce)</p>
         <Mailchimp
           action={process.env.NEXT_PUBLIC_NEWSLETTER}
           fields={[
