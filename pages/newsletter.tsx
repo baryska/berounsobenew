@@ -30,6 +30,10 @@ const archiveItems = [
   {
     title: 'Duben 2025',
     link: "https://mailchi.mp/6ee46af4f7eb/jak-se-mas-beroune-7"
+  },
+  {
+    title: 'Květen 2026',
+    link: "https://mailchi.mp/2c328eb8f5ec/jak-se-mas-beroune-12933777"
   }
 ]
 
