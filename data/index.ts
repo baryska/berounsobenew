@@ -3,6 +3,7 @@ import EK from '../public/eva2_small.png';
 import MV from '../public/martin2_small.png';
 import JV from '../public/jana_valach.png';
 import JZ from '../public/jan_zykan_small.png';
+import VP from '../public/veronika_small.png';
 import LucieSmall from '../public/lucie2_small.png';
 import JVSmall from '../public/jv_small.png';
 import TomasSmall from '../public/tomas_small.png';
@@ -105,6 +106,14 @@ export const Candidates = [
     tags: ["KULTURA", "PODNIKÁNÍ"],
     fullText: 'Hostinský a vystudovaný politolog. Z hostímské Hospůdky U Krobiána vybudoval respektované kulturní centrum, kam na debaty pravidelně přijíždí špičky české vědy, žurnalistiky i politiky. Vedle intelektuálního přesahu se zaměřuje i na lokální gastronomii – jeho podnik sází na kvalitní suroviny od regionálních dodavatelů a ctí tradici poctivého pohostinství. Kulturní akce pořádá bez nároku na zisk – dobrovolné vstupné věnuje na charitativní projekty. Jan Zykán tak v Berouně vytváří prostor, kde se lidé setkávají, diskutují a kde se klade důraz na lokální hodnoty i společenskou odpovědnost.',
     perex: 'Hostinský a politolog, který z hostímské hospůdky vytvořil významné kulturní centrum. Vedle špičkových veřejných debat do regionu přináší poctivou gastronomii postavenou na lokálních potravinách.',
+  },
+  {
+    titles: "",
+    name: "Veronika Pohlová",
+    photo: VP, 
+    tags: ["SPORT", "KULTURA"],
+    fullText: 'Veronika studuje vysokou školu se zaměřením na vzdělávání a výtvarnou výchovu. Jako rodilá Berouňačka chce, aby město bylo místem, kde mladí lidé rádi zůstávají a kde mají prostor pro svůj rozvoj. Jako budoucí učitelka věří, že moderní škola má být především o bezpečném prostředí, podpoře individuality a kreativity, nejen o známkách. Sama se aktivně věnuje sportu a umění, proto v Berouně postrádá dostupnější sportovní zázemí pro všechny a větší podporu místních umělců. Jejím cílem je oživit kulturu, podpořit místní galerie a dát začínajícím tvůrcům šanci se ukázat. Nechce o změnách jen mluvit, ale chce být součástí generace, která je v Berouně pomůže tvořit.',
+    perex: 'Studentka pedagogiky a rodilá Berouňačka, která chce moderní školy zaměřené na kreativitu, dostupný sport pro všechny generace a více prostoru pro místní kulturu a mladé talenty.',
   },
 ];
 
