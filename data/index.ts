@@ -111,7 +111,7 @@ export const Candidates = [
     titles: "",
     name: "Veronika Pohlová",
     photo: VP, 
-    tags: ["SPORT", "KULTURA"],
+    tags: ["SPORT", "KULTURA", "ŠKOLSTVÍ"],
     fullText: 'Veronika studuje vysokou školu se zaměřením na vzdělávání a výtvarnou výchovu. Jako rodilá Berouňačka chce, aby město bylo místem, kde mladí lidé rádi zůstávají a kde mají prostor pro svůj rozvoj. Jako budoucí učitelka věří, že moderní škola má být především o bezpečném prostředí, podpoře individuality a kreativity, nejen o známkách. Sama se aktivně věnuje sportu a umění, proto v Berouně postrádá dostupnější sportovní zázemí pro všechny a větší podporu místních umělců. Jejím cílem je oživit kulturu, podpořit místní galerie a dát začínajícím tvůrcům šanci se ukázat. Nechce o změnách jen mluvit, ale chce být součástí generace, která je v Berouně pomůže tvořit.',
     perex: 'Studentka pedagogiky a rodilá Berouňačka, která chce moderní školy zaměřené na kreativitu, dostupný sport pro všechny generace a více prostoru pro místní kulturu a mladé talenty.',
   },
