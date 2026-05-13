@@ -4,6 +4,7 @@ import MV from '../public/martin2_small.png';
 import JV from '../public/jana_valach.png';
 import JZ from '../public/jan_zykan_small.png';
 import VP from '../public/veronika_small.png';
+import JN from '../public/jakub.png';
 import LucieSmall from '../public/lucie2_small.png';
 import JVSmall from '../public/jv_small.png';
 import TomasSmall from '../public/tomas_small.png';
@@ -56,6 +57,15 @@ export const Candidates = [
     tags: ["STAVEBNICTVÍ", "VEŘEJNÝ PROSTOR"],
     perex: "Stavební inženýrka s praxí v řízení rekonstrukcí. Dlouhodobě se věnuje správě bytového fondu a aktivně usiluje o smysluplný rozvoj, modernizaci bytové infrastruktury a zkvalitnění veřejného prostoru.",
     fullText: `Berounská rodačka, která vystudovala stavební inženýrství. V posledních letech se aktivně zapojuje do dění v místě, kde žije. Ujala se správy bytového domu na Velkém sídlišti, kde jako předsedkyně SVJ koordinovala jeho kompletní revitalizaci. Zároveň se dlouhodobě zajímá o kvalitu veřejného prostoru a snaží se o jeho zlepšení.`,
+  },
+   {
+    titles: "Mgr., Ph.D.",
+    name: "Jakub Novák",
+    photo: JN,
+    tags: ["ZDRAVOTNICTVÍ", "VEŘEJNÝ PROSTOR"],
+    perex: `Biolog, bývalý novinář, dnes pracuje ve zdravotnictví. Ale hlavně – táta, soused a Berouňák.
+          Věří, že dobré město se pozná podle toho, jak se v něm žije těm, kteří to nemají nejlehčí. Dostupné bydlení, kvalitní školy, fungující zdravotnictví a důstojnost pro každého. To je volba, kterou můžeme udělat společně.`,
+    fullText: `Vystudoval biologii a působil jako novinář, v současnosti pracuje ve zdravotnictví. Věří, že každý v Berouně si zaslouží důstojný život: bydlení, které nezruinuje rodinu, dostupného doktora, školu, kam děti chodí rády a která je rozvíjí. Město, kudy se dá bezpečně, spolehlivě a včas dostat z jednoho konce na druhý. Komunitu, na kterou se dá spolehnout. Tohle je základ, na kterém stojí dobrý život ve městě.`,
   },
   {
     titles: "PhDr.",
