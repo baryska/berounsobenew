@@ -12,8 +12,10 @@ nav.navPanel {
 .logo {
   display: flex;
   align-items: center;
-  width: 220px;
-  height: 220px;
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .logoImage {
@@ -83,7 +85,7 @@ div.pullRight a:hover::after {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1000px) {
   .sidemenuVisible {
     display: block;
   }
