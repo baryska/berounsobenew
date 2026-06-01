@@ -36,12 +36,12 @@ export const Header = () => {
   
   return (
     <>
-      <div ref={node} className={styles.sidemenuVisible}>
-        <BurgerMenu onBurgerClick={() => setOpen(!open)} open={open} />
-        <SideMenu open={open} onClose={() => setOpen(false)}/>
-      </div>
       <header>
         <nav className={styles.navPanel}>
+          <div ref={node} className={styles.sidemenuVisible}>
+            <BurgerMenu onBurgerClick={() => setOpen(!open)} open={open} />
+            <SideMenu open={open} onClose={() => setOpen(false)}/>
+          </div>
           <Link href="/">
             <a className={styles.logo}>
               <Image src={Logo} alt="Beroun sobě" width={220} height={220} className={styles.logoImage} />
