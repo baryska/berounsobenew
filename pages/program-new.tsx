@@ -1,38 +1,88 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
-import { ALL_SEKCE } from '../data/program-new-data';
+import { useState, useEffect, useMemo, useCallback } from 'react';
+import { type PersonaId } from '../data/program-new-data';
+import { buildProgram } from '../lib/buildProgram';
 import { TocTiles } from '../components/ProgramNew/TocTiles';
 import { PersonaFilter } from '../components/ProgramNew/PersonaFilter';
 import { SidebarNav } from '../components/ProgramNew/SidebarNav';
-import { ProgSection } from '../components/ProgramNew/ProgSection';
+import { ProgSection, ProgIntroSection } from '../components/ProgramNew/ProgSection';
 import { FeedbackSection } from '../components/ProgramNew/FeedbackSection';
 import styles from '../components/ProgramNew/ProgramNew.module.css';
+
+function ScrollToTop() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 400);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return (
+    <button
+      type="button"
+      className={[styles.scrollTop, visible ? styles.scrollTopVisible : ''].filter(Boolean).join(' ')}
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      aria-label="Zpět nahoru"
+    >
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+  );
+}
+
+function parseFiltr(raw: string | string[] | undefined): Set<PersonaId> {
+  if (!raw || Array.isArray(raw)) return new Set();
+  const valid: PersonaId[] = ['rodina','senior','student','auto','mhd','cyklista','podnikatel','sidliste'];
+  const ids = raw.split(',').filter((id): id is PersonaId => valid.includes(id as PersonaId));
+  return new Set(ids);
+}
 
 const ProgramNewPage: NextPage = () => {
   const router = useRouter();
   const [allowed, setAllowed] = useState(false);
-  const [activePersona, setActivePersona] = useState<string | null>(null);
+  const [active, setActive] = useState<Set<PersonaId>>(new Set());
 
   useEffect(() => {
     if (!router.isReady) return;
     if (router.query.program === 'tajny') {
       setAllowed(true);
+      const fromUrl = parseFiltr(router.query.filtr);
+      if (fromUrl.size > 0) setActive(fromUrl);
     } else {
       router.replace('/');
     }
   }, [router.isReady, router.query.program]);
 
-  useEffect(() => {
-    const saved = localStorage.getItem('bsn_persona');
-    if (saved) setActivePersona(saved);
-  }, []);
+  const syncUrl = useCallback((next: Set<PersonaId>) => {
+    const query: Record<string, string> = { program: 'tajny' };
+    if (next.size > 0) query.filtr = [...next].join(',');
+    router.replace({ pathname: router.pathname, query }, undefined, { shallow: true });
+  }, [router]);
 
-  useEffect(() => {
-    if (activePersona) localStorage.setItem('bsn_persona', activePersona);
-    else localStorage.removeItem('bsn_persona');
-  }, [activePersona]);
+  const toggle = useCallback((id: PersonaId) => {
+    setActive(prev => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id); else next.add(id);
+      syncUrl(next);
+      return next;
+    });
+  }, [syncUrl]);
+
+  const reset = useCallback(() => {
+    setActive(new Set());
+    syncUrl(new Set());
+  }, [syncUrl]);
+
+  const view = useMemo(() => buildProgram(active), [active]);
+
+  const orderedSekce = useMemo(
+    () => view.sekce.map(sv => sv.sekce),
+    [view]
+  );
 
   if (!allowed) return null;
 
@@ -46,28 +96,39 @@ const ProgramNewPage: NextPage = () => {
       <section className={styles.hero}>
         <div
           className={styles.heroBg}
-          style={{ backgroundImage: "url('/namesti1.jpg')" }}
+          style={{ backgroundImage: "url('/namesti_husovo.jpg')" }}
         />
         <div className={styles.heroContent}>
           <span className={styles.heroLabel}>Volební program 2026</span>
           <h1 className={styles.heroTitle}>
-            Beroun pro lidi,<br />kteří tu skutečně žijí.
+            Tolik nápadů, jak zlepšit život v Berouně, <br /> že se nám nevešly na billboard.
           </h1>
           <p className={styles.heroSubtitle}>
-            Nejsme tu od toho, abychom slibovali zázraky. Jsme tu proto, že Beroun známe a víme, kde ho tlačí bota.
+            Žádný seznam vzletných přání, které zůstanou v šuplíku, ale konkrétní projekty, kterými obratem začneme zlepšovat život všech obyvatel Berouna. Potřebujeme jen váš hlas. 
           </p>
         </div>
       </section>
 
-      <TocTiles />
-      <PersonaFilter active={activePersona} setActive={setActivePersona} />
-      <SidebarNav />
+      <TocTiles orderedSekce={orderedSekce} />
+      <PersonaFilter active={active} toggle={toggle} reset={reset} />
+      <SidebarNav orderedSekce={orderedSekce} />
 
-      {ALL_SEKCE.map(sec => (
-        <ProgSection key={sec.id} sec={sec} activePersona={activePersona} />
+      {view.microcopy && (
+        <div className={styles.microcopyBanner}>
+          <p className={styles.microcopyText}>{view.microcopy}</p>
+        </div>
+      )}
+
+      {view.intro.map(sec => (
+        <ProgIntroSection key={sec.id} sec={sec} />
+      ))}
+
+      {view.sekce.map(sv => (
+        <ProgSection key={sv.sekce.id} view={sv} filterActive={active.size > 0} />
       ))}
 
       <FeedbackSection />
+      <ScrollToTop />
     </>
   );
 };

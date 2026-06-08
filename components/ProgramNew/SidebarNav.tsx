@@ -1,10 +1,12 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { ALL_SEKCE } from '../../data/program-new-data';
+import type { Sekce } from '../../data/program-new-data';
 import styles from './ProgramNew.module.css';
 
-export function SidebarNav() {
+export function SidebarNav({ orderedSekce }: { orderedSekce: Sekce[] }) {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [visible, setVisible] = useState(false);
+  const sekceRef = useRef(orderedSekce);
+  sekceRef.current = orderedSekce;
 
   const checkOverlap = useCallback(() => {
     const vh = window.innerHeight;
@@ -14,7 +16,7 @@ export function SidebarNav() {
     let overlapsHero = false;
     let anyContentVisible = false;
 
-    for (const s of ALL_SEKCE) {
+    for (const s of sekceRef.current) {
       const hero = document.getElementById(`${s.id}-hero`);
       if (hero) {
         const r = hero.getBoundingClientRect();
@@ -46,7 +48,7 @@ export function SidebarNav() {
       { rootMargin: '-20% 0px -60% 0px' }
     );
 
-    ALL_SEKCE.forEach(s => {
+    orderedSekce.forEach(s => {
       const section = document.getElementById(s.id);
       if (section) activeObserver.observe(section);
     });
@@ -58,7 +60,7 @@ export function SidebarNav() {
       activeObserver.disconnect();
       window.removeEventListener('scroll', checkOverlap);
     };
-  }, [checkOverlap]);
+  }, [checkOverlap, orderedSekce]);
 
   const navClass = [
     styles.sideNav,
@@ -67,7 +69,7 @@ export function SidebarNav() {
 
   return (
     <nav className={navClass}>
-      {ALL_SEKCE.map(s => (
+      {orderedSekce.map(s => (
         <a
           key={s.id}
           href={`#${s.id}`}
@@ -78,7 +80,7 @@ export function SidebarNav() {
           }}
         >
           <span className={styles.sideNavDot} />
-          <span className={styles.sideNavLabel}>{s.eyebrow}</span>
+          <span className={styles.sideNavLabel}>{s.eyebrow || s.headline}</span>
         </a>
       ))}
     </nav>

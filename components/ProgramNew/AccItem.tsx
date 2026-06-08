@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import type { ProgramPoint } from '../../data/program-new-data';
+import { RichText } from './RichText';
 import styles from './ProgramNew.module.css';
 
-export function AccItem({ point, isHighlighted, forceOpen }: {
+export function AccItem({ point, forceOpen, isHighlighted }: {
   point: ProgramPoint;
-  isHighlighted: boolean;
   forceOpen: boolean;
+  isHighlighted?: boolean;
 }) {
   const [manualToggle, setManualToggle] = useState<boolean | null>(null);
   const prevForceOpen = useRef(forceOpen);
@@ -27,7 +28,12 @@ export function AccItem({ point, isHighlighted, forceOpen }: {
 
   return (
     <div className={itemClass}>
-      <button className={styles.accHeader} onClick={() => setManualToggle(prev => prev !== null ? !prev : !forceOpen)}>
+      <button
+        className={styles.accHeader}
+        onClick={() => setManualToggle(prev => prev !== null ? !prev : !forceOpen)}
+        type="button"
+        aria-expanded={open}
+      >
         <span className={styles.accDot} />
         <span className={styles.accHeading}>{point.heading}</span>
         {isHighlighted && <span className={styles.priorityBadge}>Pro vás</span>}
@@ -38,7 +44,7 @@ export function AccItem({ point, isHighlighted, forceOpen }: {
       <div className={styles.accBody}>
         <div className={styles.accBodyInner}>
           {point.text.split('\n\n').map((para, i, arr) => (
-            <p key={i} style={{ marginBottom: i < arr.length - 1 ? '0.75rem' : 0 }}>{para}</p>
+            <p key={i} style={{ marginBottom: i < arr.length - 1 ? '0.75rem' : 0 }}><RichText text={para} /></p>
           ))}
         </div>
       </div>
