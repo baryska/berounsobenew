@@ -106,7 +106,7 @@ export function ProgSection({ view, filterActive }: {
                   alt={sec.quoteName}
                   layout="fill"
                   objectFit="cover"
-                  objectPosition="center 15%"
+                  objectPosition="center 10%"
                   quality={90}
                   sizes="145px"
                 />
