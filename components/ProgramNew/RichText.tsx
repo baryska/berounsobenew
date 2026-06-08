@@ -5,7 +5,7 @@ export function RichText({ text }: { text: string }) {
   return (
     <>
       {parts.map((part, i) => {
-        const match = part.match(/^<strong>(.*)<\/strong>$/s);
+        const match = part.match(/^<strong>([\s\S]*)<\/strong>$/);
         if (match) return <strong key={i}>{match[1]}</strong>;
         return <React.Fragment key={i}>{part}</React.Fragment>;
       })}
