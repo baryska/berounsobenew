@@ -34,6 +34,10 @@ const archiveItems = [
   {
     title: 'Květen 2026',
     link: "https://mailchi.mp/2c328eb8f5ec/jak-se-mas-beroune-12933777"
+  },
+  {
+    title: 'Červen 2026',
+    link: "https://mailchi.mp/b4bba3683a9c/jak-se-mas-beroune-12934191?e=9211873847"
   }
 ]
 
@@ -69,11 +73,13 @@ const MailChimpForm = () => {
 
       </div>
       <h3 className={styles.archiveTitle}>Archiv čísel:</h3>
-      {archiveItems.reverse().map((item) => (
-        <a href={item.link} key={item.title} target="_blank" rel="noreferrer">
-          <p className={styles.archiveItem}>{item.title}</p>
-        </a>
-      ))}
+      <div className={styles.archiveGrid}>
+        {[...archiveItems].reverse().map((item) => (
+          <a href={item.link} key={item.title} target="_blank" rel="noreferrer" className={styles.archiveItem}>
+            {item.title}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

@@ -815,6 +815,14 @@
   font-size: 1.5rem;
 }
 
+.archiveGrid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.3rem 4rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
 .archiveItem {
   font-weight: 600;
   font-size: 1.2rem;
