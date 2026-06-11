@@ -98,7 +98,7 @@
 
 .tocTile {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.9rem;
   padding: 0.9rem 1.2rem;
   border-radius: 14px;
@@ -241,6 +241,11 @@
   background: var(--color-primary-light);
 }
 
+.checkboxLabelActive {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
 .checkboxInput {
   display: none;
 }
@@ -356,7 +361,7 @@
 }
 
 .microcopyText {
-  max-width: 720px;
+  max-width: 1200px;
   margin: 0 auto;
   font-size: 0.92rem;
   line-height: 1.6;
@@ -491,6 +496,46 @@
 
 .sideNavItem:hover .sideNavLabel {
   color: #475569;
+}
+
+.sideNavTooltip {
+  display: none;
+}
+
+@media (max-width: 1280px) and (min-width: 901px) {
+  .sideNavTooltip {
+    display: block;
+    position: absolute;
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--color-primary);
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 0.35rem 0.7rem;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.18s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .sideNavTooltip::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-right-color: var(--color-primary);
+  }
+
+  .sideNavItem:hover .sideNavTooltip {
+    opacity: 1;
+  }
 }
 
 /* ═══════════════════════════════════════════
@@ -669,28 +714,6 @@
   font-weight: 500;
 }
 
-.quoteBody::before {
-  content: '\201E';
-  font-family: var(--font-heading);
-  font-size: 2.2rem;
-  line-height: 1;
-  color: var(--color-accent);
-  opacity: 0.5;
-  display: block;
-  margin-bottom: 0.1rem;
-}
-
-.quoteBody::after {
-  content: '\201C';
-  font-family: var(--font-heading);
-  font-size: 2.2rem;
-  line-height: 1;
-  color: var(--color-accent);
-  opacity: 0.5;
-  display: block;
-  text-align: right;
-  margin-top: 0.1rem;
-}
 
 .quoteName {
   font-family: var(--font-heading);
@@ -960,6 +983,24 @@
   box-shadow: 0 0 0 3px rgba(60, 150, 215, 0.12);
 }
 
+.feedbackCheckboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #475569;
+  cursor: pointer;
+  user-select: none;
+  align-self: center;
+}
+
+.feedbackCheckbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
 .feedbackSubmit {
   align-self: center;
   margin-top: 0.5rem;
@@ -1030,6 +1071,21 @@
   }
 }
 
+@media (max-width: 1280px) and (min-width: 901px) {
+  .sideNavLabel {
+    display: none;
+  }
+
+  .sideNavItem {
+    gap: 0;
+  }
+
+  .sideNav {
+    left: 1rem;
+    padding: 0.5rem;
+  }
+}
+
 @media (max-width: 900px) {
   .sectionHero {
     grid-template-columns: 1fr;
@@ -1050,6 +1106,11 @@
 
   .sideNav {
     display: none !important;
+  }
+
+  .progContent {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .tocGrid {

@@ -36,7 +36,7 @@ function ScrollToTop() {
 
 function parseFiltr(raw: string | string[] | undefined): Set<PersonaId> {
   if (!raw || Array.isArray(raw)) return new Set();
-  const valid: PersonaId[] = ['rodina','senior','student','auto','mhd','cyklista','podnikatel','sidliste'];
+  const valid: PersonaId[] = ['rodina','senior','student','auto','mhd','cyklista','podnikatel','sidliste','miluji'];
   const ids = raw.split(',').filter((id): id is PersonaId => valid.includes(id as PersonaId));
   return new Set(ids);
 }

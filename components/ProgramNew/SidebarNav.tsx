@@ -16,6 +16,9 @@ export function SidebarNav({ orderedSekce }: { orderedSekce: Sekce[] }) {
     let overlapsHero = false;
     let anyContentVisible = false;
 
+    const filterEl = document.getElementById('program-filter');
+    const pastIntro = filterEl ? filterEl.getBoundingClientRect().bottom < vh * 0.5 : true;
+
     for (const s of sekceRef.current) {
       const hero = document.getElementById(`${s.id}-hero`);
       if (hero) {
@@ -34,7 +37,7 @@ export function SidebarNav({ orderedSekce }: { orderedSekce: Sekce[] }) {
       }
     }
 
-    setVisible(anyContentVisible && !overlapsHero);
+    setVisible(anyContentVisible && !overlapsHero && pastIntro);
   }, []);
 
   useEffect(() => {
@@ -81,6 +84,7 @@ export function SidebarNav({ orderedSekce }: { orderedSekce: Sekce[] }) {
         >
           <span className={styles.sideNavDot} />
           <span className={styles.sideNavLabel}>{s.eyebrow || s.headline}</span>
+          <span className={styles.sideNavTooltip}>{s.eyebrow || s.headline}</span>
         </a>
       ))}
     </nav>

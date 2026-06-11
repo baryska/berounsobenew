@@ -4,30 +4,34 @@ export function FeedbackSection() {
   return (
     <section className={styles.feedbackSection}>
       <div className={styles.feedbackInner}>
-        <h2 className={styles.feedbackHeadline}>Něco vám v programu chybí?</h2>
+        <h2 className={styles.feedbackHeadline}>Máte na srdci něco dalšího?</h2>
         <p className={styles.feedbackPerex}>
-          Napište nám, co vás trápí nebo co byste chtěli zlepšit — každý podnět čteme.
+          Nápady na ta nejdrobnější zlepšení vítáme s otevřenou náručí. Stejně jako konstruktivní zpětnou vazbu.
         </p>
         <form className={styles.feedbackForm} onSubmit={e => e.preventDefault()}>
           <textarea
             className={styles.feedbackTextarea}
-            placeholder="Váš podnět nebo nápad…"
+            placeholder="Vaše zpráva"
             rows={4}
           />
           <div className={styles.feedbackRow}>
             <input
               className={styles.feedbackInput}
               type="text"
-              placeholder="Jméno (nepovinné)"
+              placeholder="Jméno"
             />
             <input
               className={styles.feedbackInput}
               type="email"
-              placeholder="E-mail (nepovinné)"
+              placeholder="E-mail (nepovinné, pokud nečekáte odpověď)"
             />
           </div>
+          <label className={styles.feedbackCheckboxLabel}>
+            <input type="checkbox" className={styles.feedbackCheckbox} />
+            <span>Přeji si odebírat newsletter Beroun sobě</span>
+          </label>
           <button type="submit" className={styles.feedbackSubmit}>
-            Odeslat podnět
+            Odeslat
           </button>
         </form>
       </div>

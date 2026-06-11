@@ -7,24 +7,26 @@ export function PersonaFilter({ active, toggle, reset }: {
   reset: () => void;
 }) {
   return (
-    <div className={styles.filterSection} role="group" aria-label="Filtr programu podle životní situace">
-      <span className={styles.filterSectionLabel}>Kdo jsem:</span>
+    <div id="program-filter" className={styles.filterSection} role="group" aria-label="Filtr programu podle životní situace">
+      <span className={styles.filterSectionLabel}>Co pro mě máte, když:</span>
       <div className={styles.checkboxGroup}>
         {PERSONAS.map(p => (
-          <button
+          <label
             key={p.id}
-            type="button"
-            role="switch"
-            aria-pressed={active.has(p.id)}
-            aria-checked={active.has(p.id)}
             className={[
-              styles.personaBtn,
-              active.has(p.id) ? styles.personaBtnActive : '',
+              styles.checkboxLabel,
+              active.has(p.id) ? styles.checkboxLabelActive : '',
             ].filter(Boolean).join(' ')}
-            onClick={() => toggle(p.id)}
           >
-            {p.label}
-          </button>
+            <input
+              type="checkbox"
+              className={styles.checkboxInput}
+              checked={active.has(p.id)}
+              onChange={() => toggle(p.id)}
+            />
+            <span className={styles.checkboxCustom} />
+            <span className={styles.checkboxText}>{p.label}</span>
+          </label>
         ))}
       </div>
       {active.size > 0 && (

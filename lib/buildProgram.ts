@@ -47,12 +47,15 @@ export function buildProgram(active: Set<PersonaId>): ProgramView {
       .map(x => x.p);
 
     const collapsed = score === 0;
+    const allSameScore = sortedPoints.length > 0 &&
+      sortedPoints.every(p => scoreFor(p.weights, active) === scoreFor(sortedPoints[0].weights, active));
+    const splitAt = collapsed ? 0 : allSameScore ? sortedPoints.length : 3;
     return {
       sekce: s,
       score,
       collapsed,
-      visiblePoints: collapsed ? [] : sortedPoints.slice(0, 3),
-      hiddenPoints: collapsed ? sortedPoints : sortedPoints.slice(3),
+      visiblePoints: sortedPoints.slice(0, splitAt),
+      hiddenPoints: sortedPoints.slice(splitAt),
     };
   });
 
