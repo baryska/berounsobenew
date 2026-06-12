@@ -856,7 +856,7 @@
 }
 
 .accItemOpen .accBody {
-  max-height: 1200px;
+  max-height: none;
 }
 
 .accBodyInner {
