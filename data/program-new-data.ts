@@ -155,7 +155,7 @@ export const ALL_SEKCE: Sekce[] = [
     headline: "Doprava jako propojený systém",
     perex1: "Kvalita života ve městě se měří mimo jiné tím, jak snadno a bezpečně se v něm dokážeme pohybovat. Berounská doprava si zaslouží propracovanou koncepci, která zohlední pohyb všemi prostředky – pěšky, na kole, MHD i autem. Beroun musí být připravený a zajistit plynulé spojení i v momentě, kdy se stát a kraj rozhodnou zahájit výstavbu tunelu nebo rekonstrukci mostu.",
     perex2: "Jsme proaktivní a proto už teď nabízíme jasné kroky, které <strong>uleví centru</strong>, <strong>propojí izolovaná místa</strong> a zajistí, aby pohyb po Berouně (i do Prahy) dával smysl i za pár let.",
-    quote: "Když se ráno snažím vymotat z ucpané Plzeňské ulice, uvědomuji si, jak moc dopravě v Berouně chybí plynulost. A není to jen o autech. Cesta od vlaku domů je zdlouhavá, na kole kličkujete mezi auty a chodci, naopak po práci nemáte auto, kde na sídlišti zaparkovat. Naše řešení nestaví na plošných zákazech, ale na chytrém propojování a plánování s ohledem na nevyhnutelnou budoucnost.",
+    quote: "Když se ráno snažím vymotat z ucpané Plzeňské ulice, uvědomuji si, jak moc dopravě v Berouně chybí plynulost. A není to jen o autech. Cesta od vlaku domů je zdlouhavá, na kole kličkujete mezi auty a chodci, naopak po práci nemáte auto kde na sídlišti zaparkovat. Naše řešení nestaví na plošných zákazech, ale na chytrém propojování a plánování s ohledem na nevyhnutelnou budoucnost.",
     quoteName: "Tomáš Procházka",
     quoteRole: "",
     quoteAvatar: "/Tomas_prochazka.jpg",
@@ -189,7 +189,7 @@ export const ALL_SEKCE: Sekce[] = [
       {
         id: "dojizdeni_autobusem",
         heading: "Dojíždění autobusem nejen do Prahy si zaslouží vylepšení",
-        text: "Zkoordinujeme spoje v ranní špičce – ke stávajícím linkám do Prahy chceme přidat <strong>expresní spojení s metropolí přímo ze sídliště</strong>. Povede mimo vytížené centrum se zastávkou na berounském nádraží. Tím zároveň posílíme dopravu mezi sídlištěm a nádražím, která není dostatečná. Beroun si zaslouží i kvalitnější spojení s letištěm, jako má například Kladno. Zahájíme proto diskusi o možnosti přímého <strong>spojení Beroun–Letiště Václava Havla</strong>, resp. posílení spojů ve vybraných časech a sezóně na Zličín. Pro děti i seniory navíc připravíme edukační kampaň a <strong>poradenství ohledně tarifů</strong>, abychom ukázali, že cestovat v MHD není žádná věda.",
+        text: "Zkoordinujeme spoje v ranní špičce – ke stávajícím linkám do Prahy chceme přidat <strong>expresní spojení s metropolí přímo ze sídliště</strong>. Povede mimo vytížené centrum se zastávkou na berounském nádraží. Tím zároveň posílíme dopravu mezi sídlištěm a nádražím, která není dostatečná. Beroun si zaslouží i kvalitnější spojení s letištěm, jako má například Kladno. Zahájíme proto diskusi o možnosti přímého <strong>spojení Beroun–Letiště Václava Havla</strong>, resp. posílení spojů ve vybraných časech a sezóně na Zličín. Nejen pro děti i seniory navíc připravíme edukační kampaň a <strong>poradenství ohledně tarifů</strong>, abychom ukázali, že cestovat v MHD není žádná věda.",
         weights: { rodina: 0, senior: 0, student: 10, auto: 0, mhd: 10, cyklista: 0, podnikatel: 5, sidliste: 5, miluji: 10 },
       },
       {
@@ -287,7 +287,7 @@ export const ALL_SEKCE: Sekce[] = [
       {
         id: "ms_dvoulete",
         heading: "Do systému mateřských škol vrátíme kapacity pro dvouleté",
-        text: "Z našeho pohledu je to dosažitelný cíl, pokud se nám povede do systému vrátit selský rozum.",
+        text: "Z našeho pohledu je to dosažitelný cíl, pokud se nám povede do systému vrátit selský rozum. Chceme umožnit rodičům vrátit se do práce, pokud o to stojí.",
         weights: { rodina: 10, senior: 0, student: 0, auto: 0, mhd: 0, cyklista: 0, podnikatel: 5, sidliste: 0, miluji: 10 },
       },
       {
