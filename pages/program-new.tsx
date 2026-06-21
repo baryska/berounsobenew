@@ -37,8 +37,8 @@ function ScrollToTop() {
 function parseFiltr(raw: string | string[] | undefined): Set<PersonaId> {
   if (!raw || Array.isArray(raw)) return new Set();
   const valid: PersonaId[] = ['rodina','senior','student','auto','mhd','cyklista','podnikatel','sidliste','miluji'];
-  const ids = raw.split(',').filter((id): id is PersonaId => valid.includes(id as PersonaId));
-  return new Set(ids);
+  const first = raw.split(',').find((id): id is PersonaId => valid.includes(id as PersonaId));
+  return first ? new Set([first]) : new Set();
 }
 
 const ProgramNewPage: NextPage = () => {
@@ -65,8 +65,8 @@ const ProgramNewPage: NextPage = () => {
 
   const toggle = useCallback((id: PersonaId) => {
     setActive(prev => {
-      const next = new Set(prev);
-      if (next.has(id)) next.delete(id); else next.add(id);
+      const next = new Set<PersonaId>();
+      if (!prev.has(id)) next.add(id);
       syncUrl(next);
       return next;
     });
