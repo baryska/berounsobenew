@@ -262,7 +262,7 @@ export const ALL_SEKCE: Sekce[] = [
     id: "vzdelane",
     eyebrow: "BEROUN VZDĚLANĚ",
     color: "",
-    headline: "Školy, ve kterých se budou děti cítit dobře a které je připraví na život i další studium",
+    headline: "Školy, ve kterých se budou děti cítit dobře a které je připraví jak na život, tak na další studia",
     perex1: "Základem úspěšného města jsou vzdělané, sebevědomé a spokojené děti. Naší vizí je vytvořit <strong>ve školách i školkách</strong> takové prostředí, které děti neodrazuje od vzdělávání a neničí jejich zvídavost. Chceme školy postavené na <strong>moderních metodách, funkčním zázemí a partnerském přístupu k rodičům</strong>.",
     perex2: "Město sice nemůže diktovat, jak mají učit, ale jako zřizovatel musí ředitelům vytvořit podmínky, aby měli volné ruce k budování kvalitních pedagogických týmů.",
     quote: "Celý život se věnuji školství a mnohokrát jsem si ověřila, že strach z neúspěchu je to nejhorší, co může dítě potkat. Nemůžeme po dětech chtít jen bezmyšlenkovité biflování. Musíme je učit přemýšlet, logicky argumentovat a nebát se chyb, protože metodou pokus–omyl se dostanou nejdál. K tomu ale ředitelé a učitelé potřebují od města adekvátní zázemí, moderní technologie a podporu, aby se mohli soustředit na to hlavní. Na moderní výuku a rozvoj dětí.",
