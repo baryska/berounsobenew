@@ -63,16 +63,17 @@ export function ProgIntroSection({ sec }: { sec: Sekce }) {
   );
 }
 
-export function ProgSection({ view, filterActive }: {
+export function ProgSection({ view, filterActive, filterKey }: {
   view: SekceView;
   filterActive: boolean;
+  filterKey: string;
 }) {
   const { sekce: sec, visiblePoints, hiddenPoints, collapsed } = view;
   const [expandState, setExpandState] = useState<'default' | 'all' | 'none'>('default');
 
   useEffect(() => {
     setExpandState('default');
-  }, [filterActive, view.score]);
+  }, [filterKey]);
 
   const allPoints = [...visiblePoints, ...hiddenPoints];
   const priorityIds = new Set(visiblePoints.map(p => p.id));

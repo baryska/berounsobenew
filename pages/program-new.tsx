@@ -124,7 +124,7 @@ const ProgramNewPage: NextPage = () => {
       ))}
 
       {view.sekce.map(sv => (
-        <ProgSection key={sv.sekce.id} view={sv} filterActive={active.size > 0} />
+        <ProgSection key={sv.sekce.id} view={sv} filterActive={active.size > 0} filterKey={[...active].sort().join(',')} />
       ))}
 
       <FeedbackSection />
