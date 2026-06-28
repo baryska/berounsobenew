@@ -105,7 +105,7 @@ export const ALL_SEKCE: Sekce[] = [
     eyebrow: "BEROUN CHYTŘE",
     color: "blue",
     headline: "Berounská karta a úřad v mobilu.\nVšechny služby na jednom místě",
-    perex1: "Nechceme, aby si na každou návštěvu úřadu bylo nutné brát volno z práce. Proto začneme postupně budovat moderní systém služeb pro občany, který nám všem usnadní život. Od platby za odpady přes vyřízení dokladů až po nákup lístků do kina, vše přehledně v mobilní aplikaci. Nová možnost pro všechny, kterým digitální cesta nevadí a ocení možnost zařídit si povinnosti na dálku. Zároveň ale zachováme možnost si vše vyřídit osobně, pokud to někomu vyhovuje více.",
+    perex1: "Začneme postupně budovat moderní systém služeb pro občany, který nám všem usnadní život. Od platby za odpady přes vyřízení dokladů až po nákup lístků do kina, vše přehledně v mobilní aplikaci. Nová možnost pro všechny, kterým digitální cesta nevadí a ocení možnost zařídit si povinnosti na dálku. Zároveň ale zachováme možnost si vše vyřídit osobně, pokud to někomu vyhovuje více.",
     perex2: "Vedle toho zavedeme <strong>Berounskou kartu</strong>, protože žít v Berouně je radost. A my si přejeme, aby to s sebou neslo i praktické výhody. Karta bude součástí připravované aplikace, takže ať už se rozhodnete pro digitální verzi, nebo s sebou budete raději nosit plastovou kartičku, získáte nárok na praktické výhody.\n\nV programových bodech pak její možnosti rozebíráme podrobněji, stejně jako naši snahu o otevření městských dat veřejnosti.",
     ctaUrl: "https://www.berounskakarta.cz",
     ctaLabel: "Více o Berounské kartě na berounskakarta.cz",
@@ -114,7 +114,7 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Barbora_skalova.jpg",
     heroImage: "",
-    weights: { rodina: 8, senior: 7, student: 10, auto: 7, mhd: 6, cyklista: 5, podnikatel: 9, sidliste: 8, miluji: 10 },
+    weights: { rodina: 8, senior: 7, student: 9, auto: 7, mhd: 6, cyklista: 5, podnikatel: 9, sidliste: 8, miluji: 10 },
     points: [
       {
         id: "karta_app",
@@ -123,16 +123,16 @@ export const ALL_SEKCE: Sekce[] = [
         weights: { rodina: 10, senior: 8, student: 10, auto: 8, mhd: 3, cyklista: 3, podnikatel: 9, sidliste: 8, miluji: 10 },
       },
       {
-        id: "smartinfo",
-        heading: "Přívětivější úřad a chytrá komunikace přes SMS nebo aplikaci",
-        text: "Úřad tu má být pro vás, ne vy pro něj. Zpřehledníme online objednávání a <strong>upravíme úřední dobu</strong> tak, abyste si nově mohli běžnou agendu zařídit před nebo po práci. Alespoň jednou za měsíc. Důležité informace už navíc nebudete muset vyhledávat na nepřehledných webech nebo sociálních sítích. <strong>Systém SmartInfo</strong> vás bude varovat před haváriemi, nehodami nebo vás upozorní, která popelnice se bude zítra vyvážet – jednoduchou SMS zprávou nebo upozorněním přímo v aplikaci <strong>Beroun v mobilu</strong>.",
-        weights: { rodina: 9, senior: 9, student: 5, auto: 4, mhd: 8, cyklista: 2, podnikatel: 8, sidliste: 6, miluji: 10 },
-      },
-      {
         id: "vykopy",
         heading: "Konec rozkopaných ulic bez vysvětlení. Všechny stavby a výkopy na jedné mapě.",
         text: "Každý jsme si toho už někdy všimnul. Večer se vrátíme z práce a pod okny máme rozkopanou ulici, aniž bychom věděli, proč a jak dlouho to bude trvat. Vytvoříme proto <strong>interaktivní mapu plánovaných staveb, výkopových prací a uzavírek</strong>. Chceme, abyste věděli, co se ve vaší ulici chystá. A také aby město konečně dokázalo lépe koordinovat práce různých dodavatelů. Každý velký projekt, jako je rekonstrukce mostu, revitalizace náplavky či stavba nového hřiště, bude navíc mít vlastní <strong>profil na webové stránce</strong>. Na té zjistíte aktuální stav a veškeré informace o dodržování termínů i čerpání rozpočtu. Transparentně, v reálném čase.",
         weights: { rodina: 5, senior: 5, student: 2, auto: 10, mhd: 8, cyklista: 5, podnikatel: 8, sidliste: 9, miluji: 10 },
+      },
+      {
+        id: "smartinfo",
+        heading: "Přívětivější úřad a chytrá komunikace přes SMS nebo aplikaci",
+        text: "Úřad tu má být pro vás, ne vy pro něj. Zpřehledníme online objednávání a <strong>upravíme úřední dobu</strong> tak, abyste si nově mohli běžnou agendu zařídit před nebo po práci. Alespoň jednou za měsíc. Důležité informace už navíc nebudete muset vyhledávat na nepřehledných webech nebo sociálních sítích. <strong>Systém SmartInfo</strong> vás bude varovat před haváriemi, nehodami nebo vás upozorní, která popelnice se bude zítra vyvážet – jednoduchou SMS zprávou nebo upozorněním přímo v aplikaci <strong>Beroun v mobilu</strong>.",
+        weights: { rodina: 9, senior: 9, student: 5, auto: 4, mhd: 8, cyklista: 2, podnikatel: 8, sidliste: 6, miluji: 10 },
       },
       {
         id: "benefity",
@@ -218,7 +218,7 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Kristyna_kymlickova.jpg",
     heroImage: "",
-    weights: { rodina: 9, senior: 9, student: 9, auto: 4, mhd: 9, cyklista: 9, podnikatel: 6, sidliste: 9, miluji: 10 },
+    weights: { rodina: 10, senior: 9, student: 10, auto: 4, mhd: 9, cyklista: 9, podnikatel: 6, sidliste: 9, miluji: 10 },
     points: [
       {
         id: "naplavka",
@@ -253,7 +253,7 @@ export const ALL_SEKCE: Sekce[] = [
       {
         id: "prednadrazi",
         heading: "Důstojné přednádraží a plynule prostupné centrum",
-        text: "Vlakové nádraží je vstupní branou do Berouna. Začneme s projektováním <strong>moderního přestupního uzlu propojujícího vlaky a autobusy</strong> (kryté přechody, jednotné značení, čekárny a navýšení kapacit P+R) s ohledem na plánovaný železniční tunel z Prahy. Dnes je cesta od vlakového nádraží do centra (a dále přes Wagnerovo náměstí nebo například na Městskou horu) nepřehledná, s nepříjemnými přechody přes rušné silnice (např. třída Politických vězňů). Nebudeme si hrát na všemocné politiky a <strong>odborné posouzení necháme na urbanistovi</strong>, který navrhne kroky, kterými v dané lokalitě reálně zvýšíme pocit bezpečí, zajistíme lepší osvětlení, snazší orientaci nebo mimo jiné odstraníme slepá místa.",
+        text: "Vlakové nádraží je vstupní branou do Berouna. Začneme s projektováním <strong>moderního přestupního uzlu propojujícího vlaky a autobusy</strong> (kryté přechody, jednotné značení, čekárny a navýšení kapacit P+R) s ohledem na plánovaný železniční tunel z Prahy. Dnes je cesta od vlakového nádraží do centra (a dále přes Wagnerovo náměstí nebo například na Městskou horu) nepřehledná, s nepříjemnými přechody přes rušné silnice (např. třída Politických vězňů). Na složitá urbanistická témata nechceme dávat jednoduché politické odpovědi. Proto se opřeme o doporučení odborníků, kteří navrhnou řešení skutečně odpovídající dané lokalitě.",
         weights: { rodina: 5, senior: 6, student: 7, auto: 6, mhd: 10, cyklista: 5, podnikatel: 5, sidliste: 7, miluji: 10 },
       },
     ],
@@ -270,7 +270,7 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Eva_kotrcova.jpg",
     heroImage: "",
-    weights: { rodina: 10, senior: 3, student: 3, auto: 2, mhd: 2, cyklista: 1, podnikatel: 4, sidliste: 3, miluji: 10 },
+    weights: { rodina: 10, senior: 3, student: 3, auto: 2, mhd: 2, cyklista: 0, podnikatel: 4, sidliste: 3, miluji: 10 },
     points: [
       {
         id: "pedagogicke_tymy",
@@ -293,7 +293,7 @@ export const ALL_SEKCE: Sekce[] = [
       {
         id: "svazkova_skola",
         heading: "Nová škola a moderní knihovna v kasárnách, které uleví napjatým kapacitám",
-        text: "Kapacity současných základních škol v Berouně jsou na hraně. Prosadíme proto <strong>vybudování takzvané svazkové školy</strong> v areálu kasáren, která vznikne v rámci připravované nové budovy městské knihovny. Co znamená svazková škola? Jde o školu, kterou <strong>společně vybudují a financují okolní obce spojené ve speciálním svazku</strong>. Stát svazkové školy podporuje a často na ně vypisuje dotace. Tato nová škola tak přirozeně převezme podstatnou <strong>část dojíždějících dětí</strong>, čímž se konečně uvolní místa ve všech stávajících městských školách primárně pro místní, berounské děti.",
+        text: "Kapacity současných základních škol v Berouně jsou na hraně. Prosadíme proto <strong>vybudování takzvané svazkové školy</strong> v areálu kasáren, mimo jiné v budově, kde nyní sídlí městská knihovna. Co znamená svazková škola? Jde o školu, kterou <strong>společně vybudují a financují okolní obce spojené ve speciálním svazku</strong>. Stát svazkové školy podporuje a často na ně vypisuje dotace. Tato nová škola tak přirozeně převezme podstatnou <strong>část dojíždějících dětí</strong>, čímž se konečně uvolní místa ve všech stávajících městských školách primárně pro místní, berounské děti.",
         weights: { rodina: 10, senior: 6, student: 9, auto: 2, mhd: 2, cyklista: 1, podnikatel: 5, sidliste: 5, miluji: 10 },
       },
       {
@@ -322,7 +322,7 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Lucie_simeckova.jpg",
     heroImage: "",
-    weights: { rodina: 3, senior: 5, student: 7, auto: 3, mhd: 3, cyklista: 4, podnikatel: 10, sidliste: 4, miluji: 10 },
+    weights: { rodina: 3, senior: 5, student: 7, auto: 3, mhd: 3, cyklista: 1, podnikatel: 10, sidliste: 4, miluji: 10 },
     points: [
       {
         id: "mestske_trhy",
@@ -334,7 +334,7 @@ export const ALL_SEKCE: Sekce[] = [
         id: "popup_obchody",
         heading: "Pop-up obchody pro otestování nápadů",
         text: "V Berouně je momentálně velký nedostatek komerčních prostor. Vytypujeme proto <strong>nevyužité městské prostory</strong> vhodné pro komerční využití a nabídneme je k tzv. pop-up (krátkodobým) pronájmům. Místní tvůrci, gastro podnikatelé a drobní prodejci si tak budou moci snadno a bez velkého finančního rizika <strong>otestovat svůj byznys plán</strong>.",
-        weights: { rodina: 3, senior: 2, student: 9, auto: 0, mhd: 0, cyklista: 0, podnikatel: 10, sidliste: 1, miluji: 10 },
+        weights: { rodina: 3, senior: 2, student: 9, auto: 0, mhd: 0, cyklista: 0, podnikatel: 9, sidliste: 1, miluji: 10 },
       },
       {
         id: "online_katalog",
@@ -346,7 +346,7 @@ export const ALL_SEKCE: Sekce[] = [
         id: "byznys_hub",
         heading: "Městský byznys hub pro nové i zavedené firmy",
         text: "Pro dlouhodobý rozvoj najdeme silného partnera, se kterým připravíme projekt <strong>multifunkčního byznysového hubu s coworkingem</strong>, kancelářemi, sdílenými službami a konferenčním prostorem. Jako ideální lokality se nabízí brownfieldy – například léta chátrající areál bývalých kasáren.",
-        weights: { rodina: 2, senior: 1, student: 9, auto: 0, mhd: 0, cyklista: 0, podnikatel: 10, sidliste: 1, miluji: 10 },
+        weights: { rodina: 2, senior: 1, student: 9, auto: 0, mhd: 0, cyklista: 0, podnikatel: 9, sidliste: 1, miluji: 10 },
       },
       {
         id: "byznys_u_stolu",
@@ -358,7 +358,7 @@ export const ALL_SEKCE: Sekce[] = [
         id: "know_how",
         heading: "Odborné know-how z celého Česka přímo v Berouně",
         text: "Podnikatelé už nebudou muset pro rady do Prahy. Navážeme partnerství s institucemi jako CzechInvest, CzechTrade, Hospodářská komora a regionálními agenturami. Zajistíme, aby tyto organizace měly v Berouně <strong>pravidelné konzultační dny, workshopy a kurzy</strong> zaměřené na účetnictví, právo či úspěšné čerpání dotací.",
-        weights: { rodina: 1, senior: 1, student: 5, auto: 0, mhd: 0, cyklista: 0, podnikatel: 10, sidliste: 0, miluji: 10 },
+        weights: { rodina: 1, senior: 1, student: 5, auto: 0, mhd: 0, cyklista: 0, podnikatel: 9, sidliste: 0, miluji: 10 },
       },
       {
         id: "skoly_realny_svet",
@@ -370,7 +370,7 @@ export const ALL_SEKCE: Sekce[] = [
         id: "podnikatelska_zona",
         heading: "Moderní podnikatelská zóna a optické sítě",
         text: "Identifikujeme 2–3 lokality (ideálně poblíž dálnice a nádraží) a připravíme plán jejich využití k <strong>vybudování moderní podnikatelské zóny pro lehkou výrobu a služby</strong>. Zóna s důrazem na udržitelnou architekturu a zeleň nabídne občanům reálnou pracovní alternativu k dojíždění do Prahy. Postaráme se také o aktivní koordinaci s dodavateli optických sítí a stavebními firmami, aby byl do budoucna zajištěn <strong>rychlý internet napříč celým městem</strong>.",
-        weights: { rodina: 5, senior: 2, student: 8, auto: 3, mhd: 2, cyklista: 0, podnikatel: 10, sidliste: 5, miluji: 10 },
+        weights: { rodina: 5, senior: 2, student: 8, auto: 3, mhd: 2, cyklista: 0, podnikatel: 9, sidliste: 5, miluji: 10 },
       },
     ],
   },
@@ -381,7 +381,7 @@ export const ALL_SEKCE: Sekce[] = [
     headline: "Výstavba a územní plánování, které řídí město, ne developeři",
     perex1: "Rozvoj města nemůže určovat zisk soukromých investorů, ale potřeby lidí, kteří v něm reálně žijí. Beroun v posledních letech zažil stavební boom, na který ale doprava, školy ani školky nebyly připravené. Naší vizí je tento přístup otočit – nová výstavba je možná až tehdy, až bude město mít hotovou infrastrukturu.",
     perex2: "Stavět nové domy je možné až poté, co budou k dispozici funkční obchvat, bezpečné mosty a dostatek míst pro děti ve vzdělávacích zařízeních. Zároveň jako město musíme začít systematicky budovat <strong>vlastní bytový fond</strong>.",
-    quote: "Když se člověk podívá na to, co se v Berouně děje, přepadne ho pocit, že developeři mají na radnici hlavní slovo. Z okna vidím, jak se staví bytové domy, přitom v celé čtvrti zoufale chybí parkování a místa ve školce narychlo dotuje město z našich peněz. Chci, aby pravidla hry určovalo město – nejdřív musí být vyřešené dopravní napojení a občanská vybavenost, potom se teprve může začít cokoli stavět.",
+    quote: "Když se člověk podívá na to, co se v Berouně děje, přepadne ho pocit, že developeři mají na radnici hlavní slovo. Na třech místech se staví celé čtvrti bytových domů, přitom v jejich okolí zoufale chybí parkování a místa ve školce narychlo dotuje město z našich peněz. Chci, aby pravidla hry určovalo město – nejdřív musí být vyřešené dopravní napojení a občanská vybavenost, potom se teprve může začít cokoli stavět.",
     quoteName: "Jan Valachovič",
     quoteRole: "",
     quoteAvatar: "/Jan_valachovic.jpg",
@@ -409,7 +409,7 @@ export const ALL_SEKCE: Sekce[] = [
       {
         id: "kasarna_kultura",
         heading: "Kasárna jako centrum kultury, vzdělávání a odpočinku",
-        text: "Areál bývalých kasáren je dnes <strong>parkovištěm obklopeným chátrajícími budovami</strong>, mezi kterými jsou jedinými výjimkami městská knihovna, Jiná káva a dětská skupinka. Celou tuto část chceme začít od základů měnit a vytvořit zde moderní <strong>multifunkční prostor pro všechny generace</strong>. Knihovna by po letech skvělé práce zasloužila <strong>novou budovu</strong>. Dále tu je místo pro reprezentativní <strong>kulturní sál</strong>, který Berounu tak zoufale chybí a který se stane novým domovem nejen pro maturitní plesy, ale i další společenské akce. Součástí projektu bude také <strong>relaxační zóna a vyčleněné startovací byty</strong>, které poslouží jako motivace pro přilákání kvalitních učitelů do berounských škol.",
+        text: "Areál bývalých kasáren je dnes <strong>parkovištěm obklopeným chátrajícími budovami</strong>, mezi kterými jsou jedinými výjimkami městská knihovna, Jiná káva a dětská skupinka. Celou tuto část chceme začít od základů měnit a vytvořit zde moderní <strong>multifunkční prostor pro všechny generace</strong>. Knihovna by po letech skvělé práce zasloužila <strong>novou budovu</strong>. Dále tu je místo pro reprezentativní <strong>kulturní sál</strong>, který Berounu tak zoufale chybí a který se stane novým domovem nejen pro maturitní plesy, ale i další společenské akce. Součástí projektu bude také <strong>relaxační zóna a vyčleněné startovací byty</strong>, které poslouží jako motivace pro přilákání kvalitních učitelů do berounských škol. Stejně tak podpoříme vznik sportovní haly pro jednoho ze spoluvlastníků nemotivostí v areálu kasarém - TJ Lokomotivu Beroun.",
         weights: { rodina: 10, senior: 8, student: 9, auto: 2, mhd: 2, cyklista: 2, podnikatel: 6, sidliste: 4, miluji: 10 },
       },
       {
