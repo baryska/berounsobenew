@@ -813,6 +813,7 @@
 
 .archiveTitle {
   font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .archiveGrid {
@@ -830,6 +831,27 @@
 
 .archiveItem:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .newsletterWrapper {
+    padding: 0 1.5rem;
+  }
+
+  .archiveTitle {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .archiveGrid {
+    grid-template-columns: repeat(2, auto);
+    gap: 0.4rem 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .archiveItem {
+    font-size: 0.95rem;
+  }
 }
 
 .bridgeSection {
