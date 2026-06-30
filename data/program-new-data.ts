@@ -391,7 +391,7 @@ export const ALL_SEKCE: Sekce[] = [
       {
         id: "zadne_rozsirovani",
         heading: "Žádné další rozšiřování stavebních parcel bez hotové dopravy",
-        text: "Dokud nebude 100% vyřešena celková dopravní infrastruktura a kapacity škol, <strong>nebudeme schvalovat rozšiřování dalších zastavitelných území</strong>. Z pozice města budeme proto odmítat developerské tlaky na zastavění zelených ploch. Zrevidujeme celou změnu źemního plánu č. 6 a nepustíme dále změny, které ohrozí udržitelný rozvoj města.",
+        text: "Dokud nebude 100% vyřešena celková dopravní infrastruktura a kapacity škol, <strong>nebudeme schvalovat rozšiřování dalších zastavitelných území</strong>. Z pozice města budeme proto odmítat developerské tlaky na zastavění zelených ploch. Zrevidujeme celou změnu územního plánu č. 6 a nepustíme dále změny, které ohrozí udržitelný rozvoj města.",
         weights: { rodina: 6, senior: 6, student: 3, auto: 8, mhd: 2, cyklista: 4, podnikatel: 3, sidliste: 9, miluji: 10 },
       },
       {
