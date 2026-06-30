@@ -224,7 +224,7 @@ export const ALL_SEKCE: Sekce[] = [
         id: "naplavka",
         heading: "Náplavka a břehy řek pro lidi (s respektem k přírodě)",
         text: "Oživení břehů Berounky i Litavky je pro nás velkým tématem. Litavka dnes působí spíše jako bariéra, přitom má stejný potenciál jako Berounka. U obou řek bychom proto rádi dobudovali <strong>průchozí nábřežní promenády s lavičkami, pobytovými plochami a napojením na cyklostezku</strong>. U řeky Berounky máme jako prioritu realizaci propojení <strong>náplavky po celé délce břehu od Štiky až do kempu a také od parku Na Špici až po Štulovnu</strong>, kde má dle původní studie z roku 2018 vzniknout kromě pěší trasy i amfiteátr, přírodní koridor přes ostrov a prostor pro foodtruck nebo sezónní kavárnu. Počítáme navíc s úpravou břehů po vzoru Litomyšle a Sušice, kdy přidáme schody do vody.",
-        weights: { rodina: 10, senior: 5, student: 9, auto: 2, mhd: 4, cyklista: 10, podnikatel: 6, sidliste: 5, miluji: 10 },
+        weights: { rodina: 10, senior: 5, student: 9, auto: 2, mhd: 4, cyklista: 10, podnikatel: 8, sidliste: 5, miluji: 10 },
       },
       {
         id: "mestska_hora",
@@ -236,19 +236,19 @@ export const ALL_SEKCE: Sekce[] = [
         id: "sidliste_sport",
         heading: "Sídliště zpět v centru pozornosti a dostupný sport",
         text: "Aby sídliště ožila, musí nabídnout mnohem kvalitnější prostor pro život. Staré prolézačky nahradíme <strong>moderními hřišti s vodními prvky, kuličkodráhami či lanovými prolézačkami</strong>. Prostranství u Hvězdy oživíme pravidelnými trhy a kulturním programem. Po vzoru Litvínova vybudujeme <strong>dostupné, multifunkční sportovní plácky</strong> s jednoduchým vybavením (například bránou pro Street X Ball či stolem na ping-pong). Tyto plochy nebudou vyžadovat žádné vstupné ani rezervaci a doplní tak přeplněná placená sportoviště (např. Lokotku). Chceme lépe využít areál koupaliště – vybudováním <strong>suchého hřiště</strong> pro nejmenší nebo lepším občerstvením. O navýšení počtu parkovacích míst budeme navíc usilovat při každé vhodné příležitosti (typicky v rámci plánované rekonstrukce ulic), a to s ohledem na chodce, cyklisty a zeleň.",
-        weights: { rodina: 7, senior: 5, student: 8, auto: 3, mhd: 2, cyklista: 3, podnikatel: 2, sidliste: 10, miluji: 10 },
+        weights: { rodina: 8, senior: 5, student: 8, auto: 3, mhd: 2, cyklista: 3, podnikatel: 2, sidliste: 10, miluji: 10 },
       },
       {
         id: "bezpecne_centrum",
         heading: "Bezpečné centrum, úklid a konec temných koutů",
         text: "Na berounských ulicích jsme všichni svědky toho, že spoléhat se pouze na externí úklidové firmy nestačí, obzvlášť, pokud jim město nedává dostatečné zadání. <strong>Zrevidujeme proto spolupráci s AVE</strong>, a pokud to bude pro město výhodnější, bude si zajišťovat údržbu, drobné opravy městského mobiliáře (koše, lavičky, …) a péči o zeleň vlastními silami pomocí městské firmy. Ve spolupráci s odborníkem na urbanismus potom navrhneme <strong>změny na kritických místech, kde se lidé necítí bezpečně</strong> – v okolí Chačapuri, za knihkupectvím, v podchodech u Barrande, v parčíku u Koně a pod dálničním mostem. Zaměříme se na řešení nepořádku kolem popelnic, situaci lidí bez domova a užívání návykových látek. <strong>Podpoříme noční hlídky, více osvětlení, chytré kamery i úzkou spolupráci se sociálními službami.</strong> Pro ty, kdo o pomoc stojí, zřídíme nové komunitní a nízkoprahové centrum pro děti a dospělé.",
-        weights: { rodina: 8, senior: 10, student: 8, auto: 4, mhd: 8, cyklista: 8, podnikatel: 8, sidliste: 9, miluji: 10 },
+        weights: { rodina: 8, senior: 10, student: 8, auto: 4, mhd: 8, cyklista: 5, podnikatel: 8, sidliste: 5, miluji: 10 },
       },
       {
         id: "zelen_stin",
         heading: "Zeleň, stín a jednotná tvář veřejného prostoru",
         text: "Klimatické změny začínáme pociťovat všichni. Změníme proto přístup k zeleni – zavedeme důslednou <strong>povýsadbovou péči, budování dešťových záhonů, lepší zasakování vody</strong> a ochranu proti tepelným ostrovům. Aktivně začneme vytvářet zastíněná místa u dětských hřišť a laviček. Městu také dáme jednotnou a moderní tvář prostřednictvím <strong>městské koncepce budoucího mobiliáře</strong>. Nezapomínáme ani na ohrazené výběhy pro psy.",
-        weights: { rodina: 6, senior: 9, student: 4, auto: 2, mhd: 3, cyklista: 5, podnikatel: 8, sidliste: 8, miluji: 10 },
+        weights: { rodina: 6, senior: 9, student: 4, auto: 2, mhd: 3, cyklista: 5, podnikatel: 5, sidliste: 8, miluji: 10 },
       },
       {
         id: "prednadrazi",

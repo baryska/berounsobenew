@@ -1167,3 +1167,122 @@
     font-size: 0.75rem;
   }
 }
+
+/* ═══════════════════════════════════════════
+   PODCAST EMBED
+   ═══════════════════════════════════════════ */
+
+.podcastBand {
+  background: linear-gradient(135deg, #f0f7fc 0%, #ffffff 70%);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.75rem 2rem;
+}
+
+.podcastInline {
+  background: var(--color-primary-light);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem 0;
+}
+
+.podcastInner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.podcastInnerHero {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.podcastIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: white;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 6px 18px rgba(60, 150, 215, 0.28);
+}
+
+.podcastMeta {
+  min-width: 0;
+}
+
+.podcastEyebrow {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin: 0 0 0.2rem;
+}
+
+.podcastTitle {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #161534;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.podcastDesc {
+  font-size: 0.88rem;
+  color: #5a6478;
+  margin: 0.25rem 0 0;
+  line-height: 1.45;
+}
+
+.podcastAudio {
+  width: 340px;
+  max-width: 100%;
+  accent-color: var(--color-primary);
+}
+
+.podcastNote {
+  grid-column: 2 / 3;
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  color: #5a6478;
+  line-height: 1.5;
+  padding-top: 0.7rem;
+  border-top: 1px dashed rgba(60, 150, 215, 0.25);
+}
+
+.podcastSpotifyLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+.podcastSpotifyLink:hover {
+  color: var(--color-secondary);
+}
+
+@media (max-width: 720px) {
+  .podcastBand {
+    padding: 1.25rem 1rem;
+  }
+  .podcastInner {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.75rem 1rem;
+  }
+  .podcastAudio {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+  .podcastNote {
+    grid-column: 1 / -1;
+  }
+}

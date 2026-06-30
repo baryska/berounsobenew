@@ -10,6 +10,7 @@ import styles from './Header.module.css';
 
 const LINKS = [
   { link: "#kdojsme", name: "kdo jsme" },
+  { link: "program", name: "program" },
   { link: "#informujeme", name: "informujeme" },
   { link: "podpisy", name: "podpisy" },
   { link: "newsletter", name: "newsletter" },
@@ -55,7 +56,10 @@ export const Header = () => {
                     key={index}
                   >
                     <Link href={`/${link}`}>
-                      <a>{name}</a>
+                      <a>
+                        {name}
+                        {name === "program" && <span className={styles.programBadge}>2026</span>}
+                      </a>
                     </Link>
                   </li>
                 );

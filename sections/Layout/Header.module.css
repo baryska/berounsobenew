@@ -68,6 +68,20 @@ div.pullRight a:hover::after {
   width: 100%;
 }
 
+.programBadge {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 2px 7px;
+  background: var(--color-accent, #ffaf4b);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: 'Inria Sans', sans-serif;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+
 .socialIcon {
   display: flex;
   align-items: center;
@@ -86,7 +100,7 @@ div.pullRight a:hover::after {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .sidemenuVisible {
     display: block;
   }
