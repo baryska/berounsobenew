@@ -107,13 +107,13 @@ const ProgramPage: NextPage = () => {
         src="/01-barbora-v2.mp3"
         title="Úvodní díl: Beroun může fungovat lépe"
         description="Proč vstoupila do komunální politiky? Jakou vizi má pro Beroun? Odpovídá berounská zastupitelka a kandidátka na starostku Barbora Skálová, která už deset let bojuje za vodovod v Hostímě."
+        spotifyUrl="https://open.spotify.com/episode/5nNgcNxTmpbH98XXSIYkyJ?si=5301e6d37c1449ca"
         note={
           <>
-            Další díly budeme zveřejňovat postupně přes celé léto u jednotlivých kapitol programu. 
-            {/* Najdete je také na{' '}
+            Další díly budeme zveřejňovat postupně přes celé léto u jednotlivých kapitol programu. Všechny díly najdete i na{' '}
             <a
-              className={styles.podcastSpotifyLink}
-              href="https://open.spotify.com/"
+              className={styles.podcastSpotifyInline}
+              href="https://open.spotify.com/show/5IJyRDm6FBcBa0trvk1FE3?si=2697036db0bf4231"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -122,7 +122,7 @@ const ProgramPage: NextPage = () => {
               </svg>
               Spotify
             </a>
-            . */}
+            .
           </>
         }
       />

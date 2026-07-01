@@ -1239,6 +1239,13 @@
   line-height: 1.45;
 }
 
+.podcastPlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
 .podcastAudio {
   width: 340px;
   max-width: 100%;
@@ -1258,15 +1265,36 @@
 .podcastSpotifyLink {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
-  color: var(--color-primary);
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
+  color: #1db954;
+  background: rgba(29, 185, 84, 0.08);
+  border: 1px solid rgba(29, 185, 84, 0.35);
+  border-radius: 999px;
   text-decoration: none;
-  border-bottom: 1px solid currentColor;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
 .podcastSpotifyLink:hover {
-  color: var(--color-secondary);
+  color: #ffffff;
+  background: #1db954;
+  border-color: #1db954;
+}
+
+.podcastSpotifyInline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  vertical-align: middle;
+  color: #1db954;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.podcastSpotifyInline:hover {
+  color: #17963f;
 }
 
 @media (max-width: 720px) {
@@ -1278,9 +1306,15 @@
     grid-template-rows: auto auto;
     gap: 0.75rem 1rem;
   }
-  .podcastAudio {
+  .podcastPlayer {
     grid-column: 1 / -1;
+    align-items: stretch;
+  }
+  .podcastAudio {
     width: 100%;
+  }
+  .podcastSpotifyLink {
+    align-self: flex-start;
   }
   .podcastNote {
     grid-column: 1 / -1;
