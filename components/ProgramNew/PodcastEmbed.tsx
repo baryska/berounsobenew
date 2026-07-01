@@ -29,7 +29,7 @@ export function PodcastEmbed({ src, title, description, variant = 'section', not
           </svg>
         </div>
         <div className={styles.podcastMeta}>
-          <p className={styles.podcastEyebrow}>Podcast Beroun sobě</p>
+          <p className={styles.podcastEyebrow}>Podcast Beroun tobě</p>
           <p className={styles.podcastTitle}>{title}</p>
           {description && <p className={styles.podcastDesc}>{description}</p>}
         </div>
