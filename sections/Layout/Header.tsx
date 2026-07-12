@@ -13,7 +13,7 @@ const LINKS = [
   { link: "program", name: "program" },
   { link: "podcast", name: "podcast" },
   { link: "#informujeme", name: "informujeme" },
-  { link: "podpisy", name: "podpisy" },
+  // { link: "podpisy", name: "podpisy" },
   { link: "newsletter", name: "newsletter" },
   { link: "most", name: "most" },
   { link: "#napistenam", name: "napište nám" },
