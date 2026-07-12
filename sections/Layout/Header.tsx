@@ -11,6 +11,7 @@ import styles from './Header.module.css';
 const LINKS = [
   { link: "#kdojsme", name: "kdo jsme" },
   { link: "program", name: "program" },
+  { link: "podcast", name: "podcast" },
   { link: "#informujeme", name: "informujeme" },
   { link: "podpisy", name: "podpisy" },
   { link: "newsletter", name: "newsletter" },

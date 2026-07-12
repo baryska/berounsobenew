@@ -3,6 +3,7 @@ import Image from 'next/image';
 import type { Sekce } from '../../data/program-new-data';
 import type { SekceView } from '../../lib/buildProgram';
 import { AccItem } from './AccItem';
+import { PodcastEmbed } from './PodcastEmbed';
 import { RichText } from './RichText';
 import styles from './ProgramNew.module.css';
 
@@ -160,6 +161,15 @@ export function ProgSection({ view, filterActive, filterKey }: {
               );
             })}
           </div>
+        )}
+
+        {sec.podcast && (
+          <PodcastEmbed
+            src={sec.podcast.src}
+            title={sec.podcast.title}
+            description={sec.podcast.description}
+            spotifyUrl={sec.podcast.spotifyUrl}
+          />
         )}
       </div>
     </section>

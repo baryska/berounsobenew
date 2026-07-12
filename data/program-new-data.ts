@@ -33,6 +33,12 @@ export interface Sekce {
   quoteRole: string;
   quoteAvatar: string | null;
   heroImage: string;
+  podcast?: {
+    src: string;
+    title: string;
+    description?: string;
+    spotifyUrl?: string;
+  };
   points: ProgramPoint[];
   weights?: Weights;
 }
@@ -218,6 +224,12 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Kristyna_kymlickova.jpg",
     heroImage: "",
+    podcast: {
+      src: "/Sidliste-final-upraveny.mp3",
+      title: "Sídliště zpět v centru pozornosti",
+      description: "Co by se dalo vylepšit na prostranství u Hvězdy na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
+      spotifyUrl: "https://open.spotify.com/episode/2OOGPGN4I7pUy4q0TSfmbm?si=255811dc3e12476d",
+    },
     weights: { rodina: 10, senior: 9, student: 10, auto: 4, mhd: 9, cyklista: 9, podnikatel: 6, sidliste: 9, miluji: 10 },
     points: [
       {
