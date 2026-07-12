@@ -26,7 +26,7 @@ const PodcastPage: NextPage = () => {
               key={i}
               style={{
                 height: `${18 + Math.abs(Math.sin(i * 1.7)) * 46}px`,
-                animationDelay: `${(i % 9) * 0.24}s`,
+                animationDelay: `${(i % 9) * 0.14}s`,
               }}
             />
           ))}

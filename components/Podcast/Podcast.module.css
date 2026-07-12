@@ -97,7 +97,7 @@
   background: white;
   transform: scaleY(0.6);
   transform-origin: bottom;
-  animation: wave 2.4s ease-in-out infinite;
+  animation: wave 1.4s ease-in-out infinite;
   will-change: transform;
 }
 
