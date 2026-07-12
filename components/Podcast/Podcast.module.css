@@ -75,6 +75,43 @@
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
 }
 
+/* Dekorativní zvukové vlny na pozadí hera.
+   Animuje se pouze transform (scaleY), aby nedocházelo k přepočtu layoutu. */
+.heroWave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  opacity: 0.14;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.heroWave span {
+  flex: 0 0 8px;
+  border-radius: 4px 4px 0 0;
+  background: white;
+  transform: scaleY(0.6);
+  transform-origin: bottom;
+  animation: wave 2.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.35); }
+  50% { transform: scaleY(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroWave span {
+    animation: none;
+  }
+}
+
 /* ═══════════════════════════════════════════
    SEZNAM DÍLŮ
    ═══════════════════════════════════════════ */

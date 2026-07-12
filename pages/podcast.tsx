@@ -20,6 +20,17 @@ const PodcastPage: NextPage = () => {
       </Head>
 
       <section className={styles.hero}>
+        <div className={styles.heroWave} aria-hidden="true">
+          {Array.from({ length: 60 }).map((_, i) => (
+            <span
+              key={i}
+              style={{
+                height: `${18 + Math.abs(Math.sin(i * 1.7)) * 46}px`,
+                animationDelay: `${(i % 9) * 0.24}s`,
+              }}
+            />
+          ))}
+        </div>
         <div className={styles.heroContent}>
           <span className={styles.heroLabel}>Podcast</span>
           <h1 className={styles.heroTitle}>Beroun tobě</h1>
