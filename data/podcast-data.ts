@@ -5,6 +5,7 @@ export interface PodcastEpisode {
   number: number;
   title: string;
   description: string;
+  speakers: string[];
   src: string;
   spotifyUrl?: string;
   chapterLabel?: string;
@@ -22,6 +23,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     title: "Úvodní díl: Beroun může fungovat lépe",
     description:
       "Proč vstoupila do komunální politiky? Jakou vizi má pro Beroun? Odpovídá berounská zastupitelka a kandidátka na starostku Barbora Skálová, která už deset let bojuje za vodovod v Hostímě.",
+    speakers: ["Barbora Skálová"],
     src: "/01-barbora-v2.mp3",
     spotifyUrl: "https://open.spotify.com/episode/5nNgcNxTmpbH98XXSIYkyJ?si=5301e6d37c1449ca",
     chapterLabel: "Volební program",
@@ -33,6 +35,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     title: "Sídliště zpět v centru pozornosti",
     description:
       "Co by se dalo vylepšit na prostranství u Hvězdy na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
+    speakers: ["Kristýna Kymličková", "Tomáš Procházka"],
     src: "/Sidliste-final-upraveny.mp3",
     spotifyUrl: "https://open.spotify.com/episode/2OOGPGN4I7pUy4q0TSfmbm?si=255811dc3e12476d",
     chapterLabel: "Beroun zeleně",

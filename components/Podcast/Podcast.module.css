@@ -195,6 +195,16 @@
   line-height: 1.3;
 }
 
+.cardSpeakers {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0 0 0.55rem;
+}
+
 .cardDesc {
   font-size: 0.92rem;
   color: #5a6478;
