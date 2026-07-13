@@ -39,6 +39,16 @@ export function EpisodeCard({ episode, isActive, onPlay }: Props) {
     if (!isActive) audioRef.current?.pause();
   }, [isActive]);
 
+  // Metadata se mohou načíst ještě před hydratací, takže událost
+  // loadedmetadata proběhne dřív, než ji React začne poslouchat.
+  // Po připojení komponenty proto délku přečteme přímo z elementu.
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (audio && audio.readyState >= HTMLMediaElement.HAVE_METADATA && isFinite(audio.duration)) {
+      setDuration(audio.duration);
+    }
+  }, []);
+
   const togglePlay = () => {
     const audio = audioRef.current;
     if (!audio) return;
