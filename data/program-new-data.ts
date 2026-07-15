@@ -166,6 +166,12 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Tomas_prochazka.jpg",
     heroImage: "",
+    podcast: {
+      src: "/MHD.mp3",
+      title: "Smysluplná veřejná doprava",
+      description: "Jak ovlivní přidání expresních spojů do Prahy a lepší spojení s nádražím dopravu v Berouně? Proč chceme v Berouně zavést PID Haló? A co je to tzv. berounský tarif?",
+      spotifyUrl: "https://open.spotify.com/episode/7ETgf0neSd2wYYhlI7iayw?si=2d530d4c1f2742e9",
+    },
     weights: { rodina: 7, senior: 10, student: 8, auto: 10, mhd: 10, cyklista: 10, podnikatel: 7, sidliste: 10, miluji: 10 },
     points: [
       {

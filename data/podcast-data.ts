@@ -41,4 +41,16 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     chapterLabel: "Beroun zeleně",
     chapterHref: "/program#zelene",
   },
+  {
+    id: "mhd",
+    number: 3,
+    title: "Smysluplná veřejná doprava",
+    description:
+      "Jak ovlivní přidání expresních spojů do Prahy a lepší spojení s nádražím dopravu v Berouně? Proč chceme v Berouně zavést PID Haló? A co je to tzv. berounský tarif?",
+    speakers: ["Tomáš Procházka"],
+    src: "/MHD.mp3",
+    spotifyUrl: "https://open.spotify.com/episode/7ETgf0neSd2wYYhlI7iayw?si=2d530d4c1f2742e9",
+    chapterLabel: "Beroun dostupně",
+    chapterHref: "/program#dostupne",
+  },
 ];
