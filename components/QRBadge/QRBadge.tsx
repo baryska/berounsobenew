@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import styles from './QRBadge.module.css';
+import { MERCH_URL } from '../../data/merch';
 
 const QRBadge = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +42,17 @@ const QRBadge = () => {
         <p className={styles.text}>
           Přispějte na kampaň <strong>nezávislé</strong> berounské kandidátky.
         </p>
+        <a
+          className={styles.merchLink}
+          href={MERCH_URL}
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+        >
+          Nebo si kupte naše tričko
+        </a>
         <p className={styles.volby}>VOLBY 2026</p>
+      
       </div>
     </div>
   );

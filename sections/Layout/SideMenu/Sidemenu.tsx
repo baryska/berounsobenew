@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './Sidemenu.module.css'
+import { MERCH_URL } from '../../../data/merch'
 
 interface Props {
   open: boolean,
@@ -15,6 +16,9 @@ const Sidemenu = ({open, onClose}: Props) => {
       <Link href="/#kdojsme"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>kdo jsme</button></a></Link>
       <Link href="/program"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>program<span className={styles.programBadge}>2026</span></button></a></Link>
       <Link href="/podcast"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>podcast</button></a></Link>
+      <a className={styles.navItemLink} href={MERCH_URL} target="_blank" rel="noreferrer">
+        <button className={styles.navItem} onClick={() => onClose()}>merch</button>
+      </a>
       <Link href="/#informujeme"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>informujeme</button></a></Link>
       {/* <Link href="/podpisy"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>podpisy</button></a></Link> */}
       <Link href="/newsletter"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>newsletter</button></a></Link>

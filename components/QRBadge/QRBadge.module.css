@@ -2,7 +2,7 @@
   position: fixed;
   top: 150px;
   right: 0;
-  height: 350px;
+  height: 400px;
   background-color: var(--color-primary);
   border-radius: 15px 0 0 15px;
   box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.2);
@@ -86,16 +86,31 @@
   font-size: 1.3rem;
   font-weight: 800;
   color: var(--color-primary);
-  margin: 12px 0 25px 0;
+  margin: 12px 0 10px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.merchLink {
+  font-family: 'Inria Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.merchLink:hover {
+  color: var(--color-accent, #ffaf4b);
 }
 
 @media (max-width: 768px) {
   .badge {
     top: auto;
     bottom: 100px;
-    height: 260px;
+    height: 310px;
   }
 
   .collapsed {
@@ -119,5 +134,10 @@
 
   .volby {
     font-size: 0.9rem;
+  }
+
+  .merchLink {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
   }
 }

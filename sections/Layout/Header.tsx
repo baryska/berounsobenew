@@ -7,11 +7,20 @@ import Instagram from '../../public/Instagram.png'
 import BurgerMenu from '../Layout/BurgerMenu/BurgerMenu';
 import SideMenu from '../Layout/SideMenu/Sidemenu'
 import styles from './Header.module.css';
+import { MERCH_URL } from '../../data/merch';
 
-const LINKS = [
+interface NavLink {
+  link: string;
+  name: string;
+  badge?: string;
+  external?: boolean;
+}
+
+const LINKS: NavLink[] = [
   { link: "#kdojsme", name: "kdo jsme" },
-  { link: "program", name: "program" },
+  { link: "program", name: "program", badge: "2026" },
   { link: "podcast", name: "podcast" },
+  { link: MERCH_URL, name: "merch", external: true },
   { link: "#informujeme", name: "informujeme" },
   // { link: "podpisy", name: "podpisy" },
   { link: "newsletter", name: "newsletter" },
@@ -51,17 +60,22 @@ export const Header = () => {
           </Link>
           <div className={`${styles.container} ${styles.pullRight}`}>
             <ul>
-              {LINKS.map(({ name, link }, index) => {
+              {LINKS.map(({ name, link, badge, external }, index) => {
+                const label = (
+                  <>
+                    {name}
+                    {badge && <span className={styles.programBadge}>{badge}</span>}
+                  </>
+                );
                 return (
-                  <li
-                    key={index}
-                  >
-                    <Link href={`/${link}`}>
-                      <a>
-                        {name}
-                        {name === "program" && <span className={styles.programBadge}>2026</span>}
-                      </a>
-                    </Link>
+                  <li key={index}>
+                    {external ? (
+                      <a href={link} target="_blank" rel="noreferrer">{label}</a>
+                    ) : (
+                      <Link href={`/${link}`}>
+                        <a>{label}</a>
+                      </Link>
+                    )}
                   </li>
                 );
               })}
