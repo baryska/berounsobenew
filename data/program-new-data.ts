@@ -33,12 +33,14 @@ export interface Sekce {
   quoteRole: string;
   quoteAvatar: string | null;
   heroImage: string;
-  podcast?: {
+  // Ke kapitole může patřit i více dílů podcastu, vypisují se v tomto pořadí.
+  podcasts?: {
     src: string;
     title: string;
     description?: string;
     spotifyUrl?: string;
-  };
+    appleUrl?: string;
+  }[];
   points: ProgramPoint[];
   weights?: Weights;
 }
@@ -166,12 +168,15 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Tomas_prochazka.jpg",
     heroImage: "",
-    podcast: {
-      src: "/MHD.mp3",
-      title: "Smysluplná veřejná doprava",
-      description: "Jak ovlivní přidání expresních spojů do Prahy a lepší spojení s nádražím dopravu v Berouně? Proč chceme v Berouně zavést PID Haló? A co je to tzv. berounský tarif?",
-      spotifyUrl: "https://open.spotify.com/episode/7ETgf0neSd2wYYhlI7iayw?si=2d530d4c1f2742e9",
-    },
+    podcasts: [
+      {
+        src: "/MHD.mp3",
+        title: "Smysluplná veřejná doprava",
+        description: "Jak ovlivní přidání expresních spojů do Prahy a lepší spojení s nádražím dopravu v Berouně? Proč chceme v Berouně zavést PID Haló? A co je to tzv. berounský tarif?",
+        spotifyUrl: "https://open.spotify.com/episode/7ETgf0neSd2wYYhlI7iayw?si=2d530d4c1f2742e9",
+        appleUrl: "https://podcasts.apple.com/cz/podcast/smyslupln%C3%A1-ve%C5%99ejn%C3%A1-doprava/id6792550119?i=1000777456821",
+      },
+    ],
     weights: { rodina: 7, senior: 10, student: 8, auto: 10, mhd: 10, cyklista: 10, podnikatel: 7, sidliste: 10, miluji: 10 },
     points: [
       {
@@ -230,12 +235,22 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Kristyna_kymlickova.jpg",
     heroImage: "",
-    podcast: {
-      src: "/Sidliste-final-upraveny.mp3",
-      title: "Sídliště zpět v centru pozornosti",
-      description: "Co by se dalo vylepšit na prostranství u Hvězdy na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
-      spotifyUrl: "https://open.spotify.com/episode/2OOGPGN4I7pUy4q0TSfmbm?si=255811dc3e12476d",
-    },
+    podcasts: [
+      {
+        src: "/Sidliste-final-upraveny.mp3",
+        title: "Sídliště zpět v centru pozornosti",
+        description: "Co by se dalo vylepšit na prostranství u Hvězdy na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
+        spotifyUrl: "https://open.spotify.com/episode/2OOGPGN4I7pUy4q0TSfmbm?si=255811dc3e12476d",
+        appleUrl: "https://podcasts.apple.com/cz/podcast/s%C3%ADdli%C5%A1t%C4%9B-zp%C4%9Bt-v-centru-pozornosti/id6792550119?i=1000777456722",
+      },
+      {
+        src: "/Verejny-prostor-final.mp3",
+        title: "Veřejný prostor pro lidi, s úctou k přírodě",
+        description: "Jak chceme oživit berounskou náplavku a proč nejde jen o lavičky? Co je potřeba udělat, aby se Městská hora konečně stala centrálním parkem Berouna? A jak zpříjemníme cestu od nádraží, aby se na ní lidé cítili bezpečně?",
+        spotifyUrl: "https://open.spotify.com/episode/1dbZjIrtYOk3YVv9m8xKz3?si=215625e870294097",
+        appleUrl: "https://podcasts.apple.com/cz/podcast/ve%C5%99ejn%C3%BD-prostor-pro-lidi-s-%C3%BActou-k-p%C5%99%C3%ADrod%C4%9B/id6792550119?i=1000777825732",
+      },
+    ],
     weights: { rodina: 10, senior: 9, student: 10, auto: 4, mhd: 9, cyklista: 9, podnikatel: 6, sidliste: 9, miluji: 10 },
     points: [
       {

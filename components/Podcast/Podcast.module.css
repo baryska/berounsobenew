@@ -54,7 +54,16 @@
   line-height: 1.6;
 }
 
-.heroSpotify {
+.heroLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.heroSpotify,
+.heroApple {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -70,7 +79,12 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.heroSpotify:hover {
+.heroApple {
+  background: #8c30c9;
+}
+
+.heroSpotify:hover,
+.heroApple:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
 }
@@ -363,6 +377,32 @@
   border-color: #1db954;
 }
 
+.appleLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8c30c9;
+  background: rgba(140, 48, 201, 0.08);
+  border: 1px solid rgba(140, 48, 201, 0.35);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Když u dílu Spotify odkaz chybí, odsadí se doprava tento. */
+.appleLink:first-of-type {
+  margin-left: auto;
+}
+
+.appleLink:hover {
+  color: #ffffff;
+  background: #8c30c9;
+  border-color: #8c30c9;
+}
+
 /* ═══════════════════════════════════════════
    POZNÁMKA POD SEZNAMEM
    ═══════════════════════════════════════════ */
@@ -418,7 +458,9 @@
     height: 48px;
   }
 
-  .spotifyLink {
+  .spotifyLink,
+  .appleLink,
+  .appleLink:first-of-type {
     margin-left: 0;
   }
 

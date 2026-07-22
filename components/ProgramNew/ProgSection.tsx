@@ -163,14 +163,16 @@ export function ProgSection({ view, filterActive, filterKey }: {
           </div>
         )}
 
-        {sec.podcast && (
+        {sec.podcasts?.map(pod => (
           <PodcastEmbed
-            src={sec.podcast.src}
-            title={sec.podcast.title}
-            description={sec.podcast.description}
-            spotifyUrl={sec.podcast.spotifyUrl}
+            key={pod.src}
+            src={pod.src}
+            title={pod.title}
+            description={pod.description}
+            spotifyUrl={pod.spotifyUrl}
+            appleUrl={pod.appleUrl}
           />
-        )}
+        ))}
       </div>
     </section>
   );

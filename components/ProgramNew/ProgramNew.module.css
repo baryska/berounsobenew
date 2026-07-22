@@ -1283,6 +1283,48 @@
   border-color: #1db954;
 }
 
+.podcastLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.podcastAppleLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #8c30c9;
+  background: rgba(140, 48, 201, 0.08);
+  border: 1px solid rgba(140, 48, 201, 0.35);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.podcastAppleLink:hover {
+  color: #ffffff;
+  background: #8c30c9;
+  border-color: #8c30c9;
+}
+
+.podcastAppleInline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  vertical-align: middle;
+  color: #8c30c9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.podcastAppleInline:hover {
+  color: #6f21a3;
+}
+
 .podcastSpotifyInline {
   display: inline-flex;
   align-items: center;
@@ -1313,7 +1355,8 @@
   .podcastAudio {
     width: 100%;
   }
-  .podcastSpotifyLink {
+  .podcastSpotifyLink,
+  .podcastAppleLink {
     align-self: flex-start;
   }
   .podcastNote {

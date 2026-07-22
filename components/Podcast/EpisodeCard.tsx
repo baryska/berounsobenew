@@ -20,6 +20,14 @@ function SpotifyIcon() {
   );
 }
 
+function AppleIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.56 12.72c-.02-2.5 2.04-3.7 2.13-3.76-1.16-1.7-2.97-1.93-3.61-1.95-1.54-.16-3 .9-3.78.9-.78 0-1.98-.88-3.26-.86-1.68.03-3.22.98-4.08 2.48-1.74 3.02-.44 7.5 1.25 9.96.83 1.2 1.81 2.55 3.11 2.5 1.25-.05 1.72-.81 3.23-.81 1.51 0 1.94.81 3.26.78 1.35-.02 2.2-1.22 3.02-2.43.95-1.39 1.34-2.74 1.36-2.81-.03-.01-2.61-1-2.63-3.99zM15.08 5.62c.69-.83 1.15-1.99 1.03-3.14-.99.04-2.19.66-2.9 1.49-.64.73-1.19 1.91-1.04 3.04 1.1.09 2.23-.56 2.91-1.39z" />
+    </svg>
+  );
+}
+
 type Props = {
   episode: PodcastEpisode;
   isActive: boolean;
@@ -207,6 +215,12 @@ export function EpisodeCard({ episode, isActive, onPlay }: Props) {
               <a className={styles.spotifyLink} href={episode.spotifyUrl} target="_blank" rel="noopener noreferrer">
                 <SpotifyIcon />
                 Poslechnout na Spotify
+              </a>
+            )}
+            {episode.appleUrl && (
+              <a className={styles.appleLink} href={episode.appleUrl} target="_blank" rel="noopener noreferrer">
+                <AppleIcon />
+                Apple Podcasts
               </a>
             )}
           </div>
