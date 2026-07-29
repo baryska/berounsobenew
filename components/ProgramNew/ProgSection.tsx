@@ -171,6 +171,7 @@ export function ProgSection({ view, filterActive, filterKey }: {
             description={pod.description}
             spotifyUrl={pod.spotifyUrl}
             appleUrl={pod.appleUrl}
+            youtubeUrl={pod.youtubeUrl}
           />
         ))}
       </div>

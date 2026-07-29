@@ -1311,6 +1311,27 @@
   border-color: #8c30c9;
 }
 
+.podcastYoutubeLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #d90000;
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.podcastYoutubeLink:hover {
+  color: #ffffff;
+  background: #ff0000;
+  border-color: #ff0000;
+}
+
 .podcastAppleInline {
   display: inline-flex;
   align-items: center;
@@ -1356,7 +1377,8 @@
     width: 100%;
   }
   .podcastSpotifyLink,
-  .podcastAppleLink {
+  .podcastAppleLink,
+  .podcastYoutubeLink {
     align-self: flex-start;
   }
   .podcastNote {

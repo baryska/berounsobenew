@@ -28,6 +28,14 @@ function AppleIcon() {
   );
 }
 
+function YouTubeIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.08 0 12 0 12s0 3.92.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.81zM9.6 15.6V8.4l6.24 3.6L9.6 15.6z" />
+    </svg>
+  );
+}
+
 type Props = {
   episode: PodcastEpisode;
   isActive: boolean;
@@ -211,18 +219,26 @@ export function EpisodeCard({ episode, isActive, onPlay }: Props) {
             <button type="button" className={styles.speedBtn} onClick={cycleSpeed} aria-label={`Rychlost přehrávání ${SPEEDS[speedIdx]}×`}>
               {SPEEDS[speedIdx]}×
             </button>
-            {episode.spotifyUrl && (
-              <a className={styles.spotifyLink} href={episode.spotifyUrl} target="_blank" rel="noopener noreferrer">
-                <SpotifyIcon />
-                Poslechnout na Spotify
-              </a>
-            )}
-            {episode.appleUrl && (
-              <a className={styles.appleLink} href={episode.appleUrl} target="_blank" rel="noopener noreferrer">
-                <AppleIcon />
-                Apple Podcasts
-              </a>
-            )}
+            <div className={styles.serviceLinks}>
+              {episode.spotifyUrl && (
+                <a className={styles.spotifyLink} href={episode.spotifyUrl} target="_blank" rel="noopener noreferrer">
+                  <SpotifyIcon />
+                  Spotify
+                </a>
+              )}
+              {episode.appleUrl && (
+                <a className={styles.appleLink} href={episode.appleUrl} target="_blank" rel="noopener noreferrer">
+                  <AppleIcon />
+                  Apple Podcasts
+                </a>
+              )}
+              {episode.youtubeUrl && (
+                <a className={styles.youtubeLink} href={episode.youtubeUrl} target="_blank" rel="noopener noreferrer">
+                  <YouTubeIcon />
+                  YouTube
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>

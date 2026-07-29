@@ -40,6 +40,7 @@ export interface Sekce {
     description?: string;
     spotifyUrl?: string;
     appleUrl?: string;
+    youtubeUrl?: string;
   }[];
   points: ProgramPoint[];
   weights?: Weights;
@@ -175,6 +176,7 @@ export const ALL_SEKCE: Sekce[] = [
         description: "Jak ovlivní přidání expresních spojů do Prahy a lepší spojení s nádražím dopravu v Berouně? Proč chceme v Berouně zavést PID Haló? A co je to tzv. berounský tarif?",
         spotifyUrl: "https://open.spotify.com/episode/7ETgf0neSd2wYYhlI7iayw?si=2d530d4c1f2742e9",
         appleUrl: "https://podcasts.apple.com/cz/podcast/smyslupln%C3%A1-ve%C5%99ejn%C3%A1-doprava/id6792550119?i=1000777456821",
+        youtubeUrl: "https://www.youtube.com/watch?v=zfrcygrNyjo",
       },
     ],
     weights: { rodina: 7, senior: 10, student: 8, auto: 10, mhd: 10, cyklista: 10, podnikatel: 7, sidliste: 10, miluji: 10 },
@@ -242,6 +244,7 @@ export const ALL_SEKCE: Sekce[] = [
         description: "Co by se dalo vylepšit na prostranství u Hvězdy na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
         spotifyUrl: "https://open.spotify.com/episode/2OOGPGN4I7pUy4q0TSfmbm?si=255811dc3e12476d",
         appleUrl: "https://podcasts.apple.com/cz/podcast/s%C3%ADdli%C5%A1t%C4%9B-zp%C4%9Bt-v-centru-pozornosti/id6792550119?i=1000777456722",
+        youtubeUrl: "https://www.youtube.com/watch?v=bRDx32XTVmg",
       },
       {
         src: "/Verejny-prostor-final.mp3",
@@ -249,6 +252,7 @@ export const ALL_SEKCE: Sekce[] = [
         description: "Jak chceme oživit berounskou náplavku a proč nejde jen o lavičky? Co je potřeba udělat, aby se Městská hora konečně stala centrálním parkem Berouna? A jak zpříjemníme cestu od nádraží, aby se na ní lidé cítili bezpečně?",
         spotifyUrl: "https://open.spotify.com/episode/1dbZjIrtYOk3YVv9m8xKz3?si=215625e870294097",
         appleUrl: "https://podcasts.apple.com/cz/podcast/ve%C5%99ejn%C3%BD-prostor-pro-lidi-s-%C3%BActou-k-p%C5%99%C3%ADrod%C4%9B/id6792550119?i=1000777825732",
+        youtubeUrl: "https://www.youtube.com/watch?v=e38rUGDDufQ&t=1s",
       },
     ],
     weights: { rodina: 10, senior: 9, student: 10, auto: 4, mhd: 9, cyklista: 9, podnikatel: 6, sidliste: 9, miluji: 10 },
@@ -465,6 +469,16 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Vaclav_kovar.jpg",
     heroImage: "",
+    podcasts: [
+      {
+        src: "/Otevrena-radnice-final.mp3",
+        title: "Otevřená radnice",
+        description: "Proč chceme, aby se o důležitých rozhodnutích diskutovalo s lidmi už před zahájením projektů? Jak chceme dostat radnici blíž k mladým lidem? A co uděláme pro to, aby radnice komunikovala srozumitelně a včas?",
+        spotifyUrl: "https://open.spotify.com/episode/0tWShHXewfJU29ilFhT4VU?si=03425832eabd4a76",
+        appleUrl: "https://podcasts.apple.com/cz/podcast/radnice-jako-partner-se-kter%C3%BDm-si-rozum%C3%ADte/id6792550119?i=1000778815250",
+        youtubeUrl: "https://youtu.be/IYY0CmvQHbI?si=dZ6OyZ9A4o1uj9eT",
+      },
+    ],
     weights: { rodina: 6, senior: 6, student: 5, auto: 5, mhd: 4, cyklista: 2, podnikatel: 8, sidliste: 6, miluji: 10 },
     points: [
       {
