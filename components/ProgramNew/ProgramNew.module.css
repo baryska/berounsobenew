@@ -1360,6 +1360,20 @@
   color: #17963f;
 }
 
+.podcastYoutubeInline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  vertical-align: middle;
+  color: #d90000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.podcastYoutubeInline:hover {
+  color: #b00000;
+}
+
 @media (max-width: 720px) {
   .podcastBand {
     padding: 1.25rem 1rem;
