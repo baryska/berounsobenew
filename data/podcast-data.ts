@@ -44,7 +44,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     number: 2,
     title: "Sídliště zpět v centru pozornosti",
     description:
-      "Co by se dalo vylepšit na prostranství u Hvězdy na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
+      "Co by se dalo vylepšit na prostranství u Hvězdy a na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
     speakers: ["Kristýna Kymličková", "Tomáš Procházka"],
     src: "/Sidliste-final-upraveny.mp3",
     spotifyUrl: "https://open.spotify.com/episode/2OOGPGN4I7pUy4q0TSfmbm?si=255811dc3e12476d",

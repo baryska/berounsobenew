@@ -241,7 +241,7 @@ export const ALL_SEKCE: Sekce[] = [
       {
         src: "/Sidliste-final-upraveny.mp3",
         title: "Sídliště zpět v centru pozornosti",
-        description: "Co by se dalo vylepšit na prostranství u Hvězdy na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
+        description: "Co by se dalo vylepšit na prostranství u Hvězdy a na berounském koupališti? Je parkování na sídlišti neřešitelný problém? A kam se obyvatelé sídliště (ne)dostanou veřejnou dopravou?",
         spotifyUrl: "https://open.spotify.com/episode/2OOGPGN4I7pUy4q0TSfmbm?si=255811dc3e12476d",
         appleUrl: "https://podcasts.apple.com/cz/podcast/s%C3%ADdli%C5%A1t%C4%9B-zp%C4%9Bt-v-centru-pozornosti/id6792550119?i=1000777456722",
         youtubeUrl: "https://www.youtube.com/watch?v=bRDx32XTVmg",
