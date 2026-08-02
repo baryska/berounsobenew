@@ -35,7 +35,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     spotifyUrl: "https://open.spotify.com/episode/5nNgcNxTmpbH98XXSIYkyJ?si=5301e6d37c1449ca",
     appleUrl:
       "https://podcasts.apple.com/cz/podcast/beroun-m%C5%AF%C5%BEe-fungovat-l%C3%A9pe/id6792550119?i=1000777456723",
-    youtubeUrl: "https://youtu.be/k0cYTKJ6FGY?si=Kd0tjCn8wJvvSByN",
+    youtubeUrl: "https://www.youtube.com/watch?v=B_JtLMnzhfk",
     chapterLabel: "Volební program",
     chapterHref: "/program",
   },
@@ -50,7 +50,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     spotifyUrl: "https://open.spotify.com/episode/2OOGPGN4I7pUy4q0TSfmbm?si=255811dc3e12476d",
     appleUrl:
       "https://podcasts.apple.com/cz/podcast/s%C3%ADdli%C5%A1t%C4%9B-zp%C4%9Bt-v-centru-pozornosti/id6792550119?i=1000777456722",
-    youtubeUrl: "https://www.youtube.com/watch?v=bRDx32XTVmg",
+    youtubeUrl: "https://www.youtube.com/watch?v=LbeSIkbSPu0",
     chapterLabel: "Beroun zeleně",
     chapterHref: "/program#zelene",
   },
@@ -65,7 +65,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     spotifyUrl: "https://open.spotify.com/episode/7ETgf0neSd2wYYhlI7iayw?si=2d530d4c1f2742e9",
     appleUrl:
       "https://podcasts.apple.com/cz/podcast/smyslupln%C3%A1-ve%C5%99ejn%C3%A1-doprava/id6792550119?i=1000777456821",
-    youtubeUrl: "https://www.youtube.com/watch?v=zfrcygrNyjo",
+    youtubeUrl: "https://www.youtube.com/watch?v=2j_YaaNZMSE&t",
     chapterLabel: "Beroun dostupně",
     chapterHref: "/program#dostupne",
   },
@@ -80,7 +80,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     spotifyUrl: "https://open.spotify.com/episode/1dbZjIrtYOk3YVv9m8xKz3?si=215625e870294097",
     appleUrl:
       "https://podcasts.apple.com/cz/podcast/ve%C5%99ejn%C3%BD-prostor-pro-lidi-s-%C3%BActou-k-p%C5%99%C3%ADrod%C4%9B/id6792550119?i=1000777825732",
-    youtubeUrl: "https://www.youtube.com/watch?v=e38rUGDDufQ&t=1s",
+    youtubeUrl: "https://www.youtube.com/watch?v=pBderCsNesw",
     chapterLabel: "Beroun zeleně",
     chapterHref: "/program#zelene",
   },
@@ -95,7 +95,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     spotifyUrl: "https://open.spotify.com/episode/0tWShHXewfJU29ilFhT4VU?si=03425832eabd4a76",
     appleUrl:
       "https://podcasts.apple.com/cz/podcast/radnice-jako-partner-se-kter%C3%BDm-si-rozum%C3%ADte/id6792550119?i=1000778815250",
-    youtubeUrl: "https://youtu.be/IYY0CmvQHbI?si=dZ6OyZ9A4o1uj9eT",
+    youtubeUrl: "https://www.youtube.com/watch?v=_2ZpGS75_78",
     chapterLabel: "Beroun otevřeně",
     chapterHref: "/program#transparentne",
   },

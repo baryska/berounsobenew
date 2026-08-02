@@ -109,7 +109,7 @@ const ProgramPage: NextPage = () => {
         description="Proč vstoupila do komunální politiky? Jakou vizi má pro Beroun? Odpovídá berounská zastupitelka a kandidátka na starostku Barbora Skálová, která už deset let bojuje za vodovod v Hostímě."
         spotifyUrl="https://open.spotify.com/episode/5nNgcNxTmpbH98XXSIYkyJ?si=5301e6d37c1449ca"
         appleUrl="https://podcasts.apple.com/cz/podcast/beroun-m%C5%AF%C5%BEe-fungovat-l%C3%A9pe/id6792550119?i=1000777456723"
-        youtubeUrl="https://youtu.be/k0cYTKJ6FGY?si=Kd0tjCn8wJvvSByN"
+        youtubeUrl="https://www.youtube.com/watch?v=B_JtLMnzhfk"
         note={
           <>
             Další díly budeme zveřejňovat postupně přes celé léto u jednotlivých kapitol programu. Všechny díly najdete i na{' '}
