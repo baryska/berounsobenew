@@ -25,6 +25,8 @@ const LINKS: NavLink[] = [
   // { link: "podpisy", name: "podpisy" },
   { link: "newsletter", name: "newsletter" },
   { link: "most", name: "most" },
+  // Skryté – stránka je dostupná jen přes odkaz s klíčem (?klic=...). Až půjde veřejně, odkomentovat.
+  // { link: "obchvat", name: "obchvat" },
   { link: "#napistenam", name: "napište nám" },
 ]
 

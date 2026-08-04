@@ -22,6 +22,7 @@
 
 html {
   font-size: 1.1rem; /* 17.6px – efektivně +0.1rem pro všechny rem hodnoty */
+  scroll-behavior: smooth; /* plynulé kotvení (např. schéma → osy na /obchvat) */
 }
 
 :root {

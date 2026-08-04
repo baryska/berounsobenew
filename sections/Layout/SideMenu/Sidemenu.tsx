@@ -23,6 +23,8 @@ const Sidemenu = ({open, onClose}: Props) => {
       {/* <Link href="/podpisy"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>podpisy</button></a></Link> */}
       <Link href="/newsletter"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>newsletter</button></a></Link>
       <Link href="/most"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>most</button></a></Link>
+      {/* Skryté – stránka je dostupná jen přes odkaz s klíčem (?klic=...). Až půjde veřejně, odkomentovat. */}
+      {/* <Link href="/obchvat"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>obchvat</button></a></Link> */}
       <Link href="/#napistenam"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>napište nám</button></a></Link>
     </div>
   )
