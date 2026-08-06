@@ -307,6 +307,16 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Eva_kotrcova.jpg",
     heroImage: "",
+    podcasts: [
+      {
+        src: "/Skolstvi-final-cut.mp3",
+        title: "Školy, které připraví děti na budoucnost",
+        description: "Jak vyřešíme kapacity berounských škol a proč mluvíme o nové svazkové škole v kasárnách? Proč podporujeme moderní metody výuky a zavádění formativního hodnocení? Jak městská agentura uvolní ruce ředitelům, aby se mohli více věnovat kvalitě výuky a netrávit čas provozními věcmi?",
+        spotifyUrl: "https://open.spotify.com/episode/1Pn7AeUqfr8pZzJ0kx8Iv9?si=d996648635054593",
+        appleUrl: "https://podcasts.apple.com/cz/podcast/%C5%A1koly-kter%C3%A9-p%C5%99iprav%C3%AD-d%C4%9Bti-na-budoucnost/id6792550119?i=1000779988251",
+        youtubeUrl: "https://youtu.be/Y6dMr_dXg10?si=x4uWTbvk1PKdq7lZ",
+      },
+    ],
     weights: { rodina: 10, senior: 3, student: 3, auto: 2, mhd: 2, cyklista: 0, podnikatel: 4, sidliste: 3, miluji: 10 },
     points: [
       {
