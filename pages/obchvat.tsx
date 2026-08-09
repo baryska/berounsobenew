@@ -275,7 +275,7 @@ const Obchvat = () => {
 
                   <div className={`${styles.ev} ${styles.m3}`}>
                     <div className={styles.date}>04/2026</div>
-                    <h4>„Projekt připraven" — odevzdáno vše</h4>
+                    <h4>„Projekt připraven“ — odevzdáno vše</h4>
                     <p>
                       V zápise ze společné koordinace má Králův Dvůr u své části poznámku, že je připravena.
                       Zbývající kroky se týkají berounské části.
@@ -307,7 +307,7 @@ const Obchvat = () => {
 
                   <div className={`${styles.ev} ${styles.m0}`}>
                     <div className={styles.date}>2022</div>
-                    <h4>Stavba „zahájena" archeologickým výkopem</h4>
+                    <h4>Stavba „zahájena“ archeologickým výkopem</h4>
                     <p>
                       V roce, kdy by povolení propadlo, město stavbu formálně zahajuje zemními pracemi pro
                       zjišťovací archeologický průzkum a práce vzápětí přerušuje. Podle webu města se tak stalo
