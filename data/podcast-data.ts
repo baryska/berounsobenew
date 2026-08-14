@@ -114,4 +114,19 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     chapterLabel: "Beroun vzdělaně",
     chapterHref: "/program#vzdelane",
   },
+  {
+    id: "vystavba",
+    number: 7,
+    title: "Výstavba, kterou řídí město, ne developeři",
+    description:
+      "Jak zastavíme chaotické změny územního plánu díky dlouhodobému a koncepčnímu územnímu plánování? Proč trváme na přísnějších a vymahatelných smlouvách s developery? A jakou máme vizi pro areál kasáren, kde by mohli vzniknout nová městská knihovna evropského standardu, kulturní multifunkční sál nebo městské byty?",
+    speakers: ["Barbora Skálová", "Martin Veselý", "Václav Kovář"],
+    src: "/UP-final.mp3",
+    spotifyUrl: "https://open.spotify.com/episode/4nzPqQaJk9eDF1OVYBpwWQ?si=d923a669b4f54aba",
+    appleUrl:
+      "https://podcasts.apple.com/us/podcast/v%C3%BDstavba-kterou-%C5%99%C3%ADd%C3%AD-m%C4%9Bsto-ne-develope%C5%99i/id6792550119?i=1000782903365",
+    youtubeUrl: "https://www.youtube.com/watch?v=jhaXURfGhNQ",
+    chapterLabel: "Beroun udržitelně",
+    chapterHref: "/program#udrzitelne",
+  },
 ];
