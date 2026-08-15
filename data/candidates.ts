@@ -62,7 +62,7 @@ export const Candidates: Candidate[] = [
   },
   {
     number: 2,
-    titles: 'Ing.',
+    titles: 'Ing. et Ing.',
     name: 'Lucie Šimečková',
     photo: P02,
     tags: ['PODNIKÁNÍ', 'MARKETING'],
