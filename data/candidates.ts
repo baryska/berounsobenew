@@ -57,7 +57,7 @@ export const Candidates: Candidate[] = [
     tags: ['CHYTRÉ MĚSTO', 'INOVACE', 'KOMUNIKACE'],
     badge: 'současná zastupitelka',
     perex:
-      'Softwarová vývojářka, která ví, že moderní město stojí na chytrých službách, kvalitním školství a vstřícné komunikaci. Desátým rokem neúnavně bojuje za vodovod v Hostímě. Spoluzakladatelka sousedského spolku Berounský rybníček.',
+      'Softwarová vývojářka, která ví, že moderní město stojí na chytrých službách, kvalitním školství a vstřícné komunikaci. Desátým rokem bojuje za vodovod v Hostímě. Spoluzakladatelka spolku Berounský rybníček.',
     fullText: `Vystudovala finštinu a moderní dějiny, ale zakotvila ve světě IT a už mnoho let se živí jako softwarová vývojářka. Absolvovala několik studijních pobytů ve Finsku, kde zjistila, že moderní město 21. století stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a otevřené komunikaci s občany. Tuto praxi by chtěla přinést i do Berouna. Již 15 let je hrdou obyvatelkou Hostíma, kde už desátým rokem jako místopředsedkyně osadního výboru bojuje o vodovod a kanalizaci. V létě mění klávesnici za pádlo a jako vedoucí jezdí na vodácký tábor. Je spoluzakladatelkou sousedského spolku Berounský rybníček. Má dvě dcery.`,
   },
   {
@@ -67,7 +67,7 @@ export const Candidates: Candidate[] = [
     photo: P02,
     tags: ['PODNIKÁNÍ', 'MARKETING'],
     perex:
-      'Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem a také založila úspěšný lokální profil @ziju_v_beroune.',
+      'Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem a také založila úspěšný lokální profil @ziju_v_beroune a stála u i u zrodu spolku Berounský rybníček.',
     fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a na České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat jako marketérka v IT. Během studií na VŠ strávila tři měsíce na studijní stáži na Generálním konzulátu České republiky v Los Angeles. Zkušenosti z nadnárodní IT korporace a technologického startupu přetavila ve vlastní podnikání, poskytuje marketingové služby začínajícím startupům. Od roku 2020 s hrdostí nazývá Beroun svým domovem. Během rodičovské založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.`,
   },
   {

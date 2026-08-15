@@ -29,7 +29,7 @@ const CandidateMiniCard = ({
       <div className="relative h-[225px] overflow-hidden border-b border-[#161534]/15">
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute left-[-6px] top-6 select-none text-[120px] font-bold leading-[0.8] sm:left-[-8px] sm:top-4 sm:text-[150px]"
+          className="pointer-events-none absolute left-[14px] top-6 select-none text-[120px] font-bold leading-[0.8] sm:left-[12px] sm:top-auto sm:bottom-[75px] sm:text-[150px] md:bottom-[120px] md:text-[120px]"
           style={{ fontFamily: 'var(--font-heading)', color: NUMBER_GRAY }}
         >
           {numberLabel}

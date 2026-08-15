@@ -94,7 +94,7 @@ const CandidateModal = ({ candidate, onClose }: CandidateModalProps) => {
       {/* Wrapper: overflow visible, aby postava mohla vystoupit z modálu */}
       <div className="relative w-full max-w-[680px]">
         {/* Karta */}
-        <div className="relative z-10 flex h-[500px] max-h-[75vh] flex-col overflow-hidden rounded-2xl bg-[#F7F9FB] shadow-2xl sm:h-[540px]">
+        <div className="relative z-10 w-full max-w-[600px] overflow-hidden rounded-2xl bg-[#F7F9FB] shadow-2xl">
           {/* Nakloněný modrý panel za postavou — oříznutý rohem karty */}
           <div
             aria-hidden="true"
@@ -194,27 +194,34 @@ const CandidateModal = ({ candidate, onClose }: CandidateModalProps) => {
             </div>
           </div>
 
-          {/* Tělo: text scroluje vpravo vedle stojící postavy */}
+          {/* Tělo: JEDEN div — scroll, výška, padding i text pohromadě.
+              Spodní fade přes mask: posledních 28px textu mizí do ztracena. */}
           <div
-            className="cm-anim cm-scroll relative z-10 min-h-0 flex-1 overflow-y-scroll pb-6 pl-[185px] pr-4 pt-2 sm:pl-[265px] sm:pr-7"
-            style={{ animation: 'cmTextIn 0.3s ease-out 0.14s backwards' }}
+            className="cm-anim cm-scroll relative z-10 pb-8 pl-[190px] pr-4 pt-2 text-[14px] leading-[1.5] text-gray-700 sm:pl-[240px] sm:pr-7 sm:text-[15px] sm:leading-[1.55]"
+            style={{
+              height: '320px',
+              overflowY: 'scroll',
+              fontFamily: 'var(--font-body)',
+              animation: 'cmTextIn 0.3s ease-out 0.14s backwards',
+              WebkitMaskImage:
+                'linear-gradient(to bottom, #000 calc(100% - 20px), transparent 10%)',
+              maskImage:
+                'linear-gradient(to bottom, #000 calc(100% - 20px), transparent 10%)',
+            }}
           >
-            <div
-              className="text-[14px] leading-[1.5] text-gray-700 sm:text-[15px] sm:leading-[1.55]"
-              style={{ fontFamily: 'var(--font-body)' }}
-            >
-              {candidate.fullText.split('\n\n').map((para, i) => (
-                <p key={i} className={i > 0 ? 'mt-3' : ''}>
-                  {para}
-                </p>
-              ))}
-            </div>
+            {candidate.fullText.split('\n\n').map((para, i) => (
+              <p key={i} className={i > 0 ? 'mt-3' : ''}>
+                {para}
+              </p>
+            ))}
           </div>
         </div>
 
-        {/* Postava: vjede zespoda, rameno přes hranu modálu, nohy uříznuté spodkem */}
+        {/* Postava: sourozenec karty (mimo overflow-hidden), rameno vyčnívá
+            přes levou hranu do overlaye. Text uvnitř karty je omezený
+            výškou karty, takže pod fotku neteče. */}
         <div
-          className="cm-anim pointer-events-none absolute bottom-0 left-[-85px] z-20 h-[calc(100%-135px)] max-h-[390px] w-[250px] sm:left-[-34px] sm:w-[265px]"
+          className="cm-anim pointer-events-none absolute bottom-0 left-[-40px] z-20 h-[300px] w-[240px] sm:left-[-20px] sm:h-[340px] sm:w-[265px]"
           style={{ animation: 'cmSlideUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.05s backwards' }}
         >
           <img

@@ -39,12 +39,6 @@ const ONas: NextPage = () => {
       <main className="relative bg-[#F7F9FB]">
         {/* ===== HERO ===== */}
         <section className="relative px-5 sm:px-8 pt-16 pb-10 md:pt-20 md:pb-14 max-w-6xl mx-auto">
-          <p
-            className="text-sm font-bold uppercase tracking-[0.25em] text-[#3C96D7] mb-5"
-            style={{ fontFamily: 'var(--font-heading)' }}
-          >
-            Beroun sobě · Kdo jsme
-          </p>
           <h1
             className="text-[2.75rem] leading-[0.95] sm:text-6xl md:text-7xl font-bold text-[#161534] max-w-4xl"
             style={{ fontFamily: 'var(--font-heading)' }}
