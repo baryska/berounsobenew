@@ -1,0 +1,272 @@
+/*
+  Editorial blok kandidáta – úklidový průchod.
+  DESKTOP: flex dvousloupec. Fotka definuje výšku bloku a stojí na jeho spodní
+  hraně (přesah -30px nahoře). Text = jeden svislý sloupec, vertikálně
+  vycentrovaný vůči fotce, jedna svislice (u reverse zrcadlově pravá).
+  Číslo: horní hrana = horní hrana fotky, ~40 % šířky glyfů viditelných
+  za fotkou – jednotné pravidlo pro všechny bloky.
+  Rytmus mezer: jméno→titul 4px, titul→tagy 14px, tagy→bio 14px, bio→odkaz 14px.
+  Pozn.: shape-outside obtékání odstraněno – nelze kombinovat s vertikálním
+  centrováním textu a jednou svislicí (pravidla 2 + 4).
+*/
+
+.block {
+  position: relative;
+  display: flex;
+  align-items: center;             /* 2) text centrovaný vůči fotce */
+  max-width: 58rem;
+  margin: 0 auto 96px auto;        /* 6) jednotná mezera mezi bloky */
+  z-index: 0;
+}
+
+.normal { flex-direction: row; }
+.reverse { flex-direction: row-reverse; }
+
+/* ---------- Číslo: top = top fotky (-30px), ~40 % glyfů viditelných ---------- */
+.bgNumber {
+  position: absolute;
+  top: -30px;                      /* 3) horní hrana čísla = horní hrana fotky */
+  z-index: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 320px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: rgba(148, 163, 184, 0.55);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* číslo je ~38 % šířky bloku; posun o 14 % nechává viditelných ~40 % glyfů */
+.normal .bgNumber { left: 14%; right: auto; }
+.reverse .bgNumber { right: 14%; left: auto; }
+
+/* ---------- Fotka: 100 % výšky bloku, stojí na spodní hraně ---------- */
+.figure {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  align-self: flex-end;            /* 1) spodní hrana fotky = spodní hrana bloku */
+  width: 38%;
+  max-width: 350px;
+  margin-top: -30px;               /* přesah nahoru zůstává */
+}
+
+.normal .figure { margin-right: -20px; }
+.reverse .figure { margin-left: -20px; }
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ---------- Textový sloupec: jedna svislice, centrovaný vůči fotce ---------- */
+.content {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;         /* 4) jedna levá svislice */
+}
+
+.reverse .content {
+  align-items: flex-end;           /* 4) zrcadlově pravá svislice */
+  text-align: right;
+}
+
+/* ---------- Lockup jména ---------- */
+.head {
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(40px, 5vw, 56px);   /* 7) desktop typografie beze změny */
+  line-height: 0.98;
+  color: #161534;
+}
+
+.nameFirst,
+.nameLast {
+  display: block;
+}
+
+.titleLine {
+  margin: 4px 0 0 0;               /* 5) jméno → titul 4px */
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: #6B7280;
+}
+
+/* ---------- Tagy: 14px pod lockupem, bez vlastního odsazení ---------- */
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+  margin: 14px 0 0 0;              /* 5) titul → tagy 14px */
+  padding: 0;
+}
+
+.tag {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #161534;
+  background: #E7ECF2;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.28rem 0.7rem;
+  white-space: nowrap;
+}
+
+.tagStrong {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #00C864;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.28rem 0.7rem;
+  white-space: nowrap;
+}
+
+/* ---------- Bio ---------- */
+.bio {
+  margin: 14px 0 0 0;              /* 5) tagy → bio 14px */
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #4B5563;
+}
+
+/* ---------- Odkaz ---------- */
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 14px 0 0 0;              /* 5) bio → odkaz 14px */
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #3C96D7;
+  transition: transform 0.25s ease;
+}
+
+.link:hover {
+  transform: translateX(3px);
+}
+
+/* =====================================================================
+   MOBIL < 768px
+   Kompozice zůstává: fotka za okrajem, střídání stran, clip na wrapperu.
+   Vrstvy: číslo (z0) → fotka (z1, stojí na spodní hraně bloku) → text (z2).
+   Přes číslo leží POUZE lockup jména; tagy/bio/odkaz začínají pod jeho
+   spodní hranou na čistém pozadí. Rytmus mezer 4/14/14/14 zůstává.
+   ===================================================================== */
+@media (max-width: 767px) {
+  .block {
+    display: block;                /* výšku definuje textový flow, blok se stáhne k obsahu */
+    padding: 16px 20px 0 20px;
+    margin: 0 0 3rem 0;
+  }
+
+  /* ČÍSLO: zmenšené tak, aby jeho spodní hrana (glyfy ~112px) končila nad tagy
+     – tagy, bio a odkaz tak leží na čistém pozadí (spodní hrana ≈ horní 2/3
+     foto-oblasti). */
+  .bgNumber {
+    font-size: 140px;
+    line-height: 1;
+    top: 0;
+    color: #C9CFDA;
+  }
+  .normal .bgNumber { left: 8px; right: auto; }
+  .reverse .bgNumber { right: 8px; left: auto; }
+
+  /* FOTKA: absolutní, stojí na spodní hraně bloku, vysunutá za okraj */
+  .figure,
+  .normal .figure,
+  .reverse .figure {
+    position: absolute;
+    bottom: 0;                     /* 1) postava stojí na spodní hraně bloku */
+    width: 48%;
+    max-width: none;
+    margin: 0;
+    align-self: auto;
+    z-index: 1;
+  }
+  .normal .figure { right: 8px; left: auto; }    /* malý odstup od okraje, žádný bleed */
+  .reverse .figure { left: 8px; right: auto; }
+
+  /* TEXT: jeden sloupec s jednou svislicí; odsazený od foto-strany */
+  .content {
+    z-index: 2;
+  }
+  .normal .content { padding-right: 42%; align-items: flex-start; text-align: left; }
+  .reverse .content { padding-left: 42%; align-items: flex-end; text-align: right; }
+
+  /* LOCKUP: jediný prvek ležící přes číslo */
+  .head {
+    margin-top: 40px;              /* jméno sedí v ploše čísla */
+  }
+
+  .name {
+    font-size: clamp(24px, 7vw, 30px);
+    line-height: 1.1;
+  }
+  .nameFirst,
+  .nameLast {
+    white-space: nowrap;
+  }
+
+  .titleLine {
+    font-size: 12px;
+    margin-top: 4px;               /* 5) jméno → titul 4px */
+  }
+
+  /* TAGY: pod spodní hranou čísla, na čistém pozadí */
+  .meta {
+    margin: 14px 0 0 0;            /* 5) titul → tagy 14px */
+    flex-wrap: nowrap;
+    gap: 6px;
+    overflow: hidden;
+  }
+  .meta > *:nth-child(n + 3) {
+    display: none;                 /* na mobilu jen první 2 pilulky */
+  }
+  .tag,
+  .tagStrong {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  /* BIO: 14px / 1.45, celý text bez ořezu */
+  .bio {
+    margin: 14px 0 0 0;            /* 5) tagy → bio 14px */
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  /* ODKAZ */
+  .link {
+    margin: 14px 0 0 0;            /* 5) bio → odkaz 14px */
+  }
+}
