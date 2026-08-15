@@ -9,18 +9,6 @@ import { FeaturedCandidates, OtherCandidates, Candidate } from '../data/candidat
 // Přístupový klíč – stránka se zobrazí jen s ?klic=<tato hodnota>, jinak vrací 404.
 const ONAS_PREVIEW_KEY = 'nahled-onas-2026';
 
-// Témata do hlavičky
-const THEMES = [
-  'Otevřená radnice',
-  'Školství',
-  'Zeleň',
-  'Doprava',
-  'Veřejný prostor',
-  'Kultura',
-  'Zdravotnictví',
-  'Bydlení',
-];
-
 const ONas: NextPage = () => {
   const [selectedCandidate, setSelectedCandidate] = useState<CandidateModalData | null>(null);
 
@@ -62,9 +50,19 @@ const ONas: NextPage = () => {
             style={{ fontFamily: 'var(--font-heading)' }}
           >
             Lidé, kteří chtějí{' '}
-            <span className="relative inline-block">
-              <span className="relative z-10">posunout Beroun</span>
-              <span className="absolute inset-x-0 bottom-1 z-0 h-3 md:h-4 bg-[#3C96D7]/20 -rotate-1" />
+            {/* podtržení jako inline background → láme se spolu s textem, vždy pod slovy */}
+            <span
+              style={{
+                backgroundImage:
+                  'linear-gradient(rgba(60, 150, 215, 0.2), rgba(60, 150, 215, 0.2))',
+                backgroundSize: '100% 0.28em',
+                backgroundPosition: '0 88%',
+                backgroundRepeat: 'no-repeat',
+                WebkitBoxDecorationBreak: 'clone',
+                boxDecorationBreak: 'clone',
+              }}
+            >
+              posunout Beroun
             </span>{' '}
             dál.
           </h1>
