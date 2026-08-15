@@ -79,18 +79,6 @@ const ONas: NextPage = () => {
             Beroun zodpovědně vést.
           </p>
 
-          {/* Témata */}
-          <div className="mt-8 flex flex-wrap gap-2">
-            {THEMES.map((theme) => (
-              <span
-                key={theme}
-                className="rounded-full border border-[#161534]/15 bg-white/60 px-4 py-1.5 text-sm font-semibold text-[#161534]/80 backdrop-blur"
-                style={{ fontFamily: 'var(--font-heading)' }}
-              >
-                {theme}
-              </span>
-            ))}
-          </div>
         </section>
 
         {/* ===== PRVNÍCH 10 – editorial layout ===== */}

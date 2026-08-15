@@ -136,7 +136,7 @@ export const Candidates: Candidate[] = [
     titles: 'Ing., Ph.D.',
     name: 'Adéla Schmiedová',
     photo: P09,
-    tags: ['DOPLNIT'],
+    tags: ['REGIONÁLNÍ ROZVOJ', 'DOTACE'],
     perex: 'Ekonomka a ředitelka MAS Jihozápad, která už přes dvacet let pomáhá rozvíjet obce na Berounsku. Odbornice na dotace a regionální rozvoj. Chce, aby radnice naslouchala i těm částem Berouna, na které se často zapomíná.',
     fullText: 'Vystudovala ekonomii na České zemědělské univerzitě a tamtéž si přidala postgraduál v oboru regionálního a sociálního rozvoje. Venkovanka tělem i duší, která už přes dvacet let jako ředitelka obecně prospěšné společnosti MAS Jihozápad pomáhá rozvíjet obce mezi Berounem a Prahou — dotačním poradenstvím i podporou místních spolků, škol a podnikatelů. Málokdo zná zdejší region tak dobře jako ona. Narodila se v Hostímě, kde dnes vede osadní výbor a městu vytrvale nabízí pomocnou ruku při rozvoji obce — zatím marně, ale nevzdává to. Chce, aby radnice naslouchala i těm částem města, na které se často zapomíná.',
   },
