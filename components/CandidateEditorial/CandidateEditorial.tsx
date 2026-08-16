@@ -192,7 +192,7 @@ const CandidateEditorial = ({
 
             {titles ? (
               <p
-                className="mt-1 text-[12px] font-bold tracking-wide text-[#3C96D7]"
+                className="mt-0.5 text-[12px] font-bold tracking-wide text-[#3C96D7] sm:mt-1"
                 style={{ fontFamily: 'var(--font-heading)' }}
               >
                 {titles}
@@ -200,12 +200,12 @@ const CandidateEditorial = ({
             ) : null}
 
             <div
-              className="mt-2 flex flex-wrap items-center gap-1.5"
+              className="mt-1.5 flex flex-wrap items-center gap-1 sm:mt-2 sm:gap-1.5"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
               {badge ? (
                 <span
-                  className={`${pillBase} px-2 py-[3px] text-[10px] text-white`}
+                  className={`cand-pill ${pillBase} px-2 py-[3px] text-[10px] text-white`}
                   style={{ backgroundColor: BADGE_BG }}
                 >
                   {badge}
@@ -214,7 +214,7 @@ const CandidateEditorial = ({
               {tags.slice(0, 2).map((tag) => (
                 <span
                   key={tag}
-                  className={`${pillBase} px-2 py-[3px] text-[10px]`}
+                  className={`cand-pill ${pillBase} px-2 py-[3px] text-[10px]`}
                   style={{ backgroundColor: TAG_BG, color: NAVY }}
                 >
                   {tag}
@@ -224,9 +224,9 @@ const CandidateEditorial = ({
           </div>
 
           {/* Střední zóna: celý perex (vejde se i nejdelší) */}
-          <div className="min-h-0 flex-1 py-2">
+          <div className="min-h-0 flex-1 py-1 sm:py-2">
             <p
-              className="text-[13px] text-gray-700"
+              className="text-[13px] text-gray-700 md:text-[15px]"
               style={{
                 fontFamily: 'var(--font-body)',
                 lineHeight: 1.4,
@@ -240,7 +240,7 @@ const CandidateEditorial = ({
           <button
             type="button"
             onClick={onReadMore}
-            className="mb-2.5 text-[14px] font-bold text-[#3C96D7] hover:underline"
+            className="mb-2.5 self-start text-left text-[14px] font-bold text-[#3C96D7] hover:underline"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
             Celý profil &rarr;
