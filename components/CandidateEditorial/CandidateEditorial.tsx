@@ -1,4 +1,5 @@
 import type { StaticImageData } from 'next/image';
+import { renderBold } from '../../lib/renderBold';
 import styles from './CandidateEditorial.module.css';
 
 type CandidateEditorialProps = {
@@ -82,7 +83,7 @@ const CandidateEditorial = ({
             ))}
           </div>
 
-          <p className={styles.desktopPerex}>{perex}</p>
+          <p className={styles.desktopPerex}>{renderBold(perex)}</p>
 
           <button
             type="button"
@@ -149,7 +150,7 @@ const CandidateEditorial = ({
 
           {/* Střední zóna: celý perex (vejde se i nejdelší) */}
           <div className={styles.mobilePerexZone}>
-            <p className={styles.mobilePerex}>{perex}</p>
+            <p className={styles.mobilePerex}>{renderBold(perex)}</p>
           </div>
 
           {/* Dolní zóna: odkaz u dolní hrany fotky */}
