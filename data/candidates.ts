@@ -58,7 +58,17 @@ export const Candidates: Candidate[] = [
     badge: 'současná zastupitelka',
     perex:
       'Softwarová vývojářka, která ví, že moderní město stojí na chytrých službách, kvalitním školství a vstřícné komunikaci. Desátým rokem bojuje za vodovod v Hostímě. Spoluzakladatelka spolku Berounský rybníček.',
-    fullText: `Vystudovala finštinu a moderní dějiny, ale zakotvila ve světě IT a už mnoho let se živí jako softwarová vývojářka. Absolvovala několik studijních pobytů ve Finsku, kde zjistila, že moderní město 21. století stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a otevřené komunikaci s občany. Tuto praxi by chtěla přinést i do Berouna. Již 15 let je hrdou obyvatelkou Hostíma, kde už desátým rokem jako místopředsedkyně osadního výboru bojuje o vodovod a kanalizaci. V létě mění klávesnici za pádlo a jako vedoucí jezdí na vodácký tábor. Je spoluzakladatelkou sousedského spolku Berounský rybníček. Má dvě dcery.`,
+    fullText: `Vystudovala finštinu a moderní dějiny, ale zakotvila ve světě IT a už mnoho let se živí jako softwarová vývojářka. 
+    
+    Absolvovala několik studijních pobytů ve Finsku, kde zjistila, že moderní město 21. století stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a otevřené komunikaci s občany. Tuto praxi by chtěla přinést i do Berouna. 
+    
+    Již 15 let je hrdou obyvatelkou Hostíma, kde už desátým rokem jako místopředsedkyně osadního výboru bojuje o vodovod a kanalizaci. 
+    
+    V létě mění klávesnici za pádlo a jako vedoucí jezdí na vodácký tábor. 
+    
+    Je spoluzakladatelkou sousedského spolku Berounský rybníček. 
+    
+    Má dvě dcery.`,
   },
   {
     number: 2,
@@ -68,7 +78,13 @@ export const Candidates: Candidate[] = [
     tags: ['PODNIKÁNÍ', 'MARKETING'],
     perex:
       'Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem, založila úspěšný lokální profil @ziju_v_beroune a stála i u zrodu spolku Berounský rybníček.',
-    fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a na České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat jako marketérka v IT. Během studií na VŠ strávila tři měsíce na studijní stáži na Generálním konzulátu České republiky v Los Angeles. Zkušenosti z nadnárodní IT korporace a technologického startupu přetavila ve vlastní podnikání, poskytuje marketingové služby začínajícím startupům. Během rodičovské založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.`,
+    fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a na České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat jako marketérka v IT. 
+    
+    Během studií na VŠ strávila tři měsíce na studijní stáži na Generálním konzulátu České republiky v Los Angeles. 
+    
+    Zkušenosti z nadnárodní IT korporace a technologického startupu přetavila ve vlastní podnikání, poskytuje marketingové služby začínajícím startupům. 
+    
+    Během rodičovské založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.`,
   },
   {
     number: 3,
@@ -78,7 +94,15 @@ export const Candidates: Candidate[] = [
     tags: ['VEŘEJNÝ PROSTOR', 'OTEVŘENÁ RADNICE'],
     perex:
       'Odborník na zapojování veřejnosti do rozhodování. Šest let vedl spolek Berounská zeleň. Do komunální politiky přináší téma město pro lidi – kvalitní veřejná prostranství a otevřenou radnici.',
-    fullText: `Po studiích novinařiny pracoval v kultuře. Věnoval se produkci a vedení projektových týmů. Profesní život ho dovedl až k rozvoji komunitního života a zapojování veřejnosti do rozhodovacích procesů (participaci). Tomu se začal naplno věnovat před dvěma lety jako designér participativních procesů, lektor a facilitátor. Od malička má blízko k přírodě, což mohl naplno zužitkovat při vedení dobrovolnického spolku Berounská zeleň. Deset let žije se ženou a dvěma dětmi v Berouně a stejně dlouho se zabývá současnými přístupy k navrhování a správě veřejného prostoru. Věří, že pouze otevřená radnice může přinést důvěru a spokojenost lidí. Město vnímá jako živý organismus, ve kterém se setkává řada důležitých funkcí. Úroveň veřejného prostoru určuje jak se ve městě cítíme a kolik času v něm chceme trávit. Jeho rozvoj je proto potřeba připravovat s ohledem na potřeby všech.`,
+    fullText: `Po studiích novinařiny pracoval v kultuře. Věnoval se produkci a vedení projektových týmů. 
+    
+    Profesní život ho dovedl až k rozvoji komunitního života a zapojování veřejnosti do rozhodovacích procesů (participaci). Tomu se začal naplno věnovat před dvěma lety jako designér participativních procesů, lektor a facilitátor. 
+    
+    Od malička má blízko k přírodě, což mohl naplno zužitkovat při vedení dobrovolnického spolku Berounská zeleň. 
+    
+    Deset let žije se ženou a dvěma dětmi v Berouně a stejně dlouho se zabývá současnými přístupy k navrhování a správě veřejného prostoru. Věří, že pouze otevřená radnice může přinést důvěru a spokojenost lidí. 
+    
+    Město vnímá jako živý organismus, ve kterém se setkává řada důležitých funkcí. Úroveň veřejného prostoru určuje jak se ve městě cítíme a kolik času v něm chceme trávit. Jeho rozvoj je proto potřeba připravovat s ohledem na potřeby všech.`,
   },
   {
     number: 4,
@@ -89,7 +113,9 @@ export const Candidates: Candidate[] = [
     badge: 'současná zastupitelka',
     perex:
       'Pedagožka s dlouholetou praxí v běžných školách i ve speciálním vzdělávání. Používá moderní inovativní metody, které dětem pomáhají učit se s radostí a bez stresu.',
-    fullText: `Absolventka Pedagogické fakulty Univerzity Karlovy, obor učitelství na prvním stupni. Dále vystudovala speciální pedagogiku, logopedii a psychopedii. Během své praxe působila na různých typech škol v státním i soukromém sektoru. Má zkušenosti s vedením školy, působila jako zástupce ředitele, dále s prezentací inovativních metod ve výuce a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
+    fullText: `Absolventka Pedagogické fakulty Univerzity Karlovy, obor učitelství na prvním stupni. Dále vystudovala speciální pedagogiku, logopedii a psychopedii. 
+    
+    Během své praxe působila na různých typech škol v státním i soukromém sektoru. Má zkušenosti s vedením školy, působila jako zástupce ředitele, dále s prezentací inovativních metod ve výuce a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
   },
   {
     number: 5,
@@ -99,7 +125,15 @@ export const Candidates: Candidate[] = [
     tags: ['EKONOMIKA', 'SPORT'],
     perex:
       'Finanční expert se zaměřením na efektivní hospodaření a odpovědný rozpočet. Jako předseda florbalového oddílu navíc dlouhodobě vede děti k aktivnímu pohybu.',
-    fullText: `Po absolvování Gymnázia v Berouně studoval VŠCHT. Více než 20 let pracuje jako finanční poradce, vede tým spolupracovníků jako regionální ředitel. Přibližně stejnou dobu se věnuje florbalu, posledních 9 let jako registrovaný hráč, 7 let jako funkcionář. V roce 2019 s kolegy založil oddíl Florbal pro Beroun, jehož je předsedou. Hlavním zaměřením oddílu je práce s dětmi a mládeží. Aktivně se zajímá o život ve městě, angažuje se jako dobrovolník. Coby ekonomicky vzdělaný profesionál vnímá rozpočet města jako prostředek k rozvoji a klade důraz na to, aby každá investice byla smysluplná a udržitelná.`,
+    fullText: `Po absolvování Gymnázia v Berouně studoval VŠCHT. 
+    
+    Více než 20 let pracuje jako finanční poradce, vede tým spolupracovníků jako regionální ředitel. 
+    
+    Přibližně stejnou dobu se věnuje florbalu, posledních 9 let jako registrovaný hráč, 7 let jako funkcionář. V roce 2019 s kolegy založil oddíl Florbal pro Beroun, jehož je předsedou. Hlavním zaměřením oddílu je práce s dětmi a mládeží. 
+    
+    Aktivně se zajímá o život ve městě, angažuje se jako dobrovolník. 
+    
+    Coby ekonomicky vzdělaný profesionál vnímá rozpočet města jako prostředek k rozvoji a klade důraz na to, aby každá investice byla smysluplná a udržitelná.`,
   },
   {
     number: 6,
@@ -109,7 +143,11 @@ export const Candidates: Candidate[] = [
     tags: ['STAVEBNICTVÍ', 'VEŘEJNÝ PROSTOR'],
     perex:
       'Stavební inženýrka s praxí v řízení rekonstrukcí. Dlouhodobě se věnuje správě bytového fondu a usiluje o modernizaci bytové infrastruktury a zkvalitnění veřejného prostoru.',
-    fullText: `Berounská rodačka, která vystudovala stavební inženýrství. V posledních letech se aktivně zapojuje do dění v místě, kde žije. Ujala se správy bytového domu na Velkém sídlišti, kde jako předsedkyně SVJ koordinovala jeho kompletní revitalizaci. Zároveň se dlouhodobě zajímá o kvalitu veřejného prostoru a snaží se o jeho zlepšení.`,
+    fullText: `Berounská rodačka, která vystudovala stavební inženýrství. 
+    
+    V posledních letech se aktivně zapojuje do dění v místě, kde žije. Ujala se správy bytového domu na Velkém sídlišti, kde jako předsedkyně SVJ koordinovala jeho kompletní revitalizaci. 
+    
+    Zároveň se dlouhodobě zajímá o kvalitu veřejného prostoru a snaží se o jeho zlepšení.`,
   },
   {
     number: 7,
@@ -119,7 +157,11 @@ export const Candidates: Candidate[] = [
     tags: ['KOMUNIKACE', 'DOPRAVA'],
     perex:
       'Zkušený novinář, vedoucí zahraniční redakce Hospodářských novin. Zastánce živé občanské společnosti a spolehlivé veřejné dopravy.',
-    fullText: `V médiích začal pracovat už během studia na gymnáziu. Řadu let působil v regionálním Deníku, kde ho zajímal život v městech a obcích. Nyní vede zahraniční redakci Hospodářských novin a magazín Víkend HN. V Berouně žije s rodinou více než deset let. Otec tří synů je fanouškem veřejné dopravy, vidí kde jsou bolavá místa, která stojí za to vyléčit. Věří, že kvalitní vzdělání a odolná společnost mohou věcmi pohnout víc, než se může na první pohled zdát.`,
+    fullText: `V médiích začal pracovat už během studia na gymnáziu. Řadu let působil v regionálním Deníku, kde ho zajímal život v městech a obcích. Nyní vede zahraniční redakci Hospodářských novin a magazín Víkend HN. 
+    
+    V Berouně žije s rodinou více než deset let. Otec tří synů je fanouškem veřejné dopravy, vidí kde jsou bolavá místa, která stojí za to vyléčit. 
+    
+    Věří, že kvalitní vzdělání a odolná společnost mohou věcmi pohnout víc, než se může na první pohled zdát.`,
   },
   {
     number: 8,
@@ -129,7 +171,11 @@ export const Candidates: Candidate[] = [
     tags: ['ZDRAVOTNICTVÍ', 'VEŘEJNÝ PROSTOR'],
     perex:
       'Biolog, bývalý novinář, dnes pracuje ve zdravotnictví. Věří, že dobré město se pozná podle toho, jak se v něm žije těm, kteří to nemají nejlehčí.',
-    fullText: `Vystudoval biologii a působil jako novinář, v současnosti pracuje ve zdravotnictví. Věří, že každý v Berouně si zaslouží důstojný život: bydlení, které nezruinuje rodinu, dostupného doktora, školu, kam děti chodí rády a která je rozvíjí. Město, kudy se dá bezpečně, spolehlivě a včas dostat z jednoho konce na druhý. Komunitu, na kterou se dá spolehnout. Tohle je základ, na kterém stojí dobrý život ve městě.`,
+    fullText: `Vystudoval biologii a působil jako novinář, v současnosti pracuje ve zdravotnictví. 
+    
+    Věří, že každý v Berouně si zaslouží důstojný život: bydlení, které nezruinuje rodinu, dostupného doktora, školu, kam děti chodí rády a která je rozvíjí. 
+    
+    Město, kudy se dá bezpečně, spolehlivě a včas dostat z jednoho konce na druhý. Komunitu, na kterou se dá spolehnout. Tohle je základ, na kterém stojí dobrý život ve městě.`,
   },
   {
     number: 9,
@@ -138,7 +184,13 @@ export const Candidates: Candidate[] = [
     photo: P09,
     tags: ['REGIONÁLNÍ ROZVOJ', 'DOTACE'],
     perex: 'Ekonomka a ředitelka MAS Jihozápad, která už přes dvacet let pomáhá rozvíjet obce na Berounsku. Odbornice na dotace a regionální rozvoj. Chce, aby radnice naslouchala i těm částem Berouna, na které se často zapomíná.',
-    fullText: 'Vystudovala ekonomii na České zemědělské univerzitě a tamtéž si přidala postgraduál v oboru regionálního a sociálního rozvoje. Venkovanka tělem i duší, která už přes dvacet let jako ředitelka obecně prospěšné společnosti MAS Jihozápad pomáhá rozvíjet obce mezi Berounem a Prahou — dotačním poradenstvím i podporou místních spolků, škol a podnikatelů. Málokdo zná zdejší region tak dobře jako ona. Narodila se v Hostímě, kde dnes vede osadní výbor a městu vytrvale nabízí pomocnou ruku při rozvoji obce — zatím marně, ale nevzdává to. Chce, aby radnice naslouchala i těm částem města, na které se často zapomíná.',
+    fullText: `Vystudovala ekonomii na České zemědělské univerzitě a tamtéž si přidala postgraduál v oboru regionálního a sociálního rozvoje. 
+    
+    Venkovanka tělem i duší, která už přes dvacet let jako ředitelka obecně prospěšné společnosti MAS Jihozápad pomáhá rozvíjet obce mezi Berounem a Prahou - dotačním poradenstvím i podporou místních spolků, škol a podnikatelů. Málokdo zná zdejší region tak dobře jako ona. 
+    
+    Narodila se v Hostímě, kde dnes vede osadní výbor a městu vytrvale nabízí pomocnou ruku při rozvoji obce — zatím marně, ale nevzdává to. 
+    
+    Chce, aby radnice naslouchala i těm částem města, na které se často zapomíná.`,
   },
   {
     number: 10,
@@ -149,7 +201,11 @@ export const Candidates: Candidate[] = [
     badge: 'současný zastupitel',
     perex:
       'Architekt s mezinárodními zkušenostmi. Je zakladatelem spolku Berounská zeleň a dlouhodobě se zasazuje o kvalitní územní rozvoj a ochranu městské zeleně.',
-    fullText: `Absolvent ČVUT Fakulty stavební, obor pozemní stavby a architektura. Od roku 2006 pracuje jako OSVČ ve vlastním ateliéru. Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko). Je jedním ze zakladatelů spolku Berounská zeleň.`,
+    fullText: `Absolvent ČVUT Fakulty stavební, obor pozemní stavby a architektura. 
+    
+    Od roku 2006 pracuje jako OSVČ ve vlastním ateliéru. Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko). 
+    
+    Je jedním ze zakladatelů spolku Berounská zeleň.`,
   },
   {
     number: 11,

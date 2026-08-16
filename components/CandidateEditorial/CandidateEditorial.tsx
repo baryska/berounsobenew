@@ -58,7 +58,7 @@ const CandidateEditorial = ({
           >
             {numberLabel}
           </span>
-          <img src={photoSrc} alt={name} className={styles.desktopPhoto} />
+          <img src={photoSrc} alt={name} className={styles.desktopPhoto} loading={Number(number) <= 2 ? "eager" : "lazy"}/>
         </div>
 
         {/* Text: kompaktní blok, vertikálně vycentrovaný vůči fotce */}

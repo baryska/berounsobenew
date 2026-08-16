@@ -117,9 +117,15 @@ const CandidateModal = ({ candidate, onClose }: CandidateModalProps) => {
           {/* Tělo: JEDEN div — scroll, výška, padding i text pohromadě.
               Spodní fade přes mask: posledních ~20px textu mizí do ztracena. */}
           <div className={styles.body}>
-            {candidate.fullText.split('\n\n').map((para, i) => (
-              <p key={i}>{renderBold(para)}</p>
-            ))}
+            {/* Odstavce odděluje prázdný řádek; tolerujeme mezery z odsazení
+                template literalu (řádek s whitespace je pořád „prázdný“). */}
+            {candidate.fullText
+              .split(/\n\s*\n/)
+              .map((para) => para.trim())
+              .filter(Boolean)
+              .map((para, i) => (
+                <p key={i}>{renderBold(para)}</p>
+              ))}
           </div>
         </div>
 
