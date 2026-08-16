@@ -1,3 +1,4 @@
+import { renderBold } from '../../lib/renderBold';
 import styles from './CandidateMiniCard.module.css';
 
 type CandidateMiniCardProps = {
@@ -38,7 +39,7 @@ const CandidateMiniCard = ({
       <div className={styles.text}>
         <h3 className={styles.name}>{name}</h3>
         {titles && titles.trim() ? <p className={styles.titles}>{titles}</p> : null}
-        <p className={styles.shortText}>{shortText}</p>
+        <p className={styles.shortText}>{renderBold(shortText)}</p>
       </div>
     </article>
   );

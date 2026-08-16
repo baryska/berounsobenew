@@ -31,14 +31,14 @@
     left: 12px;
     top: auto;
     bottom: 75px;
-    font-size: 150px;
+    font-size: 130px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1250px) {
   .number {
-    bottom: 120px;
-    font-size: 120px;
+    bottom: 100px;
+    font-size: 150px;
   }
 }
 
@@ -52,11 +52,11 @@
   width: 165px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1250px) {
   .photoBox {
     right: 0.25rem;
-    height: 190px;
-    width: 190px;
+    height: 210px;
+    width: 210px;
   }
 }
 

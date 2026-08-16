@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import type { StaticImageData } from 'next/image';
+import { renderBold } from '../../lib/renderBold';
 import styles from './CandidateModal.module.css';
 
 export interface CandidateModalData {
@@ -117,7 +118,7 @@ const CandidateModal = ({ candidate, onClose }: CandidateModalProps) => {
               Spodní fade přes mask: posledních ~20px textu mizí do ztracena. */}
           <div className={styles.body}>
             {candidate.fullText.split('\n\n').map((para, i) => (
-              <p key={i}>{para}</p>
+              <p key={i}>{renderBold(para)}</p>
             ))}
           </div>
         </div>
