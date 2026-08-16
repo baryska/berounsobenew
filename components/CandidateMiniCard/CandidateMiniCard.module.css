@@ -23,7 +23,7 @@
   font-size: 120px;
   font-weight: 700;
   line-height: 0.8;
-  color: #dce2ea;
+  color: rgb(60 150 215 / 30%);
 }
 
 @media (min-width: 640px) {
