@@ -217,21 +217,28 @@
   overflow-y: scroll;
   padding: 0.5rem 1rem 2rem 190px;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   color: #374151;
   animation: textIn 0.3s ease-out 0.14s backwards;
   -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent 10%);
   mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent 10%);
-  scrollbar-width: thin;
-  scrollbar-color: #afbdcc transparent;
+}
+
+/* Firefox fallback — v Chromu/Edgi by scrollbar-color vypnul ::-webkit-scrollbar
+   styly a prohlížeč by použil překryvný scrollbar, který se schovává. */
+@supports not selector(::-webkit-scrollbar) {
+  .body {
+    scrollbar-width: thin;
+    scrollbar-color: #afbdcc transparent;
+  }
 }
 
 @media (min-width: 640px) {
   .body {
     padding-left: 240px;
     padding-right: 1.75rem;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.55;
   }
 }
