@@ -5,6 +5,7 @@ import CandidateEditorial from '../components/CandidateEditorial/CandidateEditor
 import CandidateMiniCard from '../components/CandidateMiniCard/CandidateMiniCard';
 import CandidateModal, { CandidateModalData } from '../components/CandidateModal/CandidateModal';
 import { FeaturedCandidates, OtherCandidates, Candidate } from '../data/candidates';
+import styles from '../styles/ONas.module.css';
 
 // Přístupový klíč – stránka se zobrazí jen s ?klic=<tato hodnota>, jinak vrací 404.
 const ONAS_PREVIEW_KEY = 'nahled-onas-2026';
@@ -25,7 +26,7 @@ const ONas: NextPage = () => {
   const handleCloseModal = () => setSelectedCandidate(null);
 
   return (
-    <div style={{ overflowX: 'clip' }}>
+    <div className={styles.pageWrapper}>
       <Head>
         <title>O nás | Beroun sobě</title>
         <meta name="description" content="Kandidáti Beroun sobě – lidé, kteří chtějí posunout Beroun dál." />
@@ -36,36 +37,17 @@ const ONas: NextPage = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Head>
 
-      <main className="relative bg-[#F7F9FB]">
+      <main className={styles.main}>
         {/* ===== HERO ===== */}
-        <section className="relative px-5 sm:px-8 pt-16 pb-10 md:pt-20 md:pb-14 max-w-6xl mx-auto">
-          <h1
-            className="text-[2.75rem] leading-[0.95] sm:text-6xl md:text-7xl font-bold text-[#161534] max-w-4xl"
-            style={{ fontFamily: 'var(--font-heading)' }}
-          >
+        <section className={styles.hero}>
+          <h1 className={styles.heroTitle}>
             Lidé, kteří chtějí{' '}
             {/* podtržení jako inline background → láme se spolu s textem, vždy pod slovy */}
-            <span
-              style={{
-                backgroundImage:
-                  'linear-gradient(rgba(60, 150, 215, 0.2), rgba(60, 150, 215, 0.2))',
-                backgroundSize: '100% 0.28em',
-                backgroundPosition: '0 88%',
-                backgroundRepeat: 'no-repeat',
-                WebkitBoxDecorationBreak: 'clone',
-                boxDecorationBreak: 'clone',
-              }}
-            >
-              posunout Beroun
-            </span>{' '}
-            dál.
+            <span className={styles.heroHighlight}>posunout Beroun</span> dál.
           </h1>
 
-          <p
-            className="mt-8 max-w-2xl text-lg text-gray-600 leading-relaxed"
-            style={{ fontFamily: 'var(--font-body)' }}
-          >
-            Jsme <strong className="text-[#161534]">nezávislá, občanská kandidátka</strong> a nejsilnější
+          <p className={styles.heroPerex}>
+            Jsme <strong>nezávislá, občanská kandidátka</strong> a nejsilnější
             opoziční síla v Berouně. Za víc než deset let v komunální politice jsme pochopili, co město
             skutečně potřebuje. Náš tým jsme posílili o nové osobnosti a odborníky – a dnes jsme připraveni
             Beroun zodpovědně vést.
@@ -75,7 +57,7 @@ const ONas: NextPage = () => {
 
         {/* ===== PRVNÍCH 10 – editorial layout ===== */}
         {/* na mobilu full-bleed (bez horizontálního paddingu), aby absolutní vrstvy mířily na okraj viewportu */}
-        <section className="relative md:px-8 pt-10 md:pt-16 pb-16 max-w-6xl mx-auto">
+        <section className={styles.editorialSection}>
           {FeaturedCandidates.map((candidate, i) => (
             <CandidateEditorial
               key={candidate.number}
@@ -93,9 +75,9 @@ const ONas: NextPage = () => {
         </section>
 
         {/* ===== KANDIDÁTI 11–21 – roster ===== */}
-        <section className="relative px-5 sm:px-8 max-w-6xl mx-auto pb-28">
+        <section className={styles.rosterSection}>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-8">
+          <div className={styles.rosterGrid}>
             {OtherCandidates.map((candidate) => (
               <CandidateMiniCard
                 key={candidate.number}

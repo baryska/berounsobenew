@@ -85,33 +85,9 @@ h1, h2, h3, h4, h5, h6,
   color: var(--color-accent);
 }
 
-/* Modal fade-in */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Line clamp utility for candidate perex */
-.line-clamp-4 {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-
 @media only screen and (min-width: 2200px) {
   body {
     margin: 0 auto;
     width: 100%;
 }
 }
-
-@media (max-width: 385px) {
-  .cand-pill {
-    font-size: 9px !important;
-  }
-}
-
-.perex-text { font-size: 13.3px; }
-@media (min-width: 430px) { .perex-text { font-size: 15px; } }
