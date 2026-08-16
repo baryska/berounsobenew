@@ -1,10 +1,5 @@
 import type { StaticImageData } from 'next/image';
-
-// ── Barvy: srovnej s existujícími konstantami projektu, ať badge sedí ──
-const NAVY = '#161534';
-const NUMBER_GRAY = '#DCE2EA';
-const BADGE_BG = '#22B573'; // zelená badge „současná zastupitelka" — nahraď svou přesnou hodnotou
-const TAG_BG = '#E7ECF2';
+import styles from './CandidateEditorial.module.css';
 
 type CandidateEditorialProps = {
   number: number | string;
@@ -34,182 +29,117 @@ const CandidateEditorial = ({
   const numberLabel = String(number);
   const isSingleDigit = numberLabel.length === 1;
 
-  const pillBase =
-    'rounded-full font-bold uppercase tracking-wide whitespace-nowrap';
+  const desktopNumberPosition = reverse
+    ? isSingleDigit
+      ? styles.desktopNumberRightSingle
+      : styles.desktopNumberRightDouble
+    : isSingleDigit
+      ? styles.desktopNumberLeftSingle
+      : styles.desktopNumberLeftDouble;
+
+  const mobileNumberPosition = reverse
+    ? isSingleDigit
+      ? styles.mobileNumberRightSingle
+      : styles.mobileNumberRightDouble
+    : isSingleDigit
+      ? styles.mobileNumberLeftSingle
+      : styles.mobileNumberLeftDouble;
 
   return (
-    <article className="mb-16 last:mb-0 md:mb-24">
-      {/* ================= DESKTOP (md+) ================= */}
-      <div
-        className={`mx-auto hidden w-fit lg:flex items-center gap-6 ${reverse ? 'flex-row-reverse' : ''
-          }`}
-      >
+    <article className={styles.article}>
+      {/* ================= DESKTOP (lg+) ================= */}
+      <div className={`${styles.desktop} ${reverse ? styles.desktopReverse : ''}`}>
         {/* Foto + číslo: pevná výška = kotva bloku, definuje výšku sloupce. */}
-        <div className="relative h-[440px] w-[380px] shrink-0">
+        <div className={styles.desktopPhotoBox}>
           <span
             aria-hidden="true"
-            className={`pointer-events-none absolute top-0 select-none whitespace-nowrap text-[300px] font-bold leading-[0.82] ${reverse
-                ? isSingleDigit
-                  ? 'right-[55%]'
-                  : 'right-[45%]'
-                : isSingleDigit
-                  ? 'left-[55%]'
-                  : 'left-[45%]'
-              }`}
-            style={{ fontFamily: 'var(--font-heading)', color: NUMBER_GRAY }}
+            className={`${styles.desktopNumber} ${desktopNumberPosition}`}
           >
             {numberLabel}
           </span>
-          <img
-            src={photoSrc}
-            alt={name}
-            className="absolute bottom-0 left-0 z-10 block h-auto max-h-full w-full object-contain object-bottom"
-          />
+          <img src={photoSrc} alt={name} className={styles.desktopPhoto} />
         </div>
 
         {/* Text: kompaktní blok, vertikálně vycentrovaný vůči fotce */}
-        <div className="relative z-20 flex h-[440px] w-[400px] flex-col justify-center text-left">
-          <h2
-            className="text-[52px] font-bold leading-[1.02]"
-            style={{ fontFamily: 'var(--font-heading)', color: NAVY }}
-          >
-            {name}
-          </h2>
+        <div className={styles.desktopText}>
+          <h2 className={styles.desktopName}>{name}</h2>
 
-          {titles ? (
-            <p
-              className="mt-1.5 text-[13px] font-bold tracking-wide text-[#3C96D7]"
-              style={{ fontFamily: 'var(--font-heading)' }}
-            >
-              {titles}
-            </p>
-          ) : null}
+          {titles ? <p className={styles.desktopTitles}>{titles}</p> : null}
 
-          <div
-            className="mt-3.5 flex flex-wrap items-center gap-2"
-            style={{ fontFamily: 'var(--font-heading)' }}
-          >
+          <div className={styles.desktopTags}>
             {badge ? (
-              <span
-                className={`${pillBase} px-3.5 py-1 text-[11px] text-white`}
-                style={{ backgroundColor: BADGE_BG }}
-              >
+              <span className={`${styles.pill} ${styles.desktopPill} ${styles.pillBadge}`}>
                 {badge}
               </span>
             ) : null}
             {tags.map((tag) => (
               <span
                 key={tag}
-                className={`${pillBase} px-3.5 py-1 text-[11px]`}
-                style={{ backgroundColor: TAG_BG, color: NAVY }}
+                className={`${styles.pill} ${styles.desktopPill} ${styles.pillTag}`}
               >
                 {tag}
               </span>
             ))}
           </div>
 
-          <p
-            className="mt-4 max-w-[380px] text-[17px] leading-relaxed text-gray-700"
-            style={{ fontFamily: 'var(--font-body)' }}
-          >
-            {perex}
-          </p>
+          <p className={styles.desktopPerex}>{perex}</p>
 
           <button
             type="button"
             onClick={onReadMore}
-            className="mt-4 self-start text-[15px] font-bold text-[#3C96D7] hover:underline"
-            style={{ fontFamily: 'var(--font-heading)' }}
+            className={`${styles.readMore} ${styles.desktopReadMore}`}
           >
             Celý profil &rarr;
           </button>
         </div>
       </div>
 
-      {/* ================= MOBIL (<md) ================= */}
-      {/* Pevná geometrie: fotka (FOTO_H) je kotva a určuje výšku bloku.
+      {/* ================= MOBIL (<lg) ================= */}
+      {/* Pevná geometrie: fotka je kotva a určuje výšku bloku.
           Textové prvky mají pevnou pozici vůči fotce — jméno u horní hrany,
           odkaz u dolní, bio ve stálém pásu mezi nimi. Kratší/delší bio už
           NEposouvá ostatní prvky. Pod blokem průběžná linka jako u rosteru. */}
-      <div className="relative flex items-end lg:hidden">
+      <div className={styles.mobile}>
         {/* Číslo na úrovni bloku, v mezeře fotka/text */}
         <span
           aria-hidden="true"
-          className={`pointer-events-none absolute top-[-8px] z-0 select-none whitespace-nowrap text-[150px] font-bold leading-[0.7] ${reverse
-              ? isSingleDigit
-                ? 'right-[96px]'
-                : 'right-[60px]'
-              : isSingleDigit
-                ? 'left-[96px]'
-                : 'left-[60px]'
-            }`}
-          style={{ fontFamily: 'var(--font-heading)', color: NUMBER_GRAY }}
+          className={`${styles.mobileNumber} ${mobileNumberPosition}`}
         >
           {numberLabel}
         </span>
 
-        {/* Fotka: pevná výška = kotva bloku, postava stojí na dně.
-            Linka je border-b celého bloku; protože text nikdy nepřeteče
-            fotku (stejná výška + clamp), spodní hrana bloku = spodek fotky,
-            takže linka sedí hned pod fotkou jako u rosteru 11–21. */}
+        {/* Fotka: pevná výška = kotva bloku, postava stojí na dně. */}
         <div
-          className={`relative z-10 h-[330px] w-[185px] shrink-0 ${reverse ? 'order-2' : ''
-            }`}
+          className={`${styles.mobilePhotoBox} ${reverse ? styles.mobilePhotoBoxReverse : ''}`}
         >
           <img
             src={photoSrc}
             alt={name}
-            className={`absolute bottom-0 z-10 h-full w-auto max-w-none ${reverse ? 'right-[-30px]' : 'left-[-30px]'
-              }`}
+            className={`${styles.mobilePhoto} ${
+              reverse ? styles.mobilePhotoRight : styles.mobilePhotoLeft
+            }`}
           />
         </div>
 
         {/* Textový sloupec: stejně vysoký jako fotka, prvky rozprostřené
             mezi horní a dolní hranu (jméno nahoře, odkaz dole) */}
-        <div
-          className={`relative z-20 flex h-[330px] min-w-0 flex-1 flex-col md:max-w-[420px] ${reverse ? 'pl-3 pr-4 text-left' : 'pl-4 pr-3 text-left'
-            }`}
-        >
+        <div className={`${styles.mobileText} ${reverse ? styles.mobileTextReverse : ''}`}>
           {/* Horní zóna: jméno u horní hrany fotky */}
           <div>
-            <h2
-              className="font-bold"
-              style={{
-                fontFamily: 'var(--font-heading)',
-                color: NAVY,
-                fontSize: 'clamp(22px, 6.5vw, 28px)',
-                lineHeight: 1.1,
-              }}
-            >
-              {name}
-            </h2>
+            <h2 className={styles.mobileName}>{name}</h2>
 
-            {titles ? (
-              <p
-                className="mt-0.5 text-[12px] font-bold tracking-wide text-[#3C96D7] sm:mt-1"
-                style={{ fontFamily: 'var(--font-heading)' }}
-              >
-                {titles}
-              </p>
-            ) : null}
+            {titles ? <p className={styles.mobileTitles}>{titles}</p> : null}
 
-            <div
-              className="mt-1.5 flex flex-wrap items-center gap-1 sm:mt-2 sm:gap-1.5"
-              style={{ fontFamily: 'var(--font-heading)' }}
-            >
+            <div className={styles.mobileTags}>
               {badge ? (
-                <span
-                  className={`cand-pill ${pillBase} px-2 py-[3px] text-[10px] text-white`}
-                  style={{ backgroundColor: BADGE_BG }}
-                >
+                <span className={`${styles.pill} ${styles.mobilePill} ${styles.pillBadge}`}>
                   {badge}
                 </span>
               ) : null}
               {tags.slice(0, 2).map((tag) => (
                 <span
                   key={tag}
-                  className={`cand-pill ${pillBase} px-2 py-[3px] text-[10px]`}
-                  style={{ backgroundColor: TAG_BG, color: NAVY }}
+                  className={`${styles.pill} ${styles.mobilePill} ${styles.pillTag}`}
                 >
                   {tag}
                 </span>
@@ -218,32 +148,22 @@ const CandidateEditorial = ({
           </div>
 
           {/* Střední zóna: celý perex (vejde se i nejdelší) */}
-          <div className="min-h-0 flex-1 py-1 sm:py-2">
-            <p className="perex-text text-gray-700" style={{ fontFamily: 'var(--font-body)', lineHeight: 1.4 }}>
-              {perex}
-            </p>
+          <div className={styles.mobilePerexZone}>
+            <p className={styles.mobilePerex}>{perex}</p>
           </div>
 
           {/* Dolní zóna: odkaz u dolní hrany fotky */}
           <button
             type="button"
             onClick={onReadMore}
-            className="mb-2.5 self-start text-left text-[14px] font-bold text-[#3C96D7] hover:underline"
-            style={{ fontFamily: 'var(--font-heading)' }}
+            className={`${styles.readMore} ${styles.mobileReadMore}`}
           >
             Celý profil &rarr;
           </button>
         </div>
 
         {/* Linka hned pod fotkou, na koncích mizící do ztracena */}
-        <span
-          aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 left-0 right-0 z-0 h-px"
-          style={{
-            background:
-              'linear-gradient(to right, transparent 0, rgba(22,21,52,0.14) 20%, rgba(22,21,52,0.14) 80%, transparent 100%)',
-          }}
-        />
+        <span aria-hidden="true" className={styles.mobileDivider} />
       </div>
     </article>
   );

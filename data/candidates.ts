@@ -67,7 +67,7 @@ export const Candidates: Candidate[] = [
     photo: P02,
     tags: ['PODNIKÁNÍ', 'MARKETING'],
     perex:
-      'Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem a také založila úspěšný lokální profil @ziju_v_beroune a stála u i u zrodu spolku Berounský rybníček.',
+      'Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem, založila úspěšný lokální profil @ziju_v_beroune a stála i u zrodu spolku Berounský rybníček.',
     fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a na České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat jako marketérka v IT. Během studií na VŠ strávila tři měsíce na studijní stáži na Generálním konzulátu České republiky v Los Angeles. Zkušenosti z nadnárodní IT korporace a technologického startupu přetavila ve vlastní podnikání, poskytuje marketingové služby začínajícím startupům. Od roku 2020 s hrdostí nazývá Beroun svým domovem. Během rodičovské založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.`,
   },
   {

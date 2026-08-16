@@ -1,0 +1,133 @@
+/* Stránka O nás — dříve Tailwind utility, nyní CSS modul */
+
+.pageWrapper {
+  overflow-x: clip;
+}
+
+.main {
+  position: relative;
+  background-color: #f7f9fb;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  position: relative;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 4rem 1.25rem 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+.heroTitle {
+  max-width: 56rem;
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 0.95;
+  color: #161534;
+}
+
+@media (min-width: 640px) {
+  .heroTitle {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+/* podtržení jako inline background → láme se spolu s textem, vždy pod slovy */
+.heroHighlight {
+  background-image: linear-gradient(rgba(60, 150, 215, 0.2), rgba(60, 150, 215, 0.2));
+  background-size: 100% 0.28em;
+  background-position: 0 88%;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.heroPerex {
+  max-width: 42rem;
+  margin-top: 2rem;
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.625;
+  color: #4b5563;
+}
+
+.heroPerex strong {
+  color: #161534;
+}
+
+/* ===== PRVNÍCH 10 – editorial layout ===== */
+/* na mobilu full-bleed (bez horizontálního paddingu), aby absolutní vrstvy mířily na okraj viewportu */
+
+.editorialSection {
+  position: relative;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .editorialSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+  }
+}
+
+/* ===== KANDIDÁTI 11–21 – roster ===== */
+
+.rosterSection {
+  position: relative;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 7rem;
+}
+
+@media (min-width: 640px) {
+  .rosterSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.rosterGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.25rem;
+  row-gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .rosterGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .rosterGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,294 @@
+/* ── Barvy sdílené s CandidateEditorial — držte je synchronní ──
+   navy #161534 · blue #3C96D7 · badge #22B573 · tag #E7ECF2 */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes panelIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes textIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Wrapper: overflow visible, aby postava mohla vystoupit z modálu */
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+}
+
+.card {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #f7f9fb;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Nakloněný modrý panel za postavou — oříznutý rohem karty */
+.panel {
+  pointer-events: none;
+  position: absolute;
+  bottom: -110px;
+  left: -150px;
+  z-index: 0;
+  height: 470px;
+  width: 470px;
+  border-radius: 9999px;
+  background-color: #c6e0f5;
+  animation: panelIn 0.35s ease-out backwards;
+}
+
+/* Číslo bíle skrz panel */
+.number {
+  pointer-events: none;
+  position: absolute;
+  bottom: -24px;
+  left: 36px;
+  z-index: 1;
+  user-select: none;
+  white-space: nowrap;
+  font-family: var(--font-heading);
+  font-size: 190px;
+  font-weight: 700;
+  line-height: 0.8;
+  color: rgba(255, 255, 255, 0.8);
+  animation: textIn 0.35s ease-out 0.1s backwards;
+}
+
+.closeButton {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 30;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0;
+  border-radius: 9999px;
+  background: none;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.closeButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #374151;
+}
+
+/* Hlavička */
+.header {
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
+  padding: 1.25rem 1.5rem 0.5rem;
+  animation: textIn 0.3s ease-out 0.08s backwards;
+}
+
+@media (min-width: 640px) {
+  .header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.title {
+  padding-right: 3rem;
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #161534;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 34px;
+  }
+}
+
+.titleHighlight {
+  position: relative;
+  display: inline-block;
+}
+
+.titleText {
+  position: relative;
+  z-index: 10;
+}
+
+.titleUnderline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.25rem;
+  z-index: 0;
+  height: 0.75rem;
+  transform: rotate(-1deg);
+  background-color: rgba(60, 150, 215, 0.2);
+}
+
+@media (min-width: 640px) {
+  .titleUnderline {
+    height: 1rem;
+  }
+}
+
+.titles {
+  margin-top: 0.25rem;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #3c96d7;
+}
+
+.tags {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+/* Pilulky (badge + tagy) */
+.pill {
+  border-radius: 9999px;
+  padding: 3px 0.625rem;
+  font-family: var(--font-heading);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+}
+
+.pillBadge {
+  background-color: #22b573;
+  color: #fff;
+}
+
+.pillTag {
+  background-color: #e7ecf2;
+  color: #161534;
+}
+
+/* Tělo: JEDEN blok — scroll, výška, padding i text pohromadě.
+   Spodní fade přes mask: posledních ~20px textu mizí do ztracena. */
+.body {
+  position: relative;
+  z-index: 10;
+  height: 320px;
+  overflow-y: scroll;
+  padding: 0.5rem 1rem 2rem 190px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+  animation: textIn 0.3s ease-out 0.14s backwards;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent 10%);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 20px), transparent 10%);
+  scrollbar-width: thin;
+  scrollbar-color: #afbdcc transparent;
+}
+
+@media (min-width: 640px) {
+  .body {
+    padding-left: 240px;
+    padding-right: 1.75rem;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+}
+
+.body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background: #afbdcc;
+  border-radius: 4px;
+}
+
+.body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.body p + p {
+  margin-top: 0.75rem;
+}
+
+/* Postava: sourozenec karty (mimo overflow-hidden), rameno vyčnívá
+   přes levou hranu do overlaye. Text uvnitř karty je omezený výškou
+   karty, takže pod fotku neteče. */
+.figure {
+  pointer-events: none;
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  z-index: 20;
+  height: 300px;
+  width: 240px;
+  animation: slideUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.05s backwards;
+}
+
+@media (min-width: 640px) {
+  .figure {
+    left: -20px;
+    height: 340px;
+    width: 265px;
+  }
+}
+
+.photo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: left bottom;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root,
+  .panel,
+  .number,
+  .header,
+  .body,
+  .figure {
+    animation: none;
+  }
+}

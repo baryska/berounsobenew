@@ -1,0 +1,97 @@
+/* ── Barvy sdílené s CandidateEditorial — držte je synchronní ──
+   navy #161534 · number-gray #DCE2EA · blue #3C96D7 */
+
+.card {
+  position: relative;
+}
+
+/* Číslo a postava stojí spolu na lince a překrývají se */
+.mediaBox {
+  position: relative;
+  height: 225px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(22, 21, 52, 0.15);
+}
+
+.number {
+  pointer-events: none;
+  position: absolute;
+  left: 14px;
+  top: 1.5rem;
+  user-select: none;
+  font-family: var(--font-heading);
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 0.8;
+  color: #dce2ea;
+}
+
+@media (min-width: 640px) {
+  .number {
+    left: 12px;
+    top: auto;
+    bottom: 75px;
+    font-size: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .number {
+    bottom: 120px;
+    font-size: 120px;
+  }
+}
+
+/* Holý cutout na lince — čtvercové fotky, rám 1:1 */
+.photoBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  height: 165px;
+  width: 165px;
+}
+
+@media (min-width: 640px) {
+  .photoBox {
+    right: 0.25rem;
+    height: 190px;
+    width: 190px;
+  }
+}
+
+.photo {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+/* Text pod linkou — nikdy přes fotku */
+.text {
+  padding-top: 0.625rem;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #161534;
+}
+
+.titles {
+  margin-top: 0.125rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #3c96d7;
+}
+
+.shortText {
+  margin-top: 0.375rem;
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #4b5563;
+}
