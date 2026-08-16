@@ -13,9 +13,11 @@
 
 .hero {
   position: relative;
-  max-width: 72rem;
+  /* celý blok vycentrovaný nad medailonky, text uvnitř zarovnaný doleva */
+  max-width: 56rem;
   margin: 0 auto;
   padding: 4rem 1.25rem 2.5rem;
+  text-align: left;
 }
 
 @media (min-width: 640px) {
@@ -33,7 +35,7 @@
 }
 
 .heroTitle {
-  max-width: 56rem;
+  margin: 0;
   font-family: var(--font-heading);
   font-size: 2.75rem;
   font-weight: 700;
@@ -67,7 +69,7 @@
 
 .heroPerex {
   max-width: 42rem;
-  margin-top: 2rem;
+  margin: 2rem 0 0;
   font-family: var(--font-body);
   font-size: 1.125rem;
   line-height: 1.625;
