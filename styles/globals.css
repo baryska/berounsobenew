@@ -112,3 +112,6 @@ h1, h2, h3, h4, h5, h6,
     font-size: 9px !important;
   }
 }
+
+.perex-text { font-size: 13.3px; }
+@media (min-width: 430px) { .perex-text { font-size: 15px; } }

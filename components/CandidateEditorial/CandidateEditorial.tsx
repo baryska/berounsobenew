@@ -41,23 +41,21 @@ const CandidateEditorial = ({
     <article className="mb-16 last:mb-0 md:mb-24">
       {/* ================= DESKTOP (md+) ================= */}
       <div
-        className={`mx-auto hidden w-fit lg:flex items-center gap-6 ${
-          reverse ? 'flex-row-reverse' : ''
-        }`}
+        className={`mx-auto hidden w-fit lg:flex items-center gap-6 ${reverse ? 'flex-row-reverse' : ''
+          }`}
       >
         {/* Foto + číslo: pevná výška = kotva bloku, definuje výšku sloupce. */}
         <div className="relative h-[440px] w-[380px] shrink-0">
           <span
             aria-hidden="true"
-            className={`pointer-events-none absolute top-0 select-none whitespace-nowrap text-[300px] font-bold leading-[0.82] ${
-              reverse
+            className={`pointer-events-none absolute top-0 select-none whitespace-nowrap text-[300px] font-bold leading-[0.82] ${reverse
                 ? isSingleDigit
                   ? 'right-[55%]'
                   : 'right-[45%]'
                 : isSingleDigit
-                ? 'left-[55%]'
-                : 'left-[45%]'
-            }`}
+                  ? 'left-[55%]'
+                  : 'left-[45%]'
+              }`}
             style={{ fontFamily: 'var(--font-heading)', color: NUMBER_GRAY }}
           >
             {numberLabel}
@@ -137,15 +135,14 @@ const CandidateEditorial = ({
         {/* Číslo na úrovni bloku, v mezeře fotka/text */}
         <span
           aria-hidden="true"
-          className={`pointer-events-none absolute top-[-8px] z-0 select-none whitespace-nowrap text-[150px] font-bold leading-[0.7] ${
-            reverse
+          className={`pointer-events-none absolute top-[-8px] z-0 select-none whitespace-nowrap text-[150px] font-bold leading-[0.7] ${reverse
               ? isSingleDigit
                 ? 'right-[96px]'
                 : 'right-[60px]'
               : isSingleDigit
-              ? 'left-[96px]'
-              : 'left-[60px]'
-          }`}
+                ? 'left-[96px]'
+                : 'left-[60px]'
+            }`}
           style={{ fontFamily: 'var(--font-heading)', color: NUMBER_GRAY }}
         >
           {numberLabel}
@@ -156,25 +153,22 @@ const CandidateEditorial = ({
             fotku (stejná výška + clamp), spodní hrana bloku = spodek fotky,
             takže linka sedí hned pod fotkou jako u rosteru 11–21. */}
         <div
-          className={`relative z-10 h-[330px] w-[185px] shrink-0 ${
-            reverse ? 'order-2' : ''
-          }`}
+          className={`relative z-10 h-[330px] w-[185px] shrink-0 ${reverse ? 'order-2' : ''
+            }`}
         >
           <img
             src={photoSrc}
             alt={name}
-            className={`absolute bottom-0 z-10 h-full w-auto max-w-none ${
-              reverse ? 'right-[-30px]' : 'left-[-30px]'
-            }`}
+            className={`absolute bottom-0 z-10 h-full w-auto max-w-none ${reverse ? 'right-[-30px]' : 'left-[-30px]'
+              }`}
           />
         </div>
 
         {/* Textový sloupec: stejně vysoký jako fotka, prvky rozprostřené
             mezi horní a dolní hranu (jméno nahoře, odkaz dole) */}
         <div
-          className={`relative z-20 flex h-[330px] min-w-0 flex-1 flex-col md:max-w-[420px] ${
-            reverse ? 'pl-3 pr-4 text-left' : 'pl-4 pr-3 text-left'
-          }`}
+          className={`relative z-20 flex h-[330px] min-w-0 flex-1 flex-col md:max-w-[420px] ${reverse ? 'pl-3 pr-4 text-left' : 'pl-4 pr-3 text-left'
+            }`}
         >
           {/* Horní zóna: jméno u horní hrany fotky */}
           <div>
@@ -225,13 +219,7 @@ const CandidateEditorial = ({
 
           {/* Střední zóna: celý perex (vejde se i nejdelší) */}
           <div className="min-h-0 flex-1 py-1 sm:py-2">
-            <p
-              className="text-[13px] text-gray-700 md:text-[15px]"
-              style={{
-                fontFamily: 'var(--font-body)',
-                lineHeight: 1.4,
-              }}
-            >
+            <p className="perex-text text-gray-700" style={{ fontFamily: 'var(--font-body)', lineHeight: 1.4 }}>
               {perex}
             </p>
           </div>
