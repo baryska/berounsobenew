@@ -54,7 +54,7 @@ export const Candidates: Candidate[] = [
     titles: 'Mgr., Ph.D.',
     name: 'Barbora Skálová',
     photo: P01,
-    tags: ['CHYTRÉ MĚSTO', 'INOVACE', 'KOMUNIKACE'],
+    tags: [],
     badge: 'současná zastupitelka',
     perex:
       'Softwarová vývojářka, která ví, že moderní město stojí na chytrých službách, kvalitním školství a vstřícné komunikaci. Desátým rokem bojuje za vodovod v Hostímě. Spoluzakladatelka spolku Berounský rybníček.',
@@ -75,7 +75,7 @@ export const Candidates: Candidate[] = [
     titles: 'Ing. et Ing.',
     name: 'Lucie Šimečková',
     photo: P02,
-    tags: ['PODNIKÁNÍ', 'MARKETING'],
+    tags: [],
     perex:
       'Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem, založila úspěšný lokální profil @ziju_v_beroune a stála i u zrodu spolku Berounský rybníček.',
     fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a na České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat jako marketérka v IT. 
@@ -91,7 +91,7 @@ export const Candidates: Candidate[] = [
     titles: '',
     name: 'Václav Kovář',
     photo: P03,
-    tags: ['VEŘEJNÝ PROSTOR', 'OTEVŘENÁ RADNICE'],
+    tags: [],
     perex:
       'Odborník na zapojování veřejnosti do rozhodování. Šest let vedl spolek Berounská zeleň. Do komunální politiky přináší téma město pro lidi – kvalitní veřejná prostranství a otevřenou radnici.',
     fullText: `Po studiích novinařiny pracoval v kultuře. Věnoval se produkci a vedení projektových týmů. 
@@ -109,7 +109,7 @@ export const Candidates: Candidate[] = [
     titles: 'Mgr.',
     name: 'Eva Kotrčová',
     photo: P04,
-    tags: ['ŠKOLSTVÍ', 'INOVACE'],
+    tags: [],
     badge: 'současná zastupitelka',
     perex:
       'Pedagožka s dlouholetou praxí v běžných školách i ve speciálním vzdělávání. Používá moderní inovativní metody, které dětem pomáhají učit se s radostí a bez stresu.',
@@ -122,7 +122,7 @@ export const Candidates: Candidate[] = [
     titles: '',
     name: 'Jan Valachovič',
     photo: P05,
-    tags: ['EKONOMIKA', 'SPORT'],
+    tags: [],
     perex:
       'Finanční expert se zaměřením na efektivní hospodaření a odpovědný rozpočet. Jako předseda florbalového oddílu navíc dlouhodobě vede děti k aktivnímu pohybu.',
     fullText: `Po absolvování Gymnázia v Berouně studoval VŠCHT. 
@@ -140,7 +140,7 @@ export const Candidates: Candidate[] = [
     titles: 'Ing., DiS.',
     name: 'Kristýna Kymličková',
     photo: P06,
-    tags: ['STAVEBNICTVÍ', 'VEŘEJNÝ PROSTOR'],
+    tags: [],
     perex:
       'Stavební inženýrka s praxí v řízení rekonstrukcí. Dlouhodobě se věnuje správě bytového fondu a usiluje o modernizaci bytové infrastruktury a zkvalitnění veřejného prostoru.',
     fullText: `Berounská rodačka, která vystudovala stavební inženýrství. 
@@ -154,7 +154,7 @@ export const Candidates: Candidate[] = [
     titles: 'PhDr.',
     name: 'Tomáš Procházka',
     photo: P07,
-    tags: ['KOMUNIKACE', 'DOPRAVA'],
+    tags: [],
     perex:
       'Zkušený novinář, vedoucí zahraniční redakce Hospodářských novin. Zastánce živé občanské společnosti a spolehlivé veřejné dopravy.',
     fullText: `V médiích začal pracovat už během studia na gymnáziu. Řadu let působil v regionálním Deníku, kde ho zajímal život v městech a obcích. Nyní vede zahraniční redakci Hospodářských novin a magazín Víkend HN. 
@@ -168,7 +168,7 @@ export const Candidates: Candidate[] = [
     titles: 'Mgr., Ph.D.',
     name: 'Jakub Novák',
     photo: P08,
-    tags: ['ZDRAVOTNICTVÍ', 'VEŘEJNÝ PROSTOR'],
+    tags: [],
     perex:
       'Biolog, bývalý novinář, dnes pracuje ve zdravotnictví. Věří, že dobré město se pozná podle toho, jak se v něm žije těm, kteří to nemají nejlehčí.',
     fullText: `Vystudoval biologii a působil jako novinář, v současnosti pracuje ve zdravotnictví. 
@@ -182,7 +182,7 @@ export const Candidates: Candidate[] = [
     titles: 'Ing., Ph.D.',
     name: 'Adéla Schmiedová',
     photo: P09,
-    tags: ['REGIONÁLNÍ ROZVOJ', 'DOTACE'],
+    tags: [],
     perex: 'Ekonomka a ředitelka MAS Jihozápad, která už přes dvacet let pomáhá rozvíjet obce na Berounsku. Odbornice na dotace a regionální rozvoj. Chce, aby radnice naslouchala i těm částem Berouna, na které se často zapomíná.',
     fullText: `Vystudovala ekonomii na České zemědělské univerzitě a tamtéž si přidala postgraduál v oboru regionálního a sociálního rozvoje. 
     
@@ -197,7 +197,7 @@ export const Candidates: Candidate[] = [
     titles: 'Ing.',
     name: 'Martin Veselý',
     photo: P10,
-    tags: ['ARCHITEKTURA', 'ZELEŇ'],
+    tags: [],
     badge: 'současný zastupitel',
     perex:
       'Architekt s mezinárodními zkušenostmi. Je zakladatelem spolku Berounská zeleň a dlouhodobě se zasazuje o kvalitní územní rozvoj a ochranu městské zeleně.',
@@ -212,7 +212,7 @@ export const Candidates: Candidate[] = [
     titles: '',
     name: 'Veronika Pohlová',
     photo: P11,
-    tags: ['SPORT', 'KULTURA', 'ŠKOLSTVÍ'],
+    tags: [],
     perex:
       'Studentka pedagogiky a rodilá Berouňačka, která chce moderní školy zaměřené na kreativitu, dostupný sport pro všechny generace a více prostoru pro místní kulturu a mladé talenty.',
     shortText:
