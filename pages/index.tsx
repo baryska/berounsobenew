@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Profile from '../components/Profile/Profile';
 import CandidateProfileCard from '../components/CandidateProfileCard/CandidateProfileCard';
-import CandidateModal, { CandidateModalData } from '../components/CandidateModal/CandidateModal';
+import CandidateModal, { CandidateModalData } from '../components/CandidateModalLegacy/CandidateModalLegacy';
 import { Candidates } from '../data/index';
 import ContactForm from '../components/ContactForm/ContactForm';
 import FacebookFeed from '../components/FacebookFeed/FacebookFeed';

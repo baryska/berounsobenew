@@ -62,13 +62,18 @@ export const Candidates: Candidate[] = [
     
     Absolvovala několik studijních pobytů ve Finsku, kde zjistila, že moderní město 21. století stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a otevřené komunikaci s občany. Tuto praxi by chtěla přinést i do Berouna. 
     
-    Již 15 let je hrdou obyvatelkou Hostíma, kde už desátým rokem jako místopředsedkyně osadního výboru bojuje o vodovod a kanalizaci. 
+    Její velké téma je voda a sucho.
     
+    Je hrdou obyvatelkou Hostíma, kde už desátým rokem jako místopředsedkyně osadního výboru bojuje o vodovod. 
+
     V létě mění klávesnici za pádlo a jako vedoucí jezdí na vodácký tábor. 
     
-    Je spoluzakladatelkou sousedského spolku Berounský rybníček. 
+    Je spoluzakladatelkou sousedského spolku Berounský rybníček. Baví jí vymýšlet pro Rybníček šifrovací hry o Berounu a má na svědomí i to, že si je můžete zahrát nejen na papíře, ale i v telefonu. 
     
-    Má dvě dcery.`,
+    Nejlépe si odpočine v sauně nebo když se kolébá na vlnách. Je fanynkou rozhleden, protože miluje výhledy do krajiny.
+    
+    Má dvě dcery.
+    `,
   },
   {
     number: 2,
@@ -113,9 +118,11 @@ export const Candidates: Candidate[] = [
     badge: 'současná zastupitelka',
     perex:
       'Pedagožka s dlouholetou praxí v běžných školách i ve speciálním vzdělávání. Používá moderní inovativní metody, které dětem pomáhají učit se s radostí a bez stresu.',
-    fullText: `Absolventka Pedagogické fakulty Univerzity Karlovy, obor učitelství na prvním stupni. Dále vystudovala speciální pedagogiku, logopedii a psychopedii. 
+    fullText: `Absolventka Pedagogické fakulty Univerzity Karlovy, obor učitelství na prvním stupni. Dále vystudovala speciální pedagogiku, logopedii a psychopedii.
     
-    Během své praxe působila na různých typech škol v státním i soukromém sektoru. Má zkušenosti s vedením školy, působila jako zástupce ředitele, dále s prezentací inovativních metod ve výuce a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
+                Je maminkou tří dětí. Jeji významnou zálibou je pěvecký sbor Gabriel, který přináší kulturu především těm, kteří si za ní sami nedojdou především ze zdravotních důvodů. Je předsedkyně spolku Ratinka, který se zabývá ochranou přírody. 
+
+                Během své praxe působila na různých typech škol v státním i soukromém sektoru. Má zkušenosti s vedením školy, působila jako zástupce ředitele. Dále má zkušenosti s prezentací inovativních metod ve výuce a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
   },
   {
     number: 5,
@@ -143,11 +150,15 @@ export const Candidates: Candidate[] = [
     tags: [],
     perex:
       'Stavební inženýrka s praxí v řízení rekonstrukcí. Dlouhodobě se věnuje správě bytového fondu a usiluje o modernizaci bytové infrastruktury a zkvalitnění veřejného prostoru.',
-    fullText: `Berounská rodačka, která vystudovala stavební inženýrství. 
-    
-    V posledních letech se aktivně zapojuje do dění v místě, kde žije. Ujala se správy bytového domu na Velkém sídlišti, kde jako předsedkyně SVJ koordinovala jeho kompletní revitalizaci. 
-    
-    Zároveň se dlouhodobě zajímá o kvalitu veřejného prostoru a snaží se o jeho zlepšení.`,
+    fullText: `Berounská rodačka a stavební inženýrka. V posledních letech se aktivně zapojuje do dění ve městě. Jako předsedkyně SVJ na Velkém sídlišti koordinovala kompletní revitalizaci bytového domu a dlouhodobě se zajímá o kvalitu veřejného prostoru.
+
+        Má dvě malé děti a blízký vztah ke zvířatům – řadu let se věnovala péči o nalezené nebo nechtěné králíky. 
+
+        Baví ji proměňovat interiéry a rekonstruovat staré budovy s důrazem na zachování jejich charakteru a historické hodnoty. 
+
+        Ve volném čase se ráda účastní vědomostních soutěží, především Hospodského kvízu.
+        
+        „Vzpomínám si, jak ještě během 90. let byl Beroun malé šedé městečko s fungující cementárnou u Litavky. Od té doby prošel ohromnou proměnou, přibyla spousta obyvatel a město vyrostlo. Sama se profesně pohybuji kolem staveb, jejich správy a rekonstrukcí, a čím dál víc si uvědomuji, jak důležité je nejen stavět nové, ale dobře se starat o to, co už máme.“`,
   },
   {
     number: 7,
@@ -159,9 +170,13 @@ export const Candidates: Candidate[] = [
       'Zkušený novinář, vedoucí zahraniční redakce Hospodářských novin. Zastánce živé občanské společnosti a spolehlivé veřejné dopravy.',
     fullText: `V médiích začal pracovat už během studia na gymnáziu. Řadu let působil v regionálním Deníku, kde ho zajímal život v městech a obcích. Nyní vede zahraniční redakci Hospodářských novin a magazín Víkend HN. 
     
-    V Berouně žije s rodinou více než deset let. Otec tří synů je fanouškem veřejné dopravy, vidí kde jsou bolavá místa, která stojí za to vyléčit. 
+    Otec tří synů je fanouškem veřejné dopravy. Vidí, kde jsou bolavá místa, která stojí za to vyléčit. 
     
-    Věří, že kvalitní vzdělání a odolná společnost mohou věcmi pohnout víc, než se může na první pohled zdát.`,
+    Věří, že kvalitní vzdělání a odolná společnost mohou věcmi pohnout víc, než se může na první pohled zdát. Pravidelně upozorňuje na problémy sídliště a pomáhá Na Paloučku v místním parku.
+
+    Ve svém živlu je mezi lidmi - mimo jiné na berounském Hospodském kvízu. A nebo ve chvíli, kdy plánuje ať už krátký výlet autem, nebo i delší výpravu “netradičním” způsobem. Letos takhle třeba vyrazil z Berouna vlakem za pár korun lyžovat na různá místa v Itálii.
+    
+    “Na našem městě mám rád mimo jiné to, že po každodenním dojíždění můžu na chvíli vypnout u řeky. A že tu potkávám spoustu podobně naladěných lidí, kteří mají chuť věcmi pohnout. Podobně jako média dnes mají uzávěrku de facto každou minutu, i pro město platí, že se pořád něco děje a je potřeba to řešit,” říká dvaačtyřicetiletý novinář.`,
   },
   {
     number: 8,
@@ -214,7 +229,7 @@ export const Candidates: Candidate[] = [
     photo: P11,
     tags: [],
     perex:
-      'Studentka pedagogiky a rodilá Berouňačka, která chce moderní školy zaměřené na kreativitu, dostupný sport pro všechny generace a více prostoru pro místní kulturu a mladé talenty.',
+      '',
     shortText:
       'Studentka pedagogiky na VŠ chce město, kde jsou mladí rádi. Dát prostor kreativitě, kultuře a místům pro sport.',
     fullText:
@@ -227,7 +242,7 @@ export const Candidates: Candidate[] = [
     photo: P12,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: 'Student obchodní akademie věří, že Beroun může být ještě příjemnější - když se pustíme do věcí, které tu chybí.',
+    shortText: 'Student obchodní akademie a fotbalista Cembritu. Věří, že Beroun může být ještě příjemnější - když se pustíme do věcí, které tu chybí.',
     fullText: LOREM_FULL,
   },
   {
@@ -237,7 +252,7 @@ export const Candidates: Candidate[] = [
     photo: P13,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: LOREM_SHORT,
+    shortText: 'Copywriter a ex-digitální nomád. Zakotvil v Berouně, protože k životu nenašel město s krásnější přírodou. Kandiduje, protože už nechce zavírat oči před tím, jak město přešlapuje na místě.',
     fullText: LOREM_FULL,
   },
   {
@@ -304,7 +319,8 @@ Mezi její celoživotní zájmy patří umění, architektura a grafický design
     photo: P19,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: 'Veterinární sestra, která  má vždy pozitivní pohled na věc a chuť změnit k lepšímu vše, co se dá.',
+    shortText: `Veterinární sestra.
+    Po Berouně ji můžete potkat se smečkou bílých psů. Psi a děti tvoří součást její rodiny, se kterou objíždějí sportovní akce, které i pořádá. Kromě toho se psy i pomáhá lidem při canisterapii. Má vždy pozitivní pohled na věc a chuť změnit k lepšímu vše, co se dá.`,
     fullText: LOREM_FULL,
   },
   {
