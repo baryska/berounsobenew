@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import type { StaticImageData } from 'next/image';
 import { renderBold } from '../../lib/renderBold';
+import { fixNbsp } from '../../lib/nbsp';
 import styles from './CandidateModal.module.css';
 
 export interface CandidateModalData {
@@ -37,8 +38,8 @@ const CandidateModal = ({ candidate, onClose }: CandidateModalProps) => {
 
   const photoSrc =
     typeof candidate.photo === 'string' ? candidate.photo : candidate.photo.src;
-  const numberLabel =
-    candidate.number != null ? String(candidate.number).padStart(2, '0') : null;
+  // Bez vodicí nuly – 1–9 je jedna číslice, stejně jako u medailonků
+  const numberLabel = candidate.number != null ? String(candidate.number) : null;
 
   const handleBackdropClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) onClose();
@@ -97,7 +98,7 @@ const CandidateModal = ({ candidate, onClose }: CandidateModalProps) => {
             </h2>
 
             {candidate.titles && candidate.titles.trim() ? (
-              <p className={styles.titles}>{candidate.titles}</p>
+              <p className={styles.titles}>{fixNbsp(candidate.titles)}</p>
             ) : null}
 
             <div className={styles.tags}>

@@ -195,7 +195,8 @@
 .aktualityContainer {
   margin-top: 4rem;
   margin-bottom: 2rem;
-  background-color: var(--color-primary-light);
+  /* stejné pozadí jako sekce „O nás" (.main v ONas.module.css) */
+  background-color: rgb(60 150 215 / 15%);
 }
 
 .programme {
@@ -394,6 +395,9 @@
 
 .experts {
   width: 60%;
+  /* strop na délku řádku — bez něj má text na širokém monitoru přes 85 znaků
+     na řádek, což se špatně čte (optimum je 45–75) */
+  max-width: 60ch;
   margin: 0 auto;
   font-size: 1.4rem;
   font-family: var(--font-body);
