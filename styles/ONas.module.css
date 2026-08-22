@@ -118,7 +118,10 @@
 
 .rosterSection {
   position: relative;
-  max-width: 72rem;
+  /* Širší než hero a medailonky (72rem) — roster má na desktopu čtyři sloupce
+     a při 72rem na ně zbývalo málo místa. Projeví se až nad ~1400px, níž
+     šířku stejně určuje viewport. */
+  max-width: 80rem;
   margin: 0 auto;
   padding: 0 1.25rem 7rem;
 }
@@ -159,6 +162,6 @@
    displejích tedy nula a layout zůstává symetrický. */
 @media (min-width: 769px) {
   .rosterSection {
-    padding-right: max(2rem, var(--qr-badge-width) - max(0px, (100vw - 72rem) / 2));
+    padding-right: max(2rem, var(--qr-badge-width) - max(0px, (100vw - 80rem) / 2));
   }
 }

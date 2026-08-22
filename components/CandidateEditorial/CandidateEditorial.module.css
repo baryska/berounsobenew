@@ -158,14 +158,14 @@
   margin-top: 1rem;
   max-width: 380px;
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.625;
   color: #374151;
 }
 
 .desktopReadMore {
   margin-top: 1rem;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* ================= MOBIL (<lg) ================= */
@@ -326,7 +326,7 @@
 
 .mobilePerex {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 13.5px;
   line-height: 1.4;
   color: #374151;
 }
@@ -346,7 +346,7 @@
 /* Dolní zóna: odkaz u dolní hrany fotky */
 .mobileReadMore {
   margin-bottom: 0.625rem;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 /* Linka hned pod fotkou, na koncích mizící do ztracena */

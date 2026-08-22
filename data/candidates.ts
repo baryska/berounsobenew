@@ -198,7 +198,7 @@ export const Candidates: Candidate[] = [
     name: 'Adéla Schmiedová',
     photo: P09,
     tags: [],
-    perex: 'Ekonomka a ředitelka MAS Jihozápad, která už přes dvacet let pomáhá rozvíjet obce na Berounsku. Odbornice na dotace a regionální rozvoj. Chce, aby radnice naslouchala i těm částem Berouna, na které se často zapomíná.',
+    perex: 'Ekonomka a ředitelka MAS Jihozápad. Přes dvacet let pomáhá rozvíjet obce na Berounsku. Odbornice na dotace a regionální rozvoj. Chce, aby radnice naslouchala i opomíjeným částem Berouna.',
     fullText: `Vystudovala ekonomii na České zemědělské univerzitě a tamtéž si přidala postgraduál v oboru regionálního a sociálního rozvoje. 
     
     Venkovanka tělem i duší, která už přes dvacet let jako ředitelka obecně prospěšné společnosti MAS Jihozápad pomáhá rozvíjet obce mezi Berounem a Prahou - dotačním poradenstvím i podporou místních spolků, škol a podnikatelů. Málokdo zná zdejší region tak dobře jako ona. 
@@ -258,7 +258,7 @@ export const Candidates: Candidate[] = [
     photo: P13,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: 'Copywriter a ex-digitální nomád. Zakotvil v Berouně, protože na celém světě nenašel k životu město s krásnější přírodou. Kandiduje, protože už nechce zavírat oči před tím, jak město přešlapuje na místě.',
+    shortText: 'Copywriter a ex-digitální nomád. Po té, co procestoval celý svět, zakotvil v Berouně, protože nikde nenašel k životu město s krásnější přírodou. Kandiduje, protože už nechce zavírat oči před tím, jak město přešlapuje na místě.',
     fullText: LOREM_FULL,
   },
   {
@@ -270,7 +270,7 @@ export const Candidates: Candidate[] = [
     perex:
       'Manažerka s mezinárodní zkušeností a vysokoškolská lektorka. Více než dvacet let pracuje s lidmi ve zdravotnictví a učí, jak zvládat náročné situace s respektem a porozuměním.',
     shortText:
-      `Manažerka ve zdravotnictví s mezinárodní zkušeností a vysokoškolská lektorka. Učí lékaře a sestry, jak zvládat náročné situace s respektem, porozuměním a spoluprací.
+      `Manažerka ve zdravotnictví a vysokoškolská lektorka. Učí lékaře a sestry, jak zvládat náročné situace s respektem a porozuměním.
       Odjakživa ji zajímá umění, architektura a design, a proto by ráda v Berouně pozvedla kvalitu veřejného prostoru.`,
     fullText: `Manažerka be zdravotnictví s mezinárodní zkušeností a vysokoškolská lektorka. Přes dvacet let učí lékaře a sestry, jak zvládat náročné situace s respektem, porozuměním a spoluprací.
 Deset let žila v Curychu, ale vrátila se domů do Berouna. Odjakživa ji přitahuje umění, architektura a design, a tak se doma zapojuje do projektů, které oživují veřejný prostor a sousedské vztahy. Spoluzaložila spolek Berounský rybníček.`,
