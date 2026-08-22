@@ -186,11 +186,11 @@ export const Candidates: Candidate[] = [
     tags: [],
     perex:
       'Biolog, bývalý novinář, dnes pracuje ve zdravotnictví. Věří, že dobré město se pozná podle toho, jak se v něm žije těm, kteří to nemají nejlehčí.',
-    fullText: `Vystudoval biologii a působil jako novinář, v současnosti pracuje ve zdravotnictví. 
-    
-    Věří, že každý v Berouně si zaslouží důstojný život: bydlení, které nezruinuje rodinu, dostupného doktora, školu, kam děti chodí rády a která je rozvíjí. 
-    
-    Město, kudy se dá bezpečně, spolehlivě a včas dostat z jednoho konce na druhý. Komunitu, na kterou se dá spolehnout. Tohle je základ, na kterém stojí dobrý život ve městě.`,
+    fullText: `Královédvorský rodák a doktor, který neléčí lidi, ale rozumí řadě věcí a problémů, které nejsou na první pohled vidět. Do Berouna ho s rodinou vyhnaly pražské nájmy, kterým je za to zpětně velmi vděčný. Beroun se mu stal domovem a rád by se zasadil o to, aby se odtud ani on, ani nikdo jiný, stěhovat nemusel a ani nechtěl. A aby tu každý našel co potřebuje - své místo, důstojnost i péči.
+
+Miluje vůni lesa, tanec, berounskou knihovnu, experimenty všeho druhu, "dad's jokes", cestu podél Loděnice ke Krobiánovi, elektronickou hudbu a hlavně svého syna.
+
+Všechnu moc imaginaci a společně vytáhneme i tu největší řepu (nebo dotáhneme obchvat)!`,
   },
   {
     number: 9,
