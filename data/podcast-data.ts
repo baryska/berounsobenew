@@ -129,4 +129,19 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     chapterLabel: "Beroun udržitelně",
     chapterHref: "/program#udrzitelne",
   },
+  {
+    id: "digitalizace",
+    number: 8,
+    title: "Berounská karta a úřad v mobilu",
+    description:
+      "Jak bude fungovat Berounská karta a jaké výhody přinese lidem, kteří tu mají trvalé bydliště? Co si budete moci vyřídit z aplikace Beroun v mobilu místo cesty na úřad? A proč chceme otevřít městská data veřejnosti a uspořádat berounské hackathony?",
+    speakers: ["Lucie Šimečková", "Barbora Skálová"],
+    src: "/Digitalizace-final.mp3",
+    spotifyUrl: "https://open.spotify.com/episode/1qbWeBr3WUI8ngpBxGeFTR?si=22cff4d377994259",
+    appleUrl:
+      "https://podcasts.apple.com/us/podcast/berounsk%C3%A1-karta-a-%C3%BA%C5%99ad-v-mobilu/id6792550119?i=1000784341802",
+    youtubeUrl: "https://www.youtube.com/watch?v=dEIV-MxgKp8",
+    chapterLabel: "Beroun chytře",
+    chapterHref: "/program#chytre",
+  },
 ];

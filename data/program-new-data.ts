@@ -123,6 +123,16 @@ export const ALL_SEKCE: Sekce[] = [
     quoteRole: "",
     quoteAvatar: "/Barbora_skalova.jpg",
     heroImage: "",
+    podcasts: [
+      {
+        src: "/Digitalizace-final.mp3",
+        title: "Berounská karta a úřad v mobilu",
+        description: "Jak bude fungovat Berounská karta a jaké výhody přinese lidem, kteří tu mají trvalé bydliště? Co si budete moci vyřídit z aplikace Beroun v mobilu místo cesty na úřad? A proč chceme otevřít městská data veřejnosti a uspořádat berounské hackathony?",
+        spotifyUrl: "https://open.spotify.com/episode/1qbWeBr3WUI8ngpBxGeFTR?si=22cff4d377994259",
+        appleUrl: "https://podcasts.apple.com/us/podcast/berounsk%C3%A1-karta-a-%C3%BA%C5%99ad-v-mobilu/id6792550119?i=1000784341802",
+        youtubeUrl: "https://www.youtube.com/watch?v=dEIV-MxgKp8",
+      },
+    ],
     weights: { rodina: 8, senior: 7, student: 9, auto: 7, mhd: 6, cyklista: 5, podnikatel: 9, sidliste: 8, miluji: 10 },
     points: [
       {
