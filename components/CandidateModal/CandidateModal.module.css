@@ -72,6 +72,8 @@
 
 /* Číslo bíle skrz panel */
 .number {
+  /* jen na mobilu — na desktopu číslo nezobrazujeme */
+  display: none;
   pointer-events: none;
   position: absolute;
   bottom: -24px;
