@@ -176,7 +176,7 @@ export const Candidates: Candidate[] = [
 
     Ve svém živlu je mezi lidmi - mimo jiné na berounském Hospodském kvízu. A nebo ve chvíli, kdy plánuje ať už krátký výlet autem, nebo i delší výpravu “netradičním” způsobem. Letos takhle třeba vyrazil z Berouna vlakem za pár korun lyžovat na různá místa v Itálii.
     
-    “Na našem městě mám rád mimo jiné to, že po každodenním dojíždění můžu na chvíli vypnout u řeky. A že tu potkávám spoustu podobně naladěných lidí, kteří mají chuť věcmi pohnout. Podobně jako média dnes mají uzávěrku de facto každou minutu, i pro město platí, že se pořád něco děje a je potřeba to řešit,” říká dvaačtyřicetiletý novinář.`,
+    “Na našem městě mám rád mimo jiné to, že po každodenním dojíždění můžu na chvíli vypnout u řeky. A že tu potkávám spoustu podobně naladěných lidí, kteří mají chuť věcmi pohnout. Podobně jako média dnes mají uzávěrku de facto každou minutu, i pro město platí, že se pořád něco děje a je potřeba to řešit.”`,
   },
   {
     number: 8,
