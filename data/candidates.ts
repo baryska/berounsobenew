@@ -237,7 +237,7 @@ export const Candidates: Candidate[] = [
     perex:
       '',
     shortText:
-      'Veronika studuje pedagogiku s výtvarnou výchovou a jako rodilá Berouňačka chce, aby tady mladí lidé měli důvod zůstat. Sama sportuje i maluje, takže z vlastní zkušenosti ví, že v Berouně chybí dostupné sportovní zázemí i místa, kde se začínající tvůrci můžou ukázat.',
+      'Studuje pedagogiku s výtvarnou výchovou a jako rodilá Berouňačka chce, aby tady mladí lidé měli důvod zůstat. Sama sportuje i maluje, takže z vlastní zkušenosti ví, že v Berouně chybí dostupné sportovní zázemí i místa, kde se začínající tvůrci můžou ukázat.',
     fullText:
       'Veronika studuje vysokou školu se zaměřením na vzdělávání a výtvarnou výchovu. Jako rodilá Berouňačka chce, aby město bylo místem, kde mladí lidé rádi zůstávají a kde mají prostor pro svůj rozvoj. Jako budoucí učitelka věří, že moderní škola má být především o bezpečném prostředí, podpoře individuality a kreativity, nejen o známkách. Sama se aktivně věnuje sportu a umění, proto v Berouně postrádá dostupnější sportovní zázemí pro všechny a větší podporu místních umělců. Jejím cílem je oživit kulturu, podpořit místní galerie a dát začínajícím tvůrcům šanci se ukázat. Nechce o změnách jen mluvit, ale chce být součástí generace, která je v Berouně pomůže tvořit.',
   },
@@ -271,7 +271,7 @@ export const Candidates: Candidate[] = [
       'Manažerka s mezinárodní zkušeností a vysokoškolská lektorka. Více než dvacet let pracuje s lidmi ve zdravotnictví a učí, jak zvládat náročné situace s respektem a porozuměním.',
     shortText:
       `Manažerka ve zdravotnictví s mezinárodní zkušeností a vysokoškolská lektorka. Učí lékaře a sestry, jak zvládat náročné situace s respektem, porozuměním a spoluprací.
-      Odjakživa ji přitahuje umění, architektura a design, a proto by ráda v Berouně pozvedla veřejný prostor.`,
+      Odjakživa ji zajímá umění, architektura a design, a proto by ráda v Berouně pozvedla kvalitu veřejného prostoru.`,
     fullText: `Manažerka be zdravotnictví s mezinárodní zkušeností a vysokoškolská lektorka. Přes dvacet let učí lékaře a sestry, jak zvládat náročné situace s respektem, porozuměním a spoluprací.
 Deset let žila v Curychu, ale vrátila se domů do Berouna. Odjakživa ji přitahuje umění, architektura a design, a tak se doma zapojuje do projektů, které oživují veřejný prostor a sousedské vztahy. Spoluzaložila spolek Berounský rybníček.`,
   },
@@ -348,7 +348,7 @@ Deset let žila v Curychu, ale vrátila se domů do Berouna. Odjakživa ji přit
     perex:
       'Literární překladatel a dlouholetý předseda Skandinávského domu, za jehož práci mu finský prezident udělil Řád finského lva. Věří, že živá kultura je základem zdravých sousedských vztahů.',
     shortText:
-      'Překladatel a průvodce po severských zemích. Vede Skandinávský dům a za to od finského prezidenta dostal rytířský Řád finského lva. V Berouně se zapojil do činnosti kulturní komise. Ze severu si přiváží jednoduchou zkušenost: živá kultura drží sousedské vztahy líp než jakákoli strategie',
+      'Překladatel a průvodce po severských zemích. Vede Skandinávský dům a za to od finského prezidenta dostal rytířský Řád finského lva. V Berouně se zapojil do činnosti kulturní komise. Ze severu si přiváží jednoduchou zkušenost: živá kultura rozvíjí sousedské vztahy líp než jakákoli strategie.',
     fullText: `Vystudoval finštinu a klasickou archeologii. Pracuje jako literární a audiovizuální překladatel, turistický průvodce po severských zemích a jazykový lektor. Téměř dvacet let působí v kulturních neziskových organizacích, zejména jako předseda Skandinávského domu. Za to obdržel od finského prezidenta rytířský Řád finského lva. Nový domov našel se ženou před šesti lety v Berouně, kde se ve volném čase zapojil do činnosti kulturní komise. V severských zemích čerpá inspiraci, že dobře fungující živá městská kultura může být skvělou platformou pro setkávání občanů, rozvoj pozitivních vztahů, vznik nových myšlenek i propagaci města.`,
   },
 ];
