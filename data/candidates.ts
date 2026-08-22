@@ -89,7 +89,7 @@ export const Candidates: Candidate[] = [
 
     Do Berouna se přistěhovala před několika lety. Když se jí narodil syn, začala s kočárkem chodit po městě a chtěla se o svém novém domově dozvědět víc. Čím víc Beroun poznávala, tím víc si všímala nejen jeho historie a zajímavostí, ale také toho, co by se ve městě dalo dělat lépe. Během rodičovské proto založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.
 
-    Nejlépe si vyčistí hlavu při pohybu. Ráda si jde zaběhat, zacvičí si jógu nebo sedne na kolo a projede se kolem Berounky. A když zrovna nesportuje, baví ji dělat něco rukama. Práci u počítače ráda vyvažuje něčím, na co si může sáhnout. Ráda peče sladké, snaží se zahradničit, a baví ji nejrůznější kreativní pokuty, u kterých nejde o dokonalý výsledek, ale hlavně o radost ze samotného procesu.`,
+    Nejlépe si vyčistí hlavu při pohybu. Ráda si jde zaběhat, zacvičí si jógu nebo sedne na kolo a projede se kolem Berounky. A když zrovna nesportuje, baví ji dělat něco rukama. Práci u počítače ráda vyvažuje něčím, na co si může sáhnout. Ráda peče sladké, snaží se zahradničit, a baví ji nejrůznější kreativní pokusy, u kterých nejde o dokonalý výsledek, ale hlavně o radost ze samotného procesu.`,
   },
   {
     number: 3,
@@ -132,7 +132,7 @@ export const Candidates: Candidate[] = [
     tags: [],
     perex:
       'Finanční expert se zaměřením na efektivní hospodaření a odpovědný rozpočet. Jako předseda florbalového oddílu navíc dlouhodobě vede děti k aktivnímu pohybu.',
-    fullText: `Přes dvacet let pracuje jako finanční poradce, dnes vede jako regionální ředitel vlastní tým. Zhruba stejně dlouho hraje florbal - v roce 2019 s kolegy založil oddíl Florbal pro Beroun, který vede a který se věnuje hlavně dětem a mládeži.
+    fullText: `Přes dvacet let pracuje jako finanční poradce, dnes vede jako regionální ředitel vlastní tým. Zhruba stejně dlouho hraje florbal - v roce 2019 s kolegy založil oddíl Florbal pro Beroun, který vede a kde se věnuje dětem a mládeži.
       
       Na zahradě pěstuje vinnou révu a dělá z ní víno a burčák. Relaxuje ve své dílně a také sbírá škodovky 110R, k jejichž restaurování se dostane, až bude čas — což zatím není.
 
@@ -140,7 +140,7 @@ export const Candidates: Candidate[] = [
 
       Rozpočet města bere jako nástroj k rozvoji. Chce, aby každá investice dávala smysl i za deset let.
       
-      Je otcem dvou skoro dospělých dcer. `,
+      Je otcem dvou skoro dospělých dcer.`,
   },
   {
     number: 6,
