@@ -134,7 +134,7 @@ export const Candidates: Candidate[] = [
       'Finanční expert se zaměřením na efektivní hospodaření a odpovědný rozpočet. Jako předseda florbalového oddílu navíc dlouhodobě vede děti k aktivnímu pohybu.',
     fullText: `Přes dvacet let pracuje jako finanční poradce, dnes vede jako regionální ředitel vlastní tým. Zhruba stejně dlouho hraje florbal - v roce 2019 s kolegy založil oddíl Florbal pro Beroun, který vede a který se věnuje hlavně dětem a mládeži.
       
-      Na zahradě pěstuje vinnou révu a dělá z ní víno a burčák. Relaxuje ve své dílně na zpracovávání kovů a také sbírá škodovky 110R, k jejichž restaurování se dostane, až bude čas — což zatím není.
+      Na zahradě pěstuje vinnou révu a dělá z ní víno a burčák. Relaxuje ve své dílně a také sbírá škodovky 110R, k jejichž restaurování se dostane, až bude čas — což zatím není.
 
       V Berouně mnohokrát pomáhal v krizích jako dobrovolník: při povodních i na začátku pandemie, kdy využil chemického vzdělání a namíchal desítky litrů dezinfekce zdarma pro místní ordinace.
 
