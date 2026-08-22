@@ -120,7 +120,7 @@ export const Candidates: Candidate[] = [
       'Pedagožka s dlouholetou praxí v běžných školách i ve speciálním vzdělávání. Používá moderní inovativní metody, které dětem pomáhají učit se s radostí a bez stresu.',
     fullText: `Absolventka Pedagogické fakulty Univerzity Karlovy, obor učitelství na prvním stupni. Dále vystudovala speciální pedagogiku, logopedii a psychopedii.
     
-                Je maminkou tří dětí. Jeji významnou zálibou je pěvecký sbor Gabriel, který přináší kulturu především těm, kteří si za ní sami nedojdou především ze zdravotních důvodů. Je předsedkyně spolku Ratinka, který se zabývá ochranou přírody. 
+                Je maminkou tří dětí. Jeji významnou zálibou je pěvecký sbor Gabriel, který přináší kulturu těm, kteří si za ní sami nedojdou především ze zdravotních důvodů. Je předsedkyně spolku Ratinka, který se zabývá ochranou přírody. 
 
                 Během své praxe působila na různých typech škol v státním i soukromém sektoru. Má zkušenosti s vedením školy, působila jako zástupce ředitele. Dále má zkušenosti s prezentací inovativních metod ve výuce a s lektorováním učitelů v oblasti formativního hodnocení, využití IT ve výuce a v oblasti rozvoje logického myšlení žáků.`,
   },

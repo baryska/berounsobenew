@@ -108,8 +108,12 @@
 
 @media (max-width: 768px) {
   .badge {
-    top: auto;
-    bottom: 100px;
+    /* Na mobilu neplave nad obsahem — odroluje pryč spolu se stránkou.
+       position: absolute bez pozicovaného předka se počítá od začátku
+       dokumentu, takže odznak sedí u horního okraje první sekce. */
+    position: absolute;
+    top: 80px;
+    bottom: auto;
     height: 310px;
   }
 
