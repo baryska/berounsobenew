@@ -102,18 +102,20 @@ const CandidateEditorial = ({
           odkaz u dolní, bio ve stálém pásu mezi nimi. Kratší/delší bio už
           NEposouvá ostatní prvky. Pod blokem průběžná linka jako u rosteru. */}
       <div className={styles.mobile}>
-        {/* Číslo na úrovni bloku, v mezeře fotka/text */}
-        <span
-          aria-hidden="true"
-          className={`${styles.mobileNumber} ${mobileNumberPosition}`}
-        >
-          {numberLabel}
-        </span>
-
-        {/* Fotka: pevná výška = kotva bloku, postava stojí na dně. */}
+        {/* Fotka: pevná výška = kotva bloku, postava stojí na dně.
+            Číslo je uvnitř tohohle boxu, takže se pozicuje vůči fotce —
+            ve flex řádku se blok fotky posouvá (u reverse je až za textem)
+            a číslo ukotvené k okraji .mobile by od hlavy odjelo pryč. */}
         <div
           className={`${styles.mobilePhotoBox} ${reverse ? styles.mobilePhotoBoxReverse : ''}`}
         >
+          <span
+            aria-hidden="true"
+            className={`${styles.mobileNumber} ${mobileNumberPosition}`}
+          >
+            {numberLabel}
+          </span>
+
           <img
             src={photoSrc}
             alt={name}

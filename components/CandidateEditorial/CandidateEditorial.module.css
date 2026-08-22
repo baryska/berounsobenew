@@ -186,7 +186,9 @@
   }
 }
 
-/* Číslo na úrovni bloku, v mezeře fotka/text */
+/* Číslo sedí uvnitř .mobilePhotoBox, takže se pozicuje vůči fotce, ne vůči
+   celému bloku — jinak by u reverse variant na širokém tabletu odjelo od
+   hlavy pryč (fotka je tam ve flexu až za textem). */
 .mobileNumber {
   pointer-events: none;
   position: absolute;
@@ -205,6 +207,20 @@
 .mobileNumberLeftDouble { left: 60px; }
 .mobileNumberRightSingle { right: 96px; }
 .mobileNumberRightDouble { right: 60px; }
+
+/* Na tabletu (640–1023px) číslo zůstává velké; teprve na mobilu se zmenší,
+   aby při šířce fotky 185px netrčelo přes celý textový sloupec. Odsazení
+   je přepočítané tak, aby střed čísla zůstal na stejném místě u hlavy. */
+@media (max-width: 639.98px) {
+  .mobileNumber {
+    font-size: 110px;
+  }
+
+  .mobileNumberLeftSingle { left: 107px; }
+  .mobileNumberLeftDouble { left: 82px; }
+  .mobileNumberRightSingle { right: 107px; }
+  .mobileNumberRightDouble { right: 82px; }
+}
 
 /* Fotka: pevná výška = kotva bloku, postava stojí na dně.
    Linka je spodní hrana celého bloku; protože text nikdy nepřeteče fotku
