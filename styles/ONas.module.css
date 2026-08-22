@@ -132,7 +132,9 @@
 
 .rosterGrid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* mobil: jeden profil na řádek — dvousloupcová mřížka nechávala na text
+     jen ~20 znaků na řádek */
+  grid-template-columns: 1fr;
   column-gap: 1.25rem;
   row-gap: 2rem;
 }
@@ -146,5 +148,17 @@
 @media (min-width: 1024px) {
   .rosterGrid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Odznak „Podpořte nás" je position: fixed u pravého okraje viewportu, takže
+   leží nad obsahem. Roster je vycentrovaný na 72rem — dokud kolem něj zbývá
+   dost místa, odznak nikomu nevadí; jakmile se okraj ztenčí (zhruba pod
+   1400px), zakrývá poslední sloupec a ořezává konce řádků.
+   Přidáme vpravo přesně to, co se do volného okraje nevejde — na širokých
+   displejích tedy nula a layout zůstává symetrický. */
+@media (min-width: 769px) {
+  .rosterSection {
+    padding-right: max(2rem, var(--qr-badge-width) - max(0px, (100vw - 72rem) / 2));
   }
 }

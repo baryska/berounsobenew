@@ -91,7 +91,56 @@
 .shortText {
   margin-top: 0.375rem;
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
   color: #4b5563;
+}
+
+/* ===== MOBIL (<640px) — jeden profil na řádek =====
+   Karta je přes celou šířku, takže pevné rozměry z dvousloupcové mřížky
+   nechávaly uprostřed prázdno. Fotka i číslo vyrostou a fotka číslo
+   částečně překryje (fotka má z-index 10).
+
+   Číslo je ukotvené od té strany, kde stojí fotka, ne od kraje karty.
+   Fotka má object-fit: contain, takže u úzkého výřezu se vykreslí užší
+   než její box — kdyby bylo číslo u kraje, u takových fotek by k zákrytu
+   vůbec nedošlo. Takhle je zákryt daný jen tím, jak je postava široká.
+
+   Sudé karty se zrcadlí — fotka vlevo, číslo vpravo — aby dlouhý sloupec
+   profilů nepůsobil monotónně. Text zůstává zarovnaný doleva, čitelnost
+   je přednější než symetrie. */
+@media (max-width: 639.98px) {
+  .mediaBox {
+    height: 240px;
+  }
+
+  .photoBox {
+    height: 205px;
+    width: 205px;
+  }
+
+  .number {
+    left: auto;
+    right: 120px;
+    top: auto;
+    bottom: 100px;
+    font-size: 125px;
+  }
+
+  /* Liché karty (11, 13, 15…) mají fotku vlevo, sudé vpravo — první profil
+     tedy začíná vlevo. .card je přímý potomek .rosterGrid, takže nth-child
+     sedí na pořadí profilu v mřížce. */
+  .card:nth-child(odd) .photoBox {
+    right: auto;
+    left: 0;
+  }
+
+  .card:nth-child(odd) .photo {
+    object-position: left bottom;
+  }
+
+  .card:nth-child(odd) .number {
+    right: auto;
+    left: 120px;
+  }
 }

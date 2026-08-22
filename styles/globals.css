@@ -41,6 +41,11 @@ html {
   --color-secondary-medium: rgba(0, 200, 100, 0.5);
   --color-accent-light: rgba(255, 175, 75, 0.2);
   --color-accent-medium: rgba(255, 175, 75, 0.5);
+
+  /* Šířka zabaleného odznaku „Podpořte nás" (QRBadge) — fixed prvek u pravého
+     okraje viewportu. Obsah si o ni vpravo uhne, aby ho odznak nepřekrýval.
+     Počítáno pro hover stav (padding 25px + svislý text). */
+  --qr-badge-width: 76px;
 }
 
 a {
@@ -90,4 +95,21 @@ h1, h2, h3, h4, h5, h6,
     margin: 0 auto;
     width: 100%;
 }
+}
+
+/* ===== Typografie textu =====
+   Zarovnání zůstává vlevo (do bloku se na webu nesází — bez ručního dělení
+   slov vznikají „řeky" a WCAG 1.4.8 to nedoporučuje). Uklizený pravý okraj
+   řešíme sazbou řádků, ne zarovnáním. */
+
+/* Odstavce: prohlížeč vyrovná délky řádků a nenechá poslední řádek
+   s jediným slovem. Starší prohlížeče vlastnost ignorují. */
+p {
+  text-wrap: pretty;
+}
+
+/* Nadpisy: víceřádkový nadpis se rozloží na přibližně stejně dlouhé řádky
+   místo dlouhý-dlouhý-krátký. */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
 }

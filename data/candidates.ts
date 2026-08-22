@@ -217,7 +217,7 @@ export const Candidates: Candidate[] = [
     tags: [],
     badge: 'současný zastupitel',
     perex:
-      'Architekt s mezinárodními zkušenostmi. Je zakladatelem spolku Berounská zeleň a dlouhodobě se zasazuje o kvalitní územní rozvoj a ochranu městské zeleně.',
+      'Architekt s mezinárodními zkušenostmi. Stál u vzniku spolku Berounská zeleň a dlouhodobě se zasazuje o kvalitní územní rozvoj a ochranu městské zeleně.',
     fullText: `Absolvent Fakulty stavební ČVUT, obor pozemní stavby a architektura. Od roku 2006 pracuje ve vlastním ateliéru jako projektant a autor staveb — prošel si projekty v Česku i v zahraničí. 
     
     Je jedním ze zakladatelů iniciativy Beroun sobě a spolku Berounská zeleň.
