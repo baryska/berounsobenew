@@ -195,7 +195,8 @@
 .aktualityContainer {
   margin-top: 4rem;
   margin-bottom: 2rem;
-  background-color: var(--color-primary-light);
+  /* stejné pozadí jako sekce „O nás" (.main v ONas.module.css) */
+  background-color: rgb(60 150 215 / 15%);
 }
 
 .programme {

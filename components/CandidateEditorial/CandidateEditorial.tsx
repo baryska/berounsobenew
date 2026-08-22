@@ -1,5 +1,6 @@
 import type { StaticImageData } from 'next/image';
 import { renderBold } from '../../lib/renderBold';
+import { fixNbsp } from '../../lib/nbsp';
 import styles from './CandidateEditorial.module.css';
 
 type CandidateEditorialProps = {
@@ -65,7 +66,7 @@ const CandidateEditorial = ({
         <div className={styles.desktopText}>
           <h2 className={styles.desktopName}>{name}</h2>
 
-          {titles ? <p className={styles.desktopTitles}>{titles}</p> : null}
+          {titles ? <p className={styles.desktopTitles}>{fixNbsp(titles)}</p> : null}
 
           <div className={styles.desktopTags}>
             {badge ? (
@@ -129,7 +130,7 @@ const CandidateEditorial = ({
           <div>
             <h2 className={styles.mobileName}>{name}</h2>
 
-            {titles ? <p className={styles.mobileTitles}>{titles}</p> : null}
+            {titles ? <p className={styles.mobileTitles}>{fixNbsp(titles)}</p> : null}
 
             <div className={styles.mobileTags}>
               {badge ? (

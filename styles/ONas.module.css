@@ -14,7 +14,7 @@
 .hero {
   position: relative;
   /* celý blok vycentrovaný nad medailonky, text uvnitř zarovnaný doleva */
-  max-width: 56rem;
+  max-width: 72rem;
   margin: 0 auto;
   padding: 4rem 1.25rem 2.5rem;
   text-align: left;
@@ -34,10 +34,23 @@
   }
 }
 
+/* Od 1024px se medailonky přepínají na desktop layout s pevnou šířkou
+   (foto 380px + mezera 24px + text 400px = 804px, vycentrováno).
+   Hero má stejnou šířku a nulový horizontální padding, aby text lícoval
+   přesně s levou hranou fotky prvního medailonku. */
+@media (min-width: 1024px) {
+  .hero {
+    max-width: 804px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .heroTitle {
   margin: 0;
   font-family: var(--font-heading);
-  font-size: 2.75rem;
+  /* na mobilu plynulá velikost, aby se „posunout Beroun" vešlo na jeden řádek i na úzkém displeji */
+  font-size: clamp(1.9rem, 7.8vw, 2.75rem);
   font-weight: 700;
   line-height: 0.95;
   color: #161534;
@@ -52,13 +65,14 @@
 
 @media (min-width: 768px) {
   .heroTitle {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1;
   }
 }
 
-/* podtržení jako inline background → láme se spolu s textem, vždy pod slovy */
+/* podtržení jako inline background; nowrap drží „posunout Beroun" vždy na jednom řádku */
 .heroHighlight {
+  white-space: nowrap;
   background-image: linear-gradient(rgba(60, 150, 215, 0.2), rgba(60, 150, 215, 0.2));
   background-size: 100% 0.28em;
   background-position: 0 88%;
@@ -68,7 +82,8 @@
 }
 
 .heroPerex {
-  max-width: 42rem;
+  /* bez vlastního omezení – roztáhne se na celou šířku .hero, tedy stejně široko jako profily pod ním */
+  max-width: none;
   margin: 2rem 0 0;
   font-family: var(--font-body);
   font-size: 1.125rem;

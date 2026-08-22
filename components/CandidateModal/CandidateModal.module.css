@@ -289,6 +289,57 @@
   object-position: left bottom;
 }
 
+/* ===== MOBIL (<640px) =====
+   Skrývá se jen fotka — kvůli ní měl text odsazení 190px zleva a zbývalo
+   na něj pár slov na řádek. Modrý kruh i bílé číslo na něm zůstávají,
+   text jde přes celou šířku karty a je větší. */
+@media (max-width: 639.98px) {
+  .figure {
+    display: none;
+  }
+
+  /* Bez postavy kruh nic nepřekrývá, tak může být světlejší. Vytéká
+     z levého dolního rohu jako na desktopu, jen menší: průměr 210px
+     posunutý o 60px ven → v kartě zůstane viditelných 150×150,
+     tedy zhruba čtvrtina její výšky. */
+  .panel {
+    bottom: -60px;
+    left: -60px;
+    height: 180px;
+    width: 180px;
+    background-color: #dcecfa;
+  }
+
+  /* Číslo dostane přesně rozměr i pozici kruhu a vycentruje se v něm
+     flexboxem — sedí ve středu bez ohledu na počet číslic. Střed kruhu
+     leží 45px od rohu, tedy uvnitř karty, takže číslo oříznuté není.
+     Na světlejším kruhu potřebuje plnou bílou, aby nezaniklo. */
+  .number {
+    bottom: -60px;
+    left: -60px;
+    display: flex;
+    height: 210px;
+    width: 210px;
+    align-items: center;
+    justify-content: center;
+    font-size: 76px;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .body {
+    /* bez fotky už výšku neurčuje postava — řídí se výškou displeje */
+    height: min(62vh, 460px);
+    padding: 0.5rem 1.25rem 2rem;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .titles {
+    font-size: 13px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .root,
   .panel,

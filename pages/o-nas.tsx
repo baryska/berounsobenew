@@ -4,6 +4,7 @@ import Head from 'next/head';
 import CandidateEditorial from '../components/CandidateEditorial/CandidateEditorial';
 import CandidateMiniCard from '../components/CandidateMiniCard/CandidateMiniCard';
 import CandidateModal, { CandidateModalData } from '../components/CandidateModal/CandidateModal';
+import { renderBold } from '../lib/renderBold';
 import { FeaturedCandidates, OtherCandidates, Candidate } from '../data/candidates';
 import styles from '../styles/ONas.module.css';
 
@@ -15,9 +16,13 @@ const ONas: NextPage = () => {
 
   const handleOpenModal = (candidate: Candidate) => {
     setSelectedCandidate({
+      // number a badge musí jít do modálu taky – bez number se nevykreslí
+      // velké pořadové číslo, bez badge zelená pilulka v hlavičce
+      number: candidate.number,
       name: candidate.name,
       titles: candidate.titles,
       tags: candidate.tags,
+      badge: candidate.badge,
       fullText: candidate.fullText,
       photo: candidate.photo,
     });
@@ -46,11 +51,14 @@ const ONas: NextPage = () => {
             <span className={styles.heroHighlight}>posunout Beroun</span> dál.
           </h1>
 
+          {/* Přes renderBold: **tučně** i nedělitelné mezery za předložkami
+              řeší stejná funkce jako u medailonků, ať se to nerozejde. */}
           <p className={styles.heroPerex}>
-            Jsme <strong>nezávislá, občanská kandidátka</strong> a nejsilnější
-            opoziční síla v Berouně. Za víc než deset let v komunální politice jsme pochopili, co město
-            skutečně potřebuje. Náš tým jsme posílili o nové osobnosti a odborníky – a dnes jsme připraveni
-            Beroun zodpovědně vést.
+            {renderBold(
+              'Jsme **nezávislá, občanská kandidátka** a nejsilnější opoziční síla v Berouně. ' +
+                'Za víc než deset let v komunální politice jsme pochopili, co město skutečně potřebuje. ' +
+                'Náš tým jsme posílili o nové osobnosti a odborníky – a dnes jsme připraveni Beroun zodpovědně vést.'
+            )}
           </p>
 
         </section>

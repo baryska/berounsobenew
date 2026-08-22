@@ -62,13 +62,11 @@ export const Candidates: Candidate[] = [
     
     Absolvovala několik studijních pobytů ve Finsku, kde zjistila, že moderní město 21. století stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a otevřené komunikaci s občany. Tuto praxi by chtěla přinést i do Berouna. 
     
-    Její velké téma je voda a sucho.
+    Její velké téma je voda a sucho - už desátým rokem bojuje o vodovod v Hostímě, jehož je hrdou obyvatelkou.
     
-    Je hrdou obyvatelkou Hostíma, kde už desátým rokem jako místopředsedkyně osadního výboru bojuje o vodovod. 
-
     V létě mění klávesnici za pádlo a jako vedoucí jezdí na vodácký tábor. 
     
-    Je spoluzakladatelkou sousedského spolku Berounský rybníček. Baví jí vymýšlet pro Rybníček šifrovací hry o Berounu a má na svědomí i to, že si je můžete zahrát nejen na papíře, ale i v telefonu. 
+    Je spoluzakladatelkou sousedského spolku Berounský rybníček. Baví jí vymýšlet šifrovací hry o Berounu a má na svědomí i to, že si je můžete zahrát nejen na papíře, ale i v telefonu. 
     
     Nejlépe si odpočine v sauně nebo když se kolébá na vlnách. Je fanynkou rozhleden, protože miluje výhledy do krajiny.
     
@@ -83,13 +81,15 @@ export const Candidates: Candidate[] = [
     tags: [],
     perex:
       'Zkušenosti z nadnárodní IT korporace přetavila ve vlastní podnikání. Pomáhá začínajícím startupům s marketingem, založila úspěšný lokální profil @ziju_v_beroune a stála i u zrodu spolku Berounský rybníček.',
-    fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a na České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat jako marketérka v IT. 
+    fullText: `Po získání inženýrských titulů na Vysoké škole ekonomické a České zemědělské univerzitě v oborech hospodářská politika a podnikání a administrativa začala pracovat v marketingu v IT. 
     
-    Během studií na VŠ strávila tři měsíce na studijní stáži na Generálním konzulátu České republiky v Los Angeles. 
-    
-    Zkušenosti z nadnárodní IT korporace a technologického startupu přetavila ve vlastní podnikání, poskytuje marketingové služby začínajícím startupům. 
-    
-    Během rodičovské založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.`,
+    Během studií strávila tři měsíce na stáži na Generálním konzulátu České republiky v Los Angeles.
+
+    Zkušenosti z nadnárodní IT korporace a technologického startupu později přetavila ve vlastní podnikání. Dnes poskytuje marketingové služby především začínajícím technologickým startupům.
+
+    Do Berouna se přistěhovala před několika lety. Když se jí narodil syn, začala s kočárkem chodit po městě a chtěla se o svém novém domově dozvědět víc. Čím víc Beroun poznávala, tím víc si všímala nejen jeho historie a zajímavostí, ale také toho, co by se ve městě dalo dělat lépe. Během rodičovské proto založila lokální instagramový profil @ziju_v_beroune a později spoluzaložila sousedský spolek Berounský rybníček.
+
+    Nejlépe si vyčistí hlavu při pohybu. Ráda si jde zaběhat, zacvičí si jógu nebo sedne na kolo a projede se kolem Berounky. A když zrovna nesportuje, baví ji dělat něco rukama. Práci u počítače ráda vyvažuje něčím, na co si může sáhnout. Ráda peče sladké, snaží se zahradničit, a baví ji nejrůznější kreativní pokuty, u kterých nejde o dokonalý výsledek, ale hlavně o radost ze samotného procesu.`,
   },
   {
     number: 3,
@@ -132,15 +132,15 @@ export const Candidates: Candidate[] = [
     tags: [],
     perex:
       'Finanční expert se zaměřením na efektivní hospodaření a odpovědný rozpočet. Jako předseda florbalového oddílu navíc dlouhodobě vede děti k aktivnímu pohybu.',
-    fullText: `Po absolvování Gymnázia v Berouně studoval VŠCHT. 
-    
-    Více než 20 let pracuje jako finanční poradce, vede tým spolupracovníků jako regionální ředitel. 
-    
-    Přibližně stejnou dobu se věnuje florbalu, posledních 9 let jako registrovaný hráč, 7 let jako funkcionář. V roce 2019 s kolegy založil oddíl Florbal pro Beroun, jehož je předsedou. Hlavním zaměřením oddílu je práce s dětmi a mládeží. 
-    
-    Aktivně se zajímá o život ve městě, angažuje se jako dobrovolník. 
-    
-    Coby ekonomicky vzdělaný profesionál vnímá rozpočet města jako prostředek k rozvoji a klade důraz na to, aby každá investice byla smysluplná a udržitelná.`,
+    fullText: `Přes dvacet let pracuje jako finanční poradce, dnes vede jako regionální ředitel vlastní tým. Zhruba stejně dlouho hraje florbal - v roce 2019 s kolegy založil oddíl Florbal pro Beroun, který vede a který se věnuje hlavně dětem a mládeži.
+      
+      Na zahradě pěstuje vinnou révu a dělá z ní víno a burčák. Relaxuje ve své dílně na zpracovávání kovů a také sbírá škodovky 110R, k jejichž restaurování se dostane, až bude čas — což zatím není.
+
+      V Berouně mnohokrát pomáhal v krizích jako dobrovolník: při povodních i na začátku pandemie, kdy využil chemického vzdělání a namíchal desítky litrů dezinfekce zdarma pro místní ordinace.
+
+      Rozpočet města bere jako nástroj k rozvoji. Chce, aby každá investice dávala smysl i za deset let.
+      
+      Je otcem dvou skoro dospělých dcer. `,
   },
   {
     number: 6,
@@ -204,6 +204,8 @@ export const Candidates: Candidate[] = [
     Venkovanka tělem i duší, která už přes dvacet let jako ředitelka obecně prospěšné společnosti MAS Jihozápad pomáhá rozvíjet obce mezi Berounem a Prahou - dotačním poradenstvím i podporou místních spolků, škol a podnikatelů. Málokdo zná zdejší region tak dobře jako ona. 
     
     Narodila se v Hostímě, kde dnes vede osadní výbor a městu vytrvale nabízí pomocnou ruku při rozvoji obce — zatím marně, ale nevzdává to. 
+
+    I díky rodinné historii měla vždy blízko k půdě, takže relaxuje na zahradě i na malém rodinném políčku.
     
     Chce, aby radnice naslouchala i těm částem města, na které se často zapomíná.`,
   },
@@ -216,11 +218,15 @@ export const Candidates: Candidate[] = [
     badge: 'současný zastupitel',
     perex:
       'Architekt s mezinárodními zkušenostmi. Je zakladatelem spolku Berounská zeleň a dlouhodobě se zasazuje o kvalitní územní rozvoj a ochranu městské zeleně.',
-    fullText: `Absolvent ČVUT Fakulty stavební, obor pozemní stavby a architektura. 
+    fullText: `Absolvent Fakulty stavební ČVUT, obor pozemní stavby a architektura. Od roku 2006 pracuje ve vlastním ateliéru jako projektant a autor staveb — prošel si projekty v Česku i v zahraničí. 
     
-    Od roku 2006 pracuje jako OSVČ ve vlastním ateliéru. Autor projektů a realizace staveb v ČR a zahraničí (Švédsko, USA, Řecko). 
+    Je jedním ze zakladatelů iniciativy Beroun sobě a spolku Berounská zeleň.
+
+    Architektura ho naučila dívat se na město očima toho, kdo jím zrovna prochází. Vstřícný veřejný prostor podle něj není luxus ani ozdoba — je to místo, kde se dá pohodlně projít s kočárkem, kde je v létě stín a kde se chodec, kolo a auto nemusí prát o stejný metr. Takový prostor nevznikne náhodou, ale z poctivě připraveného projektu.
     
-    Je jedním ze zakladatelů spolku Berounská zeleň.`,
+    Sám je v pohybu pořád — běhá a sportuje po celý rok. Právě běhání ho naučilo, jak moc město rozhoduje o tom, jestli se v něm člověk pohybuje rád: kde se dá bezpečně přeběhnout, kde chybí kus chodníku, kde se musí zbytečně zajít.
+    
+    „Projektuju stavby dvacet let a naučilo mě to jednu věc: když se něco nehne, skoro nikdy to není proto, že by to nešlo. Jen někdo nechce hledat cestu. Nehledat důvody, hledat způsoby - a ptát se na to, na co se ostatní ptát nechtějí. To mě baví."`,
   },
   {
     number: 11,
@@ -231,7 +237,7 @@ export const Candidates: Candidate[] = [
     perex:
       '',
     shortText:
-      'Studentka pedagogiky na VŠ chce město, kde jsou mladí rádi. Dát prostor kreativitě, kultuře a místům pro sport.',
+      'Veronika studuje pedagogiku s výtvarnou výchovou a jako rodilá Berouňačka chce, aby tady mladí lidé měli důvod zůstat. Sama sportuje i maluje, takže z vlastní zkušenosti ví, že v Berouně chybí dostupné sportovní zázemí i místa, kde se začínající tvůrci můžou ukázat.',
     fullText:
       'Veronika studuje vysokou školu se zaměřením na vzdělávání a výtvarnou výchovu. Jako rodilá Berouňačka chce, aby město bylo místem, kde mladí lidé rádi zůstávají a kde mají prostor pro svůj rozvoj. Jako budoucí učitelka věří, že moderní škola má být především o bezpečném prostředí, podpoře individuality a kreativity, nejen o známkách. Sama se aktivně věnuje sportu a umění, proto v Berouně postrádá dostupnější sportovní zázemí pro všechny a větší podporu místních umělců. Jejím cílem je oživit kulturu, podpořit místní galerie a dát začínajícím tvůrcům šanci se ukázat. Nechce o změnách jen mluvit, ale chce být součástí generace, která je v Berouně pomůže tvořit.',
   },
@@ -242,7 +248,7 @@ export const Candidates: Candidate[] = [
     photo: P12,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: 'Student obchodní akademie a fotbalista Cembritu. Věří, že Beroun může být ještě příjemnější - když se pustíme do věcí, které tu chybí.',
+    shortText: 'Student obchodní akademie a fotbalista Cembritu. Ze hřiště ví, že se výsledek nedostaví sám od sebe a odkládáním se nic nevyřeší. A věří, že Beroun může být ještě příjemnější - když se pustíme do věcí, které tu chybí.',
     fullText: LOREM_FULL,
   },
   {
@@ -252,7 +258,7 @@ export const Candidates: Candidate[] = [
     photo: P13,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: 'Copywriter a ex-digitální nomád. Zakotvil v Berouně, protože k životu nenašel město s krásnější přírodou. Kandiduje, protože už nechce zavírat oči před tím, jak město přešlapuje na místě.',
+    shortText: 'Copywriter a ex-digitální nomád. Zakotvil v Berouně, protože na celém světě nenašel k životu město s krásnější přírodou. Kandiduje, protože už nechce zavírat oči před tím, jak město přešlapuje na místě.',
     fullText: LOREM_FULL,
   },
   {
@@ -264,10 +270,10 @@ export const Candidates: Candidate[] = [
     perex:
       'Manažerka s mezinárodní zkušeností a vysokoškolská lektorka. Více než dvacet let pracuje s lidmi ve zdravotnictví a učí, jak zvládat náročné situace s respektem a porozuměním.',
     shortText:
-      'Manažerka ve zdravotnictví a lektorka komunikace. Přináší otevřenost, spolupráci a péči o místo, kde žijeme.',
-    fullText: `Vystudovala ošetřovatelství a psychologii na Lékařské fakultě UK v Hradci Králové a management ve zdravotnictví (MBA). Více než dvacet let se věnuje komunikaci s pacienty, práci s pacientskými organizacemi a vzdělávání zdravotníků.
-V letech 2011–2020 žila ve švýcarském Curychu, kde pracovala v medicínském marketingu a jako lektorka komunikace školila zdravotníky ve více než 50 zemích světa. Po návratu do Berouna v roce 2020 vede praktické kurzy pro lékaře, sestry a manažery ve zdravotnictví, přednáší na vysoké škole.
-Mezi její celoživotní zájmy patří umění, architektura a grafický design, a i proto se angažuje v projektech, které podporují živý veřejný prostor a sousedskou komunitu. Je spoluzakladatelkou sousedského spolku Berounský rybníček.`,
+      `Manažerka ve zdravotnictví s mezinárodní zkušeností a vysokoškolská lektorka. Učí lékaře a sestry, jak zvládat náročné situace s respektem, porozuměním a spoluprací.
+      Odjakživa ji přitahuje umění, architektura a design, a proto by ráda v Berouně pozvedla veřejný prostor.`,
+    fullText: `Manažerka be zdravotnictví s mezinárodní zkušeností a vysokoškolská lektorka. Přes dvacet let učí lékaře a sestry, jak zvládat náročné situace s respektem, porozuměním a spoluprací.
+Deset let žila v Curychu, ale vrátila se domů do Berouna. Odjakživa ji přitahuje umění, architektura a design, a tak se doma zapojuje do projektů, které oživují veřejný prostor a sousedské vztahy. Spoluzaložila spolek Berounský rybníček.`,
   },
   {
     number: 15,
@@ -276,7 +282,7 @@ Mezi její celoživotní zájmy patří umění, architektura a grafický design
     photo: P15,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: LOREM_SHORT,
+    shortText: 'Zdravotnická záchranářka a lektorka první pomoci. Vidí město ve chvílích, kdy jde o čas a dostupnost - kde se protáhne sanitka, kam se dá dojet včas. Učí lidi, aby v takové chvíli věděli, co dělat. A od města chce totéž: aby v Berouně věci fungovaly ve chvíli, kdy je člověk opravdu potřebuje.',
     fullText: LOREM_FULL,
   },
   {
@@ -286,7 +292,7 @@ Mezi její celoživotní zájmy patří umění, architektura a grafický design
     photo: P16,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: 'Další z hlasů mladé generace, kterému záleží na budoucnosti Berouna. Baví ho cizí jazyky, ekonomie a mezinárodní vztahy.',
+    shortText: 'Zajímají ho jazyky, ekonomie a mezinárodní vztahy. Rád zjišťuje, jak podobně velká města řeší věci, se kterými se tady léta nehne. Do Berouna by proto rád nosil nápady, které se jinde osvědčily. Ne kopírovat, ale nebát se zeptat, jestli by to nešlo i u nás.',
     fullText: LOREM_FULL,
   },
   {
@@ -296,7 +302,7 @@ Mezi její celoživotní zájmy patří umění, architektura a grafický design
     photo: P17,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: 'Dlouholetá pedagožka na obchodní akademii v Berouně, nyní v důchodu. Aktivní seniorka, která se zajímá o život ve městě a chce, aby byl Beroun přijemným místem pro všechny generace.',
+    shortText: 'Dlouholetá pedagožka na berounské obchodní akademii, dnes v důchodu. Rukama jí prošly stovky berounských studentů. Právě proto ji zajímá, jak se ve městě žije všem: jestli tu mají kam chodit senioři i puberťáci. Chce, aby byl Beroun příjemným místem pro všechny generace.',
     fullText: LOREM_FULL,
   },
   {
@@ -308,7 +314,7 @@ Mezi její celoživotní zájmy patří umění, architektura a grafický design
     perex:
       'Hostinský a politolog, který z hostímské hospůdky vytvořil významné kulturní centrum. Vedle špičkových veřejných debat do regionu přináší poctivou gastronomii postavenou na lokálních potravinách.',
     shortText:
-      'Hostinský a politolog. Z hostímské Hospůdky U Krobiána vybudoval respektované kulturní centrum s poctivou lokální gastronomií.',
+      'Hostinský a vystudovaný politolog. Z hostímské Hospůdky U Krobiána udělal místo, kam na debaty jezdí špičky české vědy, žurnalistiky i politiky. Vaří z regionálních surovin a drží se poctivého pohostinství. Kulturní akce dělá zadarmo - dobrovolné vstupné posílá na charitu.',
     fullText:
       'Hostinský a vystudovaný politolog. Z hostímské Hospůdky U Krobiána vybudoval respektované kulturní centrum, kam na debaty pravidelně přijíždí špičky české vědy, žurnalistiky i politiky. Vedle intelektuálního přesahu se zaměřuje i na lokální gastronomii – jeho podnik sází na kvalitní suroviny od regionálních dodavatelů a ctí tradici poctivého pohostinství. Kulturní akce pořádá bez nároku na zisk – dobrovolné vstupné věnuje na charitativní projekty. Jan Zykán tak v Berouně vytváří prostor, kde se lidé setkávají, diskutují a kde se klade důraz na lokální hodnoty i společenskou odpovědnost.',
   },
@@ -330,7 +336,7 @@ Mezi její celoživotní zájmy patří umění, architektura a grafický design
     photo: P20,
     tags: ['DOPLNIT'],
     perex: LOREM,
-    shortText: 'Majitel autoservisu, který má rád věci udělané pořádně a fér. Práce pro město (i v něm) by se tím měla řídit také.',
+    shortText: 'Majitel autoservisu, který má rád věci udělané pořádně a fér. V dílně to funguje jednoduše: co slíbíš, uděláš, a za svou prací si stojíš. Práce pro město (i v něm) by se tím měla řídit taky: ať je předem jasné, kolik co stojí a do kdy to bude hotové.',
     fullText: LOREM_FULL,
   },
   {
@@ -342,7 +348,7 @@ Mezi její celoživotní zájmy patří umění, architektura a grafický design
     perex:
       'Literární překladatel a dlouholetý předseda Skandinávského domu, za jehož práci mu finský prezident udělil Řád finského lva. Věří, že živá kultura je základem zdravých sousedských vztahů.',
     shortText:
-      'Literární překladatel a předseda Skandinávského domu, nositel Řádu finského lva. Chce pro Beroun živou městskou kulturu.',
+      'Překladatel a průvodce po severských zemích. Vede Skandinávský dům a za to od finského prezidenta dostal rytířský Řád finského lva. V Berouně se zapojil do činnosti kulturní komise. Ze severu si přiváží jednoduchou zkušenost: živá kultura drží sousedské vztahy líp než jakákoli strategie',
     fullText: `Vystudoval finštinu a klasickou archeologii. Pracuje jako literární a audiovizuální překladatel, turistický průvodce po severských zemích a jazykový lektor. Téměř dvacet let působí v kulturních neziskových organizacích, zejména jako předseda Skandinávského domu. Za to obdržel od finského prezidenta rytířský Řád finského lva. Nový domov našel se ženou před šesti lety v Berouně, kde se ve volném čase zapojil do činnosti kulturní komise. V severských zemích čerpá inspiraci, že dobře fungující živá městská kultura může být skvělou platformou pro setkávání občanů, rozvoj pozitivních vztahů, vznik nových myšlenek i propagaci města.`,
   },
 ];
