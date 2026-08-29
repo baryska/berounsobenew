@@ -188,6 +188,14 @@ export const ALL_SEKCE: Sekce[] = [
         appleUrl: "https://podcasts.apple.com/cz/podcast/smyslupln%C3%A1-ve%C5%99ejn%C3%A1-doprava/id6792550119?i=1000777456821",
         youtubeUrl: "https://www.youtube.com/watch?v=2j_YaaNZMSE&t",
       },
+      {
+        src: "/Doprava-v-klidu-final.mp3",
+        title: "Férové parkování a obchvat, který se konečně pohne",
+        description: "Jak zpřehledníme systém parkování pro místní i pro návštěvy? Kde v Berouně dává smysl postavit nový parkovací dům? Proč jižní paralelní komunikace po letech nemá ani metr a co uděláme pro to, aby se konečně pohnula?",
+        spotifyUrl: "https://open.spotify.com/episode/1lUWktNsfdvPxXXr4p0pJR?si=49ca9efe5c2a437a",
+        appleUrl: "https://podcasts.apple.com/us/podcast/f%C3%A9rov%C3%A9-parkov%C3%A1n%C3%AD-a-obchvat-kter%C3%BD-se-kone%C4%8Dn%C4%9B-pohne/id6792550119?i=1000785964424",
+        youtubeUrl: "https://youtu.be/lv5-g9sSu_E?si=i5h1PzS71EmgZtMG",
+      },
     ],
     weights: { rodina: 7, senior: 10, student: 8, auto: 10, mhd: 10, cyklista: 10, podnikatel: 7, sidliste: 10, miluji: 10 },
     points: [

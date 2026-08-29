@@ -144,4 +144,19 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     chapterLabel: "Beroun chytře",
     chapterHref: "/program#chytre",
   },
+  {
+    id: "parkovani-obchvat",
+    number: 9,
+    title: "Férové parkování a obchvat, který se konečně pohne",
+    description:
+      "Jak zpřehledníme systém parkování pro místní i pro návštěvy? Kde v Berouně dává smysl postavit nový parkovací dům? Proč jižní paralelní komunikace po letech nemá ani metr a co uděláme pro to, aby se konečně pohnula?",
+    speakers: ["Kristýna Kymličková", "Jan Valachovič"],
+    src: "/Doprava-v-klidu-final.mp3",
+    spotifyUrl: "https://open.spotify.com/episode/1lUWktNsfdvPxXXr4p0pJR?si=49ca9efe5c2a437a",
+    appleUrl:
+      "https://podcasts.apple.com/us/podcast/f%C3%A9rov%C3%A9-parkov%C3%A1n%C3%AD-a-obchvat-kter%C3%BD-se-kone%C4%8Dn%C4%9B-pohne/id6792550119?i=1000785964424",
+    youtubeUrl: "https://youtu.be/lv5-g9sSu_E?si=i5h1PzS71EmgZtMG",
+    chapterLabel: "Beroun dostupně",
+    chapterHref: "/program#dostupne",
+  },
 ];
