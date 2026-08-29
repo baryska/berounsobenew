@@ -11,6 +11,7 @@ const HERO_COLOR_MAP: Record<string, string> = {
   chytre: styles.sectionHeroPrimary,
   dostupne: styles.sectionHeroPrimary,
   zelene: styles.sectionHeroSecondary,
+  ciste: styles.sectionHeroPrimary,
   vzdelane: styles.sectionHeroAccent,
   lokalne: styles.sectionHeroAccent,
   udrzitelne: styles.sectionHeroSecondary,
