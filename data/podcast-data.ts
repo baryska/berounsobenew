@@ -159,4 +159,19 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     chapterLabel: "Beroun dostupně",
     chapterHref: "/program#dostupne",
   },
+  {
+    id: "podnikani",
+    number: 10,
+    title: "Podnikání pro živější Beroun",
+    description:
+      "Proč pětina Berouňáků odjíždí za prací jinam a co to znamená pro místní podnikatele? Jak můžou vypadat městské trhy, které lidi baví navštěvovat? A kde by v Berouně mohl vzniknout prostor pro nové firmy?",
+    speakers: ["Lucie Šimečková"],
+    src: "/Podnikani-final.mp3",
+    spotifyUrl: "https://open.spotify.com/episode/1df2OFnVmWoIdcKxe97Fcb?si=141d8583d58a431e",
+    appleUrl:
+      "https://podcasts.apple.com/us/podcast/podnik%C3%A1n%C3%AD-pro-%C5%BEiv%C4%9Bj%C5%A1%C3%AD-beroun/id6792550119?i=1000787336442",
+    youtubeUrl: "https://youtu.be/_V9IWzW8_Z0?si=wUqvTER7aJnjYED-",
+    chapterLabel: "Beroun lokálně",
+    chapterHref: "/program#lokalne",
+  },
 ];
