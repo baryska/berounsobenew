@@ -62,7 +62,7 @@ export default function AnnouncementModal() {
         </button>
 
         <h2 id="announcement-title" className={styles.title}>
-          Vyjádření Václava Kováře ke dehonestačnímu článku
+          Vyjádření Václava Kováře k dehonestačnímu článku
         </h2>
 
         <div className={styles.body}>
