@@ -57,10 +57,10 @@ export const Candidates: Candidate[] = [
     tags: [],
     badge: 'současná zastupitelka',
     perex:
-      'Softwarová vývojářka, která ví, že moderní město stojí na chytrých službách, kvalitním školství a vstřícné komunikaci. Desátým rokem bojuje za vodovod v Hostímě. Spoluzakladatelka spolku Berounský rybníček.',
+      'Softwarová vývojářka, která ví, že moderní město stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a vstřícné komunikaci s občany. Desátým rokem bojuje za vodovod v Hostímě. Spoluzakladatelka spolku Berounský rybníček.',
     fullText: `Vystudovala finštinu a moderní dějiny, ale zakotvila ve světě IT a už mnoho let se živí jako softwarová vývojářka. 
     
-    Absolvovala několik studijních pobytů ve Finsku, kde zjistila, že moderní město 21. století stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a otevřené komunikaci s občany. Tuto praxi by chtěla přinést i do Berouna. 
+    Absolvovala několik studijních pobytů ve Finsku, kde zjistila, že moderní město 21. století stojí na kvalitním školství, špičkové péči o veřejný prostor, chytrých službách a vstřícné komunikaci s občany. Tuto praxi by chtěla přinést i do Berouna. 
     
     Její velké téma je voda a sucho - už desátým rokem bojuje o vodovod v Hostímě, jehož je hrdou obyvatelkou.
     
