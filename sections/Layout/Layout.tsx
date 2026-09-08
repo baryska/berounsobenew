@@ -2,6 +2,7 @@ import Script from 'next/script';
 import { Header } from './Header';
 import Consent from '../../components/Consent/Consent';
 import TopBanner from '../../components/TopBanner/TopBanner';
+import AnnouncementModal from '../../components/AnnouncementModal/AnnouncementModal';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -15,6 +16,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
       <Script data-domain="berounsobe.eu" src="https://www.google-analytics.com/analytics.js" />
       <main>{children}</main>
       <Consent />
+      <AnnouncementModal />
     </div>
   );
 };
