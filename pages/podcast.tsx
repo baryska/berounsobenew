@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import { useState } from 'react';
 import {
   PODCAST_APPLE_SHOW_URL,
@@ -91,28 +90,6 @@ const PodcastPage: NextPage = () => {
           />
         ))}
       </section>
-
-      <div className={styles.note}>
-        <p className={styles.noteInner}>
-          Další díly budeme zveřejňovat postupně přes celé léto zde i u jednotlivých kapitol{' '}
-          <Link href="/program">
-            <a>volebního programu</a>
-          </Link>
-          . Odebírat nás můžete také na{' '}
-          <a href={PODCAST_SHOW_URL} target="_blank" rel="noopener noreferrer">
-            Spotify
-          </a>{' '}
-          a{' '}
-          <a href={PODCAST_APPLE_SHOW_URL} target="_blank" rel="noopener noreferrer">
-            Apple Podcasts
-          </a>{' '}
-          a{' '}
-          <a href={PODCAST_YOUTUBE_SHOW_URL} target="_blank" rel="noopener noreferrer">
-            YouTube
-          </a>
-          .
-        </p>
-      </div>
     </>
   );
 };

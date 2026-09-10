@@ -89,18 +89,18 @@
 
 .tocGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
-  gap: 0.75rem;
-  max-width: 1200px;
+  gap: 0.85rem;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
 .tocTile {
   display: flex;
-  align-items: flex-start;
-  gap: 0.9rem;
-  padding: 0.9rem 1.2rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.05rem 1.35rem;
   border-radius: 14px;
   border: 2px solid transparent;
   text-decoration: none;
@@ -113,6 +113,7 @@
 
 /* Brand color tiles — primary (#3C96D7), secondary (#00C864), accent (#FFAF4B) */
 .tocTilePrimary {
+  --toc-accent: #2b7fbb;
   background: linear-gradient(135deg, rgba(60,150,215,0.07) 0%, rgba(60,150,215,0.14) 100%);
   border-color: rgba(60,150,215,0.22);
 }
@@ -124,6 +125,7 @@
 }
 
 .tocTileSecondary {
+  --toc-accent: #009449;
   background: linear-gradient(135deg, rgba(0,200,100,0.07) 0%, rgba(0,200,100,0.14) 100%);
   border-color: rgba(0,200,100,0.22);
 }
@@ -135,6 +137,7 @@
 }
 
 .tocTileAccent {
+  --toc-accent: #b9741a;
   background: linear-gradient(135deg, rgba(255,175,75,0.08) 0%, rgba(255,175,75,0.16) 100%);
   border-color: rgba(255,175,75,0.25);
 }
@@ -156,25 +159,46 @@
   height: 100%;
 }
 
+/* Pořadové číslo claimu — drží dlaždice pohromadě jako jeden seznam. */
+.tocIndex {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--toc-accent, #3C96D7);
+  opacity: 0.45;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  align-self: flex-start;
+  padding-top: 0.2rem;
+}
+
 .tocText {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.35rem;
   flex: 1;
   min-width: 0;
 }
 
-.tocLabel {
+/* Hlavní sdělení dlaždice. */
+.tocClaim {
   font-family: var(--font-heading);
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 700;
+  line-height: 1.28;
   color: #161534;
+  text-wrap: balance;
 }
 
-.tocSubtitle {
-  font-size: 0.82rem;
-  color: #64748b;
-  line-height: 1.4;
+/* Doplněk („BEROUN ZELENĚ“) — dřív to byl hlavní titulek dlaždice. */
+.tocLabel {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--toc-accent, #64748b);
 }
 
 .tocArrow {
@@ -1065,12 +1089,6 @@
    RESPONSIVE
    ═══════════════════════════════════════════ */
 
-@media (max-width: 1024px) {
-  .tocGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 @media (max-width: 1280px) and (min-width: 901px) {
   .sideNavLabel {
     display: none;
@@ -1114,13 +1132,13 @@
   }
 
   .tocGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 680px) {
-  .tocGrid {
-    grid-template-columns: 1fr;
+  .tocClaim {
+    font-size: 1.02rem;
   }
 
   .filterSection {
@@ -1207,6 +1225,43 @@
   place-items: center;
   flex-shrink: 0;
   box-shadow: 0 6px 18px rgba(60, 150, 215, 0.28);
+}
+
+/* Obdélníkový portrét hosta zabírá zhruba třetinu rámečku. */
+.podcastInnerPhoto {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  grid-template-rows: auto auto;
+  align-items: start;
+  gap: 0.9rem 1.5rem;
+}
+
+.podcastInnerPhoto .podcastPhoto {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  align-self: stretch;
+}
+
+.podcastInnerPhoto .podcastMeta {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.podcastInnerPhoto .podcastPlayer {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.podcastInnerPhoto .podcastNote {
+  grid-column: 2;
+}
+
+.podcastPhoto {
+  position: relative;
+  width: 100%;
+  min-height: 190px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(22, 21, 52, 0.14);
 }
 
 .podcastMeta {
@@ -1377,6 +1432,20 @@
 @media (max-width: 720px) {
   .podcastBand {
     padding: 1.25rem 1rem;
+  }
+  .podcastInnerPhoto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .podcastInnerPhoto .podcastPhoto,
+  .podcastInnerPhoto .podcastMeta,
+  .podcastInnerPhoto .podcastPlayer,
+  .podcastInnerPhoto .podcastNote {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .podcastPhoto {
+    min-height: 200px;
   }
   .podcastInner {
     grid-template-columns: auto 1fr;

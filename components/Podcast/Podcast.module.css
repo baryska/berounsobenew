@@ -206,6 +206,27 @@
   color: var(--color-primary);
 }
 
+/* Text dílu a volitelný portrét hosta vedle sebe. */
+.cardBody {
+  display: flex;
+  align-items: stretch;
+  gap: 1.25rem;
+}
+
+.cardBodyText {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardPhoto {
+  position: relative;
+  flex: 0 0 32%;
+  min-height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(22, 21, 52, 0.14);
+}
+
 .cardTitle {
   font-family: var(--font-heading);
   font-size: 1.2rem;
@@ -431,34 +452,6 @@
   border-color: #ff0000;
 }
 
-/* ═══════════════════════════════════════════
-   POZNÁMKA POD SEZNAMEM
-   ═══════════════════════════════════════════ */
-
-.note {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 0 2rem 4rem;
-}
-
-.noteInner {
-  background: var(--color-primary-light);
-  border-radius: 14px;
-  padding: 1.25rem 1.5rem;
-  font-size: 0.92rem;
-  color: #33405c;
-  line-height: 1.6;
-}
-
-.noteInner a {
-  color: var(--color-primary);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.noteInner a:hover {
-  text-decoration: underline;
-}
 
 /* ═══════════════════════════════════════════
    MOBIL
@@ -485,8 +478,16 @@
     width: 48px;
     height: 48px;
   }
+}
 
-  .note {
-    padding: 0 1rem 3rem;
+@media (max-width: 560px) {
+  .cardBody {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .cardPhoto {
+    flex: 0 0 auto;
+    min-height: 200px;
   }
 }

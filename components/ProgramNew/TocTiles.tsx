@@ -5,7 +5,10 @@ const TOC_COLOR_MAP: Record<string, string> = {
   chytre: styles.tocTilePrimary,
   dostupne: styles.tocTilePrimary,
   zelene: styles.tocTileSecondary,
+  ciste: styles.tocTileSecondary,
   vzdelane: styles.tocTileAccent,
+  spravedlive: styles.tocTilePrimary,
+  zdrave: styles.tocTileAccent,
   lokalne: styles.tocTileAccent,
   udrzitelne: styles.tocTileSecondary,
   transparentne: styles.tocTilePrimary,
@@ -26,10 +29,12 @@ export function TocTiles({ orderedSekce }: { orderedSekce: Sekce[] }) {
               document.getElementById(sec.id)?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            <div className={styles.tocText}>
+            <span className={styles.tocIndex}>{String(i + 1).padStart(2, '0')}</span>
+            <span className={styles.tocText}>
+              {/* Claim je hlavní sdělení dlaždice, eyebrow („Beroun zeleně“) jen doplněk. */}
+              <span className={styles.tocClaim}>{sec.headline.replace(/\n/g, ' ')}</span>
               <span className={styles.tocLabel}>{sec.eyebrow}</span>
-              <span className={styles.tocSubtitle}>{sec.headline}</span>
-            </div>
+            </span>
             <svg className={styles.tocArrow} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><polyline points="9 6 15 12 9 18"/></svg>
           </a>
         ))}

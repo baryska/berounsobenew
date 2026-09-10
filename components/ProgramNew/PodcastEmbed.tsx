@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { ReactNode } from 'react';
 import styles from './ProgramNew.module.css';
 
@@ -10,26 +11,47 @@ type Props = {
   spotifyUrl?: string;
   appleUrl?: string;
   youtubeUrl?: string;
+  // Volitelný portrét hosta, nahradí ikonu mikrofonu.
+  image?: string;
+  imageAlt?: string;
 };
 
-export function PodcastEmbed({ src, title, description, variant = 'section', note, spotifyUrl, appleUrl, youtubeUrl }: Props) {
+export function PodcastEmbed({ src, title, description, variant = 'section', note, spotifyUrl, appleUrl, youtubeUrl, image, imageAlt }: Props) {
   const isHero = variant === 'hero';
   const outerClass = isHero ? styles.podcastBand : styles.podcastInline;
-  const innerClass = [styles.podcastInner, isHero ? styles.podcastInnerHero : '']
+  const innerClass = [
+    styles.podcastInner,
+    isHero ? styles.podcastInnerHero : '',
+    image ? styles.podcastInnerPhoto : '',
+  ]
     .filter(Boolean)
     .join(' ');
 
   return (
     <div className={outerClass}>
       <div className={innerClass}>
-        <div className={styles.podcastIcon} aria-hidden="true">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="9" y="2" width="6" height="12" rx="3" />
-            <path d="M5 10v2a7 7 0 0 0 14 0v-2" />
-            <line x1="12" y1="19" x2="12" y2="22" />
-            <line x1="8" y1="22" x2="16" y2="22" />
-          </svg>
-        </div>
+        {image ? (
+          <div className={styles.podcastPhoto}>
+            <Image
+              src={image}
+              alt={imageAlt ?? title}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="48% 18%"
+              quality={85}
+              sizes="(max-width: 700px) 100vw, 33vw"
+            />
+          </div>
+        ) : (
+          <div className={styles.podcastIcon} aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="9" y="2" width="6" height="12" rx="3" />
+              <path d="M5 10v2a7 7 0 0 0 14 0v-2" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+              <line x1="8" y1="22" x2="16" y2="22" />
+            </svg>
+          </div>
+        )}
         <div className={styles.podcastMeta}>
           <p className={styles.podcastEyebrow}>Podcast Beroun tobě</p>
           <p className={styles.podcastTitle}>{title}</p>

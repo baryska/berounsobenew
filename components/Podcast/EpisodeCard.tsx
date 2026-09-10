@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import type { PodcastEpisode } from '../../data/podcast-data';
@@ -149,18 +150,35 @@ export function EpisodeCard({ episode, isActive, onPlay }: Props) {
         )}
       </div>
 
-      <h3 className={styles.cardTitle}>{episode.title}</h3>
-      {episode.speakers.length > 0 && (
-        <p className={styles.cardSpeakers}>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <rect x="9" y="2" width="6" height="12" rx="3" />
-            <path d="M5 10v2a7 7 0 0 0 14 0v-2" />
-            <line x1="12" y1="19" x2="12" y2="22" />
-          </svg>
-          {episode.speakers.join(', ')}
-        </p>
-      )}
-      <p className={styles.cardDesc}>{episode.description}</p>
+      <div className={styles.cardBody}>
+        <div className={styles.cardBodyText}>
+          <h3 className={styles.cardTitle}>{episode.title}</h3>
+          {episode.speakers.length > 0 && (
+            <p className={styles.cardSpeakers}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="9" y="2" width="6" height="12" rx="3" />
+                <path d="M5 10v2a7 7 0 0 0 14 0v-2" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+              </svg>
+              {episode.speakers.join(', ')}
+            </p>
+          )}
+          <p className={styles.cardDesc}>{episode.description}</p>
+        </div>
+        {episode.image && (
+          <div className={styles.cardPhoto}>
+            <Image
+              src={episode.image}
+              alt={episode.imageAlt ?? episode.speakers.join(', ')}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="48% 18%"
+              quality={85}
+              sizes="(max-width: 560px) 100vw, 33vw"
+            />
+          </div>
+        )}
+      </div>
 
       <div className={styles.player}>
         <button

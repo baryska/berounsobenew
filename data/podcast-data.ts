@@ -10,6 +10,9 @@ export interface PodcastEpisode {
   spotifyUrl?: string;
   appleUrl?: string;
   youtubeUrl?: string;
+  // Volitelný portrét hosta, zobrazuje se u dílu místo ikony mikrofonu.
+  image?: string;
+  imageAlt?: string;
   chapterLabel?: string;
   chapterHref?: string;
 }
@@ -32,6 +35,8 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
       "Proč vstoupila do komunální politiky? Jakou vizi má pro Beroun? Odpovídá berounská zastupitelka a kandidátka na starostku Barbora Skálová, která už deset let bojuje za vodovod v Hostímě.",
     speakers: ["Barbora Skálová"],
     src: "/01-barbora-v2.mp3",
+    image: "/BS_casual.jpg",
+    imageAlt: "Barbora Skálová",
     spotifyUrl: "https://open.spotify.com/episode/5nNgcNxTmpbH98XXSIYkyJ?si=5301e6d37c1449ca",
     appleUrl:
       "https://podcasts.apple.com/cz/podcast/beroun-m%C5%AF%C5%BEe-fungovat-l%C3%A9pe/id6792550119?i=1000777456723",
