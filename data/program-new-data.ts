@@ -608,7 +608,7 @@ export const ALL_SEKCE: Sekce[] = [
     headline: "Dostupná péče, na kterou se nečeká měsíce",
     perex1: "Praktik nebere nové pacienty, na pediatra se čeká, k zubaři se dovoláte, když máte štěstí, a u specialistů se objednává na měsíce dopředu. Zná to tu skoro každý.",
     perex2: "Zdravotnictví město neřídí a nemůže slibovat, že do Berouna přivede deset nových zubařů. Má ale <strong>v rukou víc nástrojů, než se zdá</strong>. Chybějící byt, náklady na rozjezd ordinace, výše nájmu, administrativa. Uděláme proto pro dostupnost kvalitní péče v Berouně všechno, co je v našich silách. A začneme tím, že si <strong>poctivě zjistíme, co konkrétně chybí</strong>.",
-    quote: "Rozjezd nové praxe je pro mladé zdravotníky finančně i administrativně náročný. Když jim město pomůže se zajištěním prostor, s vybavením ordinace nebo se zdrcující administrativou, může to být ten rozhodující důvod, proč zakotví právě v Berouně. Proto chceme městskou zdravotní síť a startovací byty pro lékaře, zubaře i sestry. Uděláme veřejný audit dostupnosti a s jeho výsledky budeme dál pracovat. A nezapomeneme ani na péči o duševní zdraví, jejíž dostupnost dnes neodpovídá skutečné potřebě.",
+    quote: "Dostupnou zdravotní péči město samo nezajistí. Může ale lépe spolupracovat s poskytovateli zdravotní péče, zjišťovat, kde jsou skutečné mezery, a společně hledat možnosti, jak situaci zlepšovat. Chceme lépe zmapovat dostupnost péče a podle výsledků hledat konkrétní kroky, které mohou pomoci. Zdravotníky chceme podpořit při jejich příchodu do Berouna a vytvářet podmínky, aby pro ně bylo město dobrým místem pro práci i život. Chceme také více spolupracovat s místními organizacemi v oblasti duševního zdraví a podporovat rozvoj paliativní péče. A nezapomínáme ani na prevenci. Připravíme dostupnou výuku první pomoci, podporu seniorů nebo přípravu města na vlny veder.",
     quoteName: "Jana Valachovičová",
     quoteRole: "",
     quoteAvatar: "/Jana_Valach_big.jpg",
@@ -635,7 +635,7 @@ export const ALL_SEKCE: Sekce[] = [
       },
       {
         id: "prehled_ordinaci",
-        heading: "Konec obvolávání deseti čísel",
+        heading: "Méně obvolávání, snazší cesta k péči",
         text: "Najít v Berouně praktika nebo zubaře, který bere nové pacienty, dnes znamená obvolat deset čísel a desetkrát slyšet ne. Tuhle informaci přitom nikdo nemá pohromadě, ani město.\n\nVytvoříme a spustíme <strong>veřejný přehled dostupnosti</strong> na webu města i v aplikaci Beroun v mobilu. Uvidíte, kdo v Berouně ordinuje, v jakém oboru a kdo zrovna přijímá nové pacienty. Pro člověka je to ušetřený půlden telefonování, pro město první poctivý přehled o tom, co ve městě opravdu chybí.",
         weights: { rodina: 10, senior: 9, student: 6, auto: 1, mhd: 2, cyklista: 1, podnikatel: 3, sidliste: 6, miluji: 10 },
       },
