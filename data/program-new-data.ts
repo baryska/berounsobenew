@@ -150,7 +150,7 @@ export const ALL_SEKCE: Sekce[] = [
       {
         id: "velke_stavby",
         heading: "Dospělý přístup k velkým stavbám a 100% transparentní informace",
-        text: "Velké investice jako <strong>jižní „obchvat“ Berouna</strong> (jižní paralelní komunikace) nebo rozsáhlá rekonstrukce dosluhujícího mostu TGM nelze slíbit ze dne na den, vždy se k nim ale budeme stavět čelem. <strong>Zrychlíme jednání s krajem a ŘSD</strong> ohledně dokončení vyprojektovaných etap jižního „obchvat“. A stejně tak budeme postupovat v případě nových dopravních spojení, která Beroun nutně potřebuje. Město se musí v jednání s krajem chovat jako sebevědomý partner. O všech akcích a jejich postupu <strong>budeme transparentně a včas informovat</strong>.",
+        text: "Velké investice jako <strong>jižní „obchvat“ Berouna</strong> (jižní paralelní komunikace) nebo rozsáhlá rekonstrukce dosluhujícího mostu TGM nelze slíbit ze dne na den, vždy se k nim ale budeme stavět čelem. <strong>Zrychlíme jednání s krajem</strong> ohledně dokončení vyprojektovaných etap jižního „obchvat“. A stejně tak budeme postupovat v případě nových dopravních spojení, která Beroun nutně potřebuje. Město se musí v jednání s krajem chovat jako sebevědomý partner. O všech akcích a jejich postupu <strong>budeme transparentně a včas informovat</strong>.",
         weights: { rodina: 4, senior: 4, student: 2, auto: 10, mhd: 5, cyklista: 4, podnikatel: 8, sidliste: 5, miluji: 10 },
       },
       {
