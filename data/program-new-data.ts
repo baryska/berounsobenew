@@ -472,7 +472,7 @@ export const ALL_SEKCE: Sekce[] = [
     ],
   },
   {
-    id: "transparentne",
+    id: "otevrene",
     eyebrow: "BEROUN OTEVŘENĚ",
     color: "",
     headline: "Radnice, které vidíte do karet. A\u00A0rozpočet, o kterém rozhodnete i vy.",
@@ -669,7 +669,7 @@ export const ALL_SEKCE: Sekce[] = [
     id: "spravedlive",
     eyebrow: "BEROUN SPRAVEDLIVĚ",
     color: "",
-    headline: "Sociální systém chránící děti, aby neplatily za finanční přešlapy dospělých.",
+    headline: "Sociální systém chránící děti, aby neplatily za finanční problémy dospělých.",
     perex1: "Beroun je bohaté město. Máme vysokou zaměstnanost, nadprůměrné příjmy i vzdělanost. A nemáme jedinou sociálně vyloučenou lokalitu. Přesto tu <strong>téměř každý 18. dospělý Berouňan žije v exekuci</strong>. Na tomhle čísle se bohatství našeho města příliš neodráží.",
     perex2: "Chudoba tu není soustředěná do jedné lokality, ale přesto tu je s námi – ve vedlejším bytě, v exekučním příkazu, který dostal kolega v práci, nebo v podobě dítěte, které nemůže jet na školní výlet. Nechceme to řešit soucitem, ale <strong>obyčejnou prací radnice</strong>. Podat ruku dřív, než se z potíží stane propast, je vždy levnější a chytřejší než nedělat nic. A hlavně je to lidské.",
     quote: "Beroun se má nadprůměrně dobře, přesto je tu celá řada lidí, která to jednoduše nedává a stydí se o tom mluvit, protože je to vnímané jako osobní prohra. A nejhorší na tom je, když důsledky odnáší děti. I tady u nás platí, že děti z chudých rodin či rodin v exekuci odpadávají ze školy, protože nemají na pomůcky, na brýle, na obědy, na výlety, na doučování a řada z nich tu kvůli tomu nedokončí základní školu. A s tím bych začal nejdříve.",
