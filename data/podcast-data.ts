@@ -102,7 +102,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
       "https://podcasts.apple.com/cz/podcast/radnice-jako-partner-se-kter%C3%BDm-si-rozum%C3%ADte/id6792550119?i=1000778815250",
     youtubeUrl: "https://www.youtube.com/watch?v=_2ZpGS75_78",
     chapterLabel: "Beroun otevřeně",
-    chapterHref: "/program#transparentne",
+    chapterHref: "/program#otevrene",
   },
   {
     id: "skolstvi",

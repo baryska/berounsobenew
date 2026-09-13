@@ -11,7 +11,7 @@ const TOC_COLOR_MAP: Record<string, string> = {
   zdrave: styles.tocTileAccent,
   lokalne: styles.tocTileAccent,
   udrzitelne: styles.tocTileSecondary,
-  transparentne: styles.tocTilePrimary,
+  otevrene: styles.tocTilePrimary,
 };
 
 export function TocTiles({ orderedSekce }: { orderedSekce: Sekce[] }) {

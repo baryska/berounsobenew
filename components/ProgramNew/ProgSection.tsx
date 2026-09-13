@@ -17,7 +17,7 @@ const HERO_COLOR_MAP: Record<string, string> = {
   zdrave: styles.sectionHeroAccent,
   lokalne: styles.sectionHeroAccent,
   udrzitelne: styles.sectionHeroSecondary,
-  transparentne: styles.sectionHeroPrimary,
+  otevrene: styles.sectionHeroPrimary,
 };
 
 function SectionHeader({ sec }: { sec: Sekce }) {
