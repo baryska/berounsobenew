@@ -205,7 +205,10 @@ const Home: NextPage = () => {
         <section id="napistenam" className={styles.contact}>
           <ContactForm />
         </section>
-        <footer className={styles.footer}>© 2026 BEROUN SOBĚ | Barbora Skálová</footer>
+        <footer className={styles.footer}>
+          <p>© 2026 BEROUN SOBĚ | Barbora Skálová</p>
+          <p className={styles.footerNote}>Volební materiál. Zadavatel: BEROUN SOBĚ. Zpracovatel: BEROUN SOBĚ.</p>
+        </footer>
 
         <CandidateModal candidate={selectedCandidate} onClose={handleCloseModal} />
       </main>

@@ -16,7 +16,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
       <Script data-domain="berounsobe.eu" src="https://www.google-analytics.com/analytics.js" />
       <main>{children}</main>
       <Consent />
-      <AnnouncementModal />
+      {/* <AnnouncementModal /> */}
     </div>
   );
 };
