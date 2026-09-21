@@ -73,7 +73,7 @@ const Home: NextPage = () => {
             <source src="/beroun4.mp4" type="video/mp4" />
           </video>
           <div className={styles.slogan}>
-            <Image src="/novy_slogan.png" alt="Beroun sobě - slogan" width={1200} height={400} />
+            <Image src="/pohneme_slogan.png" alt="Pohneme s tím, co roky stojí" width={1103} height={387} priority />
           </div>
           <button onClick={handleScrollTop} className={styles.arrow}>
             <Image src="/up.svg" width={40} height={40} alt="arrow" />
