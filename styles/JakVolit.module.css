@@ -1,4 +1,4 @@
-/* Stránka „Jak volit" — navazuje na design systém webu.
+/* Stránka „Jak volit“ — navazuje na design systém webu.
    Barvy i fonty se berou z proměnných v globals.css, neutrály a stínování
    jsou stejné jako na stránkách /obchvat a /most, aby web držel pohromadě. */
 
@@ -981,7 +981,7 @@
   color: var(--ink-soft);
 }
 
-/* ---------- Časová osa „Kdo vládne v Berouně?" ----------
+/* ---------- Časová osa „Kdo vládne v Berouně?“ ----------
    Popisky i pruhy visí na stejné mřížce, aby roky seděly nad pruhy. */
 .osa {
   --osa-strana: 124px;

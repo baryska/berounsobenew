@@ -79,7 +79,7 @@ function Otazka({ q, children }: { q: string; children: ReactNode }) {
   );
 }
 
-/* ---------- Časová osa „Kdo vládne v Berouně?" ----------
+/* ---------- Časová osa „Kdo vládne v Berouně?“ ----------
    Jedna řada na stranu, pruhy sedí na společné škále 2010–2026. Ve svislém
    řezu je tak vidět, kdo spolu v kterém období vládl, a ve vodorovném,
    jak dlouho se ta samá jména drží u moci. */
@@ -195,7 +195,7 @@ const JakVolit: NextPage = () => {
           </h1>
           <p className={styles.lede}>
             Na lístku najdete osm kandidátek. Nejdřív vám ukážeme,{' '}
-            <strong>kdo za nimi doopravdy stojí</strong> — ať vás nepřekvapí „lokální názvy". Pod
+            <strong>kdo za nimi doopravdy stojí</strong> — ať vás nepřekvapí „lokální názvy“. Pod
             tím je všechno praktické: kdy a kde se volí, co si vzít s sebou a jak lístek vyplnit,
             aby hlas platil.
           </p>
@@ -219,7 +219,7 @@ const JakVolit: NextPage = () => {
             <h2>Kdo je kdo v Berouně?</h2>
           </div>
           <p className={styles.secNote}>
-            Vyznejte se v kandidátkách. Nenechte se zmást „lokálními názvy" — pod nimi často
+            Vyznejte se v kandidátkách. Nenechte se zmást „lokálními názvy“ — pod nimi často
             kandidují celostátní strany a lidé, kteří město vedou už roky.
           </p>
 
@@ -231,6 +231,9 @@ const JakVolit: NextPage = () => {
               >
                 <div className={styles.stranaLoga} aria-hidden="true">
                   {k.loga.map((logo) => (
+                    /* Záměrně <img>, ne next/image: většina log jsou SVG a ta by
+                       optimalizátor v Next 12 odmítl bez dangerouslyAllowSVG. */
+                    // eslint-disable-next-line @next/next/no-img-element
                     <img key={logo} src={logo} alt="" className={styles.stranaLogo} />
                   ))}
                 </div>
@@ -433,7 +436,7 @@ const JakVolit: NextPage = () => {
                 </ul>
               ) : (
                 <p className={styles.empty}>
-                  Pro „{hledani}" jsme nic nenašli. Zkuste jinou ulici, nebo použijte{' '}
+                  Pro „{hledani}“ jsme nic nenašli. Zkuste jinou ulici, nebo použijte{' '}
                   <a className={styles.inlineLink} href={VYHLEDAVAC_URL} target="_blank" rel="noreferrer">
                     vyhledávač podle adresy
                   </a>
