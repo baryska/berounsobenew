@@ -1,0 +1,1265 @@
+/* Stránka „Jak volit" — navazuje na design systém webu.
+   Barvy i fonty se berou z proměnných v globals.css, neutrály a stínování
+   jsou stejné jako na stránkách /obchvat a /most, aby web držel pohromadě. */
+
+/* Jen tři značkové barvy z globals.css — žádné vlastní odstíny.
+   Oranžová i zelená jsou na světlém pozadí čitelné jen jako výplň
+   (text na nich je tmavý); jako text smí být na tmavém podkladu.
+   Modrá nese odkazy a všechno kolem Berouna sobě. */
+.page {
+  --nase: var(--color-primary);       /* modrá — Beroun sobě, zvýraznění */
+  --akce: var(--color-accent);        /* oranžová — výzvy, křížek, akcenty */
+  --ok: var(--color-secondary);       /* zelená — potvrzení, odpočet */
+
+  --paper: #ffffff;
+  --paper-2: #f7f7f6;
+  --card: #ffffff;
+  --ink: #1b1b2e;
+  --ink-soft: rgba(27, 27, 46, 0.62);
+  --line: #e2e2de;
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.03), 0 10px 28px -20px rgba(0, 0, 0, 0.3);
+
+  font-family: var(--font-body);
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.soft {
+  color: var(--ink-soft);
+}
+
+.inlineLink {
+  color: var(--nase);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.inlineLink:hover {
+  color: var(--ink);
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  padding: 3.5rem 0 2rem;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.02;
+  max-width: 18ch;
+  margin-top: 1rem;
+  color: var(--ink);
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--nase);
+}
+
+.lede {
+  margin-top: 1.1rem;
+  font-size: clamp(1rem, 1.9vw, 1.15rem);
+  max-width: 62ch;
+  color: var(--ink-soft);
+}
+
+.lede strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* Odpočet do voleb */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 1.2rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 15px 7px 12px;
+}
+
+.chip b {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.chipDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ok);
+  flex: 0 0 8px;
+}
+
+/* Kotvy na sekce */
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1.6rem;
+}
+
+.toc a {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 14px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.toc a:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+/* ---------- SEKCE ---------- */
+.section {
+  padding: 2.8rem 0;
+}
+
+.sectionHighlight {
+  position: relative;
+  background: color-mix(in srgb, var(--akce) 5%, var(--paper-2));
+  border-top: 1px solid color-mix(in srgb, var(--akce) 22%, var(--line));
+  border-bottom: 1px solid color-mix(in srgb, var(--akce) 22%, var(--line));
+}
+
+.sectionHighlight::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--akce);
+}
+
+.secHead {
+  display: flex;
+  align-items: baseline;
+  gap: 13px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.secHead h2 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(1.75rem, 4.2vw, 2.6rem);
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.secNote {
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+  max-width: 64ch;
+  margin-bottom: 1.6rem;
+}
+
+/* ---------- PRAKTICKÉ MINIMUM ---------- */
+.basics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.basicCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--nase);
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: var(--shadow);
+}
+
+.basicCard:nth-child(2) {
+  border-left-color: var(--akce);
+}
+
+.basicCard:nth-child(3) {
+  border-left-color: var(--ok);
+}
+
+.basicCard h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.basicCard p {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.basicCard p b {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.terminy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.terminy li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.terminy li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.terminy b {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--ink);
+}
+
+.terminy span {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.checklist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 14px;
+  height: 8px;
+  border-left: 2.5px solid var(--ok);
+  border-bottom: 2.5px solid var(--ok);
+  transform: rotate(-45deg);
+}
+
+.cardLink {
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--akce);
+  border: 1px solid var(--akce);
+  border-radius: 999px;
+  padding: 7px 15px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.cardLink:hover {
+  background: var(--nase);
+  border-color: var(--nase);
+  color: #fff;
+}
+
+/* ---------- JAK PODPOŘIT ---------- */
+.podporaGrid {
+  display: grid;
+  grid-template-columns: minmax(280px, 380px) 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .podporaGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ukázka hlasovacího lístku — fotka */
+.listek {
+  align-self: start;
+}
+
+.listekNote {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+/* Text vedle lístku */
+.podporaHlavni {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.podporaHlavni em {
+  font-style: normal;
+  color: var(--nase);
+}
+
+.podporaVedle {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  max-width: 48ch;
+}
+
+.pozor {
+  margin-top: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--akce);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+}
+
+.pozor h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.pozor ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.pozor li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.93rem;
+  color: var(--ink-soft);
+}
+
+.pozor li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--akce);
+}
+
+.pozor li b {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* ---------- TLAČÍTKA ---------- */
+.btn {
+  display: inline-block;
+  margin-top: 1.4rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: var(--nase);
+  border-radius: 999px;
+  padding: 13px 26px;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--akce);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.btnGhost {
+  display: inline-block;
+  margin-top: 1.4rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 12px 25px;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.btnGhost:hover {
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+
+/* ---------- VOLEBNÍ MÍSTNOSTI ---------- */
+.searchWrap {
+  display: block;
+  max-width: 420px;
+  margin-bottom: 18px;
+}
+
+.search {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 12px 20px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.okrskyList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+}
+
+.okrsek {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow);
+}
+
+.okrsekNum {
+  flex: 0 0 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  background: var(--nase);
+}
+
+.okrsekBody {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.okrsekTitle {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.okrsekTag {
+  display: inline-block;
+  margin-left: 8px;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--akce);
+  padding: 2px 8px;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+.okrsekAdresa {
+  margin-top: 3px;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.okrsekUlice {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+.okrsekMapa {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 13px;
+}
+
+.okrsekMapa:hover {
+  background: var(--akce);
+  border-color: var(--akce);
+  color: var(--ink);
+}
+
+.empty {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+/* Náhradní zdroje, dokud seznam okrsků nemáme */
+.zdrojeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 14px;
+}
+
+.zdroj {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--nase);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.zdroj:hover {
+  border-color: var(--ink);
+  border-left-color: var(--akce);
+  transform: translateY(-1px);
+}
+
+.zdroj h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.zdroj p {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.zdrojCta {
+  margin-top: auto;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+}
+
+/* ---------- OTÁZKY A ODPOVĚDI ---------- */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 800px;
+}
+
+.faqItem {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.faqQ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  padding: 18px 20px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.faqQ:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -2px;
+}
+
+.faqIcon {
+  flex: 0 0 auto;
+  fill: var(--akce);
+  height: 1.4rem;
+  width: 1.4rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.faqIconOpen {
+  transform: rotate(180deg);
+}
+
+.faqA {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 20px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.faqAOpen {
+  max-height: 100vh;
+  padding: 4px 20px 18px;
+  border-top: 1px dashed var(--line);
+}
+
+.faqA p + p {
+  margin-top: 0.7rem;
+}
+
+.faqA b {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.faqA ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 0.4rem;
+}
+
+.faqA li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.faqA li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--akce);
+}
+
+/* ---------- IN ENGLISH ---------- */
+.english {
+  background: var(--nase);
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px 32px;
+  max-width: 800px;
+}
+
+.englishFlag {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.english h2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 3vw, 1.7rem);
+  line-height: 1.15;
+  color: #fff;
+  margin: 0.7rem 0 1rem;
+  max-width: 34ch;
+}
+
+.english p + p {
+  margin-top: 0.8rem;
+}
+
+.english p {
+  font-size: 0.95rem;
+}
+
+.english b {
+  color: #fff;
+  font-weight: 700;
+}
+
+.englishDates {
+  margin-top: 1.2rem !important;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 0.88rem !important;
+}
+
+@media (max-width: 520px) {
+  .english {
+    padding: 24px 22px;
+  }
+}
+
+/* ---------- KDO JE KDO ---------- */
+.stranyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+/* Na velkých obrazovkách čtyři karty v řadě — dvě řady po čtyřech,
+   stejné rozvržení jako v tištěném letáku. Karta se tím zúží, proto
+   o něco menší odsazení, ať text uvnitř nezačne lámat po slovech. */
+@media (min-width: 1080px) {
+  .stranyGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .strana {
+    padding: 18px 18px 20px;
+  }
+}
+
+.strana {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+}
+
+.stranaNase {
+  border-color: var(--nase);
+  border-width: 2px;
+  background: color-mix(in srgb, var(--nase) 5%, #fff);
+}
+
+/* Pruh s logem — pevná výška, ať jsou loga na všech kartách stejně velká. */
+.stranaLoga {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  height: 46px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.stranaLogo {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-height: 34px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.stranaHead {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.stranaCislo {
+  flex: 0 0 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--ink);
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+}
+
+.stranaNase .stranaCislo {
+  color: #fff;
+  background: var(--nase);
+  border-color: var(--nase);
+}
+
+.stranaNazev {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.stranaDrive {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+.stranaStrana {
+  font-size: 0.92rem;
+  color: var(--ink);
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.stranaLabel {
+  display: block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 2px;
+}
+
+.tvare {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tvare li {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid var(--line);
+  padding-left: 11px;
+}
+
+.stranaNase .tvare li {
+  border-left-color: var(--nase);
+}
+
+.tvare b {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.97rem;
+  color: var(--ink);
+  line-height: 1.2;
+}
+
+.tvare span {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+.stranaLink {
+  margin-top: auto;
+  padding-top: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--nase);
+}
+
+.stranaLink:hover {
+  color: var(--ink);
+}
+
+/* Kontext — vedení města a opozice */
+.kontextGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+  /* Karta s osou je výrazně vyšší — ať se ta vedle ní neroztahuje
+     do prázdna, jen kvůli zarovnání spodní hrany. */
+  align-items: start;
+}
+
+/* Osa potřebuje víc místa než výpis opozice, proto nestejné sloupce. */
+@media (min-width: 900px) {
+  .kontextGrid {
+    grid-template-columns: minmax(0, 2fr) minmax(250px, 1fr);
+  }
+}
+
+.kontextCard {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: var(--shadow);
+}
+
+.kontextCard h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+/* Poznámka pod přehledem — přiznává, že tabulka je jen výřez, ne celá historie. */
+.vedeniNote {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+/* ---------- Časová osa „Kdo vládne v Berouně?" ----------
+   Popisky i pruhy visí na stejné mřížce, aby roky seděly nad pruhy. */
+.osa {
+  --osa-strana: 124px;
+  --osa-roky: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.osaSkalaRadek,
+.osaRadek {
+  display: grid;
+  grid-template-columns: var(--osa-strana) minmax(0, 1fr) var(--osa-roky);
+  gap: 10px;
+  align-items: center;
+}
+
+.osaSkala {
+  position: relative;
+  grid-column: 2;
+  height: 14px;
+}
+
+.osaRok {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* Krajní popisky se zarovnají dovnitř, ať nepřetečou kartu. */
+.osaRokPrvni {
+  transform: translateX(0);
+}
+
+.osaRokPosledni {
+  transform: translateX(-100%);
+}
+
+.osaRady {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.osaStrana {
+  font-size: 0.86rem;
+  line-height: 1.2;
+  color: var(--ink-soft);
+}
+
+.osaStranaMoc {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* Pás = celý rozsah osy; svislé linky padnou na roky po čtyřech. */
+.osaPas {
+  position: relative;
+  height: 19px;
+  border-radius: 999px;
+  background: var(--paper-2);
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--line) 0 1px,
+    transparent 1px 25%
+  );
+}
+
+.osaPruh {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink) 14%, #fff);
+  border: 1px solid color-mix(in srgb, var(--ink) 24%, #fff);
+}
+
+/* Strany, které kandidují i letos — akcentní oranžová jako jinde na stránce. */
+.osaPruhMoc {
+  background: var(--akce);
+  border-color: var(--akce);
+}
+
+.osaRoky {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  color: var(--ink-soft);
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Na úzkém displeji nemá název strany vedle pruhu šanci — jde nad něj. */
+@media (max-width: 560px) {
+  .osaSkalaRadek,
+  .osaRadek {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3px 10px;
+  }
+
+  .osaStrana {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .osaRoky {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .osaSkala {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .osaPas {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .osaRady {
+    gap: 14px;
+  }
+}
+
+.opozice {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opozice li {
+  position: relative;
+  padding-left: 22px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.opozice li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--nase);
+}
+
+/* ---------- KONTAKT NA ÚŘAD ---------- */
+.uradGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.uradCard {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+}
+
+.uradCard h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.uradCard p {
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.hodiny {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.hodiny li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.9rem;
+  padding-bottom: 9px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.hodiny li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.hodiny b {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.hodiny span {
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* ---------- ZÁVĚREČNÁ VÝZVA ---------- */
+.closing {
+  padding: 3.2rem 0 4rem;
+  background: var(--nase);
+  color: #fff;
+  text-align: center;
+}
+
+.closingBig {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 5.5vw, 3.2rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #fff;
+  max-width: 18ch;
+  margin: 0 auto;
+}
+
+/* Zvýrazněná část jde vždy na vlastní řádek, ať věta neláme
+   uprostřed („…s tím, co / roky stojí.“). */
+.closingBig em {
+  display: block;
+  font-style: normal;
+  color: var(--ink);
+}
+
+.closingSub {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.closingSub b {
+  color: #fff;
+  font-weight: 700;
+}
+
+.closingBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.closing .btn {
+  background: var(--akce);
+  color: var(--ink);
+}
+
+.closing .btn:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+.closing .btnGhost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.closing .btnGhost:hover {
+  border-color: #fff;
+}

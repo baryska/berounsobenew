@@ -19,6 +19,7 @@ interface NavLink {
 const LINKS: NavLink[] = [
   { link: "#kdojsme", name: "kdo jsme" },
   { link: "program", name: "program", badge: "2026" },
+  { link: "jakvolit", name: "jak volit" },
   { link: "podcast", name: "podcast" },
   { link: MERCH_URL, name: "merch", external: true },
   { link: "#informujeme", name: "informujeme" },
