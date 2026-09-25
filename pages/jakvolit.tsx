@@ -87,11 +87,6 @@ function podil(rok: number) {
   return ((rok - OSA_OD) / (OSA_DO - OSA_OD)) * 100;
 }
 
-function letSlovo(roky: number) {
-  if (roky === 1) return 'rok';
-  return roky >= 2 && roky <= 4 ? 'roky' : 'let';
-}
-
 function Osa() {
   return (
     <div className={styles.osa}>
@@ -131,9 +126,6 @@ function Osa() {
                   </span>
                 </span>
               ))}
-            </span>
-            <span className={styles.osaRoky}>
-              {v.roky} {letSlovo(v.roky)}
             </span>
           </li>
         ))}

@@ -985,7 +985,6 @@
    Popisky i pruhy visí na stejné mřížce, aby roky seděly nad pruhy. */
 .osa {
   --osa-strana: 124px;
-  --osa-roky: 44px;
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -994,7 +993,7 @@
 .osaSkalaRadek,
 .osaRadek {
   display: grid;
-  grid-template-columns: var(--osa-strana) minmax(0, 1fr) var(--osa-roky);
+  grid-template-columns: var(--osa-strana) minmax(0, 1fr);
   gap: 10px;
   align-items: center;
 }
@@ -1072,31 +1071,16 @@
   border-color: var(--akce);
 }
 
-.osaRoky {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.78rem;
-  line-height: 1.2;
-  color: var(--ink-soft);
-  text-align: right;
-  white-space: nowrap;
-}
-
 /* Na úzkém displeji nemá název strany vedle pruhu šanci — jde nad něj. */
 @media (max-width: 560px) {
   .osaSkalaRadek,
   .osaRadek {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 3px 10px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3px;
   }
 
   .osaStrana {
     grid-column: 1;
-    grid-row: 1;
-  }
-
-  .osaRoky {
-    grid-column: 2;
     grid-row: 1;
   }
 
