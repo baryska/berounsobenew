@@ -43,8 +43,8 @@ export const KANDIDATKY: Kandidatka[] = [
     strana: 'Svobodní',
     loga: ['/loga_stran/puls.png'],
     tvare: [
-      { jmeno: 'Luboš Zálom', role: 'opoziční zastupitel, předseda středočeských Svobodných' },
       { jmeno: 'Hana Kašparová', role: 'opoziční zastupitelka' },
+      { jmeno: 'Luboš Zálom', role: 'opoziční zastupitel, předseda středočeských Svobodných' },
     ],
   },
   {
@@ -96,7 +96,7 @@ export const KANDIDATKY: Kandidatka[] = [
     strana: 'Nezávislá kandidátka',
     loga: ['/loga_stran/spolecne2.png'],
     tvare: [
-      { jmeno: 'Petr Horák', role: 'ředitel Charity Beroun, opoziční zastupitel 2022–23' },
+      { jmeno: 'Petr Horák', role: 'ředitel Charity Beroun, opoziční zastupitel do 2023' },
       { jmeno: 'Martin Dolejší', role: 'opoziční zastupitel od 2023' },
     ],
   },
@@ -143,7 +143,6 @@ export interface Usek {
 export interface VladaStrany {
   strana: string;
   useky: Usek[];
-  /** Součet let ve vedení města napříč úseky. */
   roky: number;
   /** Kandiduje i v letošních volbách — na ose plnou barvou. */
   kandidujeZnovu: boolean;
