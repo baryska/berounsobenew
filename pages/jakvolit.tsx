@@ -334,9 +334,6 @@ const JakVolit: NextPage = () => {
           <div className={styles.secHead}>
             <h2>Jak maximálně podpořím Beroun sobě?</h2>
           </div>
-          <p className={styles.secNote}>
-            Pohneme s tím, co roky stojí. Pro plnou podporu stačí jediný křížek.
-          </p>
 
           <div className={styles.podporaGrid}>
             <Listek />
@@ -346,7 +343,7 @@ const JakVolit: NextPage = () => {
                 Zakřížkujte pole <em>u názvu strany</em> Beroun sobě — číslo <b>1</b>.
               </p>
               <p className={styles.podporaVedle}>
-                 Nejsilnější podporu nám dáte, když zakřížkujete celou naši kandidátku, protože tím od vás dostaneme všechny hlasy, které máte k dispozici. Když zakřížkujete jen některá jména, dostaneme od vás jen jejich zlomek. Na prvních místech kandidátky jsou lidé, kteří chtějí pro město naplno pracovat v zastupitelstvu. 
+                 Nejsilnější podporu nám dáte, když zakřížkujete celou naši kandidátku, protože tím od vás dostaneme všechny hlasy, které máte k dispozici. Když zakřížkujete jen některá jména, dostaneme od vás jen zlomek vašeho hlasu. Na prvních místech kandidátky jsou lidé, kteří chtějí pro město naplno pracovat v zastupitelstvu. 
               </p>
 
               <div className={styles.pozor}>
@@ -442,19 +439,14 @@ const JakVolit: NextPage = () => {
             <>
               <p className={styles.secNote}>
                 Vaše volební místnost je uvedená na obálce s volebními lístky. Úplný seznam okrsků
-                zveřejnilo město — najdete ji takto:
+                zveřejnilo město:
               </p>
               <div className={styles.zdrojeGrid}>
-                <a className={styles.zdroj} href={VYHLEDAVAC_URL} target="_blank" rel="noreferrer">
-                  <h3>Vyhledat podle adresy</h3>
-                  <p>Zadáte ulici a číslo popisné, aplikace ukáže příslušnou volební místnost.</p>
-                  <span className={styles.zdrojCta}>volby.tmapy.cz →</span>
-                </a>
                 <a className={styles.zdroj} href={SEZNAM_OKRSKU_URL} target="_blank" rel="noreferrer">
                   <h3>Seznam volebních místností</h3>
                   <p>
                     Závazný seznam
-                    všech volebníchmístností v Berouně.
+                    všech volebních místností v Berouně.
                   </p>
                   <span className={styles.zdrojCta}>mesto-beroun.cz · PDF →</span>
                 </a>
