@@ -38,6 +38,10 @@ const archiveItems = [
   {
     title: 'Červen 2026',
     link: "https://mailchi.mp/b4bba3683a9c/jak-se-mas-beroune-12934191?e=9211873847"
+  },
+  {
+    title: 'Září 2026',
+    link: "https://mailchi.mp/24f80fccb079/jak-se-mas-beroune-12935390"
   }
 ]
 
