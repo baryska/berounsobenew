@@ -362,8 +362,8 @@ const Obchvat = () => {
                   17 840<small>aut / den</small>
                 </div>
                 <div className={styles.keyfactL}>
-                  projede denně centrem Berouna a přes most TGM podle dopravní studie z roku 2019. Obchvat má tuto
-                  dopravu odvést mimo centrum.
+                  projede denně centrem Berouna a přes most TGM podle dopravní studie z roku 2019. Obchvat má velkou část této
+                  dopravy odvést mimo centrum.
                 </div>
                 <a
                   className={styles.keyfactSrc}
