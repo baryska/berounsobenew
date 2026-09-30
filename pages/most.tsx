@@ -6,7 +6,7 @@ import FAQ from '../components/FAQs/faqs';
 import Timeline from '../components/Timeline/Timeline';
 import glass from '../public/iconlenstrans2.png';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Obchvat.module.css';
 
 
 interface Img {
@@ -53,65 +53,100 @@ const Most = ({ groups, faqs, timeline }: Props) => {
   const docsGroup = groups.filter((group) => group.type === 'docs');
 
   return (
-    <div className={styles.bridgeSection}>
-      <div className={styles.bridgeHeader}>
-      <h2 className={styles.bridgeTitle}>
-        <strong>Vše, co víme o rekonstrukci mostu TGM</strong>
-        <div>
-          <div className={styles.blueDot} /> <div className={`${styles.blueDot} ${styles.blueDotBottom}`} />
+    <div className={styles.page}>
+      {/* ---------- HERO: titulek + info o aktualizaci ---------- */}
+      <header className={styles.hero}>
+        <div className={styles.wrap}>
+          <div className={styles.eyebrow}>Beroun sobě · rekonstrukce mostu TGM</div>
+          <h1>
+            Vše, co víme o <em>rekonstrukci mostu TGM</em>
+          </h1>
+          <p className={styles.subtitle}>
+            Informace o rekonstrukci mostu TGM i stavbě provizorního mostu se neustále mění. Tato stránka je
+            aktualizována dle nejnovějšího stavu poznání. Datum poslední aktualizace: <strong>13. 2. 2026</strong>
+          </p>
         </div>
-      </h2>
-      <p className={styles.bridgeInfo}>Informace o rekonstrukci mostu TGM i stavbě provizorního mostu se neustále mění.
-        Tato stránka je aktualizována dle nejnovějšího stavu poznání. Datum poslední aktualizace: <strong>13. 2. 2026</strong></p>
+      </header>
+
+      {/* ---------- OTÁZKY A ODPOVĚDI ---------- */}
+      <section className={styles.section}>
+        <div className={styles.wrap}>
+          <FAQ faqs={faqs} />
         </div>
-      <FAQ faqs={faqs} />
-      <Timeline timeline={timeline} />
-      <h2 className={styles.heading}>Dostupná dokumentace:</h2>
-      <div className={styles.docs}>
-        {docsGroup
-          .sort((a, b) => a.key - b.key)
-          .map((group, index) => (
-            <div className={styles.doc} style={{background: '#ebf8ff'}} key={group.title}>
-              <h2>{group.description}</h2>
-              <div style={{ textAlign: 'right' }}>
-                <button onClick={() => setOpenLightbox({ group: 'docsGroup', index })}>
-                  <Image src={glass} alt="glass" width={40} height={40} />
-                </button>
-              </div>
-              {openLightbox?.group === 'docsGroup' && openLightbox?.index === index ? (
-                <Lightbox
-                  open
-                  close={() => setOpenLightbox(null)}
-                  slides={group.images.map((image) => ({ src: image.asset.url }))}
-                  carousel={{ finite: group.images.length === 1 }}
-                />
-              ) : null}
-            </div>
-          ))}
-      </div>
-      <h2 className={styles.heading}>Z tisku:</h2>
-      <div className={styles.docs}>
-        {pressGroup
-          .sort((a, b) => a.key - b.key)
-          .map((group, index) => (
-            <div className={styles.doc}  style={{background: '#f7f7f7'}} key={group.title}>
-              <h2>{group.description}</h2>
-              <div style={{ textAlign: 'right' }}>
-                <button onClick={() => setOpenLightbox({ group: 'pressGroup', index })}>
-                  <Image src={glass} alt="glass" width={40} height={40} />
-                </button>
-              </div>
-              {openLightbox?.group === 'pressGroup' && openLightbox?.index === index ? (
-                <Lightbox
-                  open
-                  close={() => setOpenLightbox(null)}
-                  slides={group.images.map((image) => ({ src: image.asset.url }))}
-                  carousel={{ finite: group.images.length === 1 }}
-                />
-              ) : null}
-            </div>
-          ))}
-      </div>
+      </section>
+
+      {/* ---------- ČASOVÁ OSA ---------- */}
+      <section className={styles.section}>
+        <div className={styles.wrap}>
+          <Timeline timeline={timeline} />
+        </div>
+      </section>
+
+      {/* ---------- DOSTUPNÁ DOKUMENTACE ---------- */}
+      <section className={styles.section}>
+        <div className={styles.wrap}>
+          <div className={styles.secHead}>
+            <h2>Dostupná dokumentace</h2>
+          </div>
+          <div className={styles.docGrid}>
+            {docsGroup
+              .sort((a, b) => a.key - b.key)
+              .map((group, index) => (
+                <div className={styles.docCard} key={group.title}>
+                  <h3 className={styles.docTitle}>{group.description}</h3>
+                  <button
+                    className={styles.docOpen}
+                    aria-label={`Zobrazit: ${group.description}`}
+                    onClick={() => setOpenLightbox({ group: 'docsGroup', index })}
+                  >
+                    <Image src={glass} alt="" width={28} height={28} />
+                  </button>
+                  {openLightbox?.group === 'docsGroup' && openLightbox?.index === index ? (
+                    <Lightbox
+                      open
+                      close={() => setOpenLightbox(null)}
+                      slides={group.images.map((image) => ({ src: image.asset.url }))}
+                      carousel={{ finite: group.images.length === 1 }}
+                    />
+                  ) : null}
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- Z TISKU ---------- */}
+      <section className={`${styles.section} ${styles.sectionHighlight}`}>
+        <div className={styles.wrap}>
+          <div className={styles.secHead}>
+            <h2>Z tisku</h2>
+          </div>
+          <div className={styles.docGrid}>
+            {pressGroup
+              .sort((a, b) => a.key - b.key)
+              .map((group, index) => (
+                <div className={`${styles.docCard} ${styles.press}`} key={group.title}>
+                  <h3 className={styles.docTitle}>{group.description}</h3>
+                  <button
+                    className={styles.docOpen}
+                    aria-label={`Zobrazit: ${group.description}`}
+                    onClick={() => setOpenLightbox({ group: 'pressGroup', index })}
+                  >
+                    <Image src={glass} alt="" width={28} height={28} />
+                  </button>
+                  {openLightbox?.group === 'pressGroup' && openLightbox?.index === index ? (
+                    <Lightbox
+                      open
+                      close={() => setOpenLightbox(null)}
+                      slides={group.images.map((image) => ({ src: image.asset.url }))}
+                      carousel={{ finite: group.images.length === 1 }}
+                    />
+                  ) : null}
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

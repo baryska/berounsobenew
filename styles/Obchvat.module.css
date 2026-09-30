@@ -15,6 +15,7 @@
   --kd-tint: color-mix(in srgb, var(--color-primary) 6%, #fff);
   --beroun-tint: color-mix(in srgb, var(--color-accent) 6%, #fff);
   --beroun-ink: #b85a1e;              /* tmavší odstín pro AA kontrast textu */
+  --kraj: var(--ink-soft);            /* Středočeský kraj — okružní křižovatka u D5 */
 
   /* ZRALOST FÁZE — světle šedá → zelená (hotovo) */
   --m0: #bfc3bb;   /* nezačato / na papíře */
@@ -730,9 +731,9 @@
   padding: 2.8rem 0;
 }
 
-/* Zvýrazněná sekce — klíčové bloky (Čísla, Co ještě chybí).
+/* Zvýrazněná sekce — klíčové bloky (Čísla).
    Teplý tónovaný pruh přes celou šířku + oranžová linka nahoře.
-   Bílé karty uvnitř (statistiky, panel „co chybí") tím vyniknou. */
+   Bílé karty uvnitř (statistiky) tím vyniknou. */
 .sectionHighlight {
   position: relative;
   background: color-mix(in srgb, var(--east) 5%, var(--paper-2));
@@ -1045,10 +1046,21 @@
 }
 
 .ev .date {
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  letter-spacing: 0.03em;
-  color: var(--ink-soft);
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+
+/* Rok laděný podle města — modrá pro Králův Dvůr, oranžová pro Beroun */
+.track.kd .ev .date {
+  color: var(--kd);
+}
+.track.beroun .ev .date {
+  color: var(--beroun-ink);
 }
 
 .ev h4 {
@@ -1100,7 +1112,7 @@
   border: 1px dashed var(--line);
 }
 
-/* Panel „Co ještě chybí" */
+/* Panel se shrnutím — původně „Co ještě chybí", dnes závěr pod osami. */
 .blockers {
   margin: 0 0 22px;
   background: var(--card);
@@ -1134,6 +1146,11 @@
   font-size: 0.82rem;
   color: var(--ink-soft);
   margin-bottom: 8px;
+}
+
+/* Panel uzavírá sekci pod osami — odsazení proto nahoru, ne dolů. */
+.blockersAfter {
+  margin: 28px 0 0;
 }
 
 .blockers .bgroup {
@@ -1359,56 +1376,6 @@
    nezaváděj nové barvy ani fonty.
    ========================================================================== */
 
-/* ---------- HERO: tři důvody ---------- */
-.reasons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-top: 28px;
-}
-@media (max-width: 780px) {
-  .reasons { grid-template-columns: 1fr; }
-}
-.reason {
-  background: color-mix(in srgb, var(--east) 8%, #fff);
-  border: 1px solid color-mix(in srgb, var(--east) 26%, var(--line));
-  border-left: 6px solid var(--east);
-  border-radius: 14px;
-  padding: 20px 22px;
-}
-.reasonHead {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
-.reasonLabel {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  font-size: 18px;
-  color: var(--ink);
-}
-.reasonState {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 4px 11px;
-  border-radius: 999px;
-  background: var(--beroun-ink);
-  color: #fff;
-  white-space: nowrap;
-}
-.reason p {
-  font-size: 15.5px;
-  line-height: 1.55;
-  color: var(--ink);
-}
-
 /* ---------- ČÍSLA ---------- */
 .stats {
   display: grid;
@@ -1573,6 +1540,7 @@
 }
 .sl.kd .n { background: var(--kd); }
 .sl.beroun .n { background: var(--beroun); }
+.sl.kraj .n { background: var(--kraj, var(--ink-soft)); }
 .sl.m3 .n { background: var(--m3); }
 .sl b {
   display: block;
@@ -1605,3 +1573,747 @@
 .chip.done { background: rgba(58, 125, 68, 0.14); color: var(--m3); }
 .chip.open { background: rgba(233, 161, 0, 0.16); color: #8a5a00; }
 
+/* ---------- DVĚ KLÍČOVÁ ČÍSLA V HERO ---------- */
+.keyfacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 26px;
+}
+@media (max-width: 640px) {
+  .keyfacts { grid-template-columns: 1fr; }
+}
+.keyfact {
+  border-radius: 16px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+.keyfactDark {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.keyfactN {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  color: var(--beroun-ink);
+  white-space: nowrap;
+}
+.keyfactDark .keyfactN {
+  color: var(--color-accent);
+}
+.keyfactN small {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+.keyfactDark .keyfactN small {
+  color: rgba(255, 255, 255, 0.6);
+}
+.keyfactL {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.keyfactDark .keyfactL {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Zdroj pod číslem — má být po ruce, ne na očích: žádná výplň ani rámeček,
+   jen tlumeně podtržený řádek, který zesvětlá na hover. */
+.keyfactSrc {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.keyfactSrc:hover {
+  color: #fff;
+}
+
+/* ---------- SPOLEČNÁ STARTOVNÍ ČÁRA (2014) ---------- */
+.startline {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--ink);
+  border-radius: 14px;
+  padding: 20px 24px;
+  margin-bottom: 22px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 22px;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+.startYear {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 2.6rem;
+  line-height: 1;
+  color: var(--ink);
+}
+.startTitle {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.startline p {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin-top: 5px;
+  max-width: 74ch;
+}
+.startline p b { color: var(--ink); font-weight: 700; }
+@media (max-width: 600px) {
+  .startline { grid-template-columns: 1fr; gap: 8px; }
+}
+
+/* ---------- MAPA OBCHVATU ---------- */
+.mapfig {
+  margin: 0;
+}
+
+/* Mapa se zobrazuje ve své původní velikosti (1116 × 521 px) a jen na úzkých
+   displejích se proporčně zmenší, aby nepřetekla z karty. */
+.mapimg {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.mapcap {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 68ch;
+}
+
+/* ---------- PLACEHOLDER PRO CHYBĚJÍCÍ OBRÁZEK (reálná mapa) ---------- */
+.ph {
+  border: 2px dashed var(--kd);
+  border-radius: 14px;
+  padding: 34px 26px;
+  text-align: center;
+  background: repeating-linear-gradient(
+    45deg,
+    color-mix(in srgb, var(--kd) 4%, transparent) 0 14px,
+    transparent 14px 28px
+  );
+}
+.phtag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--kd);
+  padding: 4px 11px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+.pht {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1.1;
+}
+.phd {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  max-width: 62ch;
+  margin: 10px auto 0;
+  line-height: 1.55;
+}
+.phg { color: var(--m3); font-weight: 700; }
+.phr { color: var(--beroun-ink); font-weight: 700; }
+
+/* ---------- INLINE ODKAZ (prolink na /most) ---------- */
+.inl {
+  color: var(--beroun-ink);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  font-weight: 600;
+}
+.inl:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* ---------- Q&A / ČASTÉ OTÁZKY (accordion) ---------- */
+.faq {
+  border-top: 1px solid var(--line);
+}
+.faqItem {
+  border-bottom: 1px solid var(--line);
+}
+.faqQ {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  color: var(--ink);
+}
+.faqQ::-webkit-details-marker {
+  display: none;
+}
+.faqQ:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+.faqChevron {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--east);
+  transition: transform 0.2s ease;
+}
+.faqItem[open] .faqChevron {
+  transform: rotate(180deg);
+}
+.faqA {
+  padding: 0 0 20px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 72ch;
+}
+
+/* ---------- DOKUMENTY A ZDROJE ---------- */
+.docs {
+  border-top: 1px solid var(--line);
+}
+.docItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 2px;
+  border-bottom: 1px solid var(--line);
+}
+.docMain {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.docTitle {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--ink);
+}
+.docMeta {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-top: 3px;
+}
+.docLink {
+  flex: 0 0 auto;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--beroun-ink);
+  text-decoration: none;
+  border: 1px solid color-mix(in srgb, var(--beroun-ink) 40%, var(--line));
+  border-radius: 999px;
+  padding: 6px 14px;
+  white-space: nowrap;
+}
+.docLink:hover {
+  background: var(--color-accent-light);
+}
+.docLink:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+.docPending {
+  flex: 0 0 auto;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border: 1px dashed var(--line);
+  border-radius: 999px;
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+@media (max-width: 520px) {
+  .docItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* ---------- KOLAPS „DETAILY" UVNITŘ KARTY S MAPOU ---------- */
+/* Bez vlastního rámečku — jen oddělovací linka + přepínač, ať je součástí karty */
+.mapDetails {
+  margin-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.mapDetailsSummary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 14px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+.mapDetailsSummary::-webkit-details-marker {
+  display: none;
+}
+.mapDetailsSummary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+.mapDetailsChevron {
+  flex: 0 0 auto;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--east);
+  transition: transform 0.2s ease;
+}
+.mapDetails[open] .mapDetailsChevron {
+  transform: rotate(180deg);
+}
+.mapDetailsBody {
+  padding-top: 14px;
+}
+
+/* ---------- SEGMENTOVÉ KARTY JAKO LEGENDA K MAPĚ ---------- */
+/* Levý barevný pruh = stav úseku (stejná řeč jako barevný klíč a budoucí mapa) */
+.sl {
+  border-left: 5px solid var(--line);
+}
+.sl.m3 {
+  border-left-color: var(--m3);
+  background: color-mix(in srgb, var(--m3) 7%, #fff);
+}
+.sl.kd {
+  border-left-color: var(--kd);
+}
+.sl.beroun {
+  border-left-color: var(--beroun);
+}
+/* Číslo úseku jako pin na mapě — o něco větší a čitelnější */
+.sl .n {
+  flex: 0 0 26px;
+  height: 26px;
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   GALERIE DOKUMENTŮ (stránka „most") — karty s náhledem do lightboxu.
+   Používá stejné proměnné a design jako zbytek stránky (--card, --line,
+   --kd, --beroun, --shadow). Levý barevný pruh rozlišuje dokumentaci
+   (modrá) od tisku (oranžová).
+   ========================================================================== */
+.docGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.docCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 118px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--kd);
+  border-radius: 14px;
+  padding: 20px 22px;
+  box-shadow: var(--shadow);
+}
+
+.docCard.press {
+  border-left-color: var(--beroun);
+}
+
+.docTitle {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.docOpen {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--paper-2);
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.docOpen:hover {
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.docOpen:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+
+/* ---------- NA PRVNÍ SIGNÁLNÍ (roky a etapy, úplně bez detailů) ---------- */
+.basics {
+  margin-top: 28px;
+}
+
+/* Společný start 2014 — jedna věta, ať je jasné, odkud se počítá */
+.basicsStart {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.basicsStartYear {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: 1;
+  color: var(--ink);
+}
+
+.basicsStart p {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  max-width: 62ch;
+}
+
+.basicsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+  .basicsStart {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .basicsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bcard {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 24px 24px;
+  box-shadow: var(--shadow);
+  border-top: 5px solid var(--line);
+}
+
+.bcard.kd {
+  border-top-color: var(--m3);
+}
+
+.bcard.beroun {
+  border-top-color: var(--beroun);
+}
+
+.bcardHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.bcardHead h2 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.bstatus {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 5px 11px;
+  border-radius: 999px;
+}
+
+.bstatus.done {
+  background: rgba(58, 125, 68, 0.14);
+  color: var(--m3);
+}
+
+.bstatus.open {
+  background: rgba(233, 161, 0, 0.18);
+  color: #8a5a00;
+}
+
+/* Hlavní číslo — kolik etap je opravdu postavených */
+.bbig {
+  margin-top: 16px;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 7vw, 3.6rem);
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.bcard.kd .bbig {
+  color: var(--m3);
+}
+
+.bcard.beroun .bbig {
+  color: var(--beroun-ink);
+}
+
+.bbigNote {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+/* Upozornění pod hlavním číslem — u Králova Dvora vysvětluje, že „postaveno"
+   ještě neznamená hotovo: třetí úsek visí na berounské části. Záměrně bez rámečku
+   a pozadí — je to druhý mezititulek karty, ne další samostatný box. Staví se
+   tedy na stejný vzorec jako .bbig + .bbigNote, jen o stupeň menší. */
+.bnote {
+  margin-top: 18px;
+}
+
+.bnoteTag {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(1.15rem, 2.6vw, 1.45rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--beroun-ink);
+}
+
+.bnote p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+/* Roky pod sebou — rok tučně, k němu jedna krátká věta */
+.byears {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 10px;
+  list-style: none;
+}
+
+.byears li {
+  display: grid;
+  grid-template-columns: 6.6rem 1fr;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 0.98rem;
+}
+
+.byears li b {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.byears li span {
+  color: var(--ink-soft);
+}
+
+@media (max-width: 420px) {
+  .byears li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+/* ---------- HLAVNÍ ZJIŠTĚNÍ: kde se to nejvíc zdrželo ----------
+   Tmavý panel hned pod srovnáním obou měst. Pozornost si bere kontrastem
+   proti bílým kartám nad ním — velikosti písma proto můžou zůstat střídmé. */
+.delay {
+  margin-top: 24px;
+  background: var(--ink);
+  border-radius: 16px;
+  padding: 24px 26px 26px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03), 0 16px 36px -26px rgba(0, 0, 0, 0.45);
+}
+
+.delayLabel {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.delayLead {
+  margin-top: 8px;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(1.4rem, 3.4vw, 1.9rem);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.delayBody {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .delay {
+    padding: 22px 20px 24px;
+  }
+  .delayBody {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+/* Datum, kdy se výkup pozemků vůbec rozjel — hlavní údaj celého panelu.
+   Drží se v měřítku ostatních čísel v hero, aby panel nepřebíjel zbytek stránky. */
+.delayStatN {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5.2vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-accent);
+}
+
+.delayStatL {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 30ch;
+}
+
+.delayText p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.84);
+  max-width: 54ch;
+}
+
+.delayText p + p {
+  margin-top: 10px;
+}
+
+.delayText strong {
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ---------- PŘEDĚL: „Chcete vědět víc? Čtěte dál" ---------- */
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 42px 0 34px;
+  text-align: center;
+}
+
+.more::before {
+  content: "";
+  width: 56px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--east);
+  margin-bottom: 12px;
+}
+
+.moreText {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 2.6vw, 1.45rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.moreArrow {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--beroun-ink);
+}

@@ -1,53 +1,60 @@
+/* FAQ — sladěno s designem stránky „obchvat".
+   Proměnné (--ink, --line, --card, --shadow…) se dědí z .page, uvnitř
+   které se komponenta renderuje. Fallbacky pro jistotu. */
+
 .main {
-  background-color: rgba(60, 150, 215, 0.06); 
-  padding: 1.25rem;
+  background-color: transparent;
+  padding: 0;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; 
-  margin: 0.5rem 0; 
+  display: block;
+  margin: 0;
 }
 
 .inner {
-  width: 100%; 
-  margin: 0.25rem 0;
-  @media (min-width: 768px) {
-    width: 83.333333%;
-  }
-  @media (min-width: 1024px) {
-    width: 50%; 
-  }
+  width: 100%;
+  max-width: 760px;
+  margin: 0;
 }
 
 .heading {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  margin-bottom: 0.5rem;
-  text-align: center;
-  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(1.75rem, 4.2vw, 2.6rem);
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--ink, #1b1b2e);
+  text-align: left;
+  margin: 0 0 1.4rem;
 }
 
 .list {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .listItem {
-  background-color: #ffffff; 
-  margin: 0.5rem 0; 
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  background-color: var(--card, #fff);
+  margin: 0;
+  border: 1px solid var(--line, #e2e2de);
+  border-radius: 14px;
+  box-shadow: var(--shadow, 0 1px 0 rgba(0, 0, 0, 0.03), 0 10px 28px -20px rgba(0, 0, 0, 0.3));
+  overflow: hidden;
 }
 
 .listItemHeading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 400;
-  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif; 
-  padding: 0.75rem; 
+  gap: 14px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: var(--ink, #1b1b2e);
+  padding: 18px 20px;
   cursor: pointer;
 }
 
@@ -56,29 +63,33 @@
 }
 
 .icon {
-  fill: #161534; 
-  height: 1.5rem; 
-  width: 1.5rem; 
-  transform: rotate(0deg); 
-  transition: transform 0.5s; 
+  flex: 0 0 auto;
+  fill: var(--color-accent, #ffaf4b);
+  height: 1.4rem;
+  width: 1.4rem;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
 }
 
 .iconRotate {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }
 
 .content {
-  border-left: 2px solid #161534; 
   overflow: hidden;
-  transition: all 0.5s; 
-  max-height: 0; 
+  transition: all 0.4s ease;
+  max-height: 0;
+  padding: 0 20px;
 }
 
 .contentOpen {
-  max-height: 100vh; 
-  padding: 0.75rem; 
+  max-height: 100vh;
+  padding: 4px 20px 18px;
+  border-top: 1px dashed var(--line, #e2e2de);
 }
 
 .contentText {
-  color: #1a202c; 
+  color: var(--ink-soft, rgba(27, 27, 46, 0.62));
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
