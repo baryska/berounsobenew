@@ -270,7 +270,6 @@ const Obchvat = () => {
         {/* ---------- HERO ---------- */}
         <header className={styles.hero}>
           <div className={styles.wrap}>
-            <div className={styles.eyebrow}>Beroun sobě · dopravní stavby · aktualizováno 08/2026</div>
 
             <h1>
               Jak je na tom <em>obchvat</em>
