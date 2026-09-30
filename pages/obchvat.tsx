@@ -79,8 +79,8 @@ const SEGMENTS = [
     title: 'Obchvat Králova Dvora — III. část',
     from: 'Králův Dvůr → hranice katastru',
     who: 'Králův Dvůr',
-    chip: 'Odevzdáno',
-    chipType: 'done',
+    chip: 'Čeká na společnou soutěž',
+    chipType: 'open',
   },
   {
     id: 's2',
@@ -89,7 +89,7 @@ const SEGMENTS = [
     title: 'Úsek s mostem přes Litavku',
     from: 'hranice katastru → Koněpruská',
     who: 'Beroun',
-    chip: 'Projekt se dokončuje',
+    chip: 'Čeká na společnou soutěž',
     chipType: 'open',
   },
   {
@@ -99,7 +99,7 @@ const SEGMENTS = [
     title: 'Okružní křižovatka u D5',
     from: 'napojení na Koněpruskou',
     who: 'Středočeský kraj',
-    chip: 'Povolení nutno prodloužit',
+    chip: 'Čeká na společnou soutěž',
     chipType: 'open',
   },
   {
@@ -397,7 +397,9 @@ const Obchvat = () => {
                   priority
                 />
                 <figcaption className={styles.mapcap}>
-                  Trasa jižního obchvatu Berouna a Králova Dvora. Podrobnosti k jednotlivým úsekům jsou rozepsané níž.
+                  Trasa jižního obchvatu Berouna a Králova Dvora. Úseky 1 až 3 se budou stavět jako jedna zakázka
+                  s jedním zhotovitelem, protože na sebe technicky navazují — soutěž nelze vypsat, dokud nebude hotová
+                  dokumentace všech tří. Podrobnosti k jednotlivým úsekům jsou rozepsané níž.
                 </figcaption>
               </figure>
 
