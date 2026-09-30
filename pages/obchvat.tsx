@@ -412,23 +412,6 @@ const Obchvat = () => {
                   </span>
                 </summary>
                 <div className={styles.mapDetailsBody}>
-                  <div className={styles.maplegend}>
-                    <span>
-                      <i style={{ background: 'var(--m3)' }} /> hotovo a v provozu
-                    </span>
-                    <span>
-                      <i style={{ background: 'var(--kd)' }} /> Králův Dvůr — odevzdáno
-                    </span>
-                    <span>
-                      <i style={{ background: 'var(--beroun)' }} /> Beroun — ještě chybí
-                    </span>
-                    <span>
-                      <i style={{ background: 'var(--kraj)' }} /> Kraj — okružní křižovatka
-                    </span>
-                  </div>
-                  <div className={styles.maphint}>
-                    Úseky v pořadí od Králova Dvora k Hostímské — čísla 1–4 odpovídají mapě.
-                  </div>
 
                   <div className={styles.seglist}>
                     {SEGMENTS.map((s) => (
