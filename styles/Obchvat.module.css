@@ -14,7 +14,7 @@
   --beroun: var(--color-accent);      /* Beroun — oranžová */
   --kd-tint: color-mix(in srgb, var(--color-primary) 6%, #fff);
   --beroun-tint: color-mix(in srgb, var(--color-accent) 6%, #fff);
-  --beroun-ink: #b85a1e;              /* tmavší odstín pro AA kontrast textu */
+  --beroun-ink: var(--color-accent);  /* naše oranžová #FFAF4B */
   --kraj: var(--ink-soft);            /* Středočeský kraj — okružní křižovatka u D5 */
 
   /* ZRALOST FÁZE — světle šedá → zelená (hotovo) */
@@ -126,9 +126,8 @@
 
 .subtitle {
   margin-top: 1rem;
-  font-size: clamp(1.2rem, 2.4vw, 1.5rem);
-  line-height: 1.5;
-  max-width: 56ch;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.6;
   color: var(--ink-soft);
 }
 
@@ -677,7 +676,6 @@
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 0.95rem;
-  text-transform: uppercase;
   line-height: 1.12;
 }
 
@@ -687,27 +685,6 @@
   font-size: 0.78rem;
   color: var(--ink-soft);
   margin-top: 3px;
-}
-
-.chip {
-  display: inline-block;
-  margin-top: 8px;
-  font-family: var(--font-body);
-  font-size: 0.68rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 3px 9px;
-  border-radius: 999px;
-}
-
-.chip.done {
-  background: var(--color-secondary-light);
-  color: #1f7a44;
-}
-
-.chip.open {
-  background: var(--color-accent-light);
-  color: #8a5a00;
 }
 
 /* Zvýrazněný řádek — co musí město předat kraji */
@@ -783,7 +760,6 @@
 .secNote {
   font-size: 0.98rem;
   color: var(--ink-soft);
-  max-width: 64ch;
   margin-bottom: 1.6rem;
 }
 
@@ -924,7 +900,6 @@
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.35rem;
-  text-transform: uppercase;
   line-height: 1.05;
 }
 
@@ -932,7 +907,7 @@
   color: var(--west);
 }
 .track.east h3 {
-  color: #b85a1e; /* tmavší odstín accentu pro AA kontrast nadpisu */
+  color: var(--color-accent);
 }
 .track.kd h3 {
   color: var(--kd);
@@ -945,33 +920,6 @@
   font-size: 0.82rem;
   color: var(--ink-soft);
   margin-top: 5px;
-}
-
-.track .status {
-  display: inline-block;
-  margin-top: 12px;
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  padding: 5px 11px;
-  border-radius: 999px;
-  color: #fff;
-}
-
-.track.west .status {
-  background: var(--west);
-}
-.track.east .status {
-  background: var(--east);
-  color: #3a2200;
-}
-.track.kd .status {
-  background: var(--m3);
-}
-.track.beroun .status {
-  background: var(--beroun);
-  color: #3a2200;
 }
 
 /* Svislá osa s milníky */
@@ -1022,12 +970,12 @@
   border-color: var(--m2);
 }
 .ev.m3::before {
-  border-color: var(--m3);
+  border-color: var(--kd);
 }
 
-/* Milníky Králova Dvora (hotové) — zelený uzel (zpětná kompatibilita) */
+/* Milníky Králova Dvora — modrý uzel v barvě města */
 .ev.kd::before {
-  border-color: var(--m3);
+  border-color: var(--kd);
 }
 
 /* Budoucí / předpokládané milníky — tečkovaný uzel, ztlumený text */
@@ -1067,7 +1015,6 @@
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.15rem;
-  text-transform: uppercase;
   line-height: 1.12;
   margin: 2px 0 5px;
 }
@@ -1366,7 +1313,6 @@
   color: var(--ink-soft);
   font-family: var(--font-body);
   letter-spacing: 0.02em;
-  max-width: 78ch;
 }
 
 /* ==========================================================================
@@ -1489,7 +1435,7 @@
   border: 3px solid var(--line, #ccc);
 }
 .simpleline li.done::before { border-color: var(--m3); }
-.simpleline li.warn::before { border-color: #e9a100; }
+.simpleline li.warn::before { border-color: var(--color-accent); }
 .simpleline li.open::before { border-color: var(--beroun); }
 .simpleline li.future::before { border-style: dashed; }
 .simpleline li.future .slT { font-style: italic; opacity: 0.85; }
@@ -1539,9 +1485,10 @@
   margin-top: 1px;
 }
 .sl.kd .n { background: var(--kd); }
-.sl.beroun .n { background: var(--beroun); }
+/* Na světlé oranžové je bílý text nečitelný — číslo je tu tmavé. */
+.sl.beroun .n { background: var(--beroun); color: var(--ink); }
 .sl.kraj .n { background: var(--kraj, var(--ink-soft)); }
-.sl.m3 .n { background: var(--m3); }
+.sl.m3 .n { background: var(--kd); }
 .sl b {
   display: block;
   font-weight: 700;
@@ -1555,24 +1502,6 @@
   color: var(--ink-soft, #666);
   margin-top: 3px;
 }
-.slWho {
-  display: block;
-  font-size: 12px;
-  color: var(--ink-soft, #666);
-  margin-top: 3px;
-}
-.chip {
-  display: inline-block;
-  margin-top: 8px;
-  font-size: 10.5px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 3px 9px;
-  border-radius: 999px;
-}
-.chip.done { background: rgba(58, 125, 68, 0.14); color: var(--m3); }
-.chip.open { background: rgba(233, 161, 0, 0.16); color: #8a5a00; }
-
 /* ---------- DVĚ KLÍČOVÁ ČÍSLA V HERO ---------- */
 .keyfacts {
   display: grid;
@@ -1590,9 +1519,10 @@
   background: var(--card);
   box-shadow: var(--shadow);
 }
+/* Druhá karta v páru — světle modrý podklad podle rámečku podcastu v programu,
+   ale rámeček a stín si drží z .keyfact, aby dvojice karet působila jednotně. */
 .keyfactDark {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: var(--color-primary-light);
 }
 .keyfactN {
   font-family: var(--font-heading);
@@ -1604,7 +1534,7 @@
   white-space: nowrap;
 }
 .keyfactDark .keyfactN {
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 .keyfactN small {
   display: block;
@@ -1612,12 +1542,11 @@
   font-weight: 400;
   font-size: 0.8rem;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: var(--ink-soft);
   margin-top: 6px;
 }
 .keyfactDark .keyfactN small {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--ink-soft);
 }
 .keyfactL {
   margin-top: 12px;
@@ -1626,31 +1555,14 @@
   color: var(--ink-soft);
 }
 .keyfactDark .keyfactL {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Zdroj pod číslem — má být po ruce, ne na očích: žádná výplň ani rámeček,
-   jen tlumeně podtržený řádek, který zesvětlá na hover. */
-.keyfactSrc {
-  display: inline-block;
-  margin-top: 12px;
-  font-size: 0.72rem;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-}
-
-.keyfactSrc:hover {
-  color: #fff;
+  color: var(--ink-soft);
 }
 
 /* ---------- SPOLEČNÁ STARTOVNÍ ČÁRA (2014) ---------- */
 .startline {
   background: var(--card);
   border: 1px solid var(--line);
-  border-left: 5px solid var(--ink);
+  border-left: 5px solid var(--color-primary);
   border-radius: 14px;
   padding: 20px 24px;
   margin-bottom: 22px;
@@ -1671,14 +1583,12 @@
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.15rem;
-  text-transform: uppercase;
   line-height: 1.1;
 }
 .startline p {
   font-size: 0.9rem;
   color: var(--ink-soft);
   margin-top: 5px;
-  max-width: 74ch;
 }
 .startline p b { color: var(--ink); font-weight: 700; }
 @media (max-width: 600px) {
@@ -1690,14 +1600,67 @@
   margin: 0;
 }
 
-/* Mapa se zobrazuje ve své původní velikosti (1116 × 521 px) a jen na úzkých
+/* Mapa se zobrazuje ve své původní velikosti (997 × 547 px) a jen na úzkých
    displejích se proporčně zmenší, aby nepřetekla z karty. */
 .mapimg {
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
+}
+
+/* Držák mapy — zmenšuje se s obrázkem, takže čísla úseků umístěná v procentech
+   zůstávají na svých místech trasy i na mobilu. Šířku bere od rodiče (ne od
+   obsahu), jinak by ji `container-type: inline-size` srazil na nulu. */
+.mapholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 997px;
   margin: 0 auto;
+  container-type: inline-size;
+}
+
+.mappins {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Číslo úseku jako odznak přímo na trase. Velikost se odvíjí od šířky mapy
+   (cqw), aby na malé mapě nebyla čísla neúměrně velká — s dolní mezí, aby
+   zůstala čitelná i na mobilu. */
+.mappin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  min-width: max(20px, 3.1cqw);
+  height: max(20px, 3.1cqw);
+  padding: 0 max(4px, 0.6cqw);
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: max(10px, 1.6cqw);
+  line-height: 1;
+  color: #fff;
+  background: var(--kraj);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+  white-space: nowrap;
+}
+
+.mappin.m3,
+.mappin.kd {
+  background: var(--kd);
+}
+
+.mappin.beroun {
+  background: var(--beroun);
+  color: var(--ink);
+}
+
+.mappin.kraj {
+  background: var(--kraj);
 }
 
 .mapcap {
@@ -1705,7 +1668,6 @@
   font-size: 0.85rem;
   line-height: 1.5;
   color: var(--ink-soft);
-  max-width: 68ch;
 }
 
 /* ---------- PLACEHOLDER PRO CHYBĚJÍCÍ OBRÁZEK (reálná mapa) ---------- */
@@ -1806,7 +1768,6 @@
   font-size: 0.98rem;
   line-height: 1.6;
   color: var(--ink-soft);
-  max-width: 72ch;
 }
 
 /* ---------- DOKUMENTY A ZDROJE ---------- */
@@ -1842,7 +1803,6 @@
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--beroun-ink);
   text-decoration: none;
   border: 1px solid color-mix(in srgb, var(--beroun-ink) 40%, var(--line));
@@ -1862,7 +1822,6 @@
   font-family: var(--font-body);
   font-size: 0.72rem;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: var(--ink-soft);
   border: 1px dashed var(--line);
   border-radius: 999px;
@@ -1894,7 +1853,6 @@
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.05rem;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
   color: var(--ink);
 }
@@ -1925,8 +1883,8 @@
   border-left: 5px solid var(--line);
 }
 .sl.m3 {
-  border-left-color: var(--m3);
-  background: color-mix(in srgb, var(--m3) 7%, #fff);
+  border-left-color: var(--kd);
+  background: color-mix(in srgb, var(--kd) 7%, #fff);
 }
 .sl.kd {
   border-left-color: var(--kd);
@@ -1934,11 +1892,16 @@
 .sl.beroun {
   border-left-color: var(--beroun);
 }
-/* Číslo úseku jako pin na mapě — o něco větší a čitelnější */
+/* Číslo úseku jako pin na mapě — o něco větší a čitelnější.
+   Pilulka, ne kruh, aby se vešel i rozsah „1–2“ u hotových etap. */
 .sl .n {
-  flex: 0 0 26px;
+  flex: 0 0 auto;
+  min-width: 26px;
   height: 26px;
+  padding: 0 7px;
+  border-radius: 999px;
   font-size: 12px;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -2022,7 +1985,7 @@
   padding: 16px 20px;
   background: var(--card);
   border: 1px solid var(--line);
-  border-left: 5px solid var(--ink);
+  border-left: 5px solid var(--color-primary);
   border-radius: 14px;
   box-shadow: var(--shadow);
 }
@@ -2038,7 +2001,6 @@
 .basicsStart p {
   font-size: 1rem;
   color: var(--ink-soft);
-  max-width: 62ch;
 }
 
 .basicsGrid {
@@ -2069,7 +2031,7 @@
 }
 
 .bcard.kd {
-  border-top-color: var(--m3);
+  border-top-color: var(--kd);
 }
 
 .bcard.beroun {
@@ -2088,29 +2050,8 @@
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: clamp(1.3rem, 3vw, 1.7rem);
-  text-transform: uppercase;
   line-height: 1;
   color: var(--ink);
-}
-
-.bstatus {
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.68rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  padding: 5px 11px;
-  border-radius: 999px;
-}
-
-.bstatus.done {
-  background: rgba(58, 125, 68, 0.14);
-  color: var(--m3);
-}
-
-.bstatus.open {
-  background: rgba(233, 161, 0, 0.18);
-  color: #8a5a00;
 }
 
 /* Hlavní číslo — kolik etap je opravdu postavených */
@@ -2125,7 +2066,7 @@
 }
 
 .bcard.kd .bbig {
-  color: var(--m3);
+  color: var(--kd);
 }
 
 .bcard.beroun .bbig {
@@ -2146,18 +2087,8 @@
   margin-top: 18px;
 }
 
-.bnoteTag {
-  display: block;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: clamp(1.15rem, 2.6vw, 1.45rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  color: var(--beroun-ink);
-}
-
 .bnote p {
-  margin-top: 5px;
+  margin-top: 0;
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--ink-soft);
@@ -2198,40 +2129,30 @@
   }
 }
 /* ---------- HLAVNÍ ZJIŠTĚNÍ: kde se to nejvíc zdrželo ----------
-   Tmavý panel hned pod srovnáním obou měst. Pozornost si bere kontrastem
-   proti bílým kartám nad ním — velikosti písma proto můžou zůstat střídmé. */
+   Panel hned pod srovnáním obou měst. Světle modrý podklad a zaoblení podle
+   rámečku podcastu v programu, stín zůstává jako u ostatních karet stránky. */
 .delay {
   margin-top: 24px;
-  background: var(--ink);
-  border-radius: 16px;
-  padding: 24px 26px 26px;
+  background: var(--color-primary-light);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem 1.5rem;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03), 0 16px 36px -26px rgba(0, 0, 0, 0.45);
 }
 
-.delayLabel {
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-}
-
 .delayLead {
-  margin-top: 8px;
+  margin-top: 0;
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: clamp(1.4rem, 3.4vw, 1.9rem);
   line-height: 1.08;
   letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fff;
+  color: var(--ink);
 }
 
 .delayBody {
   margin-top: 20px;
   padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 1px solid color-mix(in srgb, var(--color-primary) 22%, transparent);
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   gap: 24px;
@@ -2240,7 +2161,7 @@
 
 @media (max-width: 760px) {
   .delay {
-    padding: 22px 20px 24px;
+    padding: 1.1rem 1.1rem 1.25rem;
   }
   .delayBody {
     grid-template-columns: 1fr;
@@ -2256,21 +2177,21 @@
   font-size: clamp(2.2rem, 5.2vw, 3rem);
   line-height: 1;
   letter-spacing: -0.02em;
-  color: var(--color-accent);
+  color: var(--color-primary);
 }
 
 .delayStatL {
   margin-top: 10px;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--ink-soft);
   max-width: 30ch;
 }
 
 .delayText p {
   font-size: 0.98rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.84);
+  color: var(--ink-soft);
   max-width: 54ch;
 }
 
@@ -2279,41 +2200,9 @@
 }
 
 .delayText strong {
-  color: #fff;
+  color: var(--ink);
   font-weight: 700;
   white-space: nowrap;
 }
 
-/* ---------- PŘEDĚL: „Chcete vědět víc? Čtěte dál" ---------- */
-.more {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  margin: 42px 0 34px;
-  text-align: center;
-}
 
-.more::before {
-  content: "";
-  width: 56px;
-  height: 3px;
-  border-radius: 999px;
-  background: var(--east);
-  margin-bottom: 12px;
-}
-
-.moreText {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: clamp(1.1rem, 2.6vw, 1.45rem);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: var(--ink);
-}
-
-.moreArrow {
-  font-size: 1.2rem;
-  line-height: 1;
-  color: var(--beroun-ink);
-}

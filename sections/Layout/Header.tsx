@@ -10,10 +10,13 @@ import styles from './Header.module.css';
 import { MERCH_URL } from '../../data/merch';
 
 interface NavLink {
-  link: string;
+  /** Chybí u položky, která jen rozbaluje podmenu (má children). */
+  link?: string;
   name: string;
   badge?: string;
   external?: boolean;
+  /** Podpoložky rozbalovacího menu. */
+  children?: { link: string; name: string }[];
 }
 
 const LINKS: NavLink[] = [
@@ -25,20 +28,30 @@ const LINKS: NavLink[] = [
   { link: "#informujeme", name: "informujeme" },
   // { link: "podpisy", name: "podpisy" },
   { link: "newsletter", name: "newsletter" },
-  { link: "most", name: "most" },
-  // Skryté – stránka je dostupná jen přes odkaz s klíčem (?klic=...). Až půjde veřejně, odkomentovat.
-  // { link: "obchvat", name: "obchvat" },
+  {
+    name: "most & obchvat",
+    children: [
+      { link: "most", name: "most TGM" },
+      { link: "obchvat", name: "obchvat" },
+    ],
+  },
   { link: "#napistenam", name: "napište nám" },
 ]
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
+  // Rozbalené podmenu v desktopové liště („most & obchvat“).
+  const [stavbyOpen, setStavbyOpen] = useState(false);
   const node = useRef<HTMLDivElement>(null);
+  const dropdownNode = useRef<HTMLLIElement>(null);
   const handleClickOutside = (event: MouseEvent) => {
-    if (!node.current || node.current.contains(event.target as HTMLElement)) {
-      return;
+    const target = event.target as HTMLElement;
+    if (node.current && !node.current.contains(target)) {
+      setOpen(false);
     }
-    setOpen(false)
+    if (dropdownNode.current && !dropdownNode.current.contains(target)) {
+      setStavbyOpen(false);
+    }
   }
 
   useEffect(() => {
@@ -63,13 +76,38 @@ export const Header = () => {
           </Link>
           <div className={`${styles.container} ${styles.pullRight}`}>
             <ul>
-              {LINKS.map(({ name, link, badge, external }, index) => {
+              {LINKS.map(({ name, link, badge, external, children }, index) => {
                 const label = (
                   <>
                     {name}
                     {badge && <span className={styles.programBadge}>{badge}</span>}
                   </>
                 );
+                if (children) {
+                  return (
+                    <li key={index} ref={dropdownNode} className={styles.navDropdown}>
+                      <button
+                        type="button"
+                        className={styles.navDropdownToggle}
+                        aria-expanded={stavbyOpen}
+                        aria-controls="nav-stavby"
+                        onClick={() => setStavbyOpen((prev) => !prev)}
+                      >
+                        {name}
+                        <span className={`${styles.navChevron} ${stavbyOpen ? styles.navChevronOpen : ''}`} aria-hidden="true">▾</span>
+                      </button>
+                      <ul id="nav-stavby" className={styles.navDropdownMenu} hidden={!stavbyOpen}>
+                        {children.map((child) => (
+                          <li key={child.link}>
+                            <Link href={`/${child.link}`}>
+                              <a onClick={() => setStavbyOpen(false)}>{child.name}</a>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  );
+                }
                 return (
                   <li key={index}>
                     {external ? (

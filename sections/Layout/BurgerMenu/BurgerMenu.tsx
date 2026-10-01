@@ -10,7 +10,7 @@ interface Props {
 const Burger = ({ onBurgerClick, open }: Props) => {
 
   return (
-    <div className={styles.button} onClick={() => onBurgerClick()}>
+    <div className={`${styles.button} ${open ? styles.buttonOpen : ''}`} onClick={() => onBurgerClick()}>
       <div className={!open ? styles.burger : styles.cross}/>
       <div className={!open ? styles.burger : styles.cross}/>
       <div className={!open ? styles.burger : styles.cross}/>

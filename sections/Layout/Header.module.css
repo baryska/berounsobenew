@@ -34,6 +34,9 @@ div.container ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
+  /* Odkazy jsou inline (svislý padding nezvětšuje řádek), ale rozbalovací
+     položka je <button> s vlastní výškou — bez vycentrování by seděla níž. */
+  align-items: center;
 }
 
 div.container a {
@@ -66,6 +69,62 @@ div.pullRight a::after {
 
 div.pullRight a:hover::after {
   width: 100%;
+}
+
+/* ---------- ROZBALOVACÍ POLOŽKA „most & obchvat" ---------- */
+.navDropdown {
+  position: relative;
+}
+
+/* Přepínač se musí tvářit jako ostatní odkazy v liště — `div.container a`
+   na <button> nesedne, proto se tu hodnoty opakují. */
+.navDropdownToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'PuffinDisplay', 'Inria Sans', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0px 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.navChevron {
+  font-size: 0.7em;
+  line-height: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navChevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Vyšší specificita než `div.container ul`, jinak by podmenu zdědilo
+   vodorovný flex z hlavní lišty a rozložilo se do řádku. */
+div.container ul.navDropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Přebíjí align-items: center z hlavní lišty — v panelu chceme odkazy vlevo. */
+  align-items: stretch;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px -14px rgba(0, 0, 0, 0.35);
+  padding: 10px 0;
+  gap: 8px;
+  z-index: 200;
+}
+
+div.container ul.navDropdownMenu[hidden] {
+  display: none;
 }
 
 .programBadge {

@@ -10,7 +10,9 @@ interface Props {
 
 
 const Sidemenu = ({open, onClose}: Props) => {
- 
+  // Podmenu „most & obchvat“ – zavřené, dokud na něj uživatel neklikne.
+  const [stavbyOpen, setStavbyOpen] = useState(false);
+
   return (
     <div className={`${styles.nav} ${open ? styles.navOpen : ''}`}>
       <Link href="/#kdojsme"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>kdo jsme</button></a></Link>
@@ -23,9 +25,22 @@ const Sidemenu = ({open, onClose}: Props) => {
       <Link href="/#informujeme"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>informujeme</button></a></Link>
       {/* <Link href="/podpisy"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>podpisy</button></a></Link> */}
       <Link href="/newsletter"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>newsletter</button></a></Link>
-      <Link href="/most"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>most</button></a></Link>
-      {/* Skryté – stránka je dostupná jen přes odkaz s klíčem (?klic=...). Až půjde veřejně, odkomentovat. */}
-      {/* <Link href="/obchvat"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>obchvat</button></a></Link> */}
+      {/* Dopravní stavby — rozbalovací položka, pod ní most TGM a obchvat. */}
+      <div className={styles.navGroup}>
+        <button
+          className={`${styles.navItemLink} ${styles.navItem} ${styles.navGroupToggle}`}
+          aria-expanded={stavbyOpen}
+          aria-controls="menu-stavby"
+          onClick={() => setStavbyOpen((prev) => !prev)}
+        >
+          most &amp; obchvat
+          <span className={`${styles.navChevron} ${stavbyOpen ? styles.navChevronOpen : ''}`} aria-hidden="true">▾</span>
+        </button>
+        <div className={styles.navSub} id="menu-stavby" hidden={!stavbyOpen}>
+          <Link href="/most"><a className={styles.navSubLink} onClick={() => onClose()}>most TGM</a></Link>
+          <Link href="/obchvat"><a className={styles.navSubLink} onClick={() => onClose()}>obchvat</a></Link>
+        </div>
+      </div>
       <Link href="/#napistenam"><a className={styles.navItemLink}><button className={styles.navItem} onClick={() => onClose()}>napište nám</button></a></Link>
     </div>
   )
